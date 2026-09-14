@@ -74,3 +74,10 @@ The participate guide names cow_d7a245f0 (2026.9.14.2, a 128x128 map) but the le
   Beats a 5-stack that walks into its 3-hero group under a tower; otherwise loses the race.
 - khors:v1: all five walk to (64,64) and camp mid. red-kite:v10: five-stack pushes mid together. Neither contests the side lanes.
 - base.bas: nearest-enemy targeting, walks to (64,64) when idle.
+
+## Policy engineering lessons (2026-09-14)
+- No natural HP regen: a hero at low HP with no gold stays useless; potions, level-ups (max-HP delta heals) or a respawn are the only resets.
+- Rejoin after respawn must be armed once by the respawn event; re-evaluating "rejoin" every tick resets the objective index and strands the hero at home.
+- Do not walk to ally centroids (often inside rock/lake); follow the lane road (own gate -> inner -> outer) instead.
+- Footman farming near enemy barracks stalls the push: attack footmen only when engaged (<= 2.4 tiles) or for kill shots (hp <= 30 in range).
+- Lane switching pays off only against static defenders; against a pushing enemy stack it loses the race. Lane choice vs Aaron matters more.
