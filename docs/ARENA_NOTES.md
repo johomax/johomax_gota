@@ -81,3 +81,9 @@ The participate guide names cow_d7a245f0 (2026.9.14.2, a 128x128 map) but the le
 - Do not walk to ally centroids (often inside rock/lake); follow the lane road (own gate -> inner -> outer) instead.
 - Footman farming near enemy barracks stalls the push: attack footmen only when engaged (<= 2.4 tiles) or for kill shots (hp <= 30 in range).
 - Lane switching pays off only against static defenders; against a pushing enemy stack it loses the race. Lane choice vs Aaron matters more.
+
+## REGIME CHANGE (observed 2026-09-14 ~21:00 UTC): league seating is now `distinct_teammates: true`
+Each league episode seats 10 DIFFERENT entrants: my policy controls ONE hero (its class is set by the seat: Red seat s -> class 5+s,
+Blue seat s -> class s) alongside four other entrants' heroes. Score = 1 if my team's fort kill happens. Stack-only logic (cohesion
+holds, regroup, lane switching with allies) is counterproductive here. XP A/B tests must use rosters with `{"random": true}` in the
+other nine seats (tools/xp.py mixed) to model the league; five-clone rosters no longer reflect ladder play.
