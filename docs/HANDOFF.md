@@ -1,16 +1,19 @@
-# HANDOFF — Gods of the Arena policy project (2026-09-14, 22:35 UTC)
+# HANDOFF — Gods of the Arena policy project (updated 2026-09-15, 00:05 UTC)
 
-## Where things stand
-- **League:** `league_3c60897b-25cf-4b37-9d1a-8554c1198f28`, division `div_a4534073-c5d2-4193-a94a-93d9c5e2e443`.
-  Player **Jordan** (`ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb`), policy name `Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb`.
-- **Champion (active, auto-champion on):** `Jordan:v17` = `policy/v19.bas`. Ladder: rank 5, 1536 MMR after 3 rounds (win rate 0.72). Aaron leads at 1662.
-- **League coworld right now:** `cow_0752b441-af96-421d-8a1e-f8365a95e022` (2026.9.14.4, 116x116 map hash 6EB3A6B3). It changed three times today; verify with
-  `uv run coworld xp-request get <xreq> --json` (fields coworld_id/coworld_version) before any local run. All tools already point at it.
-- **Seating regime changed today (~21:00 UTC):** `settings.ladder.scheduler.distinct_teammates = true`. Each league episode seats ten different entrants,
-  so this policy controls ONE hero (class fixed by seat: Red seat s -> class 5+s, Blue seat s -> class s) with four strangers. Everything built before
-  that (five-clone stacks, tables below labelled "vs Aaron") was measured with five-clone rosters and no longer models the ladder.
-- Auth: `uv run softmax status` (token already exchanged). Docker via OrbStack; always `export DOCKER_DEFAULT_PLATFORM=linux/amd64`.
-- No local background tasks are running (stopped at handoff). Hosted XP requests may still be listed as completed under `uv run coworld xp-request list --mine`.
+## Where things stand (solo-hero regime)
+- **Champion:** v30 = `Jordan:v28` (submitted 23:50 UTC, placed, auto-champion always). v30 = v19 minus the post-respawn home guard and
+  the ally hold. Ten-seat hosted result 146/240 (61%) vs v19 132/240 (55%). Ladder: rank 5, 1543 MMR after 7 rounds.
+- **Measurement:** `uv run python tools/xp_mixed.py create <label> --seats 0-9 -n 24 --tag t` then `report xp/t.json` (random champions in
+  the other nine seats = the league's distinct-teammates seating). Platform cap: 300 undispatched episodes per user (the tool waits on 429).
+  A 240-game batch has SE ~3.2%; differences under ~7 points are noise. Random champion base rate: Red 41%, Blue 59%.
+- **Analysis tools:** `tools/league_data.py` (our league episodes per seat), `tools/log_stats.py` (our telemetry incl. death contexts "DC"),
+  `tools/replay_lanes.py` (which lane/heroes decided each game), `tools/roster_stats.py` (per-policy win rates in random rosters).
+- **Key evidence:** winners' heroes always attack the fort; usually 4 heroes hit the final gate together; mid decides 42% of games; only 20% of
+  our wins came through the side lane we push alone; after a death the rejoin logic sends us to mid and those games were won more.
+  Cautious/passive variants lose (v23 solo mode 45%, v25 ranged safety 51%, v32 fight-on-our-half 55%). Aggression + no waiting wins.
+- **In flight (hosted, 240 each):** v33 farming, v34 = v30+v26+v28, v35 mid lane, v36 periodic rejoin, v38 fort at any distance;
+  Codex task S8 (v37 group follow). Labels: v31=:v29 ... v38=:v35 (label = version-2 from v31 on; check `uv run coworld upload-policy` output).
+- Codex workers: `docs/WORKER_BRIEF2.md` + `docs/tasks/s*.md`; launch with `node "$CC" task --background --fresh --write --model gpt-6-astra --effort xhigh`.
 
 ## Read first
 1. `docs/ARENA_NOTES.md` — verified mechanics, map coordinates, host API, BASIC dialect gotchas, opponent habits, engineering lessons.
