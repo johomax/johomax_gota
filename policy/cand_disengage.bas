@@ -2,60 +2,11 @@
 ' as a stack. Objectives come from own tower positions (always visible) and the
 ' map's point symmetry (enemy = (W-1-x, H-1-y)), so no coordinates are hardcoded.
 ' Red pushes lane 0, Blue pushes lane 2 (mirror images). See docs/ARENA_NOTES.md.
-' Candidate lane adds resistance-driven lane switching and ally rejoin.
 
 dim wpX(8)
 dim wpY(8)
 dim wpId(8)
 dim wpKind(8)
-dim routeX(20)
-dim routeY(20)
-dim routeId(20)
-dim routeKind(20)
-dim routeDead(20)
-dim seenEnemyX(4)
-dim seenEnemyY(4)
-
-sub loadLane(loadLaneId)
-  copyPoint = 0
-  while copyPoint < 7
-    copyIndex = loadLaneId * 7 + copyPoint
-    wpX(copyPoint) = routeX(copyIndex)
-    wpY(copyPoint) = routeY(copyIndex)
-    wpId(copyPoint) = routeId(copyIndex)
-    wpKind(copyPoint) = routeKind(copyIndex)
-    copyPoint = copyPoint + 1
-  wend
-end sub
-
-sub firstStanding(firstLaneId)
-  firstOi = 3
-  while firstOi < 6 and routeDead(firstLaneId * 7 + firstOi) = 1
-    firstOi = firstOi + 1
-  wend
-end sub
-
-sub adoptLane(nextLaneId, laneReason)
-  oldLane = pushLane
-  pushLane = nextLaneId
-  laneChanged = 1
-  loadLane(pushLane)
-  firstStanding(pushLane)
-  oi = firstOi
-  resistance = 0
-  stuckTicks = 0
-  stuckHits = 0
-  unstick = 0
-  holdTicks = 0
-  if oldLane <> pushLane then
-    lastLaneTick = worldTick
-  end if
-  if laneReason = 1 then
-    print "LANE " ; worldTick ; " " ; oldLane ; " " ; pushLane ; " resistance"
-  else
-    print "LANE " ; worldTick ; " " ; oldLane ; " " ; pushLane ; " rejoin"
-  end if
-end sub
 
 sub isqrt(v)
   if v <= 0 then
@@ -111,8 +62,11 @@ if inited = 0 then
   if clash = 1 then
     pushLane = 2
   end if
-  ' Seven points per lane: own gate->outer, enemy outer->gate, enemy fort.
-  ownBase = 10 + selfTeam * 3
+  ' own tower ids for the push lane (waypoints, in gate->inner->outer order)
+  ownBase = 10 + pushLane * 6 + selfTeam * 3
+  ' mirror lane own towers give enemy positions for the push lane
+  mirBase = 10 + (2 - pushLane) * 6 + selfTeam * 3
+  enemyBase = 10 + pushLane * 6 + (1 - selfTeam) * 3
   i = 0
   n = objectCount()
   while i < n
@@ -120,37 +74,31 @@ if inited = 0 then
       k = objectKind(i)
       id = objectId(i)
       if k = 4 then
-        towerOffset = id - ownBase
-        routeLane = towerOffset / 6
-        tier = towerOffset mod 6
-        routeIndex = routeLane * 7 + 2 - tier
-        routeX(routeIndex) = objectX(i)
-        routeY(routeIndex) = objectY(i)
-        routeKind(routeIndex) = 0
-        routeIndex = (2 - routeLane) * 7 + 3 + tier
-        routeX(routeIndex) = mapWidth - 1 - objectX(i)
-        routeY(routeIndex) = mapHeight - 1 - objectY(i)
-        routeId(routeIndex) = 10 + (2 - routeLane) * 6 + (1 - selfTeam) * 3 + tier
-        routeKind(routeIndex) = 1
+        tier = id - ownBase
+        if tier >= 0 and tier <= 2 then
+          wpX(2 - tier) = objectX(i)
+          wpY(2 - tier) = objectY(i)
+          wpKind(2 - tier) = 0
+        end if
+        tier = id - mirBase
+        if tier >= 0 and tier <= 2 then
+          wpX(3 + tier) = mapWidth - 1 - objectX(i)
+          wpY(3 + tier) = mapHeight - 1 - objectY(i)
+          wpId(3 + tier) = enemyBase + tier
+          wpKind(3 + tier) = 1
+        end if
       end if
       if k = 1 then
         homeX = objectX(i)
         homeY = objectY(i)
-        routeLane = 0
-        while routeLane < 3
-          routeIndex = routeLane * 7 + 6
-          routeX(routeIndex) = mapWidth - 1 - objectX(i)
-          routeY(routeIndex) = mapHeight - 1 - objectY(i)
-          routeId(routeIndex) = 2 - selfTeam
-          routeKind(routeIndex) = 1
-          routeLane = routeLane + 1
-        wend
+        wpX(6) = mapWidth - 1 - objectX(i)
+        wpY(6) = mapHeight - 1 - objectY(i)
+        wpId(6) = 2 - selfTeam
+        wpKind(6) = 1
       end if
     end if
     i = i + 1
   wend
-  loadLane(pushLane)
-  lastLaneTick = -1500
   nObj = 7
   oi = 0
   melee = 0
@@ -283,6 +231,11 @@ end if
 bestHero = 0
 bestHeroHp = 1000000
 enemyHeroNear = 0
+nearHeroD2 = 1000000
+nearAllyCount = 0
+retreatHero = 0
+retreatHeroHp = 1000000
+fortNear = 0
 nearMeleeD2 = 1000000
 nmx = 0
 nmy = 0
@@ -294,14 +247,6 @@ fortId = 0
 objDead = 0
 maxAllyD2 = -1
 allyCount = 0
-objStanding = 0
-defenders = 0
-seenEnemies = 0
-liveAllies = 0
-alliesWithin30 = 0
-allySumX = 0
-allySumY = 0
-laneChanged = 0
 
 i = 0
 n = objectCount()
@@ -315,14 +260,6 @@ while i < n
   d2 = dx * dx + dy * dy
   if t = selfTeam then
     if k = 2 then
-      if objectId(i) <> selfId and objectAlive(i) = 1 then
-        liveAllies = liveAllies + 1
-        allySumX = allySumX + x
-        allySumY = allySumY + y
-        if d2 <= 900 then
-          alliesWithin30 = alliesWithin30 + 1
-        end if
-      end if
       if objectId(i) <> selfId and objectAlive(i) = 1 and d2 <= 625 then
         ex = x - ox
         ey = y - oy
@@ -331,22 +268,23 @@ while i < n
           maxAllyD2 = ad2
         end if
         allyCount = allyCount + 1
+        if d2 <= 64 then
+          nearAllyCount = nearAllyCount + 1
+        end if
       end if
     end if
   else
     if k = 2 then
       if objectAlive(i) = 1 then
-        seenEnemyX(seenEnemies) = x
-        seenEnemyY(seenEnemies) = y
-        seenEnemies = seenEnemies + 1
-        defendD2 = d2
-        if otype = 1 then
-          defendDx = x - ox
-          defendDy = y - oy
-          defendD2 = defendDx * defendDx + defendDy * defendDy
+        if d2 < nearHeroD2 then
+          nearHeroD2 = d2
         end if
-        if defendD2 <= 100 then
-          defenders = defenders + 1
+        if d2 * 100 <= rng * rng then
+          hp = objectHp(i)
+          if hp < retreatHeroHp then
+            retreatHeroHp = hp
+            retreatHero = objectId(i)
+          end if
         end if
       end if
       if objectAlive(i) = 1 and d2 <= 100 then
@@ -379,20 +317,9 @@ while i < n
     end if
     if k = 4 then
       id = objectId(i)
-      towerOffset = id - (10 + (1 - selfTeam) * 3)
-      routeLane = towerOffset / 6
-      tier = towerOffset mod 6
-      routeIndex = routeLane * 7 + 3 + tier
-      routeX(routeIndex) = x
-      routeY(routeIndex) = y
-      if objectHp(i) <= 0 then
-        routeDead(routeIndex) = 1
-      end if
       if otype = 1 and id = oid then
         if objectHp(i) <= 0 then
           objDead = 1
-        else
-          objStanding = 1
         end if
         ' refine the reflected position with the real one
         wpX(oi) = x
@@ -408,12 +335,13 @@ while i < n
     if k = 1 then
       if objectAlive(i) = 1 and d2 <= 196 then
         fortId = objectId(i)
+        if d2 <= 144 then
+          fortNear = 1
+        end if
       end if
       if otype = 1 and objectId(i) = oid then
         if objectHp(i) <= 0 then
           objDead = 1
-        else
-          objStanding = 1
         end if
       end if
     end if
@@ -426,124 +354,19 @@ if objDead = 1 and otype = 1 and oi < nObj - 1 then
   stuckHits = 0
 end if
 
-' ---------- lane resistance / rejoin ----------
-if defenders >= 2 then
-  resistance = resistance + 1
-else
-  resistance = resistance - 1
+' Hold the retreat until enemy heroes clear 12 tiles; allow an exposed fort finish.
+outnumbered = 0
+if enemyHeroNear >= nearAllyCount + 2 or (enemyHeroNear >= 2 and selfHp * 100 < selfMaxHp * 50) then
+  outnumbered = 1
 end if
-if resistance < 0 then
-  resistance = 0
+if outnumbered = 1 and fortNear = 0 then
+  disengage = 1
 end if
-if resistance > 120 then
-  resistance = 120
+if nearHeroD2 > 144 or fortNear = 1 then
+  disengage = 0
 end if
-
-' Once isolated, keep following the living allies until within 12 tiles.
-rejoinStarted = 0
-if liveAllies = 0 then
-  rejoining = 0
-else
-  centroidX = allySumX / liveAllies
-  centroidY = allySumY / liveAllies
-  centroidDx = centroidX - selfX
-  centroidDy = centroidY - selfY
-  centroidD2 = centroidDx * centroidDx + centroidDy * centroidDy
-  if rejoining = 0 and alliesWithin30 = 0 then
-    rejoining = 1
-    rejoinStarted = 1
-    laneTravel = 0
-  end if
-  if rejoining = 1 then
-    rejoinLane = pushLane
-    nearestRouteD2 = 1000000
-    routeLane = 0
-    while routeLane < 3
-      routePoint = 0
-      while routePoint < 7
-        routeIndex = routeLane * 7 + routePoint
-        routeDx = routeX(routeIndex) - centroidX
-        routeDy = routeY(routeIndex) - centroidY
-        routeD2 = routeDx * routeDx + routeDy * routeDy
-        if routeD2 < nearestRouteD2 or (routeD2 = nearestRouteD2 and routeLane = pushLane) then
-          nearestRouteD2 = routeD2
-          rejoinLane = routeLane
-        end if
-        routePoint = routePoint + 1
-      wend
-      routeLane = routeLane + 1
-    wend
-    if rejoinLane <> pushLane or (rejoinStarted = 1 and centroidD2 > 144) then
-      adoptLane(rejoinLane, 2)
-    end if
-    if centroidD2 <= 144 then
-      rejoining = 0
-      if rejoinStarted = 0 or laneChanged = 1 then
-        print "LANE " ; worldTick ; " " ; pushLane ; " " ; pushLane ; " joined"
-      end if
-    end if
-  end if
-end if
-
-' Rejoin adopts team position immediately; resistance switches have a cooldown.
-if rejoining = 0 and laneChanged = 0 and resistance >= 72 and worldTick - lastLaneTick >= 1500 and otype = 1 and objStanding = 1 and objDead = 0 then
-  switchLane = pushLane
-  safestD2 = -1
-  routeLane = 0
-  while routeLane < 3
-    if routeLane <> pushLane then
-      firstStanding(routeLane)
-      routeIndex = routeLane * 7 + firstOi
-      clearanceD2 = 1000000
-      enemyIndex = 0
-      while enemyIndex < seenEnemies
-        routeDx = routeX(routeIndex) - seenEnemyX(enemyIndex)
-        routeDy = routeY(routeIndex) - seenEnemyY(enemyIndex)
-        routeD2 = routeDx * routeDx + routeDy * routeDy
-        if routeD2 < clearanceD2 then
-          clearanceD2 = routeD2
-        end if
-        enemyIndex = enemyIndex + 1
-      wend
-      if clearanceD2 > safestD2 or (clearanceD2 = safestD2 and switchLane = 1 and routeLane <> 1) then
-        safestD2 = clearanceD2
-        switchLane = routeLane
-      end if
-    end if
-    routeLane = routeLane + 1
-  wend
-  adoptLane(switchLane, 1)
-  laneTravel = 1
-end if
-
-' Use the existing walking/recovery path while leaving a lane or rejoining.
-routing = 0
-if laneTravel = 1 or rejoining = 1 or laneChanged = 1 then
-  ox = wpX(oi)
-  oy = wpY(oi)
-  oid = wpId(oi)
-  otype = wpKind(oi)
-  dx = ox - selfX
-  dy = oy - selfY
-  myD2 = dx * dx + dy * dy
-  if oi > 0 then
-    rx = wpX(oi - 1)
-    ry = wpY(oi - 1)
-  else
-    rx = homeX
-    ry = homeY
-  end if
-  if laneTravel = 1 and myD2 <= 100 then
-    laneTravel = 0
-  end if
-  if rejoining = 1 then
-    ox = centroidX
-    oy = centroidY
-    myD2 = centroidD2
-  end if
-  if laneTravel = 1 or rejoining = 1 then
-    routing = 1
-  end if
+if disengage = 1 then
+  print "DISENGAGE " ; worldTick ; " " ; enemyHeroNear ; " " ; nearAllyCount ; " " ; selfHp
 end if
 
 ' ---------- decide ----------
@@ -554,45 +377,63 @@ if selfHp * 100 < selfMaxHp * 30 then
   lowHp = 1
 end if
 
-if routing = 0 and selfHp * 100 < selfMaxHp * 15 and enemyHeroNear > 0 then
+if (selfHp * 100 < selfMaxHp * 15 and enemyHeroNear > 0) or (selfHp * 100 < selfMaxHp * 20 and nearHeroD2 <= 36) then
   walkTo(rx, ry)
   done = 1
   act = 1
 end if
 
-if done = 0 and routing = 0 and melee = 0 and nearMeleeD2 <= 4 then
+if done = 0 and disengage = 1 then
+  if melee = 0 and selfHp * 100 > selfMaxHp * 60 and nearMeleeD2 >= 4 and retreatHero <> 0 then
+    attackTarget(retreatHero)
+    act = 3
+  else
+    dx = rx - selfX
+    dy = ry - selfY
+    if dx * dx + dy * dy <= 64 then
+      walkTo(rx, ry)
+    else
+      stepToward(selfX, selfY, rx, ry, 8)
+      walkTo(sx, sy)
+    end if
+    act = 12
+  end if
+  done = 1
+end if
+
+if done = 0 and melee = 0 and nearMeleeD2 <= 4 then
   stepToward(selfX, selfY, rx, ry, 4)
   walkTo(sx, sy)
   done = 1
   act = 2
 end if
 
-if done = 0 and routing = 0 and bestHero <> 0 then
+if done = 0 and bestHero <> 0 then
   attackTarget(bestHero)
   done = 1
   act = 3
 end if
 
-if done = 0 and routing = 0 and bestFoot <> 0 then
+if done = 0 and bestFoot <> 0 then
   attackTarget(bestFoot)
   done = 1
   act = 4
 end if
 
-if done = 0 and routing = 0 and fortId <> 0 and lowHp = 0 then
+if done = 0 and fortId <> 0 and lowHp = 0 then
   attackTarget(fortId)
   done = 1
   act = 5
 end if
 
-if done = 0 and routing = 0 and towerId <> 0 and lowHp = 0 then
+if done = 0 and towerId <> 0 and lowHp = 0 then
   attackTarget(towerId)
   done = 1
   act = 6
 end if
 
 if done = 0 then
-  if lowHp = 1 and routing = 0 then
+  if lowHp = 1 then
     stepToward(selfX, selfY, rx, ry, 6)
     walkTo(sx, sy)
     act = 7
@@ -610,7 +451,7 @@ if done = 0 then
       isqrt(myD2)
       myD = sq
       hold = 0
-      if allyCount > 0 and routing = 0 then
+      if allyCount > 0 then
         isqrt(maxAllyD2)
         if myD + 6 < sq then
           hold = 1

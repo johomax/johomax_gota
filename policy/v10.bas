@@ -284,6 +284,7 @@ bestHero = 0
 bestHeroHp = 1000000
 enemyHeroNear = 0
 nearMeleeD2 = 1000000
+nearHeroD2 = 1000000
 nmx = 0
 nmy = 0
 bestFoot = 0
@@ -327,7 +328,7 @@ while i < n
         ex = x - ox
         ey = y - oy
         ad2 = ex * ex + ey * ey
-        if ad2 > maxAllyD2 then
+        if ad2 > maxAllyD2 and objectHp(i) > 60 then
           maxAllyD2 = ad2
         end if
         allyCount = allyCount + 1
@@ -351,6 +352,9 @@ while i < n
       end if
       if objectAlive(i) = 1 and d2 <= 100 then
         enemyHeroNear = enemyHeroNear + 1
+        if d2 < nearHeroD2 then
+          nearHeroD2 = d2
+        end if
         hp = objectHp(i)
         if d2 <= heroR2 then
           if hp < bestHeroHp then
@@ -369,8 +373,8 @@ while i < n
       end if
     end if
     if k = 3 then
-      if objectAlive(i) = 1 and d2 <= footR2 then
-        hp = objectHp(i)
+      hp = objectHp(i)
+      if objectAlive(i) = 1 and (d2 <= 6 or (d2 <= footR2 and hp <= 30)) then
         if hp < bestFootHp then
           bestFootHp = hp
           bestFoot = objectId(i)
@@ -427,7 +431,7 @@ if objDead = 1 and otype = 1 and oi < nObj - 1 then
 end if
 
 ' ---------- lane resistance / rejoin ----------
-if defenders >= 2 then
+if defenders >= 3 then
   resistance = resistance + 1
 else
   resistance = resistance - 1
@@ -449,7 +453,7 @@ else
   centroidDx = centroidX - selfX
   centroidDy = centroidY - selfY
   centroidD2 = centroidDx * centroidDx + centroidDy * centroidDy
-  if rejoining = 0 and alliesWithin30 = 0 then
+  if rejoining = 0 and alliesWithin30 = 0 and centroidD2 > 144 then
     rejoining = 1
     rejoinStarted = 1
     laneTravel = 0
@@ -473,20 +477,18 @@ else
       wend
       routeLane = routeLane + 1
     wend
-    if rejoinLane <> pushLane or (rejoinStarted = 1 and centroidD2 > 144) then
+    if rejoinStarted = 1 then
       adoptLane(rejoinLane, 2)
     end if
     if centroidD2 <= 144 then
       rejoining = 0
-      if rejoinStarted = 0 or laneChanged = 1 then
-        print "LANE " ; worldTick ; " " ; pushLane ; " " ; pushLane ; " joined"
-      end if
+      print "LANE " ; worldTick ; " " ; pushLane ; " " ; pushLane ; " joined"
     end if
   end if
 end if
 
 ' Rejoin adopts team position immediately; resistance switches have a cooldown.
-if rejoining = 0 and laneChanged = 0 and resistance >= 72 and worldTick - lastLaneTick >= 1500 and otype = 1 and objStanding = 1 and objDead = 0 then
+if rejoining = 0 and laneChanged = 0 and resistance >= 72 and worldTick - lastLaneTick >= 1500 and otype = 1 and objStanding = 1 and objDead = 0 and oi = 3 then
   switchLane = pushLane
   safestD2 = -1
   routeLane = 0
@@ -567,6 +569,20 @@ if done = 0 and routing = 0 and melee = 0 and nearMeleeD2 <= 4 then
   act = 2
 end if
 
+' end the game first: an exposed fort in reach beats any fight
+if done = 0 and fortId <> 0 and selfHp * 100 >= selfMaxHp * 15 then
+  attackTarget(fortId)
+  done = 1
+  act = 5
+end if
+
+' a tower in reach with no enemy hero adjacent to me: keep sieging
+if done = 0 and routing = 0 and towerId <> 0 and lowHp = 0 and nearHeroD2 > 9 then
+  attackTarget(towerId)
+  done = 1
+  act = 6
+end if
+
 if done = 0 and routing = 0 and bestHero <> 0 then
   attackTarget(bestHero)
   done = 1
@@ -579,18 +595,20 @@ if done = 0 and routing = 0 and bestFoot <> 0 then
   act = 4
 end if
 
-if done = 0 and routing = 0 and fortId <> 0 and lowHp = 0 then
-  attackTarget(fortId)
-  done = 1
-  act = 5
-end if
-
 if done = 0 and routing = 0 and towerId <> 0 and lowHp = 0 then
   attackTarget(towerId)
   done = 1
   act = 6
 end if
 
+if done = 0 and lowHp = 1 and routing = 0 then
+  ' crippled with no way to heal: let an enemy tower reset us (towers give the enemy nothing)
+  if selfHp * 100 < selfMaxHp * 20 and selfGold < 30 and potSlot < 0 and towerId <> 0 and enemyHeroNear = 0 then
+    attackTarget(towerId)
+    done = 1
+    act = 12
+  end if
+end if
 if done = 0 then
   if lowHp = 1 and routing = 0 then
     stepToward(selfX, selfY, rx, ry, 6)
@@ -616,11 +634,18 @@ if done = 0 then
           hold = 1
         end if
       end if
+      if noHold > 0 then
+        noHold = noHold - 1
+        hold = 0
+      end if
       if hold = 1 and holdTicks < 96 then
         walkTo(selfX, selfY)
         holdTicks = holdTicks + 1
         act = 8
       else
+        if holdTicks >= 96 then
+          noHold = 240
+        end if
         holdTicks = 0
         ok = walkTo(ox, oy)
         if ok = 0 then

@@ -27,6 +27,17 @@ uv run coworld xp-request create xp/candidate.json
 uv run coworld submit <name>:vN -l league_3c60897b-25cf-4b37-9d1a-8554c1198f28
 ```
 
-## Strategy log
-- v1 "blitz": five-stack mid push with cohesion hold, focus-fire lowest-HP enemy hero, kill engaged footmen,
-  siege exposed towers/fort, ranged kite on melee contact, retreat home under 25% HP, buy damage items.
+## Strategy log (hosted = league coworld cow_975af671, 116x116 map)
+- v1 blitz (mid, 5-stack): lost 0/4 to baseline (dove towers without waves, retreated home at 25% HP; no HP regen in this game).
+- v2 waveguard (follow the friendly footman front): 1/4 vs baseline; side-lane footmen decide games.
+- v3 edge blitz (5-stack pushes one side lane, hardcoded coordinates): 4/4 vs baseline in ~2500 ticks; hosted Red 12/12 but Blue broken
+  (waypoint inside trees + the league map turned out to be a different coworld version).
+- v4 mid blitz: faster in a pure race but 0/4 vs baseline (mid campers). Rejected.
+- v5 map-generic edge blitz (route from own tower ids + point symmetry, stuck recovery, boots first) = Jordan:v3, submitted.
+  Hosted: 64/66 vs the whole field; ~75% vs Aaron (the #1 policy), whose defenders wipe a level-1 stack under their outer tower.
+- v6 fort-first/tower-first priorities; v7 + cohesion ignores crippled allies, hold timeout, tower-suicide reset for hopeless heroes
+  (fixes a hosted deadlock) = Jordan:v5, promoted champion. Still ~75% vs Aaron.
+- v8 (Codex W4) resistance-driven lane switching + rejoin: beats the turtle sparring partner in ~4000 ticks (v5: ~11000) but loses
+  clashes vs a pushing stack (switching away from a pusher loses the race). v9 = v8 + v7 fixes.
+- v10 = v9 + no footman farming (engaged or kill shots only), switch only at the enemy outer tower vs 3+ defenders, stable rejoin.
+- Local benchmarks: RACE (mirror lanes, speed), CLASH (--clash: both teams lane 2, fights), BASE, TURTLE (policy/spar_turtle.bas).
