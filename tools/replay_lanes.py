@@ -30,7 +30,7 @@ def main():
     ap = argparse.ArgumentParser(); ap.add_argument("paths", nargs="+"); ap.add_argument("--limit", type=int, default=100000)
     a = ap.parse_args()
     rdir = ROOT / "tmp/replays"; rdir.mkdir(parents=True, exist_ok=True)
-    cache_p = ROOT / "tmp/lane_cache.json"; cache = json.load(open(cache_p)) if cache_p.exists() else {}
+    cache_p = ROOT / "tmp/lane_cache_v2.json"; cache = json.load(open(cache_p)) if cache_p.exists() else {}
     rows = []
     with CoworldApiClient.from_login(server_url=get_api_server()) as c:
         for path in a.paths:
@@ -70,7 +70,7 @@ def main():
                     winner = 0 if red_won else 1
                     my_id = 100 + seat
                     gate_hits = Counter(); fort_by_team = {0: None, 1: None}; my = Counter(); team_tower_hits = Counter()
-                    first_gate_tick = {}
+                    first_gate_tick = {}; my_lane_tier = Counter(); fort_heroes = {0: set(), 1: set()}; first_tower_tick = {}
                     for act in acts:
                         if act.get("kind") != "attackTarget": continue
                         hid = act["heroId"]; team = 0 if hid < 105 else 1; tid = act["targetId"]
@@ -81,9 +81,11 @@ def main():
                             if tier == 2:
                                 gate_hits[(team, lane)] += 1
                                 first_gate_tick.setdefault((team, lane), act["tick"])
-                            if hid == my_id: my[f"tower{tier}"] += 1
+                            first_tower_tick.setdefault((team, lane, tier), act["tick"])
+                            if hid == my_id: my[f"tower{tier}"] += 1; my_lane_tier[f"{lane}_{tier}"] += 1
                         elif tid in (1, 2):
                             if fort_by_team[team] is None: fort_by_team[team] = act["tick"]
+                            fort_heroes[team].add(hid)
                             if hid == my_id: my["fort"] += 1
                         elif 100 <= tid <= 109:
                             if hid == my_id: my["hero"] += 1
@@ -92,7 +94,11 @@ def main():
                     wl.sort(key=lambda x: -x[1])
                     lane = wl[0][0] if wl else -1
                     my_lane_hits = {l: sum(n for (t, ll, tier), n in team_tower_hits.items() if t == (0 if seat < 5 else 1) and ll == l) for l in range(3)}
+                    my_team = 0 if seat < 5 else 1
                     rec = {"seat": seat, "win": win, "ticks": ticks, "winner": winner, "win_lane": lane, "fort_tick": fort_by_team[winner],
+                           "first_gate_tick": first_gate_tick.get((winner, lane)), "fort_heroes_winner": len(fort_heroes[winner]),
+                           "my_in_win_lane": bool(lane >= 0 and my_lane_tier.get(f"{lane}_2", 0) > 0), "my_lane_tier": dict(my_lane_tier),
+                           "first_outer": {f"{t}_{l}": first_tower_tick.get((t, l, 0)) for t in (0, 1) for l in range(3)},
                            "hero_fort": fort_by_team[winner] is not None, "my": dict(my), "my_team_lane_hits": my_lane_hits,
                            "n_gate_attackers_winner": len({act["heroId"] for act in acts if act.get("kind") == "attackTarget" and 10 <= act["targetId"] <= 27 and tower_info(act["targetId"])[2] == 2 and tower_info(act["targetId"])[1] != (0 if act["heroId"] < 105 else 1) and ((0 if act["heroId"] < 105 else 1) == winner)})}
                     cache[eid] = rec; rows.append((path, rec))
@@ -114,6 +120,14 @@ def main():
     mine_lane = sum(1 for r in wins if r["win_lane"] == (2 if r["seat"] < 5 else 0)); print(f"wins where breakthrough lane == our fixed push lane: {mine_lane}/{len(wins)}")
     c = Counter((CL[(r['seat'] % 5) + (5 if r['seat'] < 5 else 0)], r["win_lane"]) for _, r in rows if r["win"]); print("per class win-lane:", dict(sorted(c.items())))
     c = Counter(r["win_lane"] for _, r in rows if not r["win"]); print("enemy breakthrough lane when we lose:", dict(c))
+    import statistics as st
+    fg = [r["first_gate_tick"] for _, r in rows if r.get("first_gate_tick")]; ft = [r["fort_tick"] for _, r in rows if r.get("fort_tick")]
+    tk = [r["ticks"] for _, r in rows if r.get("ticks")]
+    print(f"winner first gate attack: median {st.median(fg) if fg else 0:.0f}; first fort attack median {st.median(ft) if ft else 0:.0f}; game end median {st.median(tk) if tk else 0:.0f}")
+    c = Counter(min(r.get("fort_heroes_winner", 0), 5) for _, r in rows); print("winner heroes that attacked the fort:", dict(sorted(c.items())))
+    c = Counter(("W" if r["win"] else "L", r.get("my_in_win_lane")) for _, r in rows); print("our hero hit the breakthrough gate tower, by result:", dict(sorted(c.items())))
+    fo = [min(v for k, v in r["first_outer"].items() if v is not None) for _, r in rows if any(v is not None for v in r["first_outer"].values())]
+    print(f"first outer-tower hero attack (any team) median tick {st.median(fo) if fo else 0:.0f}")
 
 if __name__ == "__main__":
     main()
