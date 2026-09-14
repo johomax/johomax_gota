@@ -9,8 +9,9 @@ Guidance for coding agents working from this downloaded Coworld package.
 
 ## Start
 
-- Read the league participation guide before entering a league:
-  - Gods of the Arena: https://softmax.com/api/observatory/v2/participate?league_id=league_3c60897b-25cf-4b37-9d1a-8554c1198f28
+- No public league runs this Coworld version. Before entering any league, read its participation
+  guide: `uv run coworld leagues` lists leagues, and a league's guide is
+  https://softmax.com/api/observatory/v2/participate?league_id=<league_id>.
 - Read `coworld_manifest.json` before changing policy code.
 - Treat `game.protocols.player`, `game.docs.pages`, `variants`, and `certification` as the local contract for this
   package.

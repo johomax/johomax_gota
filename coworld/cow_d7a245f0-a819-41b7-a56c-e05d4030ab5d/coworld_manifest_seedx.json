@@ -1,0 +1,441 @@
+{
+ "tags": [
+  "strategy",
+  "basic",
+  "polyworld"
+ ],
+ "game": {
+  "name": "Gods of the Arena",
+  "version": "2026.9.14.2",
+  "description": "Two teams of five BASIC heroes battle to destroy the enemy fort. Every hero on the winning team scores one win. A time limit without a fort victory gives everyone zero.",
+  "owner": "treeform",
+  "player_runtime": "game-hosted",
+  "config_schema": {
+   "type": "object",
+   "required": [
+    "tokens",
+    "players",
+    "seed",
+    "max_ticks"
+   ],
+   "properties": {
+    "seed": {
+     "type": "integer",
+     "maximum": 2147483647,
+     "minimum": -2147483648
+    },
+    "tokens": {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "minLength": 1
+     },
+     "maxItems": 10,
+     "minItems": 10
+    },
+    "players": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "required": [
+       "name"
+      ],
+      "properties": {
+       "name": {
+        "type": "string",
+        "minLength": 1
+       }
+      },
+      "additionalProperties": false
+     },
+     "maxItems": 10,
+     "minItems": 10
+    },
+    "max_ticks": {
+     "type": "integer",
+     "maximum": 28800,
+     "minimum": 1
+    },
+    "map_preset": {
+     "type": "object",
+     "properties": {
+      "seed": {
+       "type": "integer",
+       "default": 54,
+       "maximum": 2147483647,
+       "minimum": -2147483648
+      },
+      "high_size": {
+       "type": "number",
+       "default": 511,
+       "maximum": 570,
+       "minimum": 450
+      },
+      "lake_width": {
+       "type": "number",
+       "default": 80,
+       "maximum": 120,
+       "minimum": 42
+      },
+      "road_width": {
+       "type": "number",
+       "default": 62,
+       "maximum": 62,
+       "minimum": 26
+      },
+      "camp_radius": {
+       "type": "number",
+       "default": 36,
+       "maximum": 40,
+       "minimum": 20
+      },
+      "castle_size": {
+       "type": "number",
+       "default": 295,
+       "maximum": 500,
+       "minimum": 210
+      },
+      "lake_wobble": {
+       "type": "number",
+       "default": 30,
+       "maximum": 80,
+       "minimum": 0
+      },
+      "road_wobble": {
+       "type": "number",
+       "default": 73,
+       "maximum": 80,
+       "minimum": 0
+      },
+      "stem_length": {
+       "type": "number",
+       "default": 50,
+       "maximum": 80,
+       "minimum": 30
+      },
+      "camp_scatter": {
+       "type": "number",
+       "default": 35,
+       "maximum": 60,
+       "minimum": 0
+      },
+      "jungle_roads": {
+       "type": "integer",
+       "default": 32,
+       "maximum": 50,
+       "minimum": 18,
+       "multipleOf": 2
+      },
+      "lake_crossings": {
+       "type": "integer",
+       "default": 4,
+       "maximum": 6,
+       "minimum": 0,
+       "multipleOf": 2
+      },
+      "camps_touch_roads": {
+       "type": "boolean",
+       "default": true
+      }
+     },
+     "additionalProperties": false
+    },
+    "spawn_interval_ticks": {
+     "type": "integer",
+     "default": 240,
+     "minimum": 1
+    }
+   },
+   "additionalProperties": false
+  },
+  "results_schema": {
+   "type": "object",
+   "required": [
+    "scores",
+    "ticks",
+    "seed",
+    "outcome",
+    "total_xp"
+   ],
+   "properties": {
+    "seed": {
+     "type": "integer"
+    },
+    "ticks": {
+     "type": "integer",
+     "maximum": 28800,
+     "minimum": 0
+    },
+    "scores": {
+     "type": "array",
+     "items": {
+      "enum": [
+       0,
+       1
+      ],
+      "type": "integer"
+     },
+     "maxItems": 10,
+     "minItems": 10
+    },
+    "outcome": {
+     "type": "string"
+    },
+    "returned": {
+     "type": "array",
+     "items": {
+      "type": "boolean"
+     }
+    },
+    "total_xp": {
+     "type": "array",
+     "items": {
+      "type": "integer",
+      "minimum": 0
+     },
+     "maxItems": 10,
+     "minItems": 10
+    },
+    "banked_gold": {
+     "type": "array",
+     "items": {
+      "type": "integer",
+      "minimum": 0
+     }
+    }
+   },
+   "additionalProperties": false
+  },
+  "runnable": {
+   "type": "game",
+   "image": "coworld/cow_d7a245f0-a819-41b7-a56c-e05d4030ab5d/gods-of-the-arena-2026.9.14.2-0:downloaded",
+   "run": [],
+   "env": {},
+   "source_url": "https://github.com/Metta-AI/polyworld/tree/d03d2d17b56e6ac7e0db339635efc59d0154a120/examples/gods_of_the_arena"
+  },
+  "protocols": {
+   "player": {
+    "type": "text",
+    "value": "Slots 0\u20134 are Red and slots 5\u20139 are Blue. Supply a raw BASIC file. The existing Polyworld BASIC host API runs with bounded source, memory, work, and instruction limits. PRINT is private. See the game guide and bundled base.bas for a complete working player."
+   },
+   "global": {
+    "type": "text",
+    "value": "GET /client/global returns a static status page. /global sends one JSON status message after WebSocket upgrade and echoes Ping frames with Pong. No gameplay traffic uses WebSockets. Other legacy endpoints return explicit stubs."
+   }
+  },
+  "docs": {
+   "readme": {
+    "type": "text",
+    "value": "# Gods of the Arena\n\nTwo teams of five BASIC heroes battle to destroy the enemy fort. Every hero on the winning team scores one win. A time limit without a fort victory gives everyone zero.\n\nSlots 0\u20134 are Red and slots 5\u20139 are Blue. Platform slots are zero-based. Upload a `.bas` file containing BASIC source. The game reads the staged file directly, with no player container or network connection.\n\nStart with the bundled `players/base.bas`. The [game documentation](https://github.com/Metta-AI/polyworld/blob/main/examples/gods_of_the_arena/docs/index.html) describes observations and available BASIC commands. The same source is available under `examples/gods_of_the_arena/bots.nim` and `content.nim`.\n\nEvery hero has a free single-target melee or ranged basic attack in addition to four abilities. Basic damage grows each level and includes equipment bonuses. Idle heroes automatically acquire nearby visible enemy creeps. `attackTarget(objectId)` takes priority; melee and ranged heroes both move into their own attack range and repeat basic attacks. `walkTo(x, y)` cancels the attack and suppresses automatic acquisition while walking. Basic attacks do not spend mana or spell charges.\n\nBASIC can inspect the complete static terrain with `terrainKind(x, y)`, `terrainWalkable(x, y)`, `terrainHeight(x, y)`, and `terrainWaterDepth(x, y)`. These use global tile coordinates on `selfLayer`. Each has an explicit `At(x, y, layer)` version, such as `terrainKindAt(x, y, GroundLayer)`. Read-only constants expose `mapWidth`, `mapHeight`, `mapLayers`, the layer names, and terrain kinds. Height and water depth use eighths of a tile; invalid or absent tiles return zero. The Terrain API section of the game documentation lists all constants and edge cases. Static terrain is available through fog, while enemy objects remain visibility-filtered.\n\nBASIC `PRINT` output, compiler diagnostics, runtime errors, and VM lifecycle messages go to the owning player's private log. Each log is limited to 10 MiB. Runtime limit errors disable that VM; other seats continue. Invalid BASIC syntax fails the episode with a player failure diagnostic. Public game logs and action replays contain no BASIC source or private print output.\n\nMatches run up to 28,800 deterministic ticks (20 simulated minutes), without real-time pacing. Replays run entirely in the browser with playback, seeking, speed, and loop controls. The server exposes `/healthz`; legacy clients are static stubs.\n\nThe Competition league runs every 30 minutes with at least two episodes per entrant. Separate baseline filler policies complete short rosters. Fillers are not ranked entrants. Standings use binary win scores and platform Elo.\n"
+   },
+   "pages": []
+  },
+  "replay_viewer": {
+   "bundle": "sha256:30812bf5625419d31a41c98048be6f1eb42e226a75c3df08d4c91857c4a7b0ab",
+   "replay_compression": "gzip"
+  }
+ },
+ "player": [
+  {
+   "type": "player",
+   "run": [],
+   "env": {},
+   "file": "player-files/2b358e6e116d6445e38505aad6bbb00ab62004fa381fb9e433f3e8b7abd2a464",
+   "id": "baseline",
+   "name": "Baseline",
+   "description": "Unmodified Gods of the Arena BASIC baseline."
+  }
+ ],
+ "reporter": [],
+ "commissioner": [],
+ "grader": [],
+ "diagnoser": [],
+ "optimizer": [],
+ "variants": [
+  {
+   "id": "competition",
+   "name": "Competition",
+   "game_config": {
+    "seed": 2026,
+    "players": [
+     {
+      "name": "Baseline 0"
+     },
+     {
+      "name": "Baseline 1"
+     },
+     {
+      "name": "Baseline 2"
+     },
+     {
+      "name": "Baseline 3"
+     },
+     {
+      "name": "Baseline 4"
+     },
+     {
+      "name": "Baseline 5"
+     },
+     {
+      "name": "Baseline 6"
+     },
+     {
+      "name": "Baseline 7"
+     },
+     {
+      "name": "Baseline 8"
+     },
+     {
+      "name": "Baseline 9"
+     }
+    ],
+    "max_ticks": 28800,
+    "map_preset": {
+     "seed": 54,
+     "high_size": 511,
+     "lake_width": 80,
+     "road_width": 62,
+     "camp_radius": 36,
+     "castle_size": 295,
+     "lake_wobble": 30,
+     "road_wobble": 73,
+     "stem_length": 50,
+     "camp_scatter": 35,
+     "jungle_roads": 32,
+     "lake_crossings": 4,
+     "camps_touch_roads": true
+    },
+    "spawn_interval_ticks": 240
+   },
+   "description": "Full-length deterministic competition match."
+  },
+  {
+   "id": "seedx",
+   "name": "Seed X",
+   "game_config": {
+    "seed": 330626748,
+    "players": [
+     {
+      "name": "Baseline 0"
+     },
+     {
+      "name": "Baseline 1"
+     },
+     {
+      "name": "Baseline 2"
+     },
+     {
+      "name": "Baseline 3"
+     },
+     {
+      "name": "Baseline 4"
+     },
+     {
+      "name": "Baseline 5"
+     },
+     {
+      "name": "Baseline 6"
+     },
+     {
+      "name": "Baseline 7"
+     },
+     {
+      "name": "Baseline 8"
+     },
+     {
+      "name": "Baseline 9"
+     }
+    ],
+    "max_ticks": 28800,
+    "map_preset": {
+     "seed": 54,
+     "high_size": 511,
+     "lake_width": 80,
+     "road_width": 62,
+     "camp_radius": 36,
+     "castle_size": 295,
+     "lake_wobble": 30,
+     "road_wobble": 73,
+     "stem_length": 50,
+     "camp_scatter": 35,
+     "jungle_roads": 32,
+     "lake_crossings": 4,
+     "camps_touch_roads": true
+    },
+    "spawn_interval_ticks": 240
+   },
+   "description": "Full-length deterministic competition match."
+  }
+ ],
+ "certification": {
+  "game_config": {
+   "seed": 2026,
+   "players": [
+    {
+     "name": "Baseline 0"
+    },
+    {
+     "name": "Baseline 1"
+    },
+    {
+     "name": "Baseline 2"
+    },
+    {
+     "name": "Baseline 3"
+    },
+    {
+     "name": "Baseline 4"
+    },
+    {
+     "name": "Baseline 5"
+    },
+    {
+     "name": "Baseline 6"
+    },
+    {
+     "name": "Baseline 7"
+    },
+    {
+     "name": "Baseline 8"
+    },
+    {
+     "name": "Baseline 9"
+    }
+   ],
+   "max_ticks": 28800,
+   "spawn_interval_ticks": 240
+  },
+  "players": [
+   {
+    "player_id": "baseline"
+   },
+   {
+    "player_id": "baseline"
+   },
+   {
+    "player_id": "baseline"
+   },
+   {
+    "player_id": "baseline"
+   },
+   {
+    "player_id": "baseline"
+   },
+   {
+    "player_id": "baseline"
+   },
+   {
+    "player_id": "baseline"
+   },
+   {
+    "player_id": "baseline"
+   },
+   {
+    "player_id": "baseline"
+   },
+   {
+    "player_id": "baseline"
+   }
+  ]
+ }
+}

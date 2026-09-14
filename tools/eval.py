@@ -12,7 +12,7 @@ MANIFEST = ROOT / "coworld/cow_d7a245f0-a819-41b7-a56c-e05d4030ab5d/coworld_mani
 
 def run(red, blue, n, out):
     cmd = ["uv", "run", "coworld", "run-episode", str(MANIFEST)] + [red] * 5 + [blue] * 5 + \
-          ["-o", str(out), "-n", str(n), "--timeout-seconds", "900"]
+          ["-o", str(out), "-n", str(n), "--timeout-seconds", "900", "--variant", "competition"]
     env = dict(os.environ, DOCKER_DEFAULT_PLATFORM="linux/amd64")
     return subprocess.Popen(cmd, cwd=ROOT, env=env, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
 
