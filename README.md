@@ -29,7 +29,7 @@ uv run coworld submit <name>:vN -l league_3c60897b-25cf-4b37-9d1a-8554c1198f28
 
 ## Current status (2026-09-14 ~22:00 UTC)
 - Champion: v16 = `Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v14` (auto-champion on). Ladder: rank 6, 1526 after 2 rounds (played by v7).
-- Candidate under hosted test: v18 (regroup rule) = Jordan:v16, xp/v18-aaron.json.
+- Last candidate: v18 (regroup rule) = Jordan:v16, 21/24 vs Aaron (rejected).
 - To resume: `python3 tools/xp.py report xp/<tag>.json` for hosted results; `uv run coworld results div_a4534073-c5d2-4193-a94a-93d9c5e2e443 --json` for standings.
 
 ## Strategy log (hosted = league coworld cow_975af671, 116x116 map)
@@ -52,5 +52,6 @@ uv run coworld submit <name>:vN -l league_3c60897b-25cf-4b37-9d1a-8554c1198f28
 - v16 = v13 + rejoin armed only by respawn (v12's rejoin re-triggered every tick and stranded respawned heroes).
 - Larger hosted samples vs Aaron (36 or 24 episodes, both sides): v10 27/36 (75%), v13 31/36 (86%), v16 34/36 (94%), v17 (v10, lane 2 both sides) 22/24 (92%).
 - **v16 = Jordan:v14 promoted champion** (36/36 vs the rest of the field).
+- v18 (v16 + regroup rule, no solo pushes): 21/24 vs Aaron with slower games. Rejected; v16 stays champion.
 - League coworld moved to 2026.9.14.4 (cow_0752b441, same map, game version 29) during the evening; tooling updated.
 - Local benchmarks: RACE (mirror lanes, speed), CLASH (--clash: both teams lane 2, fights), BASE, TURTLE (policy/spar_turtle.bas).
