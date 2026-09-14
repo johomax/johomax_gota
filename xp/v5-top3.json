@@ -1,0 +1,36 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v3",
+ "n": 4,
+ "requests": [
+  {
+   "id": "xreq_0b0449e8-a3f1-47be-8bf4-c566428f400a",
+   "opp": "aaron-gota-ir-waveguard-r4:v2",
+   "cand_side": "red"
+  },
+  {
+   "id": "xreq_e3225ce1-57a4-4584-b3bd-1ed4d7839a56",
+   "opp": "aaron-gota-ir-waveguard-r4:v2",
+   "cand_side": "blue"
+  },
+  {
+   "id": "xreq_93632c3b-ba85-44c3-b81b-746cfed55456",
+   "opp": "red-kite:v9",
+   "cand_side": "red"
+  },
+  {
+   "id": "xreq_06f5b1dc-e565-4e9a-8716-f2226d6a7220",
+   "opp": "red-kite:v9",
+   "cand_side": "blue"
+  },
+  {
+   "id": "xreq_0a9b1136-c962-49c6-aa4c-e21af3660a18",
+   "opp": "khors:v1",
+   "cand_side": "red"
+  },
+  {
+   "id": "xreq_ec3c8362-eed2-4933-8919-368a6e76b770",
+   "opp": "khors:v1",
+   "cand_side": "blue"
+  }
+ ]
+}
