@@ -1,0 +1,310 @@
+=============== coworld xp-request create --help
+Usage: coworld [OPTIONS] COMMAND [ARGS]...
+Try 'coworld --help' for help.
+╭─ Error ──────────────────────────────────────────────────────────────────────╮
+│ No such command 'xp-request create'. Did you mean 'xp-request'?              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+=============== coworld results --help
+ Usage: coworld results [OPTIONS] {target_id}                                   
+╭─ Arguments ──────────────────────────────────────────────────────────────────╮
+│ *    target_id      <str>  League, division, or round ID. [required]         │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭─ Options ────────────────────────────────────────────────────────────────────╮
+│ --server        <str>  Observatory API server URL.                           │
+│                        [default: https://softmax.com/api]                    │
+│ --json                 Print raw JSON.                                       │
+│ --help                 Show this message and exit.                           │
+╰──────────────────────────────────────────────────────────────────────────────╯
+=============== coworld divisions --help
+ Usage: coworld divisions [OPTIONS] [division_id]                               
+╭─ Arguments ──────────────────────────────────────────────────────────────────╮
+│   division_id      <str>  Division ID to inspect. Lists divisions when       │
+│                           omitted.                                           │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭─ Options ────────────────────────────────────────────────────────────────────╮
+│ --league  -l      <str>  Filter divisions by league ID.                      │
+│ --server          <str>  Observatory API server URL.                         │
+│                          [default: https://softmax.com/api]                  │
+│ --json                   Print raw JSON.                                     │
+│ --help                   Show this message and exit.                         │
+╰──────────────────────────────────────────────────────────────────────────────╯
+=============== coworld leagues --help
+ Usage: coworld leagues [OPTIONS] [league_id]                                   
+╭─ Arguments ──────────────────────────────────────────────────────────────────╮
+│   league_id      <str>  League ID to inspect. Lists leagues when omitted.    │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭─ Options ────────────────────────────────────────────────────────────────────╮
+│ --server        <str>  Observatory API server URL.                           │
+│                        [default: https://softmax.com/api]                    │
+│ --json                 Print raw JSON.                                       │
+│ --help                 Show this message and exit.                           │
+╰──────────────────────────────────────────────────────────────────────────────╯
+=============== coworld upload-policy --help
+ Usage: coworld upload-policy [OPTIONS] [image]                                 
+╭─ Arguments ──────────────────────────────────────────────────────────────────╮
+│   image      <str>  Local Docker image to upload as a Coworld policy. Omit   │
+│                     when using --file.                                       │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭─ Options ────────────────────────────────────────────────────────────────────╮
+│ --file                   <path>  File or directory to upload as a            │
+│                                  game-hosted player policy.                  │
+│ --name           -n      <str>   Policy name override. Defaults to a unique  │
+│                                  name derived from the active or default     │
+│                                  player.                                     │
+│ --run                    <str>   Command argv for images that contain        │
+│                                  multiple Coworld roles.                     │
+│ --secret-env             <str>   Secret environment variable for policy      │
+│                                  execution (can be repeated). Stored in AWS  │
+│                                  Secrets Manager.                            │
+│ --tag                    <str>   Private tag for your own bookkeeping        │
+│                                  (KEY=VALUE, can be repeated), e.g. --tag    │
+│                                  purpose=test.                               │
+│ --use-bedrock                    Enable AWS Bedrock access for this policy.  │
+│                                  Sets USE_BEDROCK=true in policy             │
+│                                  environment.                                │
+│ --bedrock-model          <str>   Bedrock model ID for this policy. Requires  │
+│                                  --use-bedrock and sets BEDROCK_MODEL.       │
+│ --server                 <str>   Observatory API server URL.                 │
+│                                  [default: https://softmax.com/api]          │
+│ --help                           Show this message and exit.                 │
+╰──────────────────────────────────────────────────────────────────────────────╯
+=============== coworld run-episode --help
+ Usage: coworld run-episode [OPTIONS] {manifest_uri}                            
+                            [episode_request_or_player_images]...               
+ Run one or more headless local episodes.                                       
+╭─ Arguments ──────────────────────────────────────────────────────────────────╮
+│ *    manifest_uri                      <str>  Path, URI, or Coworld ID for   │
+│                                               coworld_manifest.json.         │
+│                                               [required]                     │
+│      episode_request_or_player_i…      <str>  Optional episode_request.json, │
+│                                               or target policy/player        │
+│                                               container image override(s).   │
+│                                               One image is reused for every  │
+│                                               player slot; otherwise provide │
+│                                               one image per slot.            │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭─ Options ────────────────────────────────────────────────────────────────────╮
+│ --run                                     <str>             Command argv for │
+│                                                             supplied player  │
+│                                                             image(s).        │
+│ --output-dir       -o                     <path>            Directory for    │
+│                                                             episode          │
+│                                                             artifacts.       │
+│                                                             Defaults to      │
+│                                                             ./coworld/<cowo… │
+│                                                             for downloaded   │
+│                                                             Coworlds, or     │
+│                                                             results next to  │
+│                                                             coworld_manifes… │
+│                                                             for ordinary     │
+│                                                             local manifests. │
+│ --episodes         -n                     <int range>       Number of local  │
+│                                           [x>=1]            episodes to run. │
+│                                                             With more than   │
+│                                                             one, the game    │
+│                                                             seed is          │
+│                                                             incremented per  │
+│                                                             episode and each │
+│                                                             episode's        │
+│                                                             artifacts go in  │
+│                                                             an episode-NNNN  │
+│                                                             subdirectory.    │
+│                                                             [default: 1]     │
+│ --server                                  <str>             Observatory API  │
+│                                                             server URL.      │
+│                                                             [default:        │
+│                                                             https://softmax… │
+│ --variant                                 <str>             Coworld variant  │
+│                                                             ID to run.       │
+│                                                             Defaults to the  │
+│                                                             certification    │
+│                                                             fixture.         │
+│ --timeout-seconds                         <float range>     [default:        │
+│                                           [x>=1.0]          3600.0]          │
+│ --verify-replay        --no-verify-re…                      [default:        │
+│                                                             no-verify-repla… │
+│ --use-bedrock                                               Enable AWS       │
+│                                                             Bedrock access   │
+│                                                             for player       │
+│                                                             containers using │
+│                                                             host AWS         │
+│                                                             credentials.     │
+│ --aws-profile                             <str>             AWS profile to   │
+│                                                             use when         │
+│                                                             resolving        │
+│                                                             --use-bedrock    │
+│                                                             credentials.     │
+│ --aws-region                              <str>             AWS region to    │
+│                                                             use for          │
+│                                                             --use-bedrock    │
+│                                                             player           │
+│                                                             containers.      │
+=============== coworld submit --help
+ Usage: coworld submit [OPTIONS] {policy}                                       
+╭─ Arguments ──────────────────────────────────────────────────────────────────╮
+│ *    policy      <str>  Policy name, optionally with version suffix NAME:vN. │
+│                         [required]                                           │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭─ Options ────────────────────────────────────────────────────────────────────╮
+│ *  --league         -l                     <str>            League id.       │
+│                                                             [required]       │
+│    --server                                <str>            Observatory API  │
+│                                                             server URL.      │
+│                                                             [default:        │
+│                                                             https://softmax… │
+│    --open-browser       --no-open-brow…                     Open the policy  │
+│                                                             page in a        │
+│                                                             browser after    │
+│                                                             submitting.      │
+│                                                             [default:        │
+│                                                             open-browser]    │
+│    --player                                <str>            Submit as this   │
+│                                                             player id        │
+│                                                             (ply_...).       │
+│                                                             Defaults to the  │
+│                                                             active player,   │
+│                                                             otherwise the    │
+│                                                             account's        │
+│                                                             default. Must    │
+│                                                             match an active  │
+│                                                             player session;  │
+│                                                             with a user      │
+│                                                             credential, the  │
+│                                                             player must      │
+│                                                             belong to you.   │
+│    --auto-champion                         <always|never|l  Champion         │
+│                                            ineage>          promotion mode   │
+│                                                             after the policy │
+│                                                             qualifies.       │
+│                                                             [default:        │
+│                                                             always]          │
+│    --preference                            <str>            Submission       │
+│                                                             preference as    │
+│                                                             KEY=VALUE.       │
+│                                                             Repeat for       │
+│                                                             multiple values; │
+│                                                             JSON values are  │
+│                                                             decoded.         │
+│    --help                                                   Show this        │
+│                                                             message and      │
+│                                                             exit.            │
+╰──────────────────────────────────────────────────────────────────────────────╯
+=============== coworld power-analysis --help
+ Usage: coworld power-analysis [OPTIONS] {target}                               
+╭─ Arguments ──────────────────────────────────────────────────────────────────╮
+│ *    target      <str>  Division or league ID. [required]                    │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭─ Options ────────────────────────────────────────────────────────────────────╮
+│ --policy        <str>                         Anchor policy as name:vN or a  │
+│                                               version UUID.                  │
+│ --elo           <str>                         Comma-separated Elo            │
+│                                               sensitivities.                 │
+│ --alpha         <float range>                 [default: 0.05]                │
+│                 [1e-06<=x<=0.999999]                                         │
+│ --power         <float range>                 [default: 0.8]                 │
+│                 [1e-06<=x<=0.999999]                                         │
+│ --server        <str>                         Observatory API server URL.    │
+│                                               [default:                      │
+│                                               https://softmax.com/api]       │
+│ --json                                        Print raw JSON.                │
+│ --help                                        Show this message and exit.    │
+╰──────────────────────────────────────────────────────────────────────────────╯
+=============== coworld counterfactual --help
+ Usage: coworld counterfactual [OPTIONS] COMMAND [ARGS]...                      
+ Trigger and inspect counterfactual evals (candidate vs baseline on a league).  
+╭─ Options ────────────────────────────────────────────────────────────────────╮
+│ --help          Show this message and exit.                                  │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭─ Commands ───────────────────────────────────────────────────────────────────╮
+│ create  Start a measurement counterfactual eval of candidate vs baseline on  │
+│         a league.                                                            │
+│ get                                                                          │
+╰──────────────────────────────────────────────────────────────────────────────╯
+=============== coworld episodes --help
+ Usage: coworld episodes [OPTIONS] [episode_request_id]                         
+╭─ Arguments ──────────────────────────────────────────────────────────────────╮
+│   episode_request_id      <str>  Episode request ID to inspect. Lists        │
+│                                  episode requests when omitted.              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭─ Options ────────────────────────────────────────────────────────────────────╮
+│ --round        -r      <str>                    Filter by round ID.          │
+│ --policy       -p      <str>                    Filter by policy             │
+│                                                 name/version or policy       │
+│                                                 version UUID.                │
+│ --with-replay                                   Only show episodes with      │
+│                                                 replay URLs.                 │
+│ --limit                <int range> [1<=x<=100]  Maximum rows to return.      │
+│                                                 [default: 50]                │
+│ --cursor               <str>                    Cursor returned by the       │
+│                                                 previous page.               │
+│ --server               <str>                    Observatory API server URL.  │
+│                                                 [default:                    │
+│                                                 https://softmax.com/api]     │
+│ --json                                          Print raw JSON.              │
+│ --help                                          Show this message and exit.  │
+╰──────────────────────────────────────────────────────────────────────────────╯
+=============== coworld episode-logs --help
+ Usage: coworld episode-logs [OPTIONS] {episode_request_id}                     
+╭─ Arguments ──────────────────────────────────────────────────────────────────╮
+│ *    episode_request_id      <str>  Episode request ID. [required]           │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭─ Options ────────────────────────────────────────────────────────────────────╮
+│ --list                                      List available policy log files. │
+│ --game                                      Show/download the game log.      │
+│ --agent                 <int range> [x>=0]  Show/download one agent log.     │
+│ --mine                                      Restrict listed/downloaded logs  │
+│                                             to agents controlled by my       │
+│                                             memberships.                     │
+│ --artifact                                  Show/download player artifact    │
+│                                             .zip files.                      │
+│ --download-dir  -d      <path>              Download to a directory. Without │
+│                                             --artifact this saves each       │
+│                                             selected agent's log AND its     │
+│                                             player artifact .zip when one    │
+│                                             was uploaded; with --artifact it │
+│                                             saves only artifacts.            │
+│ --output        -o      <path>              Download a single agent's        │
+│                                             artifact/log to this exact file. │
+│ --server                <str>               Observatory API server URL.      │
+│                                             [default:                        │
+│                                             https://softmax.com/api]         │
+│ --help                                      Show this message and exit.      │
+╰──────────────────────────────────────────────────────────────────────────────╯
+=============== coworld replay --help
+ Usage: coworld replay [OPTIONS] {manifest_uri} {replay_uri}                    
+╭─ Arguments ──────────────────────────────────────────────────────────────────╮
+│ *    manifest_uri      <str>  Path, URI, or Coworld ID for                   │
+│                               coworld_manifest.json.                         │
+│                               [required]                                     │
+│ *    replay_uri        <str>  Path or URI to a replay artifact JSON file.    │
+│                               [required]                                     │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭─ Options ────────────────────────────────────────────────────────────────────╮
+│ --server                                 <str>             Observatory API   │
+│                                                            server URL.       │
+│                                                            [default:         │
+│                                                            https://softmax.… │
+│ --timeout-seconds                        <float range>     Health check      │
+│                                          [x>=1.0]          timeout.          │
+│                                                            [default: 60.0]   │
+│ --open-browser       --no-open-brows…                      Open the replay   │
+│                                                            viewer in a       │
+│                                                            browser when      │
+│                                                            ready.            │
+│                                                            [default:         │
+│                                                            open-browser]     │
+│ --help                                                     Show this message │
+│                                                            and exit.         │
+╰──────────────────────────────────────────────────────────────────────────────╯
+=============== softmax player --help
+ Usage: softmax player [OPTIONS] COMMAND [ARGS]...                              
+ Manage the active player identity.                                             
+╭─ Options ────────────────────────────────────────────────────────────────────╮
+│ --help  -h        Show this message and exit.                                │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭─ Commands ───────────────────────────────────────────────────────────────────╮
+│ list                                                                         │
+│ create                                                                       │
+│ use                                                                          │
+│ unset                                                                        │
+╰──────────────────────────────────────────────────────────────────────────────╯

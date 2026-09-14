@@ -1,0 +1,110 @@
+=============== coworld xp-request create --help
+Usage: coworld [OPTIONS] COMMAND [ARGS]...
+Try 'coworld --help' for help.
+╭─ Error ──────────────────────────────────────────────────────────────────────╮
+│ No such command 'xp-request create'. Did you mean 'xp-request'?              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+=============== coworld xp-request list --help
+Usage: coworld [OPTIONS] COMMAND [ARGS]...
+Try 'coworld --help' for help.
+╭─ Error ──────────────────────────────────────────────────────────────────────╮
+│ No such command 'xp-request list'. Did you mean 'xp-request'?                │
+╰──────────────────────────────────────────────────────────────────────────────╯
+=============== coworld xp-request get --help
+Usage: coworld [OPTIONS] COMMAND [ARGS]...
+Try 'coworld --help' for help.
+╭─ Error ──────────────────────────────────────────────────────────────────────╮
+│ No such command 'xp-request get'. Did you mean 'xp-request'?                 │
+╰──────────────────────────────────────────────────────────────────────────────╯
+=============== coworld xp-request episodes --help
+Usage: coworld [OPTIONS] COMMAND [ARGS]...
+Try 'coworld --help' for help.
+╭─ Error ──────────────────────────────────────────────────────────────────────╮
+│ No such command 'xp-request episodes'. Did you mean 'xp-request',            │
+│ 'run-episode'?                                                               │
+╰──────────────────────────────────────────────────────────────────────────────╯
+=============== coworld rounds --help
+ Usage: coworld rounds [OPTIONS] [round_id]                                     
+╭─ Arguments ──────────────────────────────────────────────────────────────────╮
+│   round_id      <str>  Round ID to inspect. Lists rounds when omitted.       │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭─ Options ────────────────────────────────────────────────────────────────────╮
+│ --league    -l      <str>                    Filter by league ID.            │
+│ --division  -d      <str>                    Filter by division ID.          │
+│ --status            <str>                    Filter by round status.         │
+│ --limit             <int range> [1<=x<=200]  Maximum rows to return.         │
+│                                              [default: 25]                   │
+│ --cursor            <str>                    Continue from a prior page      │
+│                                              cursor.                         │
+│ --server            <str>                    Observatory API server URL.     │
+│                                              [default:                       │
+│                                              https://softmax.com/api]        │
+│ --json                                       Print raw JSON.                 │
+│ --help                                       Show this message and exit.     │
+╰──────────────────────────────────────────────────────────────────────────────╯
+=============== coworld episodes --help
+ Usage: coworld episodes [OPTIONS] [episode_request_id]                         
+╭─ Arguments ──────────────────────────────────────────────────────────────────╮
+│   episode_request_id      <str>  Episode request ID to inspect. Lists        │
+│                                  episode requests when omitted.              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭─ Options ────────────────────────────────────────────────────────────────────╮
+│ --round        -r      <str>                    Filter by round ID.          │
+│ --policy       -p      <str>                    Filter by policy             │
+│                                                 name/version or policy       │
+│                                                 version UUID.                │
+│ --with-replay                                   Only show episodes with      │
+│                                                 replay URLs.                 │
+│ --limit                <int range> [1<=x<=100]  Maximum rows to return.      │
+│                                                 [default: 50]                │
+│ --cursor               <str>                    Cursor returned by the       │
+│                                                 previous page.               │
+│ --server               <str>                    Observatory API server URL.  │
+│                                                 [default:                    │
+│                                                 https://softmax.com/api]     │
+│ --json                                          Print raw JSON.              │
+│ --help                                          Show this message and exit.  │
+╰──────────────────────────────────────────────────────────────────────────────╯
+=============== coworld memberships --help
+ Usage: coworld memberships [OPTIONS]                                           
+╭─ Options ────────────────────────────────────────────────────────────────────╮
+│ --league          -l      <str>                     Filter by league ID.     │
+│ --division        -d      <str>                     Filter by division ID.   │
+│ --policy          -p      <str>                     Filter by policy         │
+│                                                     name/version or policy   │
+│                                                     version UUID.            │
+│ --player                  <str>                     Filter by player ID.     │
+│ --mine                                              Show memberships for my  │
+│                                                     players/policies.        │
+│ --active-only                                       Only show active         │
+│                                                     memberships.             │
+│ --champions-only                                    Only show champion       │
+│                                                     memberships.             │
+│ --limit                   <int range> [1<=x<=1000]  Maximum rows to return.  │
+│ --cursor                  <str>                     Continue from a previous │
+│                                                     page token.              │
+│ --server                  <str>                     Observatory API server   │
+│                                                     URL.                     │
+│                                                     [default:                │
+│                                                     https://softmax.com/api] │
+│ --json                                              Print raw JSON.          │
+│ --help                                              Show this message and    │
+│                                                     exit.                    │
+╰──────────────────────────────────────────────────────────────────────────────╯
+=============== coworld submissions --help
+ Usage: coworld submissions [OPTIONS]                                           
+╭─ Options ────────────────────────────────────────────────────────────────────╮
+│ --league  -l      <str>                     Filter by league ID.             │
+│ --policy  -p      <str>                     Filter by policy name/version or │
+│                                             policy version UUID.             │
+│ --player          <str>                     Filter by player ID.             │
+│ --mine                                      Show my submissions.             │
+│ --limit           <int range> [1<=x<=1000]  Maximum rows to return.          │
+│ --cursor          <str>                     Continue from a previous page    │
+│                                             token.                           │
+│ --server          <str>                     Observatory API server URL.      │
+│                                             [default:                        │
+│                                             https://softmax.com/api]         │
+│ --json                                      Print raw JSON.                  │
+│ --help                                      Show this message and exit.      │
+╰──────────────────────────────────────────────────────────────────────────────╯

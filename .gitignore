@@ -1,0 +1,8 @@
+.venv/
+source/
+runs/
+coworld/*/player-files/
+*.replay
+__pycache__/
+docs/openapi.json
+docs/gota-book.html

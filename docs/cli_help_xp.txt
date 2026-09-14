@@ -1,0 +1,49 @@
+=============== coworld xp-request create --help
+ Usage: coworld xp-request create [OPTIONS] {body}                              
+╭─ Arguments ──────────────────────────────────────────────────────────────────╮
+│ *    body      <str>  Path to a V2CreateExperienceRequestRequest JSON body,  │
+│                       or '-' to read stdin.                                  │
+│                       [required]                                             │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭─ Options ────────────────────────────────────────────────────────────────────╮
+│ --server        <str>  Observatory API server URL.                           │
+│                        [default: https://softmax.com/api]                    │
+│ --json                 Print raw JSON.                                       │
+│ --help                 Show this message and exit.                           │
+╰──────────────────────────────────────────────────────────────────────────────╯
+=============== coworld xp-request list --help
+ Usage: coworld xp-request list [OPTIONS]                                       
+╭─ Options ────────────────────────────────────────────────────────────────────╮
+│ --mine                                    Show only my Experience Requests.  │
+│ --limit         <int range> [1<=x<=1000]  Maximum rows to return.            │
+│                                           [default: 50]                      │
+│ --cursor        <str>                     Continue from a prior page cursor. │
+│ --server        <str>                     Observatory API server URL.        │
+│                                           [default: https://softmax.com/api] │
+│ --json                                    Print raw JSON.                    │
+│ --help                                    Show this message and exit.        │
+╰──────────────────────────────────────────────────────────────────────────────╯
+=============== coworld xp-request get --help
+ Usage: coworld xp-request get [OPTIONS] {experience_request_id}                
+╭─ Arguments ──────────────────────────────────────────────────────────────────╮
+│ *    experience_request_id      <str>  Experience Request ID (prefix xreq_). │
+│                                        [required]                            │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭─ Options ────────────────────────────────────────────────────────────────────╮
+│ --server        <str>  Observatory API server URL.                           │
+│                        [default: https://softmax.com/api]                    │
+│ --json                 Print raw JSON.                                       │
+│ --help                 Show this message and exit.                           │
+╰──────────────────────────────────────────────────────────────────────────────╯
+=============== coworld xp-request episodes --help
+ Usage: coworld xp-request episodes [OPTIONS] {experience_request_id}           
+╭─ Arguments ──────────────────────────────────────────────────────────────────╮
+│ *    experience_request_id      <str>  Experience Request ID (prefix xreq_). │
+│                                        [required]                            │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭─ Options ────────────────────────────────────────────────────────────────────╮
+│ --server        <str>  Observatory API server URL.                           │
+│                        [default: https://softmax.com/api]                    │
+│ --json                 Print raw JSON.                                       │
+│ --help                 Show this message and exit.                           │
+╰──────────────────────────────────────────────────────────────────────────────╯

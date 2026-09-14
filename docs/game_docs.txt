@@ -1,0 +1,1534 @@
+
+
+  Gods of the Arena
+
+        Arena
+        Heroes
+        Shop
+        Casting
+        Controls
+
+      Two gods sit in opposite-corner forts. Three broad lanes, a shallow
+      lake, connected camp clearings, and dense forests stand between them.
+      Ten heroes, footmen, and towers fight until one god falls.
+
+      10HEROES
+
+      18TOWERS
+
+      3LANES
+
+      20MAX LEVEL
+
+      20SHOP ITEMS
+
+      THE MATCH
+
+      How the arena works
+
+            Gods of the Arena is a 5v5 lane battler. Red brings
+            the living roster. Blue brings the undead warband. Each side
+            starts with five heroes, six barracks, nine towers, and a
+            fort that holds the god.
+
+            The 128 by 128 arena uses the map editor's saved seed 54 preset.
+            Blue starts in the southwest and Red in the northeast. Roads
+            carve the forest and cross cliffs at short ramps. Each fort has
+            three exits, two barracks per exit, and a separate walled spawn.
+            Match seeds control gameplay randomness without changing this layout.
+
+            Footmen spawn two per lane every ten seconds and march until they
+            meet the enemy. Heroes start at level 1 with 150 gold and their
+            full four-ability kit already unlocked. Kills grant gold and XP.
+            Heroes grow to level 20, then spend gold in a six-slot inventory.
+
+            Outer towers fall first, then inner, then the gate. A god becomes
+            attackable after one of its lanes is cleared. The first fort to
+            reach zero health loses.
+
+          Footmen60 HP, 12 damage, 15 gold
+
+          TowersOuter 600, inner 800, gate 1000
+
+          Gods400 HP, exposed after a lane falls
+
+          Hero bounty150 XP and 100 gold
+
+          Level curve100 XP, then +75 each level
+
+          Clock20 minute match
+
+      THE ROSTER
+
+      Heroes and ability kits
+
+      Each ability shows what it affects beside its artwork. Footprints describe the hit area; visual effects describe its appearance. Arc and cone effects share a sector footprint. Every area spell leaves a warning on the map until impact.
+
+        Every hero enters with Q, W, E, and R ready at level 1. There is
+        no skill-point tree. Stats climb through level 20. Cooldowns and ranges
+        below use the live HUD units: seconds and tiles.
+
+              1-20
+
+              BLUE TEAM
+
+              VANGUARD KNIGHT
+
+              MELEE · FRONTLINE PROTECTOR
+
+                330 → 1470HP +60/LVL
+
+                110 → 262MANA +8/LVL
+
+                25 → 120BASIC DAMAGE +5/LVL
+
+                1.17RANGE
+
+                2.32 → 2.78MOVE
+
+                1.00ATTACKS / S
+
+                HEALTH330 → 1470
+
+                MANA110 → 262
+
+                  Q
+
+                  AffectsSelf
+
+              Lion Guard
+
+              Self cast
+
+                Healing+28 HP
+
+                Mana cost0
+
+                Charges1
+
+                Cast cooldown8s
+
+                Recharge8s / charge
+
+                Cast delayInstant
+
+              Restores your health.
+
+                  W
+
+                  AffectsSingle target
+
+              Firebrand Sword
+
+              Melee
+
+                Damage40
+
+                Mana cost20
+
+                Charges3
+
+                Cast cooldown2s
+
+                Recharge12s / charge
+
+                Cast delayInstant
+
+                Cast range1.5 tiles
+
+              Strike one enemy at close range. Aim at empty ground to swing into space.
+
+                  E
+
+                  FootprintCircle
+
+              Inferno Aegis
+
+              Area cast
+
+                Healing+50 HP
+
+                Mana cost35
+
+                Charges1
+
+                Cast cooldown10s
+
+                Recharge10s / charge
+
+                Cast delay0.5s
+
+                Cast range2.33 tiles
+
+                Radius2.33 tiles
+
+                Visual effectCircle
+
+              Centered on you. Heals all allied heroes in the circle at impact.
+
+                  R
+
+                  FootprintSector
+
+              Blazing Blade
+
+              Area cast
+
+                Damage90
+
+                Mana cost70
+
+                Charges1
+
+                Cast cooldown20s
+
+                Recharge20s / charge
+
+                Cast delay0.25s
+
+                Cast range1.83 tiles
+
+                Radius1.83 tiles
+
+                Angle120°
+
+                Visual effectArc
+
+              Starts at your position, facing your aim. Hits all enemies in the sector at impact.
+
+              1-20
+
+              BLUE TEAM
+
+              RANGER
+
+              RANGER · MOBILE RANGED CARRY
+
+                210 → 932HP +38/LVL
+
+                110 → 262MANA +8/LVL
+
+                25 → 139BASIC DAMAGE +6/LVL
+
+                5.50RANGE
+
+                2.76 → 3.44MOVE
+
+                1.33ATTACKS / S
+
+                HEALTH210 → 932
+
+                MANA110 → 262
+
+                  Q
+
+                  AffectsSingle target
+
+              Dragon Sight
+
+              Projectile
+
+                Damage16
+
+                Mana cost0
+
+                Charges1
+
+                Cast cooldown9s
+
+                Recharge9s / charge
+
+                Cast delayInstant
+
+                Cast range7 tiles
+
+              Follows the selected enemy. A ground shot hits the first enemy along its path.
+
+                  W
+
+                  AffectsSingle target
+
+              Verdant Arrow
+
+              Projectile
+
+                Damage32
+
+                Mana cost18
+
+                Charges3
+
+                Cast cooldown2s
+
+                Recharge12s / charge
+
+                Cast delayInstant
+
+                Cast range6 tiles
+
+              Follows the selected enemy. A ground shot hits the first enemy along its path.
+
+                  E
+
+                  FootprintCircle
+
+              Ricochet Disc
+
+              Area cast
+
+                Damage48
+
+                Mana cost32
+
+                Charges1
+
+                Cast cooldown8s
+
+                Recharge8s / charge
+
+                Cast delay1s
+
+                Cast range6.5 tiles
+
+                Radius2 tiles
+
+                Visual effectDisc
+
+              Locks at your aimed map position. Hits all enemies in the circle at impact.
+
+                  R
+
+                  FootprintLine
+
+              Storm Eagle
+
+              Area cast
+
+                Damage95
+
+                Mana cost80
+
+                Charges1
+
+                Cast cooldown24s
+
+                Recharge24s / charge
+
+                Cast delay1s
+
+                Cast range8 tiles
+
+                Width × length1.5 × 8 tiles
+
+                Visual effectLine
+
+              Starts at your position, facing your aim. Hits all enemies in the line at impact.
+
+              1-20
+
+              BLUE TEAM
+
+              ARCANIST
+
+              MAGE · BURST MAGE
+
+                190 → 760HP +30/LVL
+
+                180 → 465MANA +15/LVL
+
+                38 → 190BASIC DAMAGE +8/LVL
+
+                5.00RANGE
+
+                2.48 → 3.01MOVE
+
+                0.80ATTACKS / S
+
+                HEALTH190 → 760
+
+                MANA180 → 465
+
+                  Q
+
+                  AffectsSelf
+
+              Mana Crystal
+
+              Self cast
+
+                Restores+28 mana
+
+                Mana cost0
+
+                Charges1
+
+                Cast cooldown6s
+
+                Recharge6s / charge
+
+                Cast delayInstant
+
+              Restores your mana.
+
+                  W
+
+                  AffectsSingle target
+
+              Frost Lance
+
+              Projectile
+
+                Damage42
+
+                Mana cost28
+
+                Charges3
+
+                Cast cooldown2s
+
+                Recharge12s / charge
+
+                Cast delayInstant
+
+                Cast range5.5 tiles
+
+              Follows the selected enemy. A ground shot hits the first enemy along its path.
+
+                  E
+
+                  FootprintCircle
+
+              Meteor Strike
+
+              Area cast
+
+                Damage70
+
+                Mana cost50
+
+                Charges1
+
+                Cast cooldown9s
+
+                Recharge9s / charge
+
+                Cast delay2s
+
+                Cast range6 tiles
+
+                Radius2 tiles
+
+                Visual effectCircle
+
+              Locks at your aimed map position. Hits all enemies in the circle at impact.
+
+                  R
+
+                  FootprintCircle
+
+              Arcane Meteor
+
+              Area cast
+
+                Damage120
+
+                Mana cost100
+
+                Charges1
+
+                Cast cooldown25s
+
+                Recharge25s / charge
+
+                Cast delay3s
+
+                Cast range7 tiles
+
+                Radius3 tiles
+
+                Visual effectCircle
+
+              Locks at your aimed map position. Hits all enemies in the circle at impact.
+
+              1-20
+
+              BLUE TEAM
+
+              DRUID WARDEN
+
+              MAGE · DURABLE SUPPORT
+
+                250 → 1162HP +48/LVL
+
+                170 → 436MANA +14/LVL
+
+                22 → 98BASIC DAMAGE +4/LVL
+
+                4.00RANGE
+
+                2.56 → 3.09MOVE
+
+                0.92ATTACKS / S
+
+                HEALTH250 → 1162
+
+                MANA170 → 436
+
+                  Q
+
+                  AffectsSelf
+
+              Nature Talisman
+
+              Self cast
+
+                Healing+22 HP
+
+                Mana cost0
+
+                Charges1
+
+                Cast cooldown8s
+
+                Recharge8s / charge
+
+                Cast delayInstant
+
+              Restores your health.
+
+                  W
+
+                  FootprintCircle
+
+              Healing Bloom
+
+              Area cast
+
+                Healing+55 HP
+
+                Mana cost30
+
+                Charges1
+
+                Cast cooldown7s
+
+                Recharge7s / charge
+
+                Cast delay0.5s
+
+                Cast range4 tiles
+
+                Radius2 tiles
+
+                Visual effectCircle
+
+              Locks at your aimed map position. Heals all allied heroes in the circle at impact.
+
+                  E
+
+                  FootprintCircle
+
+              Kindred Wisps
+
+              Area cast
+
+                Healing+80 HP
+
+                Mana cost45
+
+                Charges1
+
+                Cast cooldown12s
+
+                Recharge12s / charge
+
+                Cast delay0.5s
+
+                Cast range4 tiles
+
+                Radius2.5 tiles
+
+                Visual effectSphere
+
+              Locks at your aimed map position. Heals all allied heroes in the circle at impact.
+
+                  R
+
+                  FootprintCircle
+
+              Golem Seed
+
+              Area cast
+
+                Damage85
+
+                Mana cost75
+
+                Charges1
+
+                Cast cooldown22s
+
+                Recharge22s / charge
+
+                Cast delay1s
+
+                Cast range3.33 tiles
+
+                Radius2 tiles
+
+                Visual effectCylinder
+
+              Locks at your aimed map position. Hits all enemies in the circle at impact.
+
+              1-20
+
+              BLUE TEAM
+
+              DEMON HUNTER
+
+              MELEE · MELEE ASSASSIN
+
+                220 → 904HP +36/LVL
+
+                90 → 223MANA +7/LVL
+
+                32 → 165BASIC DAMAGE +7/LVL
+
+                1.25RANGE
+
+                3.04 → 3.95MOVE
+
+                1.50ATTACKS / S
+
+                HEALTH220 → 904
+
+                MANA90 → 223
+
+                  Q
+
+                  AffectsSelf
+
+              Shadow Cloak
+
+              Self cast
+
+                Healing+18 HP
+
+                Mana cost0
+
+                Charges1
+
+                Cast cooldown10s
+
+                Recharge10s / charge
+
+                Cast delayInstant
+
+              Restores your health.
+
+                  W
+
+                  AffectsSingle target
+
+              Void Blade
+
+              Melee
+
+                Damage38
+
+                Mana cost16
+
+                Charges3
+
+                Cast cooldown2s
+
+                Recharge12s / charge
+
+                Cast delayInstant
+
+                Cast range1.5 tiles
+
+              Strike one enemy at close range. Aim at empty ground to swing into space.
+
+                  E
+
+                  FootprintSector
+
+              Gale Slash
+
+              Area cast
+
+                Damage52
+
+                Mana cost28
+
+                Charges1
+
+                Cast cooldown7s
+
+                Recharge7s / charge
+
+                Cast delay0.25s
+
+                Cast range2 tiles
+
+                Radius2 tiles
+
+                Angle120°
+
+                Visual effectCone
+
+              Starts at your position, facing your aim. Hits all enemies in the sector at impact.
+
+                  R
+
+                  AffectsSingle target
+
+              Shadow Comet
+
+              Projectile
+
+                Damage100
+
+                Mana cost65
+
+                Charges1
+
+                Cast cooldown21s
+
+                Recharge21s / charge
+
+                Cast delayInstant
+
+                Cast range5 tiles
+
+              Follows the selected enemy. A ground shot hits the first enemy along its path.
+
+              1-20
+
+              RED TEAM
+
+              DEATH KNIGHT
+
+              MELEE · SUSTAINING BRUISER
+
+                350 → 1528HP +62/LVL
+
+                90 → 242MANA +8/LVL
+
+                30 → 144BASIC DAMAGE +6/LVL
+
+                1.27RANGE
+
+                2.28 → 2.74MOVE
+
+                0.86ATTACKS / S
+
+                HEALTH350 → 1528
+
+                MANA90 → 242
+
+                  Q
+
+                  AffectsSelf
+
+              Sanguine Chalice
+
+              Self cast
+
+                Healing+26 HP
+
+                Mana cost0
+
+                Charges1
+
+                Cast cooldown8s
+
+                Recharge8s / charge
+
+                Cast delayInstant
+
+              Restores your health.
+
+                  W
+
+                  AffectsSingle target
+
+              Afterlight Sickle
+
+              Melee
+
+                Damage42
+
+                Mana cost18
+
+                Charges3
+
+                Cast cooldown2s
+
+                Recharge12s / charge
+
+                Cast delayInstant
+
+                Cast range1.5 tiles
+
+              Strike one enemy at close range. Aim at empty ground to swing into space.
+
+                  E
+
+                  FootprintCircle
+
+              Withering Idol
+
+              Area cast
+
+                Damage60
+
+                Mana cost36
+
+                Charges1
+
+                Cast cooldown9s
+
+                Recharge9s / charge
+
+                Cast delay1s
+
+                Cast range2.67 tiles
+
+                Radius2 tiles
+
+                Visual effectCircle
+
+              Locks at your aimed map position. Hits all enemies in the circle at impact.
+
+                  R
+
+                  FootprintRing
+
+              Dark Eclipse
+
+              Area cast
+
+                Damage110
+
+                Mana cost80
+
+                Charges1
+
+                Cast cooldown26s
+
+                Recharge26s / charge
+
+                Cast delay0.5s
+
+                Cast range2.33 tiles
+
+                Radius2.33 tiles
+
+                Inner radius0.67 tiles
+
+                Visual effectRing
+
+              Centered on you. Hits all enemies in the ring at impact. The center is safe.
+
+              1-20
+
+              RED TEAM
+
+              CROSSBOWMAN
+
+              RANGER · HEAVY RANGED CARRY
+
+                230 → 1028HP +42/LVL
+
+                80 → 194MANA +6/LVL
+
+                43 → 195BASIC DAMAGE +8/LVL
+
+                6.50RANGE
+
+                2.40 → 2.86MOVE
+
+                0.67ATTACKS / S
+
+                HEALTH230 → 1028
+
+                MANA80 → 194
+
+                  Q
+
+                  AffectsSingle target
+
+              Final Measure
+
+              Projectile
+
+                Damage20
+
+                Mana cost0
+
+                Charges1
+
+                Cast cooldown9s
+
+                Recharge9s / charge
+
+                Cast delayInstant
+
+                Cast range7 tiles
+
+              Follows the selected enemy. A ground shot hits the first enemy along its path.
+
+                  W
+
+                  AffectsSingle target
+
+              Siege Scarab
+
+              Projectile
+
+                Damage50
+
+                Mana cost22
+
+                Charges3
+
+                Cast cooldown2s
+
+                Recharge12s / charge
+
+                Cast delayInstant
+
+                Cast range6.67 tiles
+
+              Follows the selected enemy. A ground shot hits the first enemy along its path.
+
+                  E
+
+                  FootprintSector
+
+              Lodestone Surge
+
+              Area cast
+
+                Damage68
+
+                Mana cost40
+
+                Charges1
+
+                Cast cooldown10s
+
+                Recharge10s / charge
+
+                Cast delay0.5s
+
+                Cast range6 tiles
+
+                Radius6 tiles
+
+                Angle90°
+
+                Visual effectCone
+
+              Starts at your position, facing your aim. Hits all enemies in the sector at impact.
+
+                  R
+
+                  FootprintCapsule
+
+              Clockwork Charge
+
+              Area cast
+
+                Damage115
+
+                Mana cost70
+
+                Charges1
+
+                Cast cooldown23s
+
+                Recharge23s / charge
+
+                Cast delay1s
+
+                Cast range7.5 tiles
+
+                Width × length1.5 × 7.5 tiles
+
+                Visual effectCapsule
+
+              Starts at your position, facing your aim. Hits all enemies in the capsule at impact.
+
+              1-20
+
+              RED TEAM
+
+              LICH
+
+              MAGE · CONTROL MAGE
+
+                185 → 717HP +28/LVL
+
+                210 → 533MANA +17/LVL
+
+                36 → 188BASIC DAMAGE +8/LVL
+
+                5.50RANGE
+
+                2.40 → 2.86MOVE
+
+                0.75ATTACKS / S
+
+                HEALTH185 → 717
+
+                MANA210 → 533
+
+                  Q
+
+                  AffectsSingle target
+
+              Frost Sigil
+
+              Projectile
+
+                Damage14
+
+                Mana cost0
+
+                Charges1
+
+                Cast cooldown8s
+
+                Recharge8s / charge
+
+                Cast delayInstant
+
+                Cast range6 tiles
+
+              Follows the selected enemy. A ground shot hits the first enemy along its path.
+
+                  W
+
+                  AffectsSingle target
+
+              Ice Spear
+
+              Projectile
+
+                Damage44
+
+                Mana cost30
+
+                Charges3
+
+                Cast cooldown2s
+
+                Recharge12s / charge
+
+                Cast delayInstant
+
+                Cast range6 tiles
+
+              Follows the selected enemy. A ground shot hits the first enemy along its path.
+
+                  E
+
+                  FootprintCircle
+
+              Bone Marionette
+
+              Area cast
+
+                Damage66
+
+                Mana cost48
+
+                Charges1
+
+                Cast cooldown9s
+
+                Recharge9s / charge
+
+                Cast delay1s
+
+                Cast range5 tiles
+
+                Radius2 tiles
+
+                Visual effectDome
+
+              Locks at your aimed map position. Hits all enemies in the circle at impact.
+
+                  R
+
+                  FootprintRing
+
+              Bound Void
+
+              Area cast
+
+                Damage125
+
+                Mana cost110
+
+                Charges1
+
+                Cast cooldown27s
+
+                Recharge27s / charge
+
+                Cast delay1s
+
+                Cast range6.5 tiles
+
+                Radius2 tiles
+
+                Inner radius0.67 tiles
+
+                Visual effectTorus
+
+              Locks at your aimed map position. Hits all enemies in the ring at impact. The center is safe.
+
+              1-20
+
+              RED TEAM
+
+              WARLOCK
+
+              MAGE · UTILITY SUMMONER
+
+                240 → 1114HP +46/LVL
+
+                190 → 494MANA +16/LVL
+
+                26 → 121BASIC DAMAGE +5/LVL
+
+                4.50RANGE
+
+                2.48 → 3.01MOVE
+
+                0.86ATTACKS / S
+
+                HEALTH240 → 1114
+
+                MANA190 → 494
+
+                  Q
+
+                  AffectsSelf
+
+              Aether Siphon
+
+              Self cast
+
+                Restores+22 mana
+
+                Mana cost0
+
+                Charges1
+
+                Cast cooldown7s
+
+                Recharge7s / charge
+
+                Cast delayInstant
+
+              Restores your mana.
+
+                  W
+
+                  AffectsSingle target
+
+              Moth Hex
+
+              Projectile
+
+                Damage36
+
+                Mana cost24
+
+                Charges3
+
+                Cast cooldown2s
+
+                Recharge12s / charge
+
+                Cast delayInstant
+
+                Cast range4.67 tiles
+
+              Follows the selected enemy. A ground shot hits the first enemy along its path.
+
+                  E
+
+                  FootprintLine
+
+              Dread Totem
+
+              Area cast
+
+                Damage58
+
+                Mana cost42
+
+                Charges1
+
+                Cast cooldown9s
+
+                Recharge9s / charge
+
+                Cast delay1s
+
+                Cast range4 tiles
+
+                Width × length1 × 4 tiles
+
+                Visual effectBox
+
+              Locks at your aimed map position. Hits all enemies in the line at impact.
+
+                  R
+
+                  FootprintRing
+
+              Void Portal
+
+              Area cast
+
+                Damage105
+
+                Mana cost90
+
+                Charges1
+
+                Cast cooldown24s
+
+                Recharge24s / charge
+
+                Cast delay1s
+
+                Cast range5 tiles
+
+                Radius2 tiles
+
+                Inner radius0.67 tiles
+
+                Visual effectHelix
+
+              Locks at your aimed map position. Hits all enemies in the ring at impact. The center is safe.
+
+              1-20
+
+              RED TEAM
+
+              BERSERKER
+
+              MELEE · AGGRESSIVE MELEE CARRY
+
+                300 → 1345HP +55/LVL
+
+                40 → 116MANA +4/LVL
+
+                35 → 168BASIC DAMAGE +7/LVL
+
+                1.33RANGE
+
+                2.72 → 3.40MOVE
+
+                1.20ATTACKS / S
+
+                HEALTH300 → 1345
+
+                MANA40 → 116
+
+                  Q
+
+                  AffectsSelf
+
+              Rage Crucible
+
+              Self cast
+
+                Healing+20 HP
+
+                Mana cost0
+
+                Charges1
+
+                Cast cooldown8s
+
+                Recharge8s / charge
+
+                Cast delayInstant
+
+              Restores your health.
+
+                  W
+
+                  AffectsSingle target
+
+              Molten Fist
+
+              Melee
+
+                Damage45
+
+                Mana cost0
+
+                Charges3
+
+                Cast cooldown2s
+
+                Recharge12s / charge
+
+                Cast delayInstant
+
+                Cast range1.5 tiles
+
+              Strike one enemy at close range. Aim at empty ground to swing into space.
+
+                  E
+
+                  FootprintSector
+
+              Winged Boot
+
+              Area cast
+
+                Damage40
+
+                Mana cost12
+
+                Charges1
+
+                Cast cooldown8s
+
+                Recharge8s / charge
+
+                Cast delay0.5s
+
+                Cast range2.5 tiles
+
+                Radius2.5 tiles
+
+                Angle90°
+
+                Visual effectCone
+
+              Starts at your position, facing your aim. Hits all enemies in the sector at impact.
+
+                  R
+
+                  FootprintCircle
+
+              Volcanic Eruption
+
+              Area cast
+
+                Damage100
+
+                Mana cost24
+
+                Charges1
+
+                Cast cooldown20s
+
+                Recharge20s / charge
+
+                Cast delay2s
+
+                Cast range2.17 tiles
+
+                Radius2 tiles
+
+                Visual effectCircle
+
+              Locks at your aimed map position. Hits all enemies in the circle at impact.
+
+      THE SHOP
+
+      Items, costs, and bonuses
+
+        Six inventory slots. Consumables stack to 8. Heroes start with 150 gold.
+        Footmen drop 15, towers 75, heroes 100.
+
+      Consumables
+
+              Ironroot Ration
+
+              30
+
+          Use: restore 40 health.
+
+              Vitality Elixir
+
+              50
+
+          Use: restore 90 health.
+
+              Mana Potion
+
+              45
+
+          Use: restore 60 mana.
+
+              Poison Potion
+
+              40
+
+          Use: deal 35 strike damage to a living, visible enemy within your hero's attack range. Tower order and god protection still apply.
+
+      Equipment
+
+              Steel Helmet
+
+              80
+
+          +50 maximum health.
+
+              Steel Buckler
+
+              90
+
+          +60 maximum health.
+
+              Leather Gauntlets
+
+              70
+
+          +4 damage.
+
+              Ranger Boots
+
+              100
+
+          +0.32 move speed.
+
+              Ruby Amulet
+
+              120
+
+          +70 maximum health.
+
+              Sapphire Ring
+
+              120
+
+          +40 maximum mana.
+
+              Crimson Dagger
+
+              110
+
+          +8 damage.
+
+              Amethyst Wand
+
+              140
+
+          +9 damage.
+
+              Sunsteel Longsword
+
+              150
+
+          +10 damage.
+
+              Ranger Bow
+
+              150
+
+          +10 damage.
+
+              Ironbark Pauldrons
+
+              140
+
+          +80 maximum health.
+
+              Knight Armor
+
+              160
+
+          +120 maximum health.
+
+              Thornwood Staff
+
+              170
+
+          +40 maximum health, +6 damage.
+
+              Battle Axe
+
+              180
+
+          +14 damage.
+
+              Rune Crossbow
+
+              180
+
+          +14 damage.
+
+              Arcane Spellbook
+
+              190
+
+          +30 maximum mana, +12 damage.
+
+      ACTIONS AND SPELLS
+
+      Aim, cast, impact, recharge
+
+      Basic attack + four abilities: Every hero has a separate single-target basic attack: a melee strike or a ranged shot, including magic bolts. Basic attacks cost no mana, use no spell charges, and repeat at the hero's attack speed. Their damage grows every level: base damage + (level − 1) × damage per level, plus equipment bonuses. Q/W/E/R are four additional abilities with their own cooldowns and charges.
+
+        One target
+Melee strikes need close range. Projectiles travel to one target. Neither becomes an area attack just because its effect looks wide. In player mode, aim at an object to target it, or aim at empty ground to swing or shoot into space.
+
+        An area on the map
+Circles, lines, sectors and other footprints affect every eligible occupant when the effect lands. The area locks when cast. Moving into it before impact can get you hit; moving out can avoid it. Enemy damage, allied healing and structure protection still apply.
+
+        A visible warning
+Cast delay is the time from releasing an area spell until it takes effect. The full footprint remains on the map during that delay, then flashes at impact. Every cast uses the same warnings and timing. Changing playback speed speeds up or slows down the battle and spell effects together.
+
+      Mana is paid when a cast is accepted. Basic attacks cost zero mana, as does Molten Fist. Other spells have their own mana costs. Invalid casts do not spend mana or charges; a valid shot into empty space does.
+
+        Charges
+The number of casts held in reserve. You need at least one charge. Each hero starts with a full set; a respawn restores the set.
+
+        Cast cooldown
+The minimum time between uses of the same action, even if charges remain. It is separate from the effect's cast delay and from its recharge timer.
+
+        Recharge cooldown
+Charges refill one at a time. The timer starts with the first spent charge. Spending another does not restart it. When a charge returns, the next missing charge starts its own full recharge.
+
+        Try it: 3 charges · 2s cooldown · 12s recharge
+
+        Cast at 0, 2 and 4 seconds. Charges return at 12, 24 and 36 seconds if you stop casting.
+
+        Cast
+        Advance 2 seconds
+        Advance 10 seconds
+        Reset
+
+      Refill resources: Ironroot Ration costs 30 gold and heals 40 HP; Vitality Elixir costs 50 gold and heals 90 HP; Mana Potion costs 45 gold and restores 60 mana. Buy them in the shop. Healing cannot revive a hero at zero HP.
+
+      PLAYER CONTROLS
+
+      Control your hero
+
+      Idle heroes automatically attack the closest visible enemy creep nearby. Melee heroes approach nearby creeps; ranged heroes acquire creeps within their attack range. Select an enemy or right-click it to make it take priority. Both melee and ranged heroes move toward that target until they reach their own basic-attack range, then stop and attack repeatedly. When the target dies or is lost in fog, they return to nearby creeps. A ground move order cancels the attack and takes priority over automatic acquisition. These rules also apply with zero mana or all four abilities on cooldown.
+
+      You control your four extra abilities; they only cast when you use them. Q/W/E/R cast immediately at your current valid target. Self actions always fire on key press and affect you. Melee actions also fire immediately: they strike a nearby target, or swing toward the pointer when there is none. For other abilities with no valid target, the key selects the ability and right-click casts at an object or the ground. Escape cancels the selection. With no ability selected, right-click moves or attacks. Click SHOP in the inventory, or press B, to open the full-screen item shop; click an item to buy it. Space pauses or resumes the battle, including while shopping. The HUD shows remaining charges and the wait until an empty action can be used again. A blue bar tracks progress toward the next charge.
+
+       |  | Input | Action
+
+         | Q / W / E / R | Your four extra abilities. Self and melee actions fire immediately; other actions use your current target or select right-click aiming.
+
+         | F / G | Use the first two inventory items, including health and mana potions.
+
+         | O | Toggle character outlines behind scenery. Enabled by default; hidden portions are outlined without revealing enemies in fog of war.
+
