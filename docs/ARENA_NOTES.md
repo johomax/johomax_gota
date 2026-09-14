@@ -67,3 +67,10 @@ The participate guide names cow_d7a245f0 (2026.9.14.2, a 128x128 map) but the le
 - `DOCKER_DEFAULT_PLATFORM=linux/amd64 uv run coworld run-episode ./coworld/cow_0752b441-af96-421d-8a1e-f8365a95e022/coworld_manifest.json <10 .bas paths> --variant competition -o runs/X`
   (~40 s per episode, 20x realtime). Results in runs/X/results.json, private prints in runs/X/logs/policy_agent_N.log.
 - tools/probe.bas dumps map/objects. tools/eval.py runs A vs B both sides over seeds.
+
+## Opponent notes (from hosted replays via tools/replay_parse.py, 2026-09-14)
+- aaron-gota-ir-waveguard-r4:v2 (#1): as Blue sends VK+Arcanist+Druid up Blue lane 0 (toward Red's lane-0 towers) and Ranger+DH along lane 2;
+  as Red sends DK+Warlock down lane 2, Crossbow+Lich along lane 0, Berserker mid. Heroes farm footmen near their towers and fight as a group.
+  Beats a 5-stack that walks into its 3-hero group under a tower; otherwise loses the race.
+- khors:v1: all five walk to (64,64) and camp mid. red-kite:v10: five-stack pushes mid together. Neither contests the side lanes.
+- base.bas: nearest-enemy targeting, walks to (64,64) when idle.
