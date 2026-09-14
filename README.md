@@ -27,15 +27,17 @@ uv run coworld xp-request create xp/candidate.json
 uv run coworld submit <name>:vN -l league_3c60897b-25cf-4b37-9d1a-8554c1198f28
 ```
 
-## Current status (2026-09-14 ~22:30 UTC)
-- **Regime change:** league seating is now `distinct_teammates: true` — my policy controls ONE hero per episode with four other entrants'
-  heroes. Stack-based A/B results above no longer model ladder play. New harnesses: `tools/eval_mixed.py` (local, base fillers) and
-  random-roster XP requests (xp/*-mixed.json). v21 adds a solo-laner mode (wave-following, farming, no solo tower dives) when fewer
-  than three allies are nearby at tick 360. Random-roster hosted results (48 episodes each): v19 32/48 (67%), v21 31/48 (65%);
-  v22 (solo retreat hysteresis) and v23 (solo skips home guard, keeps lane after respawn) queued with larger samples.
-- Champion: v19 = `Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v17` (auto-champion on). Ladder: rank 6, 1526 after 2 rounds (played by v7).
-- Candidate: v20 (v19, Blue also lane 2) = Jordan:v18, xp/v20-aaron.json.
-- To resume: `python3 tools/xp.py report xp/<tag>.json` for hosted results; `uv run coworld results div_a4534073-c5d2-4193-a94a-93d9c5e2e443 --json` for standings.
+## Current status (2026-09-14 ~23:55 UTC)
+- **Regime:** league seating is `distinct_teammates` (one hero per entrant, 12 episodes per round, rounds every 32 min, Elo K=4).
+  Measure everything with ten-seat random-roster hosted tests: `uv run python tools/xp_mixed.py create <label> --seats 0-9 -n 24 --tag t`,
+  `report xp/t.json`. A random champion wins 41% as Red / 59% as Blue (Blue classes are stronger); 240-game SE is ~3.2%.
+- **Champion:** v30 = `Jordan:v28` (submitted 23:45 UTC, auto-champion). Ladder: rank 5, 1543 MMR after 7 rounds (played by v19).
+- Ten-seat results (wins/240 unless noted): v19 132 (55%), v24 (=v19+telemetry) 106/192 (55%), v23 solo mode 108 (45%),
+  v25 ranged siege safety 122 (51%), v26 fight odds 141 (59%), v27 open-lane switching 132 (55%), v28 wave-gated siege 137 (57%),
+  v29 no home guard 99/192 (52%), **v30 no home guard + no ally hold 146 (61%)**. Queued: v31 potions-first economy, v32 fight on our half,
+  v33 footman farming, v34 = v30+v26+v28, v30 replication.
+- Telemetry (tools/log_stats.py on v24): 2.3 deaths/game, 80% of deaths to 1-2 enemy heroes at the enemy inner/gate tower with no allies
+  near; time budget 46% walking, 10% home guard, 10% ally hold, 9% siege, 8% hero fights. Removing the waiting (v30) is the only clear gain so far.
 
 ## Strategy log (hosted = league coworld cow_975af671, 116x116 map)
 - v1 blitz (mid, 5-stack): lost 0/4 to baseline (dove towers without waves, retreated home at 25% HP; no HP regen in this game).
