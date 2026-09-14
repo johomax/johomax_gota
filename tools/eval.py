@@ -42,9 +42,9 @@ def main():
     # split seeds across jobs: each job runs ceil(n/jobs) episodes? run-episode -n increments seed from the fixture seed,
     # so all batches would reuse the same seeds; keep it simple: 2 batches (sides), n episodes each.
     t0 = time.time()
-    pa = run(args.a, args.b, args.n, base / "a_red")
-    pb = run(args.b, args.a, args.n, base / "b_red")
-    for p, name in ((pa, "a_red"), (pb, "b_red")):
+    # batches run sequentially: parallel run-episode calls collide on staged player files
+    for red, blue, name in ((args.a, args.b, "a_red"), (args.b, args.a, "b_red")):
+        p = run(red, blue, args.n, base / name)
         _, err = p.communicate()
         if p.returncode != 0:
             print(f"[{name}] run-episode failed rc={p.returncode}\n{err.decode()[-2000:]}", file=sys.stderr)
