@@ -57,6 +57,11 @@ if inited = 0 then
   if selfTeam = 1 then
     pushLane = 2
   end if
+  ' clash = 1 makes both teams push lane 2 so they meet head-on (local fight benchmark only)
+  clash = 0
+  if clash = 1 then
+    pushLane = 2
+  end if
   ' own tower ids for the push lane (waypoints, in gate->inner->outer order)
   ownBase = 10 + pushLane * 6 + selfTeam * 3
   ' mirror lane own towers give enemy positions for the push lane
