@@ -4,7 +4,7 @@ usage: tools/mapcheck.py x,y x,y ...   -> per point: kind, walkable, clearance r
 """
 import sys, collections
 kinds={}; walk={}
-for line in open('runs/probe-002/logs/policy_agent_0.log'):
+for line in open('runs/probe-new/logs/policy_agent_0.log'):
     p=line.split()
     if p and p[0]=='K':
         row=int(p[1]); x=0

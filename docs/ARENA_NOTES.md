@@ -1,6 +1,6 @@
 # Gods of the Arena — mechanics notes (verified from polyworld@d03d2d1 source + local probe)
 
-Game version 2026.9.14.2 (map changed to 128x128 on 2026-09-14; older wiki/book assume 64x64).
+Game version 2026.9.14.3 (map generation changed on 2026-09-14; older wiki/book assume 64x64). Source commit 275ba23.
 
 ## Seating / scoring
 - League `team_n` + `team_layout: blocks`: my policy fills ALL 5 seats of one team; opponent fills the other 5.
@@ -9,14 +9,22 @@ Game version 2026.9.14.2 (map changed to 128x128 on 2026-09-14; older wiki/book 
 - Observed league games end by fort kill in 3,500-12,500 ticks. Even with all heroes idle, footmen alone
   kill a fort in ~8,000 ticks (probe run). Timeouts are rare now; the game is a race + fights.
 
-## Map (x right, y down, tiles 0..127; walkable: grass=1, road=2, marsh=5; NOT rock=3, trees=4, wall=6)
-- Red fort id 1 at (115,12), Red hero spawn (123,5). Blue fort id 2 at (12,115), Blue spawn (3,122).
+## Map (CURRENT league coworld cow_975af671-4f4d-4a04-8b95-d5c5a54b7f40, version 2026.9.14.3, map_size 116)
+The participate guide names cow_d7a245f0 (2026.9.14.2, a 128x128 map) but the league's hosted episodes run cow_975af671
+(map hash 000000006EB3A6B3). Always test with `coworld/cow_975af671-.../coworld_manifest.json --variant competition`.
+- Coordinates 0..115 (mapWidth = mapHeight = 116). Walkable: grass=1, road=2, marsh=5; NOT rock=3, trees=4, wall=6. Roads ~6 tiles wide.
+- The map is point-symmetric: enemy(x,y) = (115-x, 115-y); Red lane k mirrors Blue lane 2-k.
+- Red fort id 1 at (105,10), Red hero spawn (112,4). Blue fort id 2 at (10,105), Blue spawn (3,111).
 - Tower id = 10 + lane*6 + team*3 + tier (tier 0 outer, 1 inner, 2 gate). Towers only attackable outer->inner->gate.
-  - Lane 0 (top/left L): Red gate 12 (95,4), inner 11 (77,12), outer 10 (23,12); Blue outer 13 (8,50), inner 14 (8,85), gate 15 (4,95)
-  - Lane 1 (mid diagonal, crosses lake/marsh): Red gate 18 (106,21), inner 17 (89,32), outer 16 (71,46); Blue outer 19 (56,81), inner 20 (38,95), gate 21 (21,106)
-  - Lane 2 (right/bottom L): Red gate 24 (123,32), inner 23 (119,42), outer 22 (119,77); Blue outer 25 (104,115), inner 26 (50,115), gate 27 (32,123)
+  - Lane 0 (top/left L): Red gate 12 (86,4), inner 11 (69,11), outer 10 (20,11); Blue outer 13 (7,46), inner 14 (7,77), gate 15 (4,86)
+  - Lane 1 (mid diagonal, crosses lake/marsh): Red gate 18 (96,19), inner 17 (81,29), outer 16 (64,42); Blue outer 19 (51,73), inner 20 (34,86), gate 21 (19,96)
+  - Lane 2 (right/bottom L): Red gate 24 (111,29), inner 23 (108,38), outer 22 (108,69); Blue outer 25 (95,104), inner 26 (46,104), gate 27 (29,111)
+- BFS route lengths spawn->through own lane->enemy towers->fort: side lanes 219 tiles, mid 203 tiles.
+- Own-team structures are always visible, so a policy can read its own tower positions at tick 1 and derive enemy positions by reflection.
 - Fort exposed (attackable, objectAlive=1) once ANY lane has all 3 towers dead. Fort HP 400, attack range 4.25 tiles (any class). Forts do not attack.
-- ASCII maps: docs/map_kinds.txt (F/f fort, W/w towers, H/h hero spawns), map_height.txt, map_water.txt.
+- ASCII maps: docs/map_kinds.txt (F/f fort, W/w towers, H/h hero spawns), map_height.txt, map_water.txt. tools/mapcheck.py checks points/routes.
+- Engine pathing snags heroes on tree/rock corners when a walkTo target sits inside or beside obstacles: use tower courts / road centers as waypoints,
+  check walkTo's return value, and re-path (step back toward the previous waypoint) when the position stops changing.
 
 ## Units (60_000 world units = 1 tile; TickRate 24)
 - Hero ids: Red 100-104, Blue 105-109 (slot = id-100 / id-105). Red classes by slot: 5 DeathKnight, 6 Crossbowman, 7 Lich, 8 Warlock, 9 Berserker.
@@ -56,6 +64,6 @@ Game version 2026.9.14.2 (map changed to 128x128 on 2026-09-14; older wiki/book 
 17 staff +6dmg+40hp 170g | 18 axe +14 180g | 19 crossbow +14 180g | 20 spellbook +12dmg+30mana 190g
 
 ## Local tooling
-- `DOCKER_DEFAULT_PLATFORM=linux/amd64 uv run coworld run-episode ./coworld/cow_.../coworld_manifest.json <10 .bas paths> -o runs/X`
+- `DOCKER_DEFAULT_PLATFORM=linux/amd64 uv run coworld run-episode ./coworld/cow_975af671-4f4d-4a04-8b95-d5c5a54b7f40/coworld_manifest.json <10 .bas paths> --variant competition -o runs/X`
   (~40 s per episode, 20x realtime). Results in runs/X/results.json, private prints in runs/X/logs/policy_agent_N.log.
 - tools/probe.bas dumps map/objects. tools/eval.py runs A vs B both sides over seeds.

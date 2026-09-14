@@ -8,7 +8,7 @@ each with N seeds (2026, 2027, ...). Prints A's win rate and mean ticks.
 import argparse, json, os, subprocess, sys, time, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-MANIFEST = ROOT / "coworld/cow_d7a245f0-a819-41b7-a56c-e05d4030ab5d/coworld_manifest.json"
+MANIFEST = ROOT / "coworld/cow_975af671-4f4d-4a04-8b95-d5c5a54b7f40/coworld_manifest.json"
 
 def run(red, blue, n, out):
     cmd = ["uv", "run", "coworld", "run-episode", str(MANIFEST)] + [red] * 5 + [blue] * 5 + \
