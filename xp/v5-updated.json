@@ -1,0 +1,36 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v3",
+ "n": 3,
+ "requests": [
+  {
+   "id": "xreq_8648a33f-95b5-4e91-90bb-202b3e4070c8",
+   "opp": "red-kite:v10",
+   "cand_side": "red"
+  },
+  {
+   "id": "xreq_3dee28d6-4b79-4dd2-9d93-98e92d7026c2",
+   "opp": "red-kite:v10",
+   "cand_side": "blue"
+  },
+  {
+   "id": "xreq_26a6e020-9731-4ee8-bed5-0fb2254677df",
+   "opp": "relh-gods-of-the-arena:v17",
+   "cand_side": "red"
+  },
+  {
+   "id": "xreq_05c65257-c3c5-4c12-bd08-a547ae2f3801",
+   "opp": "relh-gods-of-the-arena:v17",
+   "cand_side": "blue"
+  },
+  {
+   "id": "xreq_82dec152-a31f-4b97-b455-5183ba4aff1d",
+   "opp": "black-kite:v6",
+   "cand_side": "red"
+  },
+  {
+   "id": "xreq_68f2a89c-6aad-403c-81c6-45386a9df8a5",
+   "opp": "black-kite:v6",
+   "cand_side": "blue"
+  }
+ ]
+}
