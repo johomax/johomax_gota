@@ -29,6 +29,13 @@ def parse_log(txt):
         elif p[0] == "STUCK": d["stuck"] += 1
         elif p[0] == "LANE": d["lanes"] += 1
         elif p[0] == "MODE": d["mode"] = p[1]
+        elif p[0] == "DC":
+            try:
+                kv = {p[j]: p[j + 1] for j in range(3, len(p) - 1, 2)}
+                d.setdefault("dc", []).append({"tick": int(p[1]), "x": int(kv.get("p", 0)), "y": int(p[4]), "oi": int(kv.get("oi", 0)), "act": int(kv.get("act", 0)),
+                                               "eh": int(kv.get("eh", 0)), "tw": int(kv.get("tw", 0)), "fa": int(kv.get("fa", 0)), "fe": int(kv.get("fe", 0)), "al": int(kv.get("al", 0))})
+            except Exception:
+                pass
         elif p[0] == "T":
             try:
                 d["last_t"] = int(p[1]); d["level"] = int(p[7][1:]); d["gold"] = int(p[8][1:])
@@ -80,6 +87,20 @@ def main():
     for key in sorted(cnt, key=lambda k: (str(k[0]), str(k[1]))):
         n = cnt[key]; g = agg[key]
         print(f"{str(key)[:40]:40s} {n:4d} {g['wins']/n:5.2f} {g['deaths']/n:6.2f} {g['kills']/n:6.1f} {g['hero_kills']/n:5.2f} {g['tower_kills']/n:5.2f} {g['level']/n:5.2f} {g['gold']/n:5.0f} {g['max_oi']/n:5.2f} {g['stuck']/n:5.1f} {g['last_t']/n:6.0f}")
+
+    dcs = [(CLASSES[(r["seat"] % 5) + (5 if r["seat"] < 5 else 0)], r["win"], dc) for _, r in rows for dc in r["log"].get("dc", [])]
+    if dcs:
+        from collections import Counter
+        print(f"\nDEATH CONTEXTS: {len(dcs)} deaths over {len(rows)} games")
+        def tab(name, keyf):
+            c = Counter(keyf(dc) for _, _, dc in dcs)
+            print(f"  by {name}: " + ", ".join(f"{k}={v}" for k, v in sorted(c.items(), key=lambda kv: -kv[1])[:12]))
+        tab("act", lambda dc: dc["act"]); tab("enemy heroes near", lambda dc: dc["eh"]); tab("tower in reach", lambda dc: "tower" if dc["tw"] else "none")
+        tab("objective idx", lambda dc: dc["oi"]); tab("allied footmen<=5", lambda dc: dc["fa"]); tab("allies<=25", lambda dc: dc["al"])
+        tab("eh x tower", lambda dc: f"eh{dc['eh']}{'T' if dc['tw'] else ''}")
+        tab("tick bucket", lambda dc: dc["tick"] // 1000 * 1000)
+        tab("class", lambda dc: None)
+        c = Counter(cls for cls, _, _ in dcs); print("  by class: " + ", ".join(f"{k}={v}" for k, v in sorted(c.items(), key=lambda kv: -kv[1])))
 
 if __name__ == "__main__":
     main()

@@ -31,13 +31,20 @@ def create(c, ref, seats, n, tag):
         roster = [{"player": ({"policy_ref": ref} if s == seat else {"random": True}), "slot": s} for s in range(10)]
         body = {"target": {"league_id": LEAGUE}, "roster": roster, "num_episodes": n,
                 "notes": f"[{tag}] {ref} seat {seat} + random roster"}
-        try:
-            d = dump(c.create_experience_request(body))
-        except Exception as ex:
-            print("create failed seat", seat, repr(ex)[:300], file=sys.stderr); continue
+        d = None
+        for attempt in range(4):
+            try:
+                d = dump(c.create_experience_request(body)); break
+            except Exception as ex:
+                print("create failed seat", seat, "attempt", attempt, repr(ex)[:200], file=sys.stderr); time.sleep(3 + 3 * attempt)
+        if d is None:
+            continue
+        time.sleep(1)
         print("created", d["id"], "seat", seat)
         out["requests"].append({"id": d["id"], "seat": seat})
     path = ROOT / "xp" / f"{tag}.json"
+    if path.exists():
+        old = json.load(open(path)); out["requests"] = old.get("requests", []) + out["requests"]
     json.dump(out, open(path, "w"), indent=1)
     print("saved", path)
 
