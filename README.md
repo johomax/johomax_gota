@@ -27,7 +27,11 @@ uv run coworld xp-request create xp/candidate.json
 uv run coworld submit <name>:vN -l league_3c60897b-25cf-4b37-9d1a-8554c1198f28
 ```
 
-## Current status (2026-09-14 ~22:00 UTC)
+## Current status (2026-09-14 ~22:30 UTC)
+- **Regime change:** league seating is now `distinct_teammates: true` — my policy controls ONE hero per episode with four other entrants'
+  heroes. Stack-based A/B results above no longer model ladder play. New harnesses: `tools/eval_mixed.py` (local, base fillers) and
+  random-roster XP requests (xp/*-mixed.json). v21 adds a solo-laner mode (wave-following, farming, no solo tower dives) when fewer
+  than three allies are nearby at tick 360.
 - Champion: v19 = `Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v17` (auto-champion on). Ladder: rank 6, 1526 after 2 rounds (played by v7).
 - Candidate: v20 (v19, Blue also lane 2) = Jordan:v18, xp/v20-aaron.json.
 - To resume: `python3 tools/xp.py report xp/<tag>.json` for hosted results; `uv run coworld results div_a4534073-c5d2-4193-a94a-93d9c5e2e443 --json` for standings.
