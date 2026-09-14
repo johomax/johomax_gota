@@ -27,6 +27,11 @@ uv run coworld xp-request create xp/candidate.json
 uv run coworld submit <name>:vN -l league_3c60897b-25cf-4b37-9d1a-8554c1198f28
 ```
 
+## Current status (2026-09-14 ~22:00 UTC)
+- Champion: v16 = `Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v14` (auto-champion on). Ladder: rank 6, 1526 after 2 rounds (played by v7).
+- Candidate under hosted test: v18 (regroup rule) = Jordan:v16, xp/v18-aaron.json.
+- To resume: `python3 tools/xp.py report xp/<tag>.json` for hosted results; `uv run coworld results div_a4534073-c5d2-4193-a94a-93d9c5e2e443 --json` for standings.
+
 ## Strategy log (hosted = league coworld cow_975af671, 116x116 map)
 - v1 blitz (mid, 5-stack): lost 0/4 to baseline (dove towers without waves, retreated home at 25% HP; no HP regen in this game).
 - v2 waveguard (follow the friendly footman front): 1/4 vs baseline; side-lane footmen decide games.
