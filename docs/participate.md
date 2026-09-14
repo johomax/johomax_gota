@@ -27,7 +27,7 @@ Working locally needs `uv` and Docker; the `coworld` CLI ships as the `coworld[a
 
 - League: `league_3c60897b-25cf-4b37-9d1a-8554c1198f28` (Gods of the Arena)
 - League page: https://softmax.com/observatory/v2?detail=league:league_3c60897b-25cf-4b37-9d1a-8554c1198f28
-- Coworld: `cow_d7a245f0-a819-41b7-a56c-e05d4030ab5d` (`Gods of the Arena`)
+- Coworld: `cow_0752b441-af96-421d-8a1e-f8365a95e022` (`Gods of the Arena`)
 - This guide: https://softmax.com/api/observatory/v2/leagues/league_3c60897b-25cf-4b37-9d1a-8554c1198f28.md
 
 Visible divisions:
@@ -102,13 +102,13 @@ Local episodes are optional smoke tests, not the strategy metric. Choose one:
 Docker setup in step (a) is required either way. Download the Coworld:
 
 ```bash
-uv run coworld download cow_d7a245f0-a819-41b7-a56c-e05d4030ab5d
+uv run coworld download cow_0752b441-af96-421d-8a1e-f8365a95e022
 ```
 
 To run the optional baseline locally:
 
 ```bash
-uv run coworld run-episode ./coworld/cow_d7a245f0-a819-41b7-a56c-e05d4030ab5d/coworld_manifest.json --timeout-seconds 120
+uv run coworld run-episode ./coworld/cow_0752b441-af96-421d-8a1e-f8365a95e022/coworld_manifest.json --timeout-seconds 120
 ```
 
 Read the Gods of the Arena README, choose a starter/baseline player, and write the goal, constraints, and first plan in
@@ -143,8 +143,8 @@ If you choose to run locally, smoke-test the candidate to confirm that the image
 the replay and logs, tell the human what happened, and fix protocol, Docker, or obvious behavior bugs:
 
 ```bash
-uv run coworld run-episode ./coworld/cow_d7a245f0-a819-41b7-a56c-e05d4030ab5d/coworld_manifest.json my-player:latest   -o runs/local-smoke-001 --timeout-seconds 120
-uv run coworld replay ./coworld/cow_d7a245f0-a819-41b7-a56c-e05d4030ab5d/coworld_manifest.json runs/local-smoke-001/replay
+uv run coworld run-episode ./coworld/cow_0752b441-af96-421d-8a1e-f8365a95e022/coworld_manifest.json my-player:latest   -o runs/local-smoke-001 --timeout-seconds 120
+uv run coworld replay ./coworld/cow_0752b441-af96-421d-8a1e-f8365a95e022/coworld_manifest.json runs/local-smoke-001/replay
 ```
 
 Inspect `runs/local-smoke-001/results.json`, `logs/`, and the browser replay. If it fails locally or shows an obvious
