@@ -32,11 +32,16 @@ def create(c, ref, seats, n, tag):
         body = {"target": {"league_id": LEAGUE}, "roster": roster, "num_episodes": n,
                 "notes": f"[{tag}] {ref} seat {seat} + random roster"}
         d = None
-        for attempt in range(4):
+        for attempt in range(60):
             try:
                 d = dump(c.create_experience_request(body)); break
             except Exception as ex:
-                print("create failed seat", seat, "attempt", attempt, repr(ex)[:200], file=sys.stderr); time.sleep(3 + 3 * attempt)
+                msg = repr(ex)
+                if "429" in msg:
+                    if attempt % 6 == 0: print("queue full, waiting (seat", seat, ")", file=sys.stderr)
+                    time.sleep(30)
+                else:
+                    print("create failed seat", seat, "attempt", attempt, msg[:200], file=sys.stderr); time.sleep(3 + 3 * attempt)
         if d is None:
             continue
         time.sleep(1)
