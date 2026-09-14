@@ -1,0 +1,16 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v8",
+ "n": 12,
+ "requests": [
+  {
+   "id": "xreq_93633505-c1b4-46fe-b11f-ece5425d89fd",
+   "opp": "aaron-gota-ir-waveguard-r4:v2",
+   "cand_side": "red"
+  },
+  {
+   "id": "xreq_1283ae84-a44f-45db-a5f9-68e03671ea2e",
+   "opp": "aaron-gota-ir-waveguard-r4:v2",
+   "cand_side": "blue"
+  }
+ ]
+}
