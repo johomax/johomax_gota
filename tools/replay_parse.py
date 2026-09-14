@@ -47,7 +47,7 @@ import zlib
 
 MAGIC = b"POLYWORLDREPLAY"
 GAME = "gods_of_the_arena"
-GAME_VERSIONS = {16, 17, 18, 19, 20, 22, 23, 24, 25, 26, 28}
+GAME_VERSIONS = {16, 17, 18, 19, 20, 22, 23, 24, 25, 26, 28, 29}
 MAX_BYTES = 64 * 1024 * 1024
 MAX_ACTIONS = 10_000_000
 MAX_HASHES = 100_000_000
@@ -120,7 +120,7 @@ def read_config(reader, version):
     ))
     if version >= 26:
         integers = "seed lakeCrossings jungleRoads"
-        if version == 28:
+        if version >= 28:
             integers = "mapSize " + integers
         preset = reader.record("q" * len(integers.split()), integers)
         preset.update(reader.record("9f", MAP_FLOATS))

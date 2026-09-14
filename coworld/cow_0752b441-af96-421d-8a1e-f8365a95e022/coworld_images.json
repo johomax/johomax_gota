@@ -1,0 +1,11 @@
+{
+  "coworld_id": "cow_0752b441-af96-421d-8a1e-f8365a95e022",
+  "name": "Gods of the Arena",
+  "version": "2026.9.14.4",
+  "images": [
+    {
+      "public_image_uri": "public.ecr.aws/q5f4m8t9/cogames@sha256:8bd1492a4f863a81fc0adc896c73d20fc537f591e1ae702e458e6e1f8a33f719",
+      "local_image": "coworld/cow_0752b441-af96-421d-8a1e-f8365a95e022/gods-of-the-arena-2026.9.14.4-0:downloaded"
+    }
+  ]
+}

@@ -9,7 +9,7 @@ Game version 2026.9.14.3 (map generation changed on 2026-09-14; older wiki/book 
 - Observed league games end by fort kill in 3,500-12,500 ticks. Even with all heroes idle, footmen alone
   kill a fort in ~8,000 ticks (probe run). Timeouts are rare now; the game is a race + fights.
 
-## Map (CURRENT league coworld cow_975af671-4f4d-4a04-8b95-d5c5a54b7f40, version 2026.9.14.3, map_size 116)
+## Map (CURRENT league coworld cow_0752b441-af96-421d-8a1e-f8365a95e022, version 2026.9.14.4 (cow_0752b441; same map hash 6EB3A6B3 as 2026.9.14.3), map_size 116)
 The participate guide names cow_d7a245f0 (2026.9.14.2, a 128x128 map) but the league's hosted episodes run cow_975af671
 (map hash 000000006EB3A6B3). Always test with `coworld/cow_975af671-.../coworld_manifest.json --variant competition`.
 - Coordinates 0..115 (mapWidth = mapHeight = 116). Walkable: grass=1, road=2, marsh=5; NOT rock=3, trees=4, wall=6. Roads ~6 tiles wide.
@@ -64,6 +64,6 @@ The participate guide names cow_d7a245f0 (2026.9.14.2, a 128x128 map) but the le
 17 staff +6dmg+40hp 170g | 18 axe +14 180g | 19 crossbow +14 180g | 20 spellbook +12dmg+30mana 190g
 
 ## Local tooling
-- `DOCKER_DEFAULT_PLATFORM=linux/amd64 uv run coworld run-episode ./coworld/cow_975af671-4f4d-4a04-8b95-d5c5a54b7f40/coworld_manifest.json <10 .bas paths> --variant competition -o runs/X`
+- `DOCKER_DEFAULT_PLATFORM=linux/amd64 uv run coworld run-episode ./coworld/cow_0752b441-af96-421d-8a1e-f8365a95e022/coworld_manifest.json <10 .bas paths> --variant competition -o runs/X`
   (~40 s per episode, 20x realtime). Results in runs/X/results.json, private prints in runs/X/logs/policy_agent_N.log.
 - tools/probe.bas dumps map/objects. tools/eval.py runs A vs B both sides over seeds.
