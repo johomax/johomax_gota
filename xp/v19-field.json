@@ -1,0 +1,96 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v17",
+ "n": 2,
+ "requests": [
+  {
+   "id": "xreq_4cb98b68-b9a1-434b-8c6e-97eb919cb77b",
+   "opp": "khors:v1",
+   "cand_side": "red"
+  },
+  {
+   "id": "xreq_381ea5ba-d7cd-4143-aba9-2b9c73ff8b15",
+   "opp": "khors:v1",
+   "cand_side": "blue"
+  },
+  {
+   "id": "xreq_0121ce58-abbf-49c7-9eb2-96f4a5581562",
+   "opp": "red-kite:v10",
+   "cand_side": "red"
+  },
+  {
+   "id": "xreq_3d78b9ea-bd04-4a7b-a9b8-b4cf7c45c065",
+   "opp": "red-kite:v10",
+   "cand_side": "blue"
+  },
+  {
+   "id": "xreq_c900ba73-0b25-4b05-816c-7b9bf355691e",
+   "opp": "games-bond-gota:v6",
+   "cand_side": "red"
+  },
+  {
+   "id": "xreq_8a3ee47c-c113-47c7-9952-a76b9d63efe1",
+   "opp": "games-bond-gota:v6",
+   "cand_side": "blue"
+  },
+  {
+   "id": "xreq_dc69aa97-bea6-4b11-9acb-ca32a3cf1075",
+   "opp": "richard-gods-of-the-arena:v1",
+   "cand_side": "red"
+  },
+  {
+   "id": "xreq_1148ab09-f29a-4ba6-9a73-52df9cc0cf61",
+   "opp": "richard-gods-of-the-arena:v1",
+   "cand_side": "blue"
+  },
+  {
+   "id": "xreq_10a94259-c526-4e33-a52a-e68ea858c57d",
+   "opp": "black-kite:v6",
+   "cand_side": "red"
+  },
+  {
+   "id": "xreq_b9c80a0e-c043-4f0b-8c70-dd72a5cfc721",
+   "opp": "black-kite:v6",
+   "cand_side": "blue"
+  },
+  {
+   "id": "xreq_b37470cb-a86e-4081-b182-80094fd5a4b7",
+   "opp": "relh-gods-of-the-arena:v22",
+   "cand_side": "red"
+  },
+  {
+   "id": "xreq_0bf9c98b-9dc4-4e71-8c1a-4a12abb6f836",
+   "opp": "relh-gods-of-the-arena:v22",
+   "cand_side": "blue"
+  },
+  {
+   "id": "xreq_9427f3cd-c92a-4909-a08b-eedd2429f975",
+   "opp": "daf-gota-v1:v1",
+   "cand_side": "red"
+  },
+  {
+   "id": "xreq_e4a922a7-5f06-470a-aa0a-916b0556837f",
+   "opp": "daf-gota-v1:v1",
+   "cand_side": "blue"
+  },
+  {
+   "id": "xreq_ef9be671-2222-480f-bcf9-68f303cfaf2e",
+   "opp": "4e5d53b6-dc43-42c8-9317-808950d0616a",
+   "cand_side": "red"
+  },
+  {
+   "id": "xreq_6e0fdff5-5efe-4be6-abfe-c5f71cc81988",
+   "opp": "4e5d53b6-dc43-42c8-9317-808950d0616a",
+   "cand_side": "blue"
+  },
+  {
+   "id": "xreq_bd21c3c9-a70c-42bf-b1e6-a8beec0360f7",
+   "opp": "46ca3363-6f98-46b1-a817-dc459b0b5329",
+   "cand_side": "red"
+  },
+  {
+   "id": "xreq_b7b8b21d-8b1b-4069-bdbc-dbaf8295334b",
+   "opp": "46ca3363-6f98-46b1-a817-dc459b0b5329",
+   "cand_side": "blue"
+  }
+ ]
+}
