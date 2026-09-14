@@ -1,0 +1,15 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v17",
+ "requests": [
+  {
+   "id": "xreq_54590a36-f493-411d-8296-5caa9feb5200",
+   "opp": "random-roster",
+   "cand_side": "red"
+  },
+  {
+   "id": "xreq_c60ded23-e55b-4286-9cde-1c72e18e5069",
+   "opp": "random-roster",
+   "cand_side": "blue"
+  }
+ ]
+}
