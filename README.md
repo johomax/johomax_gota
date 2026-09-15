@@ -48,7 +48,8 @@ uv run coworld submit <name>:vN -l league_3c60897b-25cf-4b37-9d1a-8554c1198f28
   = 91 wins vs 66 over 360 shared games. v58 buddy-the-deepest-ally 20/25 (dropped). v59 Crossbowman survival in seat-1 batches.
 - Since then (candidate/control per 120 shared games): v62 weakest-lane replication 30/35 (v62 total 63-56 over 240; kept as base),
   v63 join-mid-brawl 17/27 (dropped), v64 opportunistic tower spells no signal, v65 (weakest-lane check from tick 3000, 20% margin)
-  39/26 vs v62 -> replication and v65-vs-v51 cross-check running; v66 pushes the same knobs further (built, awaiting v65's verdict).
+  39/26 then 32/31 vs v62 and 35/36 vs v51 (parity), v66 (more switching) 23/33 vs v62, v67 (tunnel-vision dives) 25/39 vs v62.
+  Lesson: lane commitment plus fighting adjacent heroes during dives both matter; v62 stays champion (round 308: 1501 MMR, rank 7).
 - Labels: v50=:v45 ... v59=:v54, v60=:v55, v61=:v56, v62=:v57, v63=:v58, v64=:v59, v65=:v60, v66=:v61.
 
 ## Strategy log (hosted = league coworld cow_975af671, 116x116 map)

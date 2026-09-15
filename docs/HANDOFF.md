@@ -28,7 +28,8 @@
   v65 replication vs v62 32/31 and v65 vs v51 35/36: the weakest-lane family is parity/noise (v62 kept as base only).
   v68 (Codex S23) = v62 + Red non-Crossbowman heroes escort the allied Crossbowman while it pushes — being written. Also queued: v66 (:v61, weakest-lane
   check every 300 ticks from 1500, 10% margin) vs v62, and v67 (:v62, tunnel-vision all-in: attack the tower even with heroes adjacent,
-  fight only kill shots) vs v62. Rule: promote only >= +8 over >= 240 shared games.
+  fight only kill shots) vs v62. Results: v66 23/33/64 (dropped), v67 25/39/56 (dropped: fighting adjacent heroes during dives matters).
+  Round 308 (first with v62): 1501 MMR, rank 7. Rule: promote only >= +8 over >= 240 shared games.
   v64 (:v59, Codex S22) opportunistic tower spells: caster-seat batches (2,6,7) vs v51 queued.
   Local games are deterministic per seed (verified), so single local games are exact seed-specific A/Bs.
 - Ideas not done: Lich Ice Spear (6.33 tiles) snipes gate towers from outside their 6.0 range via castTarget (towers are valid spell targets);
