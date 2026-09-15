@@ -25,7 +25,9 @@
   120 games 33/21/66 -> promoted; replication 30/35/55, so v62 is only 63-56 over 240 (noise; kept as champion/base since it is not worse).
   v63 (:v58) join-the-mid-brawl 17/27/76 (dropped). v64 (:v59) opportunistic tower spells: caster seats 14/72 vs v51 11/72 (no signal; only
   ~4 casts per game). v65 (:v60) = v62 with the weakest-lane check from tick 3000 and a 20% margin: 39/26/55 vs v62 -> replication and a
-  v65-vs-v51 cross-check queued; promote v65 if both hold (>= +8).
+  v65-vs-v51 cross-check queued; v65 replication vs v62 came back 26/28 (so v65 is ~+5 over 222, noise). Also queued: v66 (:v61, weakest-lane
+  check every 300 ticks from 1500, 10% margin) vs v62, and v67 (:v62, tunnel-vision all-in: attack the tower even with heroes adjacent,
+  fight only kill shots) vs v62. Rule: promote only >= +8 over >= 240 shared games.
   v64 (:v59, Codex S22) opportunistic tower spells: caster-seat batches (2,6,7) vs v51 queued.
   Local games are deterministic per seed (verified), so single local games are exact seed-specific A/Bs.
 - Ideas not done: Lich Ice Spear (6.33 tiles) snipes gate towers from outside their 6.0 range via castTarget (towers are valid spell targets);
