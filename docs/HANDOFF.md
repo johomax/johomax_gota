@@ -1,34 +1,16 @@
 # HANDOFF — Gods of the Arena policy project (paused 2026-09-15, 00:45 UTC at the user's request)
 
-## Stop state (read this first)
-- Champion: v30 = `Jordan:v28` (auto-champion). Ladder rank 5, 1556 MMR after 8 rounds; round 271 (first with v30) 7/9.
-- Duel results: v35 mid lane vs v30 = 120/240 (wash). Partially created when paused: duel-v38-v30 (10 requests), duel-v41-v30 (9),
-  duel-v40-v30 (3), duel-v43-v30 (1), duel-v30-v19 (0). Recover/refresh with `uv run python tools/xp_recover.py` then
-  `uv run python tools/xp_mixed.py report xp/duel-*.json`; complete the missing seats with `tools/xp_mixed.py duel ... --seats N` (same tag).
-- policy/v44.bas (Codex task S12, hold at the fallen outer tower) was written but NOT smoke-tested or uploaded: run
-  `uv run coworld run-episode ./coworld/cow_9d9d7070-2210-4899-81de-f39401b32162/coworld_manifest.json policy/v44.bas <9x policy/base.bas> --variant competition -o runs/v44-smoke`
-  and grep the log for `BASIC error` before uploading (`uv run coworld upload-policy --file policy/v44.bas --tag version=v44` -> label :v42).
-- No local background jobs are running. Hosted requests already created will finish on their own.
-
-
-## Where things stand (solo-hero regime)
-- **Champion:** v30 = `Jordan:v28` (submitted 23:50 UTC, placed, auto-champion always). v30 = v19 minus the post-respawn home guard and
-  the ally hold. Ten-seat hosted result 146/240 (61%) vs v19 132/240 (55%). Ladder: rank 5, 1543 MMR after 7 rounds.
-- **Measurement:** `uv run python tools/xp_mixed.py create <label> --seats 0-9 -n 24 --tag t` then `report xp/t.json` (random champions in
-  the other nine seats = the league's distinct-teammates seating). Platform cap: 300 undispatched episodes per user (the tool waits on 429).
-  A 240-game batch has SE ~3.2%; differences under ~7 points are noise. Random champion base rate: Red 41%, Blue 59%.
-- **Analysis tools:** `tools/league_data.py` (our league episodes per seat), `tools/log_stats.py` (our telemetry incl. death contexts "DC"),
-  `tools/replay_lanes.py` (which lane/heroes decided each game), `tools/roster_stats.py` (per-policy win rates in random rosters).
-- **Key evidence:** winners' heroes always attack the fort; usually 4 heroes hit the final gate together; mid decides 42% of games; only 20% of
-  our wins came through the side lane we push alone; after a death the rejoin logic sends us to mid and those games were won more.
-  Cautious/passive variants lose (v23 solo mode 45%, v25 ranged safety 51%, v32 fight-on-our-half 55%). Aggression + no waiting wins.
-- **League coworld changed again ~00:00 UTC:** now `cow_9d9d7070-2210-4899-81de-f39401b32162` (2026.9.14.5, game version 30, map hash 48422D57).
-  Towers/forts/spawns keep the same coordinates; terrain differs. Tools and the replay parser are updated; v30/v35/v43 smoke-tested on it.
-- **Ten-seat results are confounded by field drift** (other players uploaded new versions overnight). Decide with duels only:
-  `uv run python tools/xp_mixed.py duel <cand> <ctrl> --seats 0-4 -n 24 --tag duel-x` -> candidate/control in mirrored seats of the same games.
-  Duel so far: v35 mid lane vs v30 43/100 (mid loses). Queued duels vs v30: v38 fort-anywhere, v40 farm-then-push (+damage-first shop),
-  v41 defend threatened towers, v43 swapped side lanes. Labels: v31=:v29, v32=:v30, ..., v40=:v38, v41=:v39, v42=:v40, v43=:v41.
-- Codex workers: `docs/WORKER_BRIEF2.md` + `docs/tasks/s*.md`; launch with `node "$CC" task --background --fresh --write --model gpt-6-astra --effort xhigh`.
+## Current state (2026-09-15 18:15 UTC) — GAME VERSION 33 changed everything
+- League coworld is now `cow_252fb6a6-cbc3-4d4f-9fa2-8b5250a9d2a2` (2026.9.15.1, game version 33): towers 1200/2400/4800 HP, 28/56/112 dmg,
+  ranges unchanged. 61% of league games time out (0 for all). Our champion v30 (`Jordan:v28`) won 9/41 there; ladder rank 7, 1483 MMR.
+  Details: docs/ARENA_NOTES.md top section; engine source in tmp/engine_new (from source/polyworld origin/main).
+- Local opponent base.bas beats five v45/v46 clones by grinding the mid gate for 20,000 ticks; our heroes abandon the gate (lane switch/rejoin)
+  and wait for waves. Lesson: commit to one lane, never wait once allies are present, and a Crossbowman can solo towers from 6.5 tiles.
+- Candidates: v45 tower-safe siege (uploaded :v42), v46 + mass dive/all-in/damage shop (:v43), v47 = v46 + long-range kiting (Codex S13,
+  local Xbow game: 5 tower kills, 13 deaths, timed out because rejoin kept switching lanes), v48a/b and v49a/b = commitment (no lane switch,
+  no rejoin, all-in from one ally or tick 12000), b = mid lane for everyone except the Crossbowman. Local tests running/queued in runs/.
+- Hosted: ten-seat 120-game checks of v45 (:v42) and v46 (:v43) in flight (games are long now; expect ~30+ min).
+- Next: pick the best of v48/v49 locally, upload, duel vs v30, promote quickly (v30 is clearly maladapted).
 
 ## Read first
 1. `docs/ARENA_NOTES.md` — verified mechanics, map coordinates, host API, BASIC dialect gotchas, opponent habits, engineering lessons.
