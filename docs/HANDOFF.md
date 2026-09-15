@@ -34,7 +34,8 @@
   replication at 54/46 after 199 (combined 92-74 over 319, consistently positive). v69 (:v64, Codex S24) escorts only while the
   Crossbowman is within 8 tiles of an exposed tower or 10 tiles of an enemy hero: 32/28/60 vs v62 (no better than v68; dropped).
   v70 (:v70) = v68 + VK/Druid follow the largest allied group: seat 5/8 batches vs v68 running. v71 (:v71) = v68 with the join rule
-  also for the Crossbowman: seat-1 batches vs v68 queued. v62 ten-seat: 49/240 (Xbow 11/24; every other seat 1-8/24, i.e. base rate);
+  also for the Crossbowman: seat-1 batches vs v68 queued (local reference seed: 26893 ticks/18 deaths vs v49a's 9665/2 — v62's weakest-lane
+  switch seems to pull the Crossbowman out of its lane). v72 (:v72) = v68 with that switch disabled for the Crossbowman: seat-1 batch queued. v62 ten-seat: 49/240 (Xbow 11/24; every other seat 1-8/24, i.e. base rate);
   v62 vs v49a 240 games 43/45 -> everything since v49a is within noise of each other. Also queued: v66 (:v61, weakest-lane
   check every 300 ticks from 1500, 10% margin) vs v62, and v67 (:v62, tunnel-vision all-in: attack the tower even with heroes adjacent,
   fight only kill shots) vs v62. Results: v66 23/33/64 (dropped), v67 25/39/56 (dropped: fighting adjacent heroes during dives matters).
