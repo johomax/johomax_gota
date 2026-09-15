@@ -75,6 +75,9 @@ The participate guide names cow_d7a245f0 (2026.9.14.2, a 128x128 map) but the le
 17 staff +6dmg+40hp 170g | 18 axe +14 180g | 19 crossbow +14 180g | 20 spellbook +12dmg+30mana 190g
 
 ## Local tooling
+- Local episodes are deterministic per seed (default seed 2026; `-n N` increments it): identical policies reproduce identical games, so a
+  single local game is an exact A/B for that seed. On seed 2026 the v49a Crossbowman beats nine base.bas heroes at tick 9665 with 2 deaths;
+  removing its kiting (v61) gives 18945/10 deaths, heavier kiting (v59) 23360/9, the damage-only shop (v52b) 17144/11.
 - `DOCKER_DEFAULT_PLATFORM=linux/amd64 uv run coworld run-episode ./coworld/cow_0752b441-af96-421d-8a1e-f8365a95e022/coworld_manifest.json <10 .bas paths> --variant competition -o runs/X`
   (~40 s per episode, 20x realtime). Results in runs/X/results.json, private prints in runs/X/logs/policy_agent_N.log.
 - tools/probe.bas dumps map/objects. tools/eval.py runs A vs B both sides over seeds.
