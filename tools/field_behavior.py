@@ -16,8 +16,11 @@ def tower_info(tid):
     off = tid - 10; return off // 6, (off % 6) // 3, off % 3
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument("--limit", type=int, default=100000); a = ap.parse_args()
+    ap = argparse.ArgumentParser(); ap.add_argument("--limit", type=int, default=100000); ap.add_argument("--coworld", default=None); a = ap.parse_args()
     files = sorted((ROOT / "tmp/replays").glob("*.replay"))[: a.limit]
+    if a.coworld:
+        eps = [e for e in json.load(open(ROOT / "docs/league_episodes.json")) if str(e.get("coworld_id", "")).startswith(a.coworld)]
+        files = [ROOT / "tmp/replays" / (e["ereq"] + ".replay") for e in eps if (ROOT / "tmp/replays" / (e["ereq"] + ".replay")).exists()]
     per = defaultdict(lambda: {"games": 0, "lane": Counter(), "tower": 0, "hero": 0, "fort": 0, "foot": 0, "walk": 0, "wx": 0, "wy": 0, "gate": 0, "camp": 0})
     for f in files:
         try:
