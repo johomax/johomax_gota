@@ -11,8 +11,9 @@
   v53 all-in from tick 4000 23/16/81, v52 long-range shop dropped (slower local Crossbowman game; seat batches 19/72 vs 17/72).
   v54 tower bait 24/25/71 (wash), v51 replication 32/27/61 (v51 total 61-48 over 240), v55 = v51+v53 27/26/67 (wash), v56 = v55 with
   all-in from tick 600 29/25/66. Nothing beats v49a by more than noise; champion stays v49a until a candidate shows >= +8 over 240 games.
-  v57 (:v52) = v55 + spell posts (Ranger/Arcanist/Lich cast area spells at towers from 7-8 tiles); first local run had 0 successful casts,
-  diagnostics run in progress (runs/v57dbg). v53 replication and a v57 caster-seat duel (seats 1,2) are queued.
+  v57 (:v52) = v55 + spell posts: casts DO work and damage towers (~0.4 HP/tick, runs/v57dbg2), but the caster-seat duel was 15/28/53
+  (Lich 0/24, Ranger 1/24) — posting instead of fighting loses; dropped. v53 replication 23/18 (total 46-34 over 240, modest).
+  Next: v58 (Codex S19) = v49a + buddy the ally deepest in enemy territory (most rosters contain a lone strong pusher).
 - Ideas not done: Lich Ice Spear (6.33 tiles) snipes gate towers from outside their 6.0 range via castTarget (towers are valid spell targets);
   all-in timing; STUCK counts are high (tower collision footprints).
 
