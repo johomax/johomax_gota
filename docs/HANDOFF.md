@@ -45,7 +45,7 @@
   also for the Crossbowman: seat-1 batches vs v68 queued (local reference seed: 26893 ticks/18 deaths vs v49a's 9665/2 — v62's weakest-lane
   switch seems to pull the Crossbowman out of its lane). v72 (:v72) = v68 with that switch disabled for the Crossbowman: reproduces v49a's reference game exactly (9665/2 deaths); seat-1 batch
   result 13/48 vs v68 15/48 and v71 17/48 (all within noise; the exemption rests on the local reproduction). v70 support seats (VK/Druid)
-  10/72 vs v68 6/72 (mildly positive). v73 (:v73) = v72 + v70: duel vs v68 queued; promote if it is not worse. v62 ten-seat: 49/240 (Xbow 11/24; every other seat 1-8/24, i.e. base rate);
+  10/72 vs v68 6/72 (mildly positive). v73 (:v73) = v72 + v70: 54/62/4 vs v68 under game version 34 (dropped). v62 ten-seat: 49/240 (Xbow 11/24; every other seat 1-8/24, i.e. base rate);
   v62 vs v49a 240 games 43/45 -> everything since v49a is within noise of each other. Also queued: v66 (:v61, weakest-lane
   check every 300 ticks from 1500, 10% margin) vs v62, and v67 (:v62, tunnel-vision all-in: attack the tower even with heroes adjacent,
   fight only kill shots) vs v62. Results: v66 23/33/64 (dropped), v67 25/39/56 (dropped: fighting adjacent heroes during dives matters).
