@@ -26,7 +26,6 @@ def parse_seats(s):
     return out
 
 def create(c, ref, seats, n, tag):
-    out = {"candidate": ref, "n": n, "requests": []}
     for seat in seats:
         roster = [{"player": ({"policy_ref": ref} if s == seat else {"random": True}), "slot": s} for s in range(10)]
         body = {"target": {"league_id": LEAGUE}, "roster": roster, "num_episodes": n,
@@ -46,12 +45,11 @@ def create(c, ref, seats, n, tag):
             continue
         time.sleep(1)
         print("created", d["id"], "seat", seat)
-        out["requests"].append({"id": d["id"], "seat": seat})
-    path = ROOT / "xp" / f"{tag}.json"
-    if path.exists():
-        old = json.load(open(path)); out["requests"] = old.get("requests", []) + out["requests"]
-    json.dump(out, open(path, "w"), indent=1)
-    print("saved", path)
+        path = ROOT / "xp" / f"{tag}.json"
+        cur = json.load(open(path)) if path.exists() else {"candidate": ref, "n": n, "requests": []}
+        cur["requests"].append({"id": d["id"], "seat": seat})
+        json.dump(cur, open(path, "w"), indent=1)
+    print("saved", ROOT / "xp" / f"{tag}.json")
 
 def report(c, paths):
     tot = {}
