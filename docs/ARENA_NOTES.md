@@ -2,7 +2,12 @@
 
 Game version 2026.9.14.3 (map generation changed on 2026-09-14; older wiki/book assume 64x64). Source commit 275ba23.
 
-## GAME VERSION 33 (league coworld cow_252fb6a6-cbc3-4d4f-9fa2-8b5250a9d2a2, 2026.9.15.1, since ~2026-09-15 early UTC)
+## GAME VERSION 34 (league coworld cow_d4827721-d640-4296-b7ff-13b1d8c3bdf0, 2026.9.15.2, since ~2026-09-15 20:30 UTC)
+- Rebalance: towers 900/1200/1800 HP, damage 18/24/30 per 24 ticks (version 33 had 1200/2400/4800 and 28/56/112; the original 600/800/1000
+  and 14/18/22). Ranges unchanged. Lion Guard heal 30, Mana Crystal restore 24. Games end decisively again (4 timeouts in 119 duel games).
+- Engine commits: a6112c5 "Rebalance GotA heroes and towers", d915109 (body separation without navigation/sqrt). Replay version 34.
+
+## GAME VERSION 33 (league coworld cow_252fb6a6-cbc3-4d4f-9fa2-8b5250a9d2a2, 2026.9.15.1, 2026-09-15 ~00:00-20:30 UTC)
 - Towers: HP 1200/2400/4800 (was 600/800/1000), damage 28/56/112 per 24 ticks (was 14/18/22); ranges unchanged 5.0/5.5/6.0 tiles.
   A gate tower one-shots footmen and kills a level-1 hero in 3-5 shots. Crossbowman (6.5) still out-ranges every tower; Ranger/Lich (5.5)
   only the outer tower. Heroes/creeps now collide with tower footprints (radii 0.42/0.55/0.70 tiles); creeps resume lane paths after fights.
