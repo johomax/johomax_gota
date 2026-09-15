@@ -27,17 +27,22 @@ uv run coworld xp-request create xp/candidate.json
 uv run coworld submit <name>:vN -l league_3c60897b-25cf-4b37-9d1a-8554c1198f28
 ```
 
-## Current status (2026-09-14 ~23:55 UTC)
+## Current status (2026-09-15 ~00:30 UTC)
 - **Regime:** league seating is `distinct_teammates` (one hero per entrant, 12 episodes per round, rounds every 32 min, Elo K=4).
-  Measure everything with ten-seat random-roster hosted tests: `uv run python tools/xp_mixed.py create <label> --seats 0-9 -n 24 --tag t`,
-  `report xp/t.json`. A random champion wins 41% as Red / 59% as Blue (Blue classes are stronger); 240-game SE is ~3.2%.
-- **Champion:** v30 = `Jordan:v28` (submitted 23:45 UTC, auto-champion). Ladder: rank 5, 1543 MMR after 7 rounds (played by v19).
-- Ten-seat results (wins/240 unless noted): v19 132 (55%), v24 (=v19+telemetry) 106/192 (55%), v23 solo mode 108 (45%),
-  v25 ranged siege safety 122 (51%), v26 fight odds 141 (59%), v27 open-lane switching 132 (55%), v28 wave-gated siege 137 (57%),
-  v29 no home guard 99/192 (52%), **v30 no home guard + no ally hold 146 (61%)**. Queued: v31 potions-first economy, v32 fight on our half,
-  v33 footman farming, v34 = v30+v26+v28, v30 replication.
-- Telemetry (tools/log_stats.py on v24): 2.3 deaths/game, 80% of deaths to 1-2 enemy heroes at the enemy inner/gate tower with no allies
-  near; time budget 46% walking, 10% home guard, 10% ally hold, 9% siege, 8% hero fights. Removing the waiting (v30) is the only clear gain so far.
+  Measure with ten-seat random-roster hosted tests (`tools/xp_mixed.py create/report`) and, for decisions, head-to-head duels
+  (`tools/xp_mixed.py duel CAND CTRL`: candidate and control in mirrored seats of the same games). The random-champion pool drifts as
+  other players upload (relh v34->v37, red-kite v10->v11, black-kite v6->v7 tonight), so absolute win rates from different hours are
+  NOT comparable: the v30 replication moved from 51% to 62% on Red within an hour. 240-game SE is ~3.2%.
+- **Champion:** v30 = `Jordan:v28` (v19 without post-respawn home guard and ally hold). Ladder: rank 5, 1556 MMR after 8 rounds; round 271
+  (first with v30) 7/9.
+- Ten-seat results (wins/240 unless noted; earlier batches first): v19 132 (55%), v24 (=v19) 106/192, v23 solo 108 (45%), v25 122, v26 141,
+  v27 132, v28 137, v29 99/192, v30 146 (61%), v31 potions 142, v32 fight-on-our-half 131, v33 farming 137, v34 (v30+v26+v28) 218/384 (57%),
+  v35 mid lane 104/168 so far (62%), v37 group follow 65/120 Red, v38 fort-at-any-distance 264/452 (58%), v39 damage-first shop 139 (58%),
+  v30 replication (Red seats 0-2) 45/72 (62%). Duels vs v30 queued for v35, v38, v40 (farm-then-push); Codex S11 (defend base) in progress.
+- Evidence (tools/replay_lanes.py, tools/field_behavior.py, 432 games): winners' heroes always attack the fort, 3-5 of them; mid decides 42% of
+  games; four entrants camp mid (base, richard, khors, daf), red-kite/black-kite push one side lane with a damage-first shop and farm first;
+  Aaron is the weakest marginal contributor in random rosters. Our deaths: 2.3/game, 80% to 1-2 heroes deep in the enemy lane.
+- BASIC gotcha: a blank line directly before `end if`/`wend` is a compile error (see docs/WORKER_BRIEF2.md).
 
 ## Strategy log (hosted = league coworld cow_975af671, 116x116 map)
 - v1 blitz (mid, 5-stack): lost 0/4 to baseline (dove towers without waves, retreated home at 25% HP; no HP regen in this game).
