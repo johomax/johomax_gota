@@ -2,7 +2,14 @@
 
 Game version 2026.9.14.3 (map generation changed on 2026-09-14; older wiki/book assume 64x64). Source commit 275ba23.
 
-## GAME VERSION 34 (league coworld cow_d4827721-d640-4296-b7ff-13b1d8c3bdf0, 2026.9.15.2, since ~2026-09-15 20:30 UTC)
+## GAME VERSION 36 (league coworld cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870, 2026.9.15.3, since ~2026-09-15 23:20 UTC)
+- No balance change vs version 34 (towers 900/1200/1800 HP, 18/24/30 dmg). Creep lanes now route around tower collision footprints.
+- New BASIC observations (bots.nim, 16 work each): objectLevel(i), objectMana(i), objectItemId(i, slot?), objectItemCount, objectFacingX/Y(i),
+  objectVelX/Y(i), objectTarget(i) = the object's current attack-target id if that target is visible to us (0 otherwise; a tower's targetId
+  is exposed while it lives), spellCount() and spellAbility/spellCasterId/spellX/spellY/spellImpactTick(k) for pending enemy area spells.
+  Also itemCount(slot). Local reference games on this coworld: v76 DK solo 11141 ticks/3 deaths, Xbow 5636/1.
+
+## GAME VERSION 34 (league coworld cow_d4827721-d640-4296-b7ff-13b1d8c3bdf0, 2026.9.15.2, 2026-09-15 ~20:30-23:20 UTC)
 - Rebalance: towers 900/1200/1800 HP, damage 18/24/30 per 24 ticks (version 33 had 1200/2400/4800 and 28/56/112; the original 600/800/1000
   and 14/18/22). Ranges unchanged. Lion Guard heal 30, Mana Crystal restore 24. Games end decisively again (4 timeouts in 119 duel games).
 - Engine commits: a6112c5 "Rebalance GotA heroes and towers", d915109 (body separation without navigation/sqrt). Replay version 34.
