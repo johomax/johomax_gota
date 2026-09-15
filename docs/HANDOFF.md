@@ -6,7 +6,8 @@
   (see docs/ARENA_NOTES.md top). Tools retargeted; v76 verified locally (DK 11141 ticks/3 deaths, Xbow 5636/1 on seed 2026).
 - `uv run python tools/coworld_check.py` reports the league coworld and engine head and warns on change (state in tmp/coworld_check.json).
 - Champion stays v76 (`Jordan:v76`). Running: sanity duel v76 vs v68 (240, on v36); v82 (:v82, Codex S28) = v76 + target-aware siege using
-  objectTarget (siege while the tower shoots someone else; step out below 45% HP when it targets me): smoke/upload/duel vs v76 chained.
+  objectTarget (siege while the tower shoots someone else; step out below 45% HP when it targets me): local reference game 4807 ticks /
+  0 deaths vs v76's 11141/3 — duel vs v76 queued (promote quickly if it holds). Sanity duel v76 vs v68 on v36: 117/121 (level).
 
 ## GAME VERSION 34 (since ~20:30 UTC 2026-09-15) — read first
 - League coworld is now `cow_d4827721-d640-4296-b7ff-13b1d8c3bdf0` (2026.9.15.2, game version 34): towers 900/1200/1800 HP, 18/24/30 dmg
