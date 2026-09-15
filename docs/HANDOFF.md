@@ -1,16 +1,16 @@
 # HANDOFF — Gods of the Arena policy project (paused 2026-09-15, 00:45 UTC at the user's request)
 
-## Current state (2026-09-15 18:15 UTC) — GAME VERSION 33 changed everything
-- League coworld is now `cow_252fb6a6-cbc3-4d4f-9fa2-8b5250a9d2a2` (2026.9.15.1, game version 33): towers 1200/2400/4800 HP, 28/56/112 dmg,
-  ranges unchanged. 61% of league games time out (0 for all). Our champion v30 (`Jordan:v28`) won 9/41 there; ladder rank 7, 1483 MMR.
-  Details: docs/ARENA_NOTES.md top section; engine source in tmp/engine_new (from source/polyworld origin/main).
-- Local opponent base.bas beats five v45/v46 clones by grinding the mid gate for 20,000 ticks; our heroes abandon the gate (lane switch/rejoin)
-  and wait for waves. Lesson: commit to one lane, never wait once allies are present, and a Crossbowman can solo towers from 6.5 tiles.
-- Candidates: v45 tower-safe siege (uploaded :v42), v46 + mass dive/all-in/damage shop (:v43), v47 = v46 + long-range kiting (Codex S13,
-  local Xbow game: 5 tower kills, 13 deaths, timed out because rejoin kept switching lanes), v48a/b and v49a/b = commitment (no lane switch,
-  no rejoin, all-in from one ally or tick 12000), b = mid lane for everyone except the Crossbowman. Local tests running/queued in runs/.
-- Hosted: ten-seat 120-game checks of v45 (:v42) and v46 (:v43) in flight (games are long now; expect ~30+ min).
-- Next: pick the best of v48/v49 locally, upload, duel vs v30, promote quickly (v30 is clearly maladapted).
+## Current state (2026-09-15 18:35 UTC) — GAME VERSION 33
+- League coworld `cow_252fb6a6` (2026.9.15.1, game version 33): towers 1200/2400/4800 HP, 28/56/112 dmg; 55-61% of games time out.
+  Details: docs/ARENA_NOTES.md top section; new engine source in tmp/engine_new (source/polyworld origin/main).
+- **Champion: v49a = `Jordan:v44`** (promoted 18:13 UTC): tower-safe siege, long-range kiting, damage-first shop, lane commitment, all-in from
+  tick 12000. Duel vs v30: 30 wins / 20 control wins / 70 timeouts (120 games). Crossbowman seat wins 50% (the carry); other classes ~20%.
+- Local truth on the new coworld: a lone v49a Crossbowman beats nine base.bas heroes (tick 9665); five committed clones win at tick 27402;
+  mid-lane variants (v48b/v49b) time out; solo melee vs base loses. Local games take 5-10 min each; do not run two run-episode at once.
+- In flight (hosted duels vs v49a, 120 games each): v50 farm-when-idle (:v45), v51 join allied side-lane pusher (:v46). v52 (:v47, all-damage
+  shop + mana potions for Crossbowman/Ranger/Lich) being smoke-tested, then seat 1/2/6 batches v52-lr vs v49a-lr.
+- Ideas not done: Lich Ice Spear (6.33 tiles) snipes gate towers from outside their 6.0 range via castTarget (towers are valid spell targets);
+  all-in timing; STUCK counts are high (tower collision footprints).
 
 ## Read first
 1. `docs/ARENA_NOTES.md` — verified mechanics, map coordinates, host API, BASIC dialect gotchas, opponent habits, engineering lessons.
