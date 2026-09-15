@@ -7,8 +7,10 @@
   tick 12000. Duel vs v30: 30 wins / 20 control wins / 70 timeouts (120 games). Crossbowman seat wins 50% (the carry); other classes ~20%.
 - Local truth on the new coworld: a lone v49a Crossbowman beats nine base.bas heroes (tick 9665); five committed clones win at tick 27402;
   mid-lane variants (v48b/v49b) time out; solo melee vs base loses. Local games take 5-10 min each; do not run two run-episode at once.
-- In flight (hosted duels vs v49a, 120 games each): v50 farm-when-idle (:v45), v51 join allied side-lane pusher (:v46). v52 (:v47, all-damage
-  shop + mana potions for Crossbowman/Ranger/Lich) being smoke-tested, then seat 1/2/6 batches v52-lr vs v49a-lr.
+- Duels vs v49a (120 shared games; candidate wins / control wins / timeouts): v50 farm idle 23/24/73 (wash), v51 join allied pusher 29/21/70,
+  v53 all-in from tick 4000 23/16/81, v52 long-range shop dropped (slower local Crossbowman game; seat batches 19/72 vs 17/72).
+  Running: v54 tower bait (:v49), v51 replication, v55 = v51+v53 (:v50), v56 = v55 with all-in from tick 600 (:v51).
+  Plan: promote v55 or v56 if the duel confirms a gain over v49a; otherwise keep v49a.
 - Ideas not done: Lich Ice Spear (6.33 tiles) snipes gate towers from outside their 6.0 range via castTarget (towers are valid spell targets);
   all-in timing; STUCK counts are high (tower collision footprints).
 
