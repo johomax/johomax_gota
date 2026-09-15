@@ -1,0 +1,18 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v47",
+ "n": 24,
+ "requests": [
+  {
+   "id": "xreq_3c8a4fab-aabe-404f-925f-122b31396263",
+   "seat": 1
+  },
+  {
+   "id": "xreq_a3f14306-a0e6-4e1c-8434-f5c966b74de9",
+   "seat": 2
+  },
+  {
+   "id": "xreq_8b8277d2-419e-4afb-b3d1-c567dcfe60d3",
+   "seat": 6
+  }
+ ]
+}
