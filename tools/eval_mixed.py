@@ -6,7 +6,7 @@ plus N seeds of pure filler for the baseline team win rate. Prints the candidate
 """
 import argparse, json, os, subprocess, sys, time, pathlib, fcntl
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-MANIFEST = ROOT / "coworld/cow_0752b441-af96-421d-8a1e-f8365a95e022/coworld_manifest.json"
+MANIFEST = ROOT / "coworld/cow_9d9d7070-2210-4899-81de-f39401b32162/coworld_manifest.json"
 def run(seats, n, out):
     cmd = ["uv","run","coworld","run-episode",str(MANIFEST)] + seats + ["-o",str(out),"-n",str(n),"--timeout-seconds","900","--variant","competition"]
     env = dict(os.environ, DOCKER_DEFAULT_PLATFORM="linux/amd64")
