@@ -3,7 +3,9 @@
 ## GAME VERSION 34 (since ~20:30 UTC 2026-09-15) — read first
 - League coworld is now `cow_d4827721-d640-4296-b7ff-13b1d8c3bdf0` (2026.9.15.2, game version 34): towers 900/1200/1800 HP, 18/24/30 dmg
   (version 33 had 1200/2400/4800 and 28/56/112). Games end decisively again (4 timeouts in 119). Round 310 failed during the switch.
-- **Champion: v75 = `Jordan:v75`** (promoted 21:47 UTC) = v68 + go for the enemy fort whenever it is exposed and visible, at any distance:
+- **Champion: v76 = `Jordan:v76`** (promoted 22:48 UTC) = v75 + head for an enemy fort as soon as its lane's gate is known dead, before the fort
+  is visible: 64-54 and 65-53 vs v75 (129-107 over 240). v78 = v76 + defend-own-fort (v77) was exact parity 120-117, so v77's rule is dropped.
+  Previous: v75 = `Jordan:v75` (promoted 21:47 UTC) = v68 + go for the enemy fort whenever it is exposed and visible, at any distance:
   65-47 then 112-121 vs v68 (177-168 over 360: level with v68; kept as base). Round 312 (first with v75): 1510 MMR, rank 6.
   v76 (:v76, head for a fort once its gate is known dead) 64/54 vs v75; v77 (:v77, defend our exposed fort) 64/56 vs v75 — both first
   batches. v78 (:v78) = v77 + v76: 240-game duel vs v75 queued; v76 replication queued. Promote v78 if >= +8 over 240. v76 (:v76) = v75 + head for an enemy fort as soon as its
