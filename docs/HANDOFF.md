@@ -16,7 +16,10 @@
   (Lich 0/24, Ranger 1/24) — posting instead of fighting loses; dropped. v53 replication 23/18 (total 46-34 over 240, modest).
   v58 (:v53, Codex S19) buddy the deepest ally: 20/25 vs v49a (dropped). v51 third batch 30/18 -> promoted (91-66 over 360).
   v59 (:v54, Codex S20) Crossbowman survival: seat-1 batches 10/48 vs v49a 15/48 (dropped; caution loses every time).
-  v60 (:v55) = v51 with the join rule covering mid too: duel vs v51 running. v61 (:v56) = v51 without Crossbowman kiting: seat-1 batches queued.
+  v60 (:v55) = v51 with the join rule covering mid too: 21/22 vs v51 (wash, dropped). v61 (:v56) = v51 without Crossbowman kiting:
+  seat-1 batches vs v51 running (local single-seed game says kiting helps: 9665/2 deaths with it, 18945/10 without).
+  v62 (Codex S21) = v51 + switch to the lane whose enemy towers have the least remaining HP (from tick 6000) — being written.
+  Local games are deterministic per seed (verified), so single local games are exact seed-specific A/Bs.
 - Ideas not done: Lich Ice Spear (6.33 tiles) snipes gate towers from outside their 6.0 range via castTarget (towers are valid spell targets);
   all-in timing; STUCK counts are high (tower collision footprints).
 
