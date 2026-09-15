@@ -3,8 +3,9 @@
 ## Current state (2026-09-15 18:35 UTC) — GAME VERSION 33
 - League coworld `cow_252fb6a6` (2026.9.15.1, game version 33): towers 1200/2400/4800 HP, 28/56/112 dmg; 55-61% of games time out.
   Details: docs/ARENA_NOTES.md top section; new engine source in tmp/engine_new (source/polyworld origin/main).
-- **Champion: v62 = `Jordan:v57`** (promoted 19:17 UTC; v51 + from tick 6000 switch to the lane whose enemy towers have the least remaining
-  HP; 33-21 vs v51 over 120 duel games, replication running — revert to `Jordan:v46` (v51) if it fails).
+- **Champion: v68 = `Jordan:v63`** (promoted 20:29 UTC; v62 + Red non-Crossbowman heroes escort the allied Crossbowman while it pushes;
+  102-85 vs v62 over 360 duel games, positive in both batches). v69 (:v64, escort only while the Crossbowman sieges/is threatened) is dueling v62.
+  Previous: v62 = `Jordan:v57` (v51 + weakest-lane switch; 63-56 vs v51 over 240, 43-45 vs v49a over 240 — parity).
   Previous: v51 = `Jordan:v46` (promoted 19:00 UTC; v49a + join an allied side-lane push; 91-66 vs v49a over 360 duel games).
   Previous: v49a = `Jordan:v44` (promoted 18:13 UTC): tower-safe siege, long-range kiting, damage-first shop, lane commitment, all-in from
   tick 12000. Duel vs v30: 30 wins / 20 control wins / 70 timeouts (120 games). Crossbowman seat wins 50% (the carry); other classes ~20%.
