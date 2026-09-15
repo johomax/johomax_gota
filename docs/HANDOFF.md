@@ -1,4 +1,15 @@
-# HANDOFF — Gods of the Arena policy project (updated 2026-09-15, 00:40 UTC)
+# HANDOFF — Gods of the Arena policy project (paused 2026-09-15, 00:45 UTC at the user's request)
+
+## Stop state (read this first)
+- Champion: v30 = `Jordan:v28` (auto-champion). Ladder rank 5, 1556 MMR after 8 rounds; round 271 (first with v30) 7/9.
+- Duel results: v35 mid lane vs v30 = 120/240 (wash). Partially created when paused: duel-v38-v30 (10 requests), duel-v41-v30 (9),
+  duel-v40-v30 (3), duel-v43-v30 (1), duel-v30-v19 (0). Recover/refresh with `uv run python tools/xp_recover.py` then
+  `uv run python tools/xp_mixed.py report xp/duel-*.json`; complete the missing seats with `tools/xp_mixed.py duel ... --seats N` (same tag).
+- policy/v44.bas (Codex task S12, hold at the fallen outer tower) was written but NOT smoke-tested or uploaded: run
+  `uv run coworld run-episode ./coworld/cow_9d9d7070-2210-4899-81de-f39401b32162/coworld_manifest.json policy/v44.bas <9x policy/base.bas> --variant competition -o runs/v44-smoke`
+  and grep the log for `BASIC error` before uploading (`uv run coworld upload-policy --file policy/v44.bas --tag version=v44` -> label :v42).
+- No local background jobs are running. Hosted requests already created will finish on their own.
+
 
 ## Where things stand (solo-hero regime)
 - **Champion:** v30 = `Jordan:v28` (submitted 23:50 UTC, placed, auto-champion always). v30 = v19 minus the post-respawn home guard and
