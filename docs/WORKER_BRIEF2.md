@@ -41,6 +41,8 @@ Idle hero (no move/attack target) auto-attacks CREEPS only within its range (mel
 ## BASIC dialect (compile errors fail the episode)
 - Identifiers are CASE-INSENSITIVE and share one namespace (scalar `ox` clashes with array `oX`). No `elseif`, no `for`, no single-line if.
   Blocks: `if c then` / `else` / `end if`; `while c` / `wend`. `sub name(a,b)` ... `end sub`, no return values (write globals). `exit sub` ok.
+- A BLANK LINE directly before `end if` or `wend` is a compile error (the parser checks the terminator before skipping newlines): the
+  closing `end if`/`wend` must immediately follow the last statement line of the block.
 - `dim arr(N)` only at top level. Globals persist across ticks; sub params are local. int32 only; `and`/`or` do NOT short-circuit;
   division by zero kills the VM for the match (guard every divisor). Comments with `'`. No strings except in print.
 - Distances: the code uses squared tile distances (d2). Keep that style.

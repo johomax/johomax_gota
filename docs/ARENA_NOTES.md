@@ -54,7 +54,7 @@ The participate guide names cow_d7a245f0 (2026.9.14.2, a 128x128 map) but the le
 - terrainKind/Walkable/Height/WaterDepth(x,y) [32 work each] (+At(x,y,layer)).
 - Idle hero (no move target, no attack target) auto-acquires CREEPS ONLY: melee within 2.5 tiles, ranged within its range.
 - Limits per decision: 20,000 instructions, 50,000 work units, 128 print events, 1024 print bytes. Division by zero = VM dies for the match.
-  Syntax: int32 only; `while/wend`, `if/then/else/end if` (no elseif, no for), `sub name(a,b) ... end sub` (no return values), `dim a(N)` top-level,
+  Syntax gotcha: a blank line directly before `end if`/`wend` fails to compile ("unexpected block terminator"). int32 only; `while/wend`, `if/then/else/end if` (no elseif, no for), `sub name(a,b) ... end sub` (no return values), `dim a(N)` top-level,
   `call`/direct sub call, `mod`, `and/or/not/xor` (no short-circuit), comments with `'` or `rem`. Globals persist across ticks. No strings.
 
 ## Items (id: effect, cost) — damage/HP apply to ANY class
