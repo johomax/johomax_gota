@@ -46,7 +46,10 @@ uv run coworld submit <name>:vN -l league_3c60897b-25cf-4b37-9d1a-8554c1198f28
 - **Champion since 19:17 UTC: v62 = `Jordan:v57`** (v51 + switch to the lane whose enemy towers have the least remaining HP from tick 6000;
   33-21 vs v51 over 120 shared games, replication running). Before that (19:00 UTC): v51 = `Jordan:v46` (v49a + join an allied side-lane push): three duel batches vs v49a 29/21, 32/27, 30/18
   = 91 wins vs 66 over 360 shared games. v58 buddy-the-deepest-ally 20/25 (dropped). v59 Crossbowman survival in seat-1 batches.
-- Labels: v50=:v45, v51=:v46, v52=:v47, v53=:v48, v54=:v49, v55=:v50, v56=:v51, v57=:v52, v58=:v53, v59=:v54.
+- Since then (candidate/control per 120 shared games): v62 weakest-lane replication 30/35 (v62 total 63-56 over 240; kept as base),
+  v63 join-mid-brawl 17/27 (dropped), v64 opportunistic tower spells no signal, v65 (weakest-lane check from tick 3000, 20% margin)
+  39/26 vs v62 -> replication and v65-vs-v51 cross-check running; v66 pushes the same knobs further (built, awaiting v65's verdict).
+- Labels: v50=:v45 ... v59=:v54, v60=:v55, v61=:v56, v62=:v57, v63=:v58, v64=:v59, v65=:v60, v66=:v61.
 
 ## Strategy log (hosted = league coworld cow_975af671, 116x116 map)
 - v1 blitz (mid, 5-stack): lost 0/4 to baseline (dove towers without waves, retreated home at 25% HP; no HP regen in this game).
