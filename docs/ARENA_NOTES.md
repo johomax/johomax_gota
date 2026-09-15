@@ -9,7 +9,8 @@ Game version 2026.9.14.3 (map generation changed on 2026-09-14; older wiki/book 
 - Observed league games end by fort kill in 3,500-12,500 ticks. Even with all heroes idle, footmen alone
   kill a fort in ~8,000 ticks (probe run). Timeouts are rare now; the game is a race + fights.
 
-## Map (CURRENT league coworld cow_0752b441-af96-421d-8a1e-f8365a95e022, version 2026.9.14.4 (cow_0752b441; same map hash 6EB3A6B3 as 2026.9.14.3), map_size 116)
+## Map (CURRENT league coworld cow_9d9d7070-2210-4899-81de-f39401b32162, version 2026.9.14.5, game version 30, map hash 48422D57, map_size 116;
+## changed from cow_0752b441 / hash 6EB3A6B3 around 2026-09-15 00:00 UTC — towers, forts and spawns are at the SAME coordinates, terrain differs)
 The participate guide names cow_d7a245f0 (2026.9.14.2, a 128x128 map) but the league's hosted episodes run cow_975af671
 (map hash 000000006EB3A6B3). Always test with `coworld/cow_975af671-.../coworld_manifest.json --variant competition`.
 - Coordinates 0..115 (mapWidth = mapHeight = 116). Walkable: grass=1, road=2, marsh=5; NOT rock=3, trees=4, wall=6. Roads ~6 tiles wide.
