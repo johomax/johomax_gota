@@ -19,7 +19,8 @@
   v60 (:v55) = v51 with the join rule covering mid too: 22/24 vs v51 (wash; its mid condition rarely fired because campers sit ~17 tiles
   from the mid towers). v61 (:v56) = v51 without Crossbowman kiting: seat-1 batches 20/48 vs v51 18/48 (no signal; kiting kept).
   v63 = v51 + join the mid brawl when 2+ allies are within 20 tiles of the map centre: duel vs v51 queued.
-  v62 (Codex S21) = v51 + switch to the lane whose enemy towers have the least remaining HP (from tick 6000) — being written.
+  v62 (:v57, Codex S21) = v51 + switch to the lane whose enemy towers have the least remaining HP (from tick 6000): duel vs v51 26/15 after
+  100 games; replication queued (duel-v62-v51-2). v63 (:v58) join-the-mid-brawl dueling; v64 (Codex S22) opportunistic tower spells being written.
   Local games are deterministic per seed (verified), so single local games are exact seed-specific A/Bs.
 - Ideas not done: Lich Ice Spear (6.33 tiles) snipes gate towers from outside their 6.0 range via castTarget (towers are valid spell targets);
   all-in timing; STUCK counts are high (tower collision footprints).
