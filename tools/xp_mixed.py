@@ -54,6 +54,8 @@ def create(c, ref, seats, n, tag):
 def report(c, paths):
     tot = {}
     for path in paths:
+        if not pathlib.Path(path).exists():
+            print(f"== {path}: no requests yet"); continue
         d = json.load(open(path))
         by_seat = {}
         pending = 0
