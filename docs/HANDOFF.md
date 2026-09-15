@@ -3,7 +3,9 @@
 ## Current state (2026-09-15 18:35 UTC) — GAME VERSION 33
 - League coworld `cow_252fb6a6` (2026.9.15.1, game version 33): towers 1200/2400/4800 HP, 28/56/112 dmg; 55-61% of games time out.
   Details: docs/ARENA_NOTES.md top section; new engine source in tmp/engine_new (source/polyworld origin/main).
-- **Champion: v68 = `Jordan:v63`** (promoted 20:29 UTC; v62 + Red non-Crossbowman heroes escort the allied Crossbowman while it pushes;
+- **Labels now equal file numbers.** Platform versions auto-increment per policy name (a ':' in --name is rejected), so v66-v70 were
+  re-uploaded in order to land as :v66-:v70; from now on upload every policy file exactly once, in numeric order, and the label matches.
+- **Champion: v68 = `Jordan:v68`** (same bytes as the earlier :v63; promoted 20:29 UTC, re-pointed to :v68 at 20:36; v62 + Red non-Crossbowman heroes escort the allied Crossbowman while it pushes;
   102-85 vs v62 over 360 duel games, positive in both batches). v69 (:v64, escort only while the Crossbowman sieges/is threatened) is dueling v62.
   Previous: v62 = `Jordan:v57` (v51 + weakest-lane switch; 63-56 vs v51 over 240, 43-45 vs v49a over 240 — parity).
   Previous: v51 = `Jordan:v46` (promoted 19:00 UTC; v49a + join an allied side-lane push; 91-66 vs v49a over 360 duel games).

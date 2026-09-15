@@ -43,7 +43,8 @@ uv run coworld submit <name>:vN -l league_3c60897b-25cf-4b37-9d1a-8554c1198f28
   v51 replication 32/27/61 (total 61-48), v55 = v51+v53 27/26/67, v56 = v55 all-in from tick 600 29/25/66. Nothing clears the noise
   floor (SE ~5 per 120), so v49a stays champion. v57 spell posts (Ranger/Arcanist/Lich hit towers with area spells from 7-8 tiles;
   verified: inner tower loses ~0.4 HP/tick) is in a caster-seat duel. Round 306, first with v49a: 1480 MMR, rank 7.
-- **Champion since 20:29 UTC: v68 = `Jordan:v63`** (v62 + Red non-Crossbowman heroes escort the allied Crossbowman; 102-85 vs v62 over 360
+- Labels equal file numbers from v66 on (v66-v70 re-uploaded in order; earlier: v50=:v45 ... v65=:v60).
+- **Champion since 20:29 UTC: v68 = `Jordan:v68`** (also uploaded earlier as :v63) (v62 + Red non-Crossbowman heroes escort the allied Crossbowman; 102-85 vs v62 over 360
   shared games). Before that (19:17 UTC): v62 = `Jordan:v57` (v51 + switch to the lane whose enemy towers have the least remaining HP from tick 6000;
   33-21 vs v51 over 120 shared games, replication running). Before that (19:00 UTC): v51 = `Jordan:v46` (v49a + join an allied side-lane push): three duel batches vs v49a 29/21, 32/27, 30/18
   = 91 wins vs 66 over 360 shared games. v58 buddy-the-deepest-ally 20/25 (dropped). v59 Crossbowman survival in seat-1 batches.
