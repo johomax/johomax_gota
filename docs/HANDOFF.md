@@ -5,7 +5,8 @@
   (version 33 had 1200/2400/4800 and 28/56/112). Games end decisively again (4 timeouts in 119). Round 310 failed during the switch.
 - Champion stays v68 (`Jordan:v68`); under v34 it beat v73 62-53 and the old tower-diving v30 68-51 (0 timeouts). v49a vs v68 running.
   v74 (:v74) = v68 with siege allowed on any tower <= 900 HP without cover and all-in from tick 6000: local DK game 15704 ticks/10 deaths vs
-  v68's 27951/17 on the same seed; duel vs v68 queued. Local checks of v68 on the new coworld: runs/v68-v34* (both won).
+  v68's 27951/17 on the same seed; duel vs v68 56/62/2 (dropped). v49a vs v68 58/58/4 (parity). Under v34 nothing beats v68 yet; a ten-seat
+  batch of v68 (v68-seats-v34) is running to find the weak seats under the new balance.
 - Labels equal file numbers from v66 on; upload every new file exactly once in numeric order.
 
 ## Current state (2026-09-15 18:35 UTC) — GAME VERSION 33
