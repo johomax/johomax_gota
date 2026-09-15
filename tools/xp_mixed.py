@@ -51,6 +51,28 @@ def create(c, ref, seats, n, tag):
         json.dump(cur, open(path, "w"), indent=1)
     print("saved", ROOT / "xp" / f"{tag}.json")
 
+def duel(c, cand, ctrl, seats, n, tag):
+    """For each seat s in 0-4: cand at s vs ctrl at s+5, and ctrl at s vs cand at s+5; eight random seats."""
+    for seat in seats:
+        for order in (0, 1):
+            a, b = (cand, ctrl) if order == 0 else (ctrl, cand)
+            roster = [{"player": ({"policy_ref": a} if s == seat else {"policy_ref": b} if s == seat + 5 else {"random": True}), "slot": s} for s in range(10)]
+            body = {"target": {"league_id": LEAGUE}, "roster": roster, "num_episodes": n,
+                    "notes": f"[{tag}] duel {cand} vs {ctrl} candseat {seat + 5 * order}"}
+            d = None
+            for attempt in range(60):
+                try:
+                    d = dump(c.create_experience_request(body)); break
+                except Exception as ex:
+                    if "429" in repr(ex): time.sleep(30)
+                    else: print("create failed", repr(ex)[:200], file=sys.stderr); time.sleep(5)
+            if d is None: continue
+            print("created", d["id"], "cand seat", seat + 5 * order)
+            path = ROOT / "xp" / f"{tag}.json"
+            cur = json.load(open(path)) if path.exists() else {"candidate": cand, "control": ctrl, "duel": True, "n": n, "requests": []}
+            cur["requests"].append({"id": d["id"], "seat": seat + 5 * order}); json.dump(cur, open(path, "w"), indent=1)
+            time.sleep(1)
+
 def report(c, paths):
     tot = {}
     for path in paths:
@@ -76,7 +98,7 @@ def report(c, paths):
                 s = by_seat.setdefault(seat, [0, 0]); s[0] += w; s[1] += 1
         tw = sum(v[0] for v in by_seat.values()); tg = sum(v[1] for v in by_seat.values())
         rw_ = sum(v[0] for k, v in by_seat.items() if k < 5); rg = sum(v[1] for k, v in by_seat.items() if k < 5)
-        print(f"== {path} {d['candidate']}")
+        print(f"== {path} {d['candidate']}" + (f"  DUEL vs {d['control']}" if d.get("duel") else ""))
         print("   " + "  ".join(f"s{k}({CLASSES[(k % 5) + (5 if k < 5 else 0)]}) {v[0]}/{v[1]}" for k, v in sorted(by_seat.items())))
         print(f"   Red {rw_}/{rg}  Blue {tw - rw_}/{tg - rg}  TOTAL {tw}/{tg} = {tw / tg if tg else 0:.3f}  pending={pending}")
         tot[path] = (tw, tg)
@@ -86,7 +108,9 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser(); sub = ap.add_subparsers(dest="cmd")
     cr = sub.add_parser("create"); cr.add_argument("ref"); cr.add_argument("--seats", default="0-9"); cr.add_argument("-n", type=int, default=12); cr.add_argument("--tag", required=True)
     rp = sub.add_parser("report"); rp.add_argument("paths", nargs="+")
+    du = sub.add_parser("duel"); du.add_argument("cand"); du.add_argument("ctrl"); du.add_argument("--seats", default="0-4"); du.add_argument("-n", type=int, default=24); du.add_argument("--tag", required=True)
     a = ap.parse_args()
     with CoworldApiClient.from_login(server_url=get_api_server()) as c:
         if a.cmd == "create": create(c, a.ref, parse_seats(a.seats), a.n, a.tag)
+        elif a.cmd == "duel": duel(c, a.cand, a.ctrl, parse_seats(a.seats), a.n, a.tag)
         else: report(c, a.paths)

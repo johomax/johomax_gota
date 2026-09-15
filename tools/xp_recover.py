@@ -22,7 +22,13 @@ def main():
                 e = dump(e); seen += 1
                 det = dump(c.get_experience_request(e["id"]))
                 req = det.get("requested") or {}
-                m = re.match(r"\[([\w.-]+)\] (\S+) seat (\d+)", req.get("notes") or "")
+                notes = req.get("notes") or ""
+                m = re.match(r"\[([\w.-]+)\] duel (\S+) vs (\S+) candseat (\d+)", notes)
+                if m:
+                    tag, ref, ctrl, seat = m.group(1), m.group(2), m.group(3), int(m.group(4))
+                    found.setdefault(tag, {"candidate": ref, "control": ctrl, "duel": True, "n": req.get("num_episodes"), "requests": []})["requests"].append({"id": e["id"], "seat": seat})
+                    continue
+                m = re.match(r"\[([\w.-]+)\] (\S+) seat (\d+)", notes)
                 if not m: continue
                 tag, ref, seat = m.group(1), m.group(2), int(m.group(3))
                 found.setdefault(tag, {"candidate": ref, "n": req.get("num_episodes"), "requests": []})["requests"].append({"id": e["id"], "seat": seat})
@@ -30,7 +36,7 @@ def main():
             if not cursor or not entries: break
     for tag, d in found.items():
         path = ROOT / "xp" / f"{tag}.json"
-        cur = json.load(open(path)) if path.exists() else {"candidate": d["candidate"], "n": d["n"], "requests": []}
+        cur = json.load(open(path)) if path.exists() else {k: v for k, v in d.items() if k != "requests"} | {"requests": []}
         ids = {r["id"] for r in cur["requests"]}
         added = [r for r in d["requests"] if r["id"] not in ids]
         if added:
