@@ -2,6 +2,16 @@
 
 Game version 2026.9.14.3 (map generation changed on 2026-09-14; older wiki/book assume 64x64). Source commit 275ba23.
 
+## GAME VERSION 33 (league coworld cow_252fb6a6-cbc3-4d4f-9fa2-8b5250a9d2a2, 2026.9.15.1, since ~2026-09-15 early UTC)
+- Towers: HP 1200/2400/4800 (was 600/800/1000), damage 28/56/112 per 24 ticks (was 14/18/22); ranges unchanged 5.0/5.5/6.0 tiles.
+  A gate tower one-shots footmen and kills a level-1 hero in 3-5 shots. Crossbowman (6.5) still out-ranges every tower; Ranger/Lich (5.5)
+  only the outer tower. Heroes/creeps now collide with tower footprints (radii 0.42/0.55/0.70 tiles); creeps resume lane paths after fights.
+- Fort HP still 400, FortRange 4.25 tiles, forts do not shoot; fort sight radius 14. Footmen unchanged (60 HP, 12 dmg/32 ticks).
+- Rewards unchanged (footman 25xp/15g, hero 150/100, tower 100/75). Idle auto-acquire is creeps only. Ranger base HP 200 (was 210).
+- Consequence: 61% of league games time out (0 for everyone); decisive games are long group sieges (first gate attack ~tick 10,000,
+  2-5 heroes at the fort). Our v30 died 15-22 times per game there and won 9/41. Engine source for this version: tmp/engine_new/*.nim
+  (from source/polyworld origin/main).
+
 ## Seating / scoring
 - League `team_n` + `team_layout: blocks`: my policy fills ALL 5 seats of one team; opponent fills the other 5.
   Slots 0-4 = Red (team 0), 5-9 = Blue (team 1). Both sides get played across episodes.
