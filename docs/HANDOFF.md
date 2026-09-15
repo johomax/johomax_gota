@@ -3,8 +3,9 @@
 ## GAME VERSION 34 (since ~20:30 UTC 2026-09-15) — read first
 - League coworld is now `cow_d4827721-d640-4296-b7ff-13b1d8c3bdf0` (2026.9.15.2, game version 34): towers 900/1200/1800 HP, 18/24/30 dmg
   (version 33 had 1200/2400/4800 and 28/56/112). Games end decisively again (4 timeouts in 119). Round 310 failed during the switch.
-- Champion stays v68 (`Jordan:v68`); under v34 it beat v73 62-53. Tools/notes retargeted; duels of the old aggressive v30 and v49a vs v68 are
-  running to see which end of the aggression spectrum the new balance favours. Local checks of v68 on the new coworld in runs/v68-v34*.
+- Champion stays v68 (`Jordan:v68`); under v34 it beat v73 62-53 and the old tower-diving v30 68-51 (0 timeouts). v49a vs v68 running.
+  v74 (:v74) = v68 with siege allowed on any tower <= 900 HP without cover and all-in from tick 6000: local DK game 15704 ticks/10 deaths vs
+  v68's 27951/17 on the same seed; duel vs v68 queued. Local checks of v68 on the new coworld: runs/v68-v34* (both won).
 - Labels equal file numbers from v66 on; upload every new file exactly once in numeric order.
 
 ## Current state (2026-09-15 18:35 UTC) — GAME VERSION 33
