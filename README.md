@@ -47,7 +47,8 @@ uv run coworld submit <name>:vN -l league_3c60897b-25cf-4b37-9d1a-8554c1198f28
   v73 54/62, old diver v30 51/69, v49a 58/58, v74 (relaxed gating, all-in 6000) 56/62, v75 (fort at any distance) 65/47 then 112/121
   (level; promoted 21:47 UTC as `Jordan:v75`, kept). vs v75: v76 (fort rush once a gate is known dead) 64/54, v77 (defend own exposed
   fort) 64/56; v76 replication 65/53 (**129-107 over 240 -> promoted 22:48 UTC as `Jordan:v76`**); v78 = v76+v77 120/117 (parity, so the
-  fort-defense rule is dropped). v68 ten-seat under v34: 100/240; v76 ten-seat 127/240. Round 314 (first with v76): 1540 MMR, rank 5.
+  fort-defense rule is dropped). v68 ten-seat under v34: 100/240; v76 ten-seat 127/240. vs v76: v79 (stage near a dying gate) 67/53 then 119/121 (parity),
+  v80 (boots first) 62/58 (parity). Round 314: 1540 (rank 5); round 315: 1511 (rank 7).
 - Labels equal file numbers from v66 on (byte-unique copies of v66-v70 uploaded in order; earlier: v50=:v45 ... v65=:v60, v68 also =:v63).
 - **Champion since 20:29 UTC: v68 = `Jordan:v68`** (also uploaded earlier as :v63) (v62 + Red non-Crossbowman heroes escort the allied Crossbowman; 102-85 vs v62 over 360
   shared games). Before that (19:17 UTC): v62 = `Jordan:v57` (v51 + switch to the lane whose enemy towers have the least remaining HP from tick 6000;
