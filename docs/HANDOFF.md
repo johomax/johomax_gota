@@ -9,7 +9,8 @@
   objectTarget (siege while the tower shoots someone else; step out below 45% HP when it targets me): local reference game 4807 ticks /
   0 deaths vs v76's 11141/3 — but duel vs v76 59/61 (level; local single-seed gains vs base.bas keep failing to transfer). Sanity duel
   v76 vs v68 on v36: 117/121 (level). v83 (:v83, Codex S29) = v82 + fights/flee keyed on enemies actually targeting me: 58/62 vs v76 (level, dropped).
-  v84 (:v84, Codex S30) = v76 + every non-Crossbowman follows the largest allied group: duel vs v76 running.
+  v84 (:v84, Codex S30) = v76 + every non-Crossbowman follows the largest allied group: 53/66 vs v76 (negative, dropped).
+  v82 240-game replication vs v76 running (its first batch 59/61). Round 316: 1489 MMR, rank 8.
 - **Where this stands (23:45 UTC):** the confirmed lineage is v49a (tower-safe siege, kiting, commitment, all-in) -> v51 (join a 2+ ally side
   push, 91-66 over 360) -> v68 (escort the allied Crossbowman, 102-85 over 360) -> v76 (fort rush once a gate is known dead, 129-107 over 240
   vs v75, level vs v68). Since game version 34 every further candidate (v73-v83, 12 of them) landed within noise (+/-5 over 120-240 games),
