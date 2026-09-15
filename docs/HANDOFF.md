@@ -22,8 +22,10 @@
   from the mid towers). v61 (:v56) = v51 without Crossbowman kiting: seat-1 batches 20/48 vs v51 18/48 (no signal; kiting kept).
   v63 = v51 + join the mid brawl when 2+ allies are within 20 tiles of the map centre: duel vs v51 queued.
   v62 (:v57, Codex S21) = v51 + switch to the lane whose enemy towers have the least remaining HP (from tick 6000): duel vs v51 26/15 after
-  120 games 33/21/66 -> promoted; replication at 24/25 after 71 (running). v63 (:v58) join-the-mid-brawl 17/27/76 (dropped).
-  v65 (:v60) = v62 with the weakest-lane check from tick 3000 and a 20% margin: duel vs v62 queued.
+  120 games 33/21/66 -> promoted; replication 30/35/55, so v62 is only 63-56 over 240 (noise; kept as champion/base since it is not worse).
+  v63 (:v58) join-the-mid-brawl 17/27/76 (dropped). v64 (:v59) opportunistic tower spells: caster seats 14/72 vs v51 11/72 (no signal; only
+  ~4 casts per game). v65 (:v60) = v62 with the weakest-lane check from tick 3000 and a 20% margin: 39/26/55 vs v62 -> replication and a
+  v65-vs-v51 cross-check queued; promote v65 if both hold (>= +8).
   v64 (:v59, Codex S22) opportunistic tower spells: caster-seat batches (2,6,7) vs v51 queued.
   Local games are deterministic per seed (verified), so single local games are exact seed-specific A/Bs.
 - Ideas not done: Lich Ice Spear (6.33 tiles) snipes gate towers from outside their 6.0 range via castTarget (towers are valid spell targets);
