@@ -8,7 +8,8 @@
 - Champion stays v76 (`Jordan:v76`). Running: sanity duel v76 vs v68 (240, on v36); v82 (:v82, Codex S28) = v76 + target-aware siege using
   objectTarget (siege while the tower shoots someone else; step out below 45% HP when it targets me): local reference game 4807 ticks /
   0 deaths vs v76's 11141/3 — but duel vs v76 59/61 (level; local single-seed gains vs base.bas keep failing to transfer). Sanity duel
-  v76 vs v68 on v36: 117/121 (level). v83 (:v83, Codex S29) = v82 + fights/flee keyed on enemies actually targeting me: duel vs v76 chained.
+  v76 vs v68 on v36: 117/121 (level). v83 (:v83, Codex S29) = v82 + fights/flee keyed on enemies actually targeting me: uploaded (local 4719/0), duel vs v76 running.
+  v84 (:v84, Codex S30) = v76 + every non-Crossbowman follows the largest allied group (v70's rule for all classes): smoke/upload/duel chained.
 
 ## GAME VERSION 34 (since ~20:30 UTC 2026-09-15) — read first
 - League coworld is now `cow_d4827721-d640-4296-b7ff-13b1d8c3bdf0` (2026.9.15.2, game version 34): towers 900/1200/1800 HP, 18/24/30 dmg
