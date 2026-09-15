@@ -5,7 +5,7 @@
   (version 33 had 1200/2400/4800 and 28/56/112). Games end decisively again (4 timeouts in 119). Round 310 failed during the switch.
 - **Champion: v75 = `Jordan:v75`** (promoted 21:47 UTC) = v68 + go for the enemy fort whenever it is exposed and visible, at any distance:
   65-47 vs v68 over 120 shared games (8 timeouts); 240-game replication running. v76 (:v76) = v75 + head for an enemy fort as soon as its
-  gate is known dead (before it is visible): duel vs v75 queued. v77 (Codex S26) = v75 + defend our own exposed fort — being written. v68 under v34: ten-seat 100/240 (Red 53, Blue 47; seats 7-14/24),
+  gate is known dead (before it is visible): duel vs v75 queued. v77 (:v77, Codex S26) = v75 + defend our own exposed fort when threatened (within 60 tiles, enemy fort not exposed): smoke/upload/duel vs v75 chained. v68 under v34: ten-seat 100/240 (Red 53, Blue 47; seats 7-14/24),
   beat v73 62-53 and the old diver v30 68-51; v49a 58-58 (parity).
   v74 (:v74) = v68 with siege allowed on any tower <= 900 HP without cover and all-in from tick 6000: local DK game 15704 ticks/10 deaths vs
   v68's 27951/17 on the same seed; duel vs v68 56/62/2 (dropped). v49a vs v68 58/58/4 (parity). Under v34 nothing beats v68 yet; a ten-seat
