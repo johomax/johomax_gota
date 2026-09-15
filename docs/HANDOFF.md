@@ -26,7 +26,9 @@
   v63 (:v58) join-the-mid-brawl 17/27/76 (dropped). v64 (:v59) opportunistic tower spells: caster seats 14/72 vs v51 11/72 (no signal; only
   ~4 casts per game). v65 (:v60) = v62 with the weakest-lane check from tick 3000 and a 20% margin: 39/26/55 vs v62 -> replication and a
   v65 replication vs v62 32/31 and v65 vs v51 35/36: the weakest-lane family is parity/noise (v62 kept as base only).
-  v68 (Codex S23) = v62 + Red non-Crossbowman heroes escort the allied Crossbowman while it pushes — being written. Also queued: v66 (:v61, weakest-lane
+  v68 (:v63, Codex S23) = v62 + Red non-Crossbowman heroes escort the allied Crossbowman while it pushes: 38/28/54 vs v62 -> 240-game
+  replication running (promote if the combined 360 stay >= +8). v62 ten-seat: 49/240 (Xbow 11/24; every other seat 1-8/24, i.e. base rate);
+  v62 vs v49a 240 games 43/45 -> everything since v49a is within noise of each other. Also queued: v66 (:v61, weakest-lane
   check every 300 ticks from 1500, 10% margin) vs v62, and v67 (:v62, tunnel-vision all-in: attack the tower even with heroes adjacent,
   fight only kill shots) vs v62. Results: v66 23/33/64 (dropped), v67 25/39/56 (dropped: fighting adjacent heroes during dives matters).
   Round 308 (first with v62): 1501 MMR, rank 7. Rule: promote only >= +8 over >= 240 shared games.
