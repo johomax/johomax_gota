@@ -3,7 +3,9 @@
 ## Current state (2026-09-15 18:35 UTC) — GAME VERSION 33
 - League coworld `cow_252fb6a6` (2026.9.15.1, game version 33): towers 1200/2400/4800 HP, 28/56/112 dmg; 55-61% of games time out.
   Details: docs/ARENA_NOTES.md top section; new engine source in tmp/engine_new (source/polyworld origin/main).
-- **Champion: v51 = `Jordan:v46`** (promoted 19:00 UTC; v49a + join an allied side-lane push; 91-66 vs v49a over 360 duel games).
+- **Champion: v62 = `Jordan:v57`** (promoted 19:17 UTC; v51 + from tick 6000 switch to the lane whose enemy towers have the least remaining
+  HP; 33-21 vs v51 over 120 duel games, replication running — revert to `Jordan:v46` (v51) if it fails).
+  Previous: v51 = `Jordan:v46` (promoted 19:00 UTC; v49a + join an allied side-lane push; 91-66 vs v49a over 360 duel games).
   Previous: v49a = `Jordan:v44` (promoted 18:13 UTC): tower-safe siege, long-range kiting, damage-first shop, lane commitment, all-in from
   tick 12000. Duel vs v30: 30 wins / 20 control wins / 70 timeouts (120 games). Crossbowman seat wins 50% (the carry); other classes ~20%.
 - Local truth on the new coworld: a lone v49a Crossbowman beats nine base.bas heroes (tick 9665); five committed clones win at tick 27402;
@@ -20,7 +22,8 @@
   from the mid towers). v61 (:v56) = v51 without Crossbowman kiting: seat-1 batches 20/48 vs v51 18/48 (no signal; kiting kept).
   v63 = v51 + join the mid brawl when 2+ allies are within 20 tiles of the map centre: duel vs v51 queued.
   v62 (:v57, Codex S21) = v51 + switch to the lane whose enemy towers have the least remaining HP (from tick 6000): duel vs v51 26/15 after
-  100 games; replication queued (duel-v62-v51-2). v63 (:v58) join-the-mid-brawl dueling; v64 (Codex S22) opportunistic tower spells being written.
+  120 games 33/21/66 -> promoted; replication running (duel-v62-v51-2). v63 (:v58) join-the-mid-brawl 12/24 after 85 (dropped).
+  v64 (:v59, Codex S22) opportunistic tower spells: caster-seat batches (2,6,7) vs v51 queued.
   Local games are deterministic per seed (verified), so single local games are exact seed-specific A/Bs.
 - Ideas not done: Lich Ice Spear (6.33 tiles) snipes gate towers from outside their 6.0 range via castTarget (towers are valid spell targets);
   all-in timing; STUCK counts are high (tower collision footprints).
