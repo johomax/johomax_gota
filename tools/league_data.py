@@ -51,7 +51,7 @@ def main():
                 seat = players.index(ME)
                 rec = {"round": rd["round_number"], "round_at": str(rd["created_at"]), "ereq": e["id"], "status": e["status"],
                        "seat": seat, "team": 0 if seat < 5 else 1, "cls": CLASSES[seat if seat >= 5 else seat + 5] if False else CLASSES[(seat % 5) + (5 if seat < 5 else 0)],
-                       "my_pv": pvs[seat], "players": [names.get(p, p[:12]) for p in players], "replay_url": e.get("replay_url")}
+                       "my_pv": pvs[seat], "players": [names.get(p, p[:12]) for p in players], "replay_url": e.get("replay_url"), "coworld_id": e.get("coworld_id")}
                 try:
                     st = dump(c.get_episode_request_episode_stats(e["id"]))
                 except Exception as ex:
@@ -74,6 +74,16 @@ def main():
     for r in out:
         if "win" not in r: continue
         k = (r["seat"], r["cls"]); w, g = by.get(k, (0, 0)); by[k] = (w + r["win"], g + 1)
+    by_round = {}
+    for r in out:
+        if "win" not in r: continue
+        k = r["round"]; w, g = by_round.get(k, (0, 0)); by_round[k] = (w + r["win"], g + 1)
+    print("per round: " + ", ".join(f"r{k}:{v[0]}/{v[1]}" for k, v in sorted(by_round.items())))
+    cw = {}
+    for r in out:
+        if "win" not in r: continue
+        k = str(r.get("coworld_id"))[:12]; w, g = cw.get(k, (0, 0)); cw[k] = (w + r["win"], g + 1)
+    print("per coworld: " + ", ".join(f"{k}:{v[0]}/{v[1]}" for k, v in cw.items()))
     tw = sum(w for w, g in by.values()); tg = sum(g for w, g in by.values())
     for k in sorted(by): print(f"seat {k[0]} {k[1]:8s} {by[k][0]}/{by[k][1]}")
     short = lambda n: n.split("-ply_")[0][:14]

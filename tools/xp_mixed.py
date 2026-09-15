@@ -95,12 +95,20 @@ def report(c, paths):
                 if not rw:
                     pending += 1; continue
                 w = 1 if rw.get(seat) else 0
-                s = by_seat.setdefault(seat, [0, 0]); s[0] += w; s[1] += 1
+                s = by_seat.setdefault(seat, [0, 0, 0, 0]); s[0] += w; s[1] += 1
+                if d.get("duel"):
+                    cs = (seat + 5) % 10
+                    s[2] += 1 if rw.get(cs) else 0
+                    if not any(rw.values()): s[3] += 1
         tw = sum(v[0] for v in by_seat.values()); tg = sum(v[1] for v in by_seat.values())
         rw_ = sum(v[0] for k, v in by_seat.items() if k < 5); rg = sum(v[1] for k, v in by_seat.items() if k < 5)
         print(f"== {path} {d['candidate']}" + (f"  DUEL vs {d['control']}" if d.get("duel") else ""))
         print("   " + "  ".join(f"s{k}({CLASSES[(k % 5) + (5 if k < 5 else 0)]}) {v[0]}/{v[1]}" for k, v in sorted(by_seat.items())))
-        print(f"   Red {rw_}/{rg}  Blue {tw - rw_}/{tg - rg}  TOTAL {tw}/{tg} = {tw / tg if tg else 0:.3f}  pending={pending}")
+        extra = ""
+        if d.get("duel"):
+            cw = sum(v[2] for v in by_seat.values()); to = sum(v[3] for v in by_seat.values())
+            extra = f"  | control wins {cw}/{tg}  timeouts {to}/{tg}"
+        print(f"   Red {rw_}/{rg}  Blue {tw - rw_}/{tg - rg}  TOTAL {tw}/{tg} = {tw / tg if tg else 0:.3f}  pending={pending}{extra}")
         tot[path] = (tw, tg)
     return tot
 
