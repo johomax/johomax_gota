@@ -3,8 +3,9 @@
 ## GAME VERSION 34 (since ~20:30 UTC 2026-09-15) — read first
 - League coworld is now `cow_d4827721-d640-4296-b7ff-13b1d8c3bdf0` (2026.9.15.2, game version 34): towers 900/1200/1800 HP, 18/24/30 dmg
   (version 33 had 1200/2400/4800 and 28/56/112). Games end decisively again (4 timeouts in 119). Round 310 failed during the switch.
-- v79 (:v79, Codex S27) = v76 + stage 9 tiles short of an enemy gate whose last seen HP <= 450 (to win the fort race): uploaded, duel vs v76 queued
-  behind the v76 ten-seat batch. v76 ten-seat under v34: 127/240 (Red 63, Blue 64; seats 8-15/24, DK weakest).
+- v79 (:v79, Codex S27) = v76 + stage 9 tiles short of an enemy gate whose last seen HP <= 450 (to win the fort race): 67/53/0 vs v76 (first batch);
+  240-game replication queued. v80 (:v80) = v76 with boots bought first: local reference game 13941/8 deaths vs v76's 25570/16; duel vs
+  v76 queued. v81 (:v81) = v79 + boots first, built for the combination test. v76 ten-seat under v34: 127/240 (Red 63, Blue 64; seats 8-15/24, DK weakest).
   Round 314 (first with v76): 1540 MMR, rank 5. v76 ten-seat batch (v76-seats) running for per-seat targeting.
 - **Champion: v76 = `Jordan:v76`** (promoted 22:48 UTC) = v75 + head for an enemy fort as soon as its lane's gate is known dead, before the fort
   is visible: 64-54 and 65-53 vs v75 (129-107 over 240). v78 = v76 + defend-own-fort (v77) was exact parity 120-117, so v77's rule is dropped.
