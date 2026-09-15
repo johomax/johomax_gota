@@ -1,4 +1,4 @@
-# HANDOFF — Gods of the Arena policy project (updated 2026-09-15, 00:05 UTC)
+# HANDOFF — Gods of the Arena policy project (updated 2026-09-15, 00:40 UTC)
 
 ## Where things stand (solo-hero regime)
 - **Champion:** v30 = `Jordan:v28` (submitted 23:50 UTC, placed, auto-champion always). v30 = v19 minus the post-respawn home guard and
@@ -11,8 +11,12 @@
 - **Key evidence:** winners' heroes always attack the fort; usually 4 heroes hit the final gate together; mid decides 42% of games; only 20% of
   our wins came through the side lane we push alone; after a death the rejoin logic sends us to mid and those games were won more.
   Cautious/passive variants lose (v23 solo mode 45%, v25 ranged safety 51%, v32 fight-on-our-half 55%). Aggression + no waiting wins.
-- **In flight (hosted, 240 each):** v33 farming, v34 = v30+v26+v28, v35 mid lane, v36 periodic rejoin, v38 fort at any distance;
-  Codex task S8 (v37 group follow). Labels: v31=:v29 ... v38=:v35 (label = version-2 from v31 on; check `uv run coworld upload-policy` output).
+- **League coworld changed again ~00:00 UTC:** now `cow_9d9d7070-2210-4899-81de-f39401b32162` (2026.9.14.5, game version 30, map hash 48422D57).
+  Towers/forts/spawns keep the same coordinates; terrain differs. Tools and the replay parser are updated; v30/v35/v43 smoke-tested on it.
+- **Ten-seat results are confounded by field drift** (other players uploaded new versions overnight). Decide with duels only:
+  `uv run python tools/xp_mixed.py duel <cand> <ctrl> --seats 0-4 -n 24 --tag duel-x` -> candidate/control in mirrored seats of the same games.
+  Duel so far: v35 mid lane vs v30 43/100 (mid loses). Queued duels vs v30: v38 fort-anywhere, v40 farm-then-push (+damage-first shop),
+  v41 defend threatened towers, v43 swapped side lanes. Labels: v31=:v29, v32=:v30, ..., v40=:v38, v41=:v39, v42=:v40, v43=:v41.
 - Codex workers: `docs/WORKER_BRIEF2.md` + `docs/tasks/s*.md`; launch with `node "$CC" task --background --fresh --write --model gpt-6-astra --effort xhigh`.
 
 ## Read first
