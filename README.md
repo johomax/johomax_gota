@@ -36,7 +36,10 @@ uv run coworld submit <name>:vN -l league_3c60897b-25cf-4b37-9d1a-8554c1198f28
 - v30 (previous champion) won 9/41 league games on the new coworld; ladder rank 6, 1498 MMR after 42 rounds.
 - Field on the new coworld (tools/field_behavior.py --coworld cow_252fb6a6): six entrants camp mid all game; red-kite, black-kite and daveey
   push side lanes and are the only ones who attack forts. Decisive games: first gate attack ~tick 10,000, 2-5 heroes at the fort.
-- Next: Codex S14 (farm when idle) and S15 (join an allied side-lane pusher) on v49a, duels vs v49a.
+- Duels vs v49a (120 shared games each; candidate wins / control wins / timeouts): v50 farm-when-idle 23/24/73 (wash),
+  v51 join-allied-pusher 29/21/70 (+8, replication queued), v53 all-in from tick 4000 (running), v54 tower bait (running),
+  v52 long-range damage shop: seat 1/2/6 batches 19/72 vs 17/72 and a slower local Crossbowman game (dropped).
+- Labels: v50=:v45, v51=:v46, v52=:v47, v53=:v48, v54=:v49, v55 (=v51+early all-in) next.
 
 ## Strategy log (hosted = league coworld cow_975af671, 116x116 map)
 - v1 blitz (mid, 5-stack): lost 0/4 to baseline (dove towers without waves, retreated home at 25% HP; no HP regen in this game).
