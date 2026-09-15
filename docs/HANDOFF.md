@@ -4,8 +4,9 @@
 - League coworld is now `cow_d4827721-d640-4296-b7ff-13b1d8c3bdf0` (2026.9.15.2, game version 34): towers 900/1200/1800 HP, 18/24/30 dmg
   (version 33 had 1200/2400/4800 and 28/56/112). Games end decisively again (4 timeouts in 119). Round 310 failed during the switch.
 - **Champion: v75 = `Jordan:v75`** (promoted 21:47 UTC) = v68 + go for the enemy fort whenever it is exposed and visible, at any distance:
-  65-47 vs v68 over 120 shared games (8 timeouts); the 240-game replication is running the other way (58/67 after 128) — v75 is
-  probably level with v68; revert to `Jordan:v68` if the full replication ends clearly negative. v76 (:v76) = v75 + head for an enemy fort as soon as its
+  65-47 then 112-121 vs v68 (177-168 over 360: level with v68; kept as base). Round 312 (first with v75): 1510 MMR, rank 6.
+  v76 (:v76, head for a fort once its gate is known dead) 64/54 vs v75; v77 (:v77, defend our exposed fort) 64/56 vs v75 — both first
+  batches. v78 (:v78) = v77 + v76: 240-game duel vs v75 queued; v76 replication queued. Promote v78 if >= +8 over 240. v76 (:v76) = v75 + head for an enemy fort as soon as its
   gate is known dead (before it is visible): duel vs v75 queued. v77 (:v77, Codex S26) = v75 + defend our own exposed fort when threatened (within 60 tiles, enemy fort not exposed): smoke/upload/duel vs v75 chained. v68 under v34: ten-seat 100/240 (Red 53, Blue 47; seats 7-14/24),
   beat v73 62-53 and the old diver v30 68-51; v49a 58-58 (parity).
   v74 (:v74) = v68 with siege allowed on any tower <= 900 HP without cover and all-in from tick 6000: local DK game 15704 ticks/10 deaths vs
