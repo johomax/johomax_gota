@@ -39,7 +39,11 @@ uv run coworld submit <name>:vN -l league_3c60897b-25cf-4b37-9d1a-8554c1198f28
 - Duels vs v49a (120 shared games each; candidate wins / control wins / timeouts): v50 farm-when-idle 23/24/73 (wash),
   v51 join-allied-pusher 29/21/70 (+8, replication queued), v53 all-in from tick 4000 (running), v54 tower bait (running),
   v52 long-range damage shop: seat 1/2/6 batches 19/72 vs 17/72 and a slower local Crossbowman game (dropped).
-- Labels: v50=:v45, v51=:v46, v52=:v47, v53=:v48, v54=:v49, v55 (=v51+early all-in) next.
+- More duels vs v49a (candidate/control/timeouts per 120): v53 replication 23/18/79 (v53 total 46-34), v54 tower bait 24/25/71,
+  v51 replication 32/27/61 (total 61-48), v55 = v51+v53 27/26/67, v56 = v55 all-in from tick 600 29/25/66. Nothing clears the noise
+  floor (SE ~5 per 120), so v49a stays champion. v57 spell posts (Ranger/Arcanist/Lich hit towers with area spells from 7-8 tiles;
+  verified: inner tower loses ~0.4 HP/tick) is in a caster-seat duel. Round 306, first with v49a: 1480 MMR, rank 7.
+- Labels: v50=:v45, v51=:v46, v52=:v47, v53=:v48, v54=:v49, v55=:v50, v56=:v51, v57=:v52.
 
 ## Strategy log (hosted = league coworld cow_975af671, 116x116 map)
 - v1 blitz (mid, 5-stack): lost 0/4 to baseline (dove towers without waves, retreated home at 25% HP; no HP regen in this game).
