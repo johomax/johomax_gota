@@ -3,7 +3,9 @@
 ## GAME VERSION 34 (since ~20:30 UTC 2026-09-15) — read first
 - League coworld is now `cow_d4827721-d640-4296-b7ff-13b1d8c3bdf0` (2026.9.15.2, game version 34): towers 900/1200/1800 HP, 18/24/30 dmg
   (version 33 had 1200/2400/4800 and 28/56/112). Games end decisively again (4 timeouts in 119). Round 310 failed during the switch.
-- Champion stays v68 (`Jordan:v68`); under v34 it beat v73 62-53 and the old tower-diving v30 68-51 (0 timeouts). v49a vs v68 running.
+- **Champion: v75 = `Jordan:v75`** (promoted 21:47 UTC) = v68 + go for the enemy fort whenever it is exposed and visible, at any distance:
+  65-47 vs v68 over 120 shared games (8 timeouts); replication running. v68 under v34: ten-seat 100/240 (Red 53, Blue 47; seats 7-14/24),
+  beat v73 62-53 and the old diver v30 68-51; v49a 58-58 (parity).
   v74 (:v74) = v68 with siege allowed on any tower <= 900 HP without cover and all-in from tick 6000: local DK game 15704 ticks/10 deaths vs
   v68's 27951/17 on the same seed; duel vs v68 56/62/2 (dropped). v49a vs v68 58/58/4 (parity). Under v34 nothing beats v68 yet; a ten-seat
   batch of v68 (v68-seats-v34) is running to find the weak seats under the new balance. v75 (:v75) = v68 + fort at any distance when

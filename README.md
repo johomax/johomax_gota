@@ -44,7 +44,8 @@ uv run coworld submit <name>:vN -l league_3c60897b-25cf-4b37-9d1a-8554c1198f28
   floor (SE ~5 per 120), so v49a stays champion. v57 spell posts (Ranger/Arcanist/Lich hit towers with area spells from 7-8 tiles;
   verified: inner tower loses ~0.4 HP/tick) is in a caster-seat duel. Round 306, first with v49a: 1480 MMR, rank 7.
 - **Game version 34 (~20:30 UTC):** towers 900/1200/1800 HP, 18/24/30 dmg; games decisive again. Duels vs v68 under v34 (120 each):
-  v73 54/62, old diver v30 51/69, v49a 58/58, v74 (relaxed gating, all-in 6000) 56/62. v68 stays champion.
+  v73 54/62, old diver v30 51/69, v49a 58/58, v74 (relaxed gating, all-in 6000) 56/62, **v75 (fort at any distance) 65/47 -> promoted
+  21:47 UTC as `Jordan:v75`**. v68 ten-seat under v34: 100/240.
 - Labels equal file numbers from v66 on (byte-unique copies of v66-v70 uploaded in order; earlier: v50=:v45 ... v65=:v60, v68 also =:v63).
 - **Champion since 20:29 UTC: v68 = `Jordan:v68`** (also uploaded earlier as :v63) (v62 + Red non-Crossbowman heroes escort the allied Crossbowman; 102-85 vs v62 over 360
   shared games). Before that (19:17 UTC): v62 = `Jordan:v57` (v51 + switch to the lane whose enemy towers have the least remaining HP from tick 6000;
