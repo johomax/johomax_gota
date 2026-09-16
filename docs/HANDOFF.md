@@ -3,8 +3,8 @@
 ## WHERE THIS STANDS (2026-09-16 04:50 UTC) — read this first
 - **Champion: v148 = `Jordan:v148`** (submitted 17:05 UTC 2026-09-16 for GAME VERSION 37; ladder label confirmed 17:26 UTC; first league
   round 349 = 6/9, MMR 1514 -> 1532; round 350 = 2/8 -> 1506; round 351 = 5/8 -> 1515, rank 6; the leaders are sliding under version 37:
-  relh 1579, khors 1576, richard 1567 at 18:33 UTC; round 352 = 4/9 -> 1518; round 353 = 5/7 -> 1536, rank 5, leader relh 1600;
-  v148 league 22/41 over rounds 349-353). An emergency fix: every
+  relh 1579, khors 1576, richard 1567 at 18:33 UTC; round 352 = 4/9 -> 1518; round 353 = 5/7 -> 1536, rank 5, leader relh 1600; round 354 = 4/8 -> 1537, rank 5, leader relh 1604;
+  v148 league 26/49 over rounds 349-354). An emergency fix: every
   earlier version parks on dead tower coordinates until the timeout because version 37 no longer lists dead buildings). v148 = v139 +
   (v147) all building-targeted walks stop 3 tiles short of the building and no walk is issued within 4 tiles of a building objective
   (act 23) + a building objective that is missing from the object list while we stand within 4 tiles counts as dead (DEADOBJ; sets
@@ -87,7 +87,7 @@
   version 37): smoke DK won 13025 / 2 deaths / OUTN 4 (v148: 14074 / 4); melee-seat duel vs v148 queued (`duel-v161-v148`, 240, plus a
   pre-queued second batch `-2`). **v161: 120/240 then 111/240 = 231/480 (-18) — level/negative, dropped (same as v145 on version 36).** `v148-red`: 152/240 = 0.633 — v148 is ~0.63 as Red and ~0.56 as Blue in random rosters (side gap `v148-red-2`: 161/240 = 0.671 (Red over 480 games 0.652). Queued `v155-blue` (no melee package on Blue seats, 240)
   to isolate the package's Blue-side value — **`v155-blue`: 137/240 = 0.571 vs v148 Blue 0.554: the melee package has no Blue-side
-  value; its +30/480 is all Red melee (DK/Berserk).** League review 19:45 UTC: v148 22/41 (Red 15/25, Blue 7/16; DH 1/5, VK 0/2).
+  value; its +30/480 is all Red melee (DK/Berserk).** League review 19:45 UTC: v148 22/41 (Red 15/25, Blue 7/16; DH 1/5, VK 0/2). `v151-blue` (v148 relabeled, Blue seats 5-9 x 48, 20:00 UTC): 147/240 = 0.613 (VK 24, Ranger 31, Arcanist 34, Druid 34, DH 24 of 48) — Blue baseline 0.55-0.61 over three batches, VK/DH pinned at 0.50. League review 20:00 UTC: v148 26/49 (Red 18/29 = 0.62, Blue 8/20 = 0.40; Xbow 5/6, DK 4/6, DH 1/5, VK 0/3), round 354 = 4/8, rank 5 at 1537 (relh 1604, khors 1579, richard 1557, Alex Smith 1538 new entrant). The 20:50 baseline timer was replaced by two ten-seat baselines queued at 20:03 UTC (`v148-seats-d`, `v148-seats-e`, 240 each).
 - **Blue-class trace on version 37 (tools/policy_trace.py --by-class over 1680 cached episodes):** aaron-gota-ir-cadence-all-0916 wins
   VK 0.68 / DH 0.60 / Arcanist 0.63 (ours 0.49 / 0.45 / 0.60) with 3600-4100 footman commands, 2300-2900 hero commands and only
   ~900 walk commands per game (ours: VK walks 6642, DH 5479) — its heroes farm and fight at the creep clash almost the whole game and
@@ -96,7 +96,7 @@
   more than 10 tiles from it, otherwise hold and farm (CAMP, acts 60/61); no solo objective walks (fort/open-lane rules still win).
   v163 smoke as VK vs nine base.bas: TIMEOUT 28800 / 13 deaths / CAMP 54 (it holds under the enemy outer tower) — local games with
   mid-camping base heroes are a poor model for a wave-camper, so it is dueled anyway: `duel-v163-v148` (seats 0,4 x 60; the s5/s9
-  rows carry the signal, s0/s4 are a null).
+  rows carry the signal, s0/s4 are a null). **v163: 109/240 = 0.454 (-20); the informative Blue melee rows VK 22/60, DH 30/60 = 52/120 (0.433), null rows DK 26/60 + Berserk 31/60 = 57/120. Telemetry (tools/roster_stats.py): the camper cut deaths to VK 2.8 / DH 2.3 per game (baseline 6.6 / 6.0) but VK ended at level 3.7 with 0.5 tower kills — fewer deaths bought nothing; the hero's value is in the push. Dropped; wave-camping joins the passive-rules list.**
   durable); **third ten-seat baseline `v148-seats-c` (19:07 UTC): 146/240 = 0.608 (Red 79/120, Blue 67/120)** — sequence 0.650,
   0.575, 0.608; field in that batch: aaron-cadence 0.575, relh:v133 0.558, codex-objective 0.537, richard:v59 (new) 0.524, khors 0.50,
   black-kite 0.45, games-bond 0.43; v148 is still the strongest entrant in random rosters. **Second v148 ten-seat baseline (`v148-seats-b`, 18:45 UTC): 138/240 = 0.575 (first 0.650)** — the field adapted
