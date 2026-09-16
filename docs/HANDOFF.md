@@ -97,7 +97,9 @@
   **v129 first batch 67/53 vs v113 (+14; VK 10/12, Arcanist 9/12)** — replication over 240 queued automatically (`duel-v129-v113-2`);
   promote only if combined >= +24 over 360 with the replication positive.
   v130 (:v130) = v113 with a looser side-lane join (one ally pushing the other side lane suffices when our lane has none and no ally is
-  beside us; JOIN fired only 0.22 times per game): 57/63 vs v113 (level, dropped). v129 replication interim 30/30 after 60.
+  beside us; JOIN fired only 0.22 times per game): 57/63 vs v113 (level, dropped). v129 replication interim 30/30 after 60; v129's
+  hosted telemetry: 3.65 dodges per game (1.0% of samples; Meteor, Bound Void, Clockwork, Void Portal, Volcanic, Shadow Comet), deaths 2.25.
+  A v113 ten-seat baseline (`v113-seats`, 240) is queued behind it for per-class rates in random rosters.
   Round 324 (first with v113): 6/9.
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep attacking footmen in basic range while travelling between lanes
   or rejoining (no enemy hero near, no tower danger): 64-56 then 136-104 vs v87 = 200-160 over 360 shared games (+40, both batches positive,
