@@ -107,7 +107,10 @@
   (tools/roster_stats.py) v113 ranks second: nancy-goa:v1 0.596 (161 games, a newly strong opponent), Jordan 0.575, black-kite 0.565,
   red-kite 0.523, codex-objective-lanes 0.502, relh:v95 0.500, aaron 0.495, richard:v50 0.466, gota-g001 0.452, base 0.437, khors 0.378. v131 (:v131) = v113 preferring footmen within one hit of death (hp <= selfAttackDamage) as the
   farming target — XP/gold go only to the killing blow: 57/63 vs v113 (level, dropped). Twenty candidates on top of v113 are now level or
-  negative; tracing nancy-goa:v1 (0.596 in the baseline batch) for a new mechanism before building more.
+  negative. Trace of the baseline replays: nancy-goa:v1 (0.596) is a centre camper like khors/base (walks to (56,56) all game, 4300 creep
+  and 2800 hero attack commands per game) but with 847 useItem commands per game (ours: 15) — the strong campers drink potions constantly.
+  Next: v132 = v113 potion economy (buy an elixir whenever gold >= 50 and none is held, drink at 70% HP instead of 55%, no sword so a slot
+  stays free) — converts the 100-360 gold our ranged seats leave unspent into effective HP.
   Round 324 (first with v113): 6/9.
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep attacking footmen in basic range while travelling between lanes
   or rejoining (no enemy hero near, no tower danger): 64-56 then 136-104 vs v87 = 200-160 over 360 shared games (+40, both batches positive,
