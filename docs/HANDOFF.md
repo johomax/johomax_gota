@@ -77,6 +77,18 @@
   v141 (:v141, S44) = v139 + the wave-bound rule for Arcanist/Lich/Warlock (Ranger/Xbow/Druid unchanged): smoke Warlock won 6724 /
   1 death, Arcanist 7908 / 2 deaths / 11 stuck (v138's far trigger caused its 40). Not yet queued — the queue holds ~1 h of work
   (v139 replication, then the two Blue-seat tests).
+- **LEAGUE STRUCTURE (20 rounds, 190 games, tools/league_data.py --rounds 20 + new tools/league_logs.py, 09:00 UTC):** Red wins only
+  0.36 of league games (XP random rosters: 0.44). Seating is not uniform: Blue seats hold the higher-rated players in 120/165 games
+  (mean current MMR Red 1512 / Blue 1534); black-kite sits Blue in 86/110 games, daveey-2 98/126, docxology 72/97, richard 105/164,
+  us 98/190, while Aaron/Andre von Houck/Alex Smith sit Red ~70%. So the leaders' league win rates (black-kite 0.69, codex-secondary
+  0.70) are partly seat luck, and the whole field loses on Red (black-kite 0.58 on Red in 24 games, richard 0.42, us 0.40 in 92).
+  Our league record by side: Red 0.42 / Blue 0.72; by class Berserk 0.18 (17), Lich 0.23 (13), Warlock 0.46, DK 0.65, VK 0.60,
+  DH 0.71, Druid 0.67, Ranger 0.82, Arcanist 0.77, Xbow 0.75. Our league win rate with/against entrants: against richard 5/20,
+  black-kite 12/33, games-bond 7/20, codex-secondary 12/31; against nancy 19/23, red-kite 23/29, aaron 31/36, base 31/41; with
+  aaron 8/30. In league games deaths do not separate wins from losses (4.2 vs 4.4 per game) but hero kills (4.3 vs 2.8) and level
+  (6.1 vs 5.3) do. Private policy logs ARE available for league episodes (`get_episode_request_policy_log(ereq, my_pv, seat)`);
+  cache in tmp/league_log_cache.json. NOTE: `tools/league_data.py` overwrites docs/league_episodes.json — monitors must pass
+  `--out tmp/league_recent.json` (the 30-min monitor now does).
 
 ## GAME VERSION 36 (since ~23:20 UTC 2026-09-15)
 - League coworld is now `cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870` (2026.9.15.3, game version 36): same balance as version 34, creep lanes
