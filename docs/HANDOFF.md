@@ -41,7 +41,9 @@
   (hit when the cooldown is within the windup, step 3 tiles away from the melee threat otherwise). v113 (:v113) delivered and smoke-tested
   (Ranger: KITE2 active, 4100 XP vs v93's 3700 on the same seed; Arcanist fine); dueling v93 (`duel-v113-v93`). Their Rangers issue ~930
   hero-attack and ~1100 creep-attack commands per game vs our 575/475 and reach the fort in 90% of games (we: 56%), i.e. they stay alive in fights.
-  v111 (boots first) 51/69 vs v93 (negative, dropped).
+  v111 (boots first) 51/69 vs v93 (negative, dropped). v112 (wave ride only) 58/62 (level, dropped).
+  **v113 first batch 67/53 vs v93 (+14; Xbow 10/12, Lich 9/12, Arcanist 8/12, Warlock 8/12)**; replication over 240 running
+  (`duel-v113-v93-2`); promote only if combined >= +24 over 360 with the replication positive. Checking the kite rule fires in its logs.
 - **Time budget (v93 ten-seat, 4340 telemetry samples):** walking the route 43%, farming creeps 14%, sieging 9%, fighting heroes 7%, escort 6%,
   open-lane fort walk 4%, waiting for a wave 4%, low-HP retreat 3% (4.4% in losses vs 2.7% in wins). With ~3.5 deaths per game and ~800 ticks
   per death (24 dying + 192 respawn + the walk back), deaths eat roughly a third of an 8500-tick game; every death avoided is worth ~10% presence.
