@@ -21,6 +21,7 @@
   v99 (:v99) = v93 with the escort walk disabled: **66/54 vs v93 (+12 first batch; as candidate Red 26/60, Blue 40/60)**; replication over 240
   running (`duel-v99-v93-2`). Also queued vs v93: v100 (:v100, never fight alone, `duel-v100-v93`), v101 (:v101, level-aware fights via
   objectLevel: never start on a hero two or more levels above us unless it is low or an ally is beside us, `duel-v101-v93`), and the
+  [v100 result: 55/65 vs v93, negative, dropped — retreating from 1v1s costs more than the re-deaths it avoids]
   v93 ten-seat baseline `v93-seats`: 129/240 (Red 60/120, Blue 69/120) — v76 was 119/240, so the side gap is mostly noise.
   Every file from v97 on prints `D tick respawn #n at x y Lk`.
 - Champion 00:42-00:56 UTC: v87 = `Jordan:v87` = v76 + attack any enemy footman within 8 tiles (melee 6) instead of walking
