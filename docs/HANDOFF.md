@@ -23,7 +23,16 @@
   --ids --exact --by-class`, fillers `tools/roster_stats.py`, ladder `tools/ladder.py`, engine/coworld drift `tools/coworld_check.py`.
   Upload every policy file once, in numeric order (`uv run coworld upload-policy --file policy/vNNN.bas --tag version=vNNN`), so the
   platform label equals the file number; smoke-test Codex output locally first (blank line before `end if`/`wend` is a compile error).
-- **In flight:** nothing; monitoring the ladder and coworld. v129-v134 dropped (level/noise).
+- **In flight (07:50 UTC):** S39 melee wave-rider = v135 (Codex task-mu3sicj1-pbpo2i, spec docs/tasks/s39_melee_wave_rider.md).
+  Why: clean per-class baseline (xp/v113-seats.json, 24 games each) Ranger 0.83 / Xbow 0.88 / Druid 0.71 / DH 0.58 / Lich 0.54 /
+  Arcanist 0.50 / Warlock 0.50 / DK 0.46 / VK 0.42 / Berserk 0.33 — the earlier "Blue side dominance" was a duel artefact (mirrored
+  copies face each other); the real gap is the melee classes. black-kite:v11 wins DK 0.53 / VK 0.55 / Berserk 0.59 / DH 0.56 with the
+  same classes (1642 random-roster games). Replays: our melee heroes walk straight to the enemy outer tower (median first tower attack
+  ~1100 ticks vs black-kite ~2400), siege at level 1, push on alone to the inner tower and die 4-6 times per game (act 9 precedes most
+  deaths); they farm 9-15% of the time (act 4) and issue half as many footman attacks (DK 757/game vs 1716). v135: melee farm before
+  siege, siege a healthy tower only with >= 2 footmen soaking, open on heroes only when adjacent/nearly dead/with an ally, and never
+  run ahead of the front allied footman toward a standing enemy tower (RIDE, act 47). Test on melee seats only:
+  `duel v135 v113 --seats 0,4 -n 30` (120 games, all DK/VK/Berserk/DH). Round 329: 4/8.
 
 ## GAME VERSION 36 (since ~23:20 UTC 2026-09-15)
 - League coworld is now `cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870` (2026.9.15.3, game version 36): same balance as version 34, creep lanes
