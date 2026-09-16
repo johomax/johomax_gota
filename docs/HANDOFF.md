@@ -49,7 +49,7 @@
   v122 replication 86/114 after 200 (-28): combined ~153-167, **dropped** — tower-centre route points hurt more than the long walks.
   v125 (:v125) = v113 + the audit fixes only (no road-following), dueling v113 (`duel-v125-v113`). v126 (:v126) = v125 + the stuck
   escalation only (walk home after six stuck hits, forget hits after 240 ticks of movement), dueling v113 (`duel-v126-v113`).
-  v123 interim 20/40 after 60 (carries v122's road-following; expected to fail).
+  v123 44/76 vs v113 (-32, dropped): together with v122's replication this makes tower-centre road-following clearly harmful.
   Round 324 (first with v113): 6/9.
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep attacking footmen in basic range while travelling between lanes
   or rejoining (no enemy hero near, no tower danger): 64-56 then 136-104 vs v87 = 200-160 over 360 shared games (+40, both batches positive,
