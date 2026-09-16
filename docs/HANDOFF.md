@@ -118,6 +118,13 @@
   package (v139) gained. Early-game act mix in league games (ticks 0-2400): Red DK/Lich/Warlock/Berserk walk 37%, escort 19%, wait
   for wave 13%, siege 10%, farm 7%, first tower/hero reward at median tick 3343, 29/63 still level 1 at tick 2400; Ranger walks 44%,
   sieges 30%, farms 16%, first reward at 1250, level 3-4 at 2400. Blue's DPS classes kill the forward outer tower a full wave earlier.
+- **Gate phase is the decisive phase (09:40 UTC):** baseline replays — in our losses our team attacked the enemy gate in 75% of games
+  (their fort in 15%); in our wins the enemy attacked our gate in 69%; median 3700-3900 ticks from the first gate hit to the end
+  (winner's first gate attack ~4900-5900, game end ~8400-9700). During the enemy-gate phase our hero walks 36% / sieges 8% in wins vs
+  walks 47% / sieges 3% in losses (2.1 deaths in that phase either way). League replays (171 v36 games): Blue wins 0.65; breakthrough
+  lanes 63/65/43; 3-5 heroes at the winning fort; long-range class among fort attackers in 130/171. Candidate: v143 (S45, Codex) =
+  v139 + race-aware gate defence (hold our own gate under its tower while enemy heroes + a wave siege it and the enemy gate in our
+  lane still has > 900 HP; DEF prints, acts 51/52).
 
 ## GAME VERSION 36 (since ~23:20 UTC 2026-09-15)
 - League coworld is now `cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870` (2026.9.15.3, game version 36): same balance as version 34, creep lanes
