@@ -47,6 +47,9 @@
   5-6 prints per game on every ranged class, 0 on melee) and the mechanism: deaths per game Ranger 0.58 (v87-era 2.46), Xbow 0.83 (2.38),
   Lich 1.17 (3.04), Arcanist ~1.5 (3.8); kills per game Ranger 8.1 (4.7), Xbow 7.9 (5.9), Lich 5.7 (3.3). Overall 2.42 deaths/game vs 3.56.
   v114 (:v114) = v113 with the kite trigger at 4.5 tiles (was 3.5) and 4-tile steps, queued vs v93 (`duel-v114-v93`).
+  Replication interim 122/78 after 200 (Blue seats 76/96: Ranger 21/24, Arcanist 19/24, Druid 19/24, VK 17/24; Red 46/104).
+  v115 (:v115, Codex S35) = v113 + melee heroes stop chasing a target that flees at >= 80% of our speed (objectVelX/Y) for 24 decisions or
+  96 chase ticks (blacklist 240 ticks unless kill shot / all-in): smoke-tested (rule silent vs base.bas), dueling v113 (`duel-v115-v113`).
 - **Time budget (v93 ten-seat, 4340 telemetry samples):** walking the route 43%, farming creeps 14%, sieging 9%, fighting heroes 7%, escort 6%,
   open-lane fort walk 4%, waiting for a wave 4%, low-HP retreat 3% (4.4% in losses vs 2.7% in wins). With ~3.5 deaths per game and ~800 ticks
   per death (24 dying + 192 respawn + the walk back), deaths eat roughly a third of an 8500-tick game; every death avoided is worth ~10% presence.
