@@ -47,7 +47,9 @@
   route points snags on their footprints; the win gain came with fewer deaths anyway. v123 (:v123) = v122 + audit fixes, dueling v113
   (`duel-v123-v113`). v124 (:v124) = v123 switching to the next route point at 6 tiles instead of 3, dueling v113 (`duel-v124-v113`).
   v122 replication 86/114 after 200 (-28): combined ~153-167, **dropped** — tower-centre route points hurt more than the long walks.
-  v125 (:v125) = v113 + the audit fixes only (no road-following), dueling v113 (`duel-v125-v113`).
+  v125 (:v125) = v113 + the audit fixes only (no road-following), dueling v113 (`duel-v125-v113`). v126 (:v126) = v125 + the stuck
+  escalation only (walk home after six stuck hits, forget hits after 240 ticks of movement), built and uploaded, to be dueled after v125's result.
+  v123 interim 15/19 after 34 (carries v122's road-following).
   Round 324 (first with v113): 6/9.
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep attacking footmen in basic range while travelling between lanes
   or rejoining (no enemy hero near, no tower danger): 64-56 then 136-104 vs v87 = 200-160 over 360 shared games (+40, both batches positive,
