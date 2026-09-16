@@ -9,7 +9,10 @@ Game version 2026.9.14.3 (map generation changed on 2026-09-14; older wiki/book 
 - **Barracks are buildings**: object kind 5, ids 40+, two per lane per team, 950 HP, no attack, attackable once the lane's towers are dead
   (`buildingExposed`); creeps spawn 3 per living barracks per interval (6 per lane per team, was 2; unit cap 360). Killing both
   barracks of a lane stops that lane's enemy creeps. No XP/gold reward found for barracks kills in the diff (towers still 100/75).
-  Fort exposure unchanged (a lane with all three towers dead).
+  Fort exposure unchanged (a lane with all three towers dead). Creep targeting (`nextEnemyBuilding`): the lane's towers by tier, then
+  the NEAREST surviving barracks of that lane, and the fort only when a creep passes within 4.25 tiles — so after a gate falls the
+  wave spends its time on the two barracks (2 x 950 HP) before the fort; a hero that goes fort-first (400 HP, no defence from the fort
+  itself) still ends the game fastest if enemy heroes do not defend it.
 - **Towers**: HP 950/1300/1950 (was 900/1200/1800), damage 18/24/30 unchanged, ranges unchanged; body footprints 1.05/1.25/1.65 tiles
   (was 0.42/0.55/0.70) — walkTo at a tower centre snags every time; stop 2.5-3 tiles short (v147) or attackTarget.
 - **Hero buffs**: Crossbowman 46 dmg +9/level (was 43/+8), Berserker 38 +8 (was 35/+7), Lich Ice Spear 48 dmg / 6.67 tiles (was 44 /
