@@ -38,7 +38,7 @@ uv run coworld submit <name>:vN -l league_3c60897b-25cf-4b37-9d1a-8554c1198f28
   engine 5c701f9): dead towers/barracks are no longer listed to policies, so v113/v139 parked on dead tower coordinates until the
   timeout (local Ranger game: 318 stuck prints, 28800 ticks). v148 = v139 + walks stop 3 tiles short of buildings + an unseen
   building objective within 4 tiles counts as dead. Local: Ranger won 7727 / 0 stuck, DK won 14074 (both lost/timed out with v139).
-  Hosted measurement on the new coworld is queued. Version 37 also adds barracks buildings (kind 5, 950 HP, killable after the
+  Hosted on the new coworld: v148 vs v139 174/240 (0.725); ten-seat random-roster baseline 156/240 = 0.650 (Red 0.67, Blue 0.63). Version 37 also adds barracks buildings (kind 5, 950 HP, killable after the
   lane's towers, 3 creeps each per wave), towers 950/1300/1950 HP with bigger footprints, and buffs for Crossbowman/Berserker/Lich.
 - **Champion 09:10-17:40 UTC 2026-09-16: v139 = `Jordan:v139`** = v113 + a melee-only package (Codex S41/S43): melee heroes last-hit
   before hitting a healthy tower, open on enemy heroes only when adjacent / nearly dead / with an ally near, and never run ahead of

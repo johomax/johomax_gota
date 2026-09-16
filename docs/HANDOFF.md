@@ -11,7 +11,11 @@
   `v139-seats-v37` and `duel-v139-v113-v37` (both broken versions — they only measure the damage: v139 ten-seat 83/240 = 0.346 on
   version 37; v139 vs v113 77/172 with 17 timeouts). **v148 vs v139 duel: 174/240 = 0.725** (Xbow 23/24, Ranger 21/24, Druid 21/24,
   DH 19/24, DK 17/24, Lich 17/24, Arcanist 17/24, VK 14/24, Warlock 13/24, Berserk 12/24; STUCK 1.3/game, 6 timeouts/240, median
-  game ~7900 ticks). Next: ten-seat baseline for v148,
+  game ~7900 ticks). **v148 ten-seat baseline on version 37 (17:29 UTC): 156/240 = 0.650** — Red 80/120 (DK 12, Xbow 19, Lich 14,
+  Warlock 18, Berserk 17 of 24), Blue 76/120 (VK 14, Ranger 19, Arcanist 16, Druid 15, DH 12); STUCK 0-4/game; deaths Berserk 4.7,
+  DH 4.8, DK 4.4 (6.5 in its losses, which last ~13600 ticks), Druid 5.2; DK tower kills 3.9/game. Red is now our stronger side (the
+  version-37 buffs went to Crossbowman/Berserker/Lich). Caveat: part of the field may still be broken on version 37 (policies that
+  wait to see a tower at 0 HP), so the baseline will drift as others fix theirs. Next: ten-seat baseline for v148 DONE;
   then re-tune for version 37 (3x creeps, barracks, bigger towers).
 - Previous champion v139 = `Jordan:v139` (08:45-17:40 UTC; game version 36). **Rank 2 at 1589 MMR after round
   338 (11:40 UTC; richard 1658, black-kite 1574).** v139 league record 35/53 = 0.66 (Red 16/25 = 0.64, Blue 19/28 = 0.68; v113 was 0.59
