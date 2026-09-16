@@ -42,6 +42,10 @@
   continued because mid-lane footmen counted as the wave. Not uploaded/tested. v137 (S41) = v113 + lane-aware wave discipline only
   (front footman of OUR lane by a physical lane test; walk to it when ahead of it or > 20 tiles behind; hold when the lane has no
   footman; act 47 in stuck detection).
+  **v135 duel result (melee seats, 120 games, done 08:25 UTC): 66/120 = 0.550 (+12, noise-level)** — DK 17/30, Berserk 20/30, VK 10/30,
+  DH 19/30. Telemetry vs the v113 baseline: deaths halved (Berserk 5.0 -> 2.0, DK 4.2 -> 2.9, VK 6.3 -> 3.3) but levels fell (Berserk
+  5.3 -> 3.8, DK 4.6 -> 4.2) and VK stuck events rose to 20/game: fewer deaths bought with passivity. The hosted queue currently
+  finishes 120 games in ~25 minutes, so 240-game batches are affordable.
 
 ## GAME VERSION 36 (since ~23:20 UTC 2026-09-15)
 - League coworld is now `cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870` (2026.9.15.3, game version 36): same balance as version 34, creep lanes
