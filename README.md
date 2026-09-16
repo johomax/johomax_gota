@@ -39,7 +39,7 @@ uv run coworld submit <name>:vN -l league_3c60897b-25cf-4b37-9d1a-8554c1198f28
   their own lane's front footman toward a standing enemy tower. Melee-seat duels vs v113: 133/240 then 122/240 (= 255/480, +30, both
   batches positive; melee deaths down 25-40%); ranged code unchanged. Promoted below the +36/360 bar on the consistency of three
   positive batches (v135 +12/120 was the same mechanism). Ten-seat random-roster baseline 150/240 = 0.625 (v113 0.575). League with
-  v139: 35/53 = 0.66 over rounds 333-338 (Red 0.64); rank 2 at 1589 MMR at 11:40 UTC (richard 1658, black-kite 1574). Dropped today: v135-v138
+  v139: 56/90 = 0.62 over rounds 333-342 (Red 0.58, Blue 0.66); rank 2 at 1582 MMR at 14:00 UTC (richard 1621, black-kite 1547). Dropped today: v135-v138
   (wave-riding variants), v140 (Blue pushing physical lane 2: 0.633 vs 0.613 in a fair Blue-seat test), v141 (casters wave-bound,
   +10/240), v142 (no Crossbowman escort, +8/480 with the Red rows at 0.479), v143/v144 (race-aware gate defence: -20/240 — safety
   rules keep losing tempo on version 36). League findings: Red wins only 0.36 of league games, seating puts the higher-rated players
