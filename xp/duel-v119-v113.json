@@ -1,0 +1,48 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v119",
+ "control": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v113",
+ "duel": true,
+ "n": 12,
+ "requests": [
+  {
+   "id": "xreq_74c7e8ee-1c2e-4ccc-964c-9f4f2cd460cd",
+   "seat": 0
+  },
+  {
+   "id": "xreq_e05c0502-3920-4666-9220-b45720893b67",
+   "seat": 5
+  },
+  {
+   "id": "xreq_4df1e724-95ce-4b9a-9452-89ff06cea95c",
+   "seat": 1
+  },
+  {
+   "id": "xreq_2305b23c-bef6-473c-b0a4-ba3a7bee606f",
+   "seat": 6
+  },
+  {
+   "id": "xreq_bdf343bb-41f6-4e92-9c5f-43211886e146",
+   "seat": 2
+  },
+  {
+   "id": "xreq_2fe9bcc3-81b1-439d-9c7d-554179748b1f",
+   "seat": 7
+  },
+  {
+   "id": "xreq_9a9c9ee7-7155-409c-9b61-353bda591694",
+   "seat": 3
+  },
+  {
+   "id": "xreq_36a67df8-6c5b-44e3-9002-5731a7302535",
+   "seat": 8
+  },
+  {
+   "id": "xreq_2917eb07-acd3-4e57-934f-874c1e5344a4",
+   "seat": 4
+  },
+  {
+   "id": "xreq_c48817df-107e-4fce-96f3-4049413930ea",
+   "seat": 9
+  }
+ ]
+}

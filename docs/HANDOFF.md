@@ -20,8 +20,10 @@
   (all six inventory slots hold equipment, so gold piles up); Arcanist 0.79, Druid 0.79, VK 0.71, Xbow 0.58 (148 gold unspent), DH 0.50
   (5.5 deaths), Lich 0.46, Warlock 0.46, DK 0.38 (0.8 kills, level 3.3 at game end, 19% of its time escorting the Crossbowman), Berserk 0.29
   (16% escorting, 14% waiting for a wave). v117 (:v117) = v113 with the escort limited to ranged Red heroes (Lich/Warlock), dueling v113.
-  v118 (:v118) = v113 with no Red escort at all, dueling v113. v119 (:v119) = v113 without the sword purchase so the sixth inventory slot
-  stays free for elixirs all game (ranged seats ended with 100-360 unspent gold and full slots), dueling v113.
+  v118 (:v118) = v113 with no Red escort at all. v119 (:v119) = v113 without the sword purchase so the sixth inventory slot stays free for
+  elixirs. All three level vs v113 and dropped: v117 62/58, v118 61/59, v119 59/61. The escort is irrelevant either way under version 36.
+  Reading of the Red gap: Red's ranged classes kite worse by design (Lich cadence 32, Warlock range 4.5 vs Ranger 18 / 5.5) and Red's
+  melee DK/Berserk get nothing from kiting; black-kite's Berserker wins 0.62 where ours wins 0.29 — next: trace what their Red melee do.
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep attacking footmen in basic range while travelling between lanes
   or rejoining (no enemy hero near, no tower danger): 64-56 then 136-104 vs v87 = 200-160 over 360 shared games (+40, both batches positive,
   0 timeouts). Replay trace over the 359 v87-v76 duel games: v87 issues 1050 creep attacks per game vs v76's 533 on the same lane/path
