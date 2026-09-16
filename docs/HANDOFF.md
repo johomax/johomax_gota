@@ -82,6 +82,9 @@
   but this design is biased: the Blue candidate meets our own v113 Red hero head-on in the same physical lane (Ranger vs the
   longer-ranged Crossbowman), which never happens in league games. Fair test queued: random-roster Blue seats, v140 vs a concurrent
   v113 baseline (`create ... --seats 5-9 -n 48`, tags `v140-blue` / `v113-blue`, 240 games each); compare the two Blue win rates.
+  **Result: v140 Blue 152/240 = 0.633 (VK 29, Ranger 38, Arcanist 29, Druid 33, DH 23 of 48) vs v113 Blue 147/240 = 0.613 — level
+  (+5, SE of the difference ~0.044). Lane choice for Blue is closed: dropped.** Round 333 (first with v139): 6/10 (Berserk 0/2, DH 1/3,
+  Warlock 2/2, Druid/Lich/VK won); rank 4, 1544.
   v141 (:v141, S44) = v139 + the wave-bound rule for Arcanist/Lich/Warlock (Ranger/Xbow/Druid unchanged): smoke Warlock won 6724 /
   1 death, Arcanist 7908 / 2 deaths / 11 stuck (v138's far trigger caused its 40). Not yet queued — the queue holds ~1 h of work
   (v139 replication, then the two Blue-seat tests).
