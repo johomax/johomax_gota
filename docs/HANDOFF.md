@@ -39,8 +39,11 @@
   (100,60)-(100,70) 66 = our own outer tower under enemy push. 54% of deaths happen at levels 2-4, ticks 2000-8000. Next test: v96 = v87 with
   the all-in dive needing 2 allies within 8 tiles for inner/gate towers (1 still enough for the outer tower).
 - v101 (level-aware fights) 57/63 vs v93 (level, dropped). League with v93: rounds 319-321 = 18/29, 1520 MMR, rank 8 (02:41 UTC).
-  Next: v102 = v93 + keep the home guard (act 14)
-  active while an enemy hero is within ~18 tiles, we are within 12 tiles of an own tower and no ally is within 8 tiles (cap ~2400 ticks),
+  Note: v93's home-guard block (act 14, 'wait at own gate up to 30 s after respawn') is dead code — guardUntil is never armed — so heroes
+  walk out immediately after every respawn. v102 (:v102) = v93 + arm a 2400-tick window at each respawn during which, with an enemy hero within
+  18 tiles, one of our first three route towers within 12 tiles and no ally within 8, the hero holds at that nearest tower (act 14) and fights
+  from there; v103 (:v103) = v93 + v84's follow-the-largest-allied-group rule restricted to Demon Hunter, Vanguard Knight and Druid (the
+  Blue-side classes that die on our own lane). Both smoke-testing, then duel vs v93.
   because Blue-side classes die mostly on our own lane right after respawn (DH 59 of 152 deaths, VK 40, Arcanist 31; act 9 walking).
   Every hosted result so far is in this file and README.md; standings via `uv run python tools/ladder.py`.
 - Previous champion v76 (`Jordan:v76`). Under version 36 (all duels since 23:30 UTC ran on it): v82 (:v82, Codex S28, target-aware siege via
