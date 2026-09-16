@@ -53,7 +53,10 @@
   in every form tried. v125 (audit fixes only) 53/66 and v126 (fixes + stuck escalation) 57/63 — both dropped; the audit's "fixes" do not
   help in aggregate (the forward-pointing retreat point and the fallback-siege gate may each have been doing useful work). **v113 stays
   champion.** Fourteen candidates on top of v113 have now been level or negative; cheap tweaks are exhausted — next: genuinely new
-  mechanisms (spell dodging via spellCount/spellX/spellY/spellImpactTick, Codex S38).
+  mechanisms (spell dodging via spellCount/spellX/spellY/spellImpactTick, Codex S38 -> v127). Engine facts for it (content.nim abilitySpec):
+  every Strike has an impact area (default circle radius 90000 = 1.5 tiles; Blazing Blade/Gale Slash 120-degree sectors from the caster;
+  Storm Eagle/Clockwork Charge lines; meteors larger), projectile casts fly at 45000 units/tick (0.75 tiles/tick), so impacts are
+  visible several ticks ahead through the spell list.
   Round 324 (first with v113): 6/9.
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep attacking footmen in basic range while travelling between lanes
   or rejoining (no enemy hero near, no tower danger): 64-56 then 136-104 vs v87 = 200-160 over 360 shared games (+40, both batches positive,
