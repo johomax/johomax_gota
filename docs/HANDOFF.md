@@ -27,6 +27,11 @@
   sides — the lane test needs no change. Plan (17:50 UTC): let v148 accumulate rounds while the field is broken (black-kite 0.40),
   review v148's league record by class at ~19:50 UTC and repeat the ten-seat baseline at ~20:50 UTC to measure the field's adaptation;
   first tuning candidates for version 37 only with a strong hypothesis (laneTowerHp defaults 950/1300/1950 go into the next one).
+  **User request 18:00 UTC: keep XP requests in flight at all times** (memory gota-xp-always-in-flight). Queue since then:
+  `null-v148-v37` (v148 vs v148, 240 — noise calibration for version 37), `duel-v149-v148` (480; v149 = v148 + tower HP defaults
+  950/1300/1950 + escort off; smoke Lich won 12565 / 2 deaths / 0 stuck), `duel-v150-v148` (240; v150 = v148 + S47 barracks endgame:
+  attack an exposed enemy barracks instead of a solo fort dive against >= 2 defenders and when idle within 12 tiles; smoke Ranger won
+  7904, rules did not trigger locally — check BARR/acts 56-57 in hosted logs). Then: replications of anything positive, repeat baseline.
   Next: ten-seat baseline for v148 DONE;
   then re-tune for version 37 (3x creeps, barracks, bigger towers).
 - Previous champion v139 = `Jordan:v139` (08:45-17:40 UTC; game version 36). **Rank 2 at 1589 MMR after round
