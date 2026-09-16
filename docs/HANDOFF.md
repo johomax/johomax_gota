@@ -113,6 +113,11 @@
   with the escort disabled (`escortOn = 0`); smoke Lich won 6960 / 1 death / 0 ESCORT. Dueling v139 on seats 0-4 x 48 = 480 games
   (`duel-v142-v139`): only the candidate-as-Red rows (s0-s4, 240 games) carry signal, the Blue rows are a null (Blue never escorts).
   v117/v118 (escort limits) read level on all seats in 120 games each — too insensitive for a Red-only effect.
+  **v142 result 248/480 = 0.517: Red rows (candidate as Red) 115/240 = 0.479; mirrored-pair effects DK 0, Xbow +2, Lich +1, Warlock
+  +3, Berserk +2 = +8/480 — level, dropped.** The escort correlation was confounded. Tally today: v135-v142 tested, only the melee
+  package (v139) gained. Early-game act mix in league games (ticks 0-2400): Red DK/Lich/Warlock/Berserk walk 37%, escort 19%, wait
+  for wave 13%, siege 10%, farm 7%, first tower/hero reward at median tick 3343, 29/63 still level 1 at tick 2400; Ranger walks 44%,
+  sieges 30%, farms 16%, first reward at 1250, level 3-4 at 2400. Blue's DPS classes kill the forward outer tower a full wave earlier.
 
 ## GAME VERSION 36 (since ~23:20 UTC 2026-09-15)
 - League coworld is now `cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870` (2026.9.15.3, game version 36): same balance as version 34, creep lanes
