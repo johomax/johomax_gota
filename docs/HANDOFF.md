@@ -94,6 +94,9 @@
   reach the fort in only 4-12 of ~50 games; relh:v133 spams manual casts (castPoint 500-1800/game) from mid; codex-objective wins
   Druid 0.64 / Ranger 0.69 on lane 0. Candidate v163 = v148 + Blue melee (VK/DH) wave-camper: ride to the lane's front footman when
   more than 10 tiles from it, otherwise hold and farm (CAMP, acts 60/61); no solo objective walks (fort/open-lane rules still win).
+  v163 smoke as VK vs nine base.bas: TIMEOUT 28800 / 13 deaths / CAMP 54 (it holds under the enemy outer tower) — local games with
+  mid-camping base heroes are a poor model for a wave-camper, so it is dueled anyway: `duel-v163-v148` (seats 0,4 x 60; the s5/s9
+  rows carry the signal, s0/s4 are a null).
   durable); **third ten-seat baseline `v148-seats-c` (19:07 UTC): 146/240 = 0.608 (Red 79/120, Blue 67/120)** — sequence 0.650,
   0.575, 0.608; field in that batch: aaron-cadence 0.575, relh:v133 0.558, codex-objective 0.537, richard:v59 (new) 0.524, khors 0.50,
   black-kite 0.45, games-bond 0.43; v148 is still the strongest entrant in random rosters. **Second v148 ten-seat baseline (`v148-seats-b`, 18:45 UTC): 138/240 = 0.575 (first 0.650)** — the field adapted
