@@ -139,7 +139,8 @@
   sample before death has mean HP 54-74%, no enemy hero within 10 tiles in 44-62% of cases, no ally within 25 in ~45%, act 9/4/3;
   Blue melee (VK 6.1, DH 5.9 deaths) die mostly in their OWN lane mid-game (walking into the enemy push after respawns), Red melee in
   the corner approach. Candidate v145 (S46, Codex) = v139 + melee back-off when alone against >= 2 enemy heroes (act 55, OUTN) and
-  ride walks removed from stuck detection; test on melee seats (`--seats 0,4 -n 60`).
+  ride walks removed from stuck detection; test on melee seats (`--seats 0,4 -n 60`). v145 (:v145) smoke: DK won 5717 / 1 death /
+  3 stuck (v139: 8-13) / OUTN fires at 2-4 enemy heroes; Berserk won 5571 / 1 death. Dueling v139 (`duel-v145-v139`, 240 games).
 
 ## GAME VERSION 36 (since ~23:20 UTC 2026-09-15)
 - League coworld is now `cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870` (2026.9.15.3, game version 36): same balance as version 34, creep lanes
