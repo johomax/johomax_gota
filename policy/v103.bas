@@ -5,6 +5,7 @@
 ' v46 = v45 + mass dives (2 allies near), late-game all-in (tick 22000), finish low towers, 25% flee, fight odds, damage-first shop.
 ' v49a = v47 (tower-safe siege + long-range kiting) committed to one lane (no lane switch/rejoin), all-in from one ally or tick 12000.
 ' v76 = v75 + head for an enemy fort as soon as its lane's gate is known dead, even before the fort is visible.
+' v103 = v93 + Demon Hunter, Vanguard Knight and Druid follow the largest allied group when not escorting (v84 rule, restricted); death telemetry.
 ' v93 = v87 + keep farming footmen in basic range while travelling between lanes or rejoining (no enemy hero near, no tower danger).
 ' v87 = v76 + farm enemy footmen within 8 tiles (melee 6) instead of walking or waiting for a wave.
 
