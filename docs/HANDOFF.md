@@ -63,7 +63,8 @@
   final null result 112/127 over 240 (-15). **Promotion rule tightened (03:05 UTC): combined >= +24 over >= 360 shared games with both
   batches positive** (v87 +37 and v93 +40 over 360 pass; nothing else so far would). v106 (crippled reset) 55/65 vs v93 (dropped).
   v111 (:v111) = v93 buying boots before the dagger (walking is 43% of our time) queued vs v93. v107 (chase kill shots) first batch
-  70/50 vs v93 (+20); replication over 240 queued (`duel-v107-v93-2`); verifying act 43 fires in its logs.
+  70/50 vs v93 (+20; the chase rule fires in 2.5% of samples, hero kills 2.34/game vs ~2.1); replication 107/109 after 216 (level) — combined
+  ~+18 over 336, below the +24 bar: dropped.
   Lesson: check that a new rule fires (act share / print) in the first hosted batch before trusting its duel. v109 (:v109) = v102 with the
   gates removed and a HOLD print; local DH/DK games show the hold firing; **duel vs v93 51/69 (negative: waiting at home loses more tempo
   than the re-deaths cost)**. v110 (hold + ride) 57/63 (level). v112 (:v112) = wave ride only, dueling v93 (`duel-v112-v93`). v103 60/60 (parity, dropped).
