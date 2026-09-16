@@ -56,7 +56,10 @@
   mechanisms (spell dodging via spellCount/spellX/spellY/spellImpactTick, Codex S38 -> v127). Engine facts for it (content.nim abilitySpec):
   every Strike has an impact area (default circle radius 90000 = 1.5 tiles; Blazing Blade/Gale Slash 120-degree sectors from the caster;
   Storm Eagle/Clockwork Charge lines; meteors larger), projectile casts fly at 45000 units/tick (0.75 tiles/tick), so impacts are
-  visible several ticks ahead through the spell list.
+  visible several ticks ahead through the spell list. Verified area casts: Meteor Strike / Volcanic Eruption radius 2 tiles with 48 cast
+  ticks, Arcane Meteor 3 tiles / 72 ticks, Ricochet Disc / Golem Seed / Withering Idol / Bone Marionette / Bound Void / Dread Totem /
+  Void Portal 2 tiles / 24 ticks, Dark Eclipse ring 2.33 tiles around the caster, Inferno Aegis heal circle; Healing Bloom / Kindred Wisps
+  are allied heals (never dodge). Enum order in content.nim: LionGuard=0 ... VolcanicEruption=39.
   Round 324 (first with v113): 6/9.
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep attacking footmen in basic range while travelling between lanes
   or rejoining (no enemy hero near, no tower danger): 64-56 then 136-104 vs v87 = 200-160 over 360 shared games (+40, both batches positive,
