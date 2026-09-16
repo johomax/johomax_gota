@@ -29,6 +29,14 @@
   relh:v88 (uploaded 03:42) scored 0.616 in 73 of those games — a new strong opponent to watch. v113 time budget: walk 39%, farm 14.5%,
   siege 13.5%, escort 6.4%, fight 5.1%; 2.6 deaths and 6.3 STUCK events per game (analysing the stuck spots).
   v120 (:v120, melee flee at 40% HP instead of 25%) 59/61 vs v113 (level, dropped); v121 (:v121, melee farming radius 8 tiles) 63/57 (level, dropped).
+- **Codex audit of v113 (docs/tasks/s37_audit_dead_rules.md, report only):** the respawn rejoin never activates (rejoinArmed is set to 1
+  but activation needs 2) — heroes walk straight at the far objective after every respawn (the stuck hot spots); the hold (act 8) and
+  resistance lane-switch machinery are dead; unseen-lane tower HP defaults to 8400 instead of version 36's 3900 (weakest-lane switch can
+  misfire); six equipment items plus a potion need seven slots; purchase flags ignore buyItem's return value; the kite rule can step away
+  from an adjacent enemy it could hit when bestHero is out of basic range; a declined fight falls through to the second siege rule beside
+  that enemy; rx/ry (retreat point) can point forward right after a respawn; open-lane/escort walks never enter stuck detection.
+  v123 = v122 + the cheap correct fixes (tower HP defaults, kite target from enemies in basic range, no fallback siege with an enemy hero
+  within 3 tiles, retreat toward home when the objective is more than 40 tiles away, escort action gated on routing = 0).
 - **Stuck analysis (v113 replication, 240 games):** 6.3 STUCK events per game (1503 total); 3 games had a hero stuck for the rest of the game
   (98-172 hits). Hot spots: near our own inner tower (105,35) while walking straight at the enemy inner tower (46,104) — 171 events — and at
   spawn (110,0) walking to the enemy gate; i.e. long cross-map walkTo calls after a respawn snag on terrain/tower footprints. v122 = v113 +
