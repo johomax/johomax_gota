@@ -56,6 +56,13 @@
   won 7815 / 2 deaths (v113 14507 / 3) — dueling v113 on all seats (`duel-v138-v113`, 240 games). v139 (:v139, S43) = v137 minus the
   far catch-up trigger plus v135's two melee combat rules — smoke DK won 5737 / 1 death, Berserk 5324 / 1 — dueling v113 on melee
   seats (`duel-v139-v113`, 240 games). Time check: it is ~08:10 UTC; the hosted queue finishes 240 games in ~25-30 minutes.
+  **v138 result 115/240 = 0.479 (-10, dropped)**: Xbow 8/24, Ranger 9/24, Lich 5/24, Warlock 7/24 — the movement rule hurts every ranged
+  class (queuing behind waves, walking back from safe range); Arcanist 13/24, Druid 15/24, VK 16/24 fine. Movement discipline stays
+  melee-only if anywhere. Baseline structure (tools/replay_lanes.py on xp/v113-seats.json, 240 games): winner's breakthrough lane is
+  evenly split (82/83/75), 3-4 heroes hit the winning gate in 80% of games, our hero is at the breakthrough gate in 74% of our wins;
+  when we lose the enemy breaks mid in 44/102. Early-game predictors of our win: carries 0 deaths by tick 3000 -> 0.94 (2+ -> 0.33),
+  casters 0 -> 0.62 / 1 -> 0.50 / 2+ -> 0.38, level 1 at tick 1920 -> 0.45 for casters; for melee nothing early predicts the result
+  (they are passengers), which caps what melee work can deliver.
 
 ## GAME VERSION 36 (since ~23:20 UTC 2026-09-15)
 - League coworld is now `cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870` (2026.9.15.3, game version 36): same balance as version 34, creep lanes
