@@ -10,8 +10,8 @@
   v93 = 207-153 over 360 (+54, both batches positive, 0 timeouts). Blue-side ranged seats carry it (Ranger 21/24, Arcanist 19/24, Druid
   19/24 in the replication); Red melee seats unchanged. Telemetry: ranged deaths per game fell 60-75%, kills up ~70%.
   v114 (kite trigger 4.5 tiles, 4-tile steps) vs v93: 77/43 (+34 first batch; DH 11/12, VK 10/12) — now dueling v113 directly
-  (`duel-v114-v113`; adopt only on >= +24 over 360 vs v113). v115 (melee anti-kite) vs v113: 25/15 after 40. Codex S36 writes v116 = v113 +
-  keep the range advantage against shorter-ranged enemy heroes (docs/tasks/s36_range_advantage_kiting.md).
+  (`duel-v114-v113`; adopt only on >= +24 over 360 vs v113). v115 (melee anti-kite) vs v113: 49/51 after 100 (level). v116 (Codex S36) =
+  v113 + keep the range advantage against shorter-ranged enemy heroes (acts 47/48, KITE3): delivered, smoke-testing, then duel vs v113.
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep attacking footmen in basic range while travelling between lanes
   or rejoining (no enemy hero near, no tower danger): 64-56 then 136-104 vs v87 = 200-160 over 360 shared games (+40, both batches positive,
   0 timeouts). Replay trace over the 359 v87-v76 duel games: v87 issues 1050 creep attacks per game vs v76's 533 on the same lane/path
