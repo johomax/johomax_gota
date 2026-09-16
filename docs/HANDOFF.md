@@ -135,7 +135,11 @@
   **v139 ten-seat baseline (09:49 UTC): 150/240 = 0.625** (v113 0.575, v93 0.537, v76 0.496): DK 11, Xbow 23, Lich 11, Warlock 13,
   Berserk 11, VK 15, Ranger 19, Arcanist 19, Druid 16, DH 12 of 24; Red 0.575 / Blue 0.675. Telemetry: Berserk deaths 3.6 (v113 5.0),
   DK 4.5, DH 5.9 (worst; unchanged), VK levels up; DK/Berserk STUCK prints 27-33 per game (v113 6-12) — the act-47 ride walks queue
-  behind waves and trip the stuck/back-off machinery (check act 10 share).
+  behind waves and trip the stuck/back-off machinery (act 10 = 4% of DK/VK samples). Melee death context in that baseline: last
+  sample before death has mean HP 54-74%, no enemy hero within 10 tiles in 44-62% of cases, no ally within 25 in ~45%, act 9/4/3;
+  Blue melee (VK 6.1, DH 5.9 deaths) die mostly in their OWN lane mid-game (walking into the enemy push after respawns), Red melee in
+  the corner approach. Candidate v145 (S46, Codex) = v139 + melee back-off when alone against >= 2 enemy heroes (act 55, OUTN) and
+  ride walks removed from stuck detection; test on melee seats (`--seats 0,4 -n 60`).
 
 ## GAME VERSION 36 (since ~23:20 UTC 2026-09-15)
 - League coworld is now `cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870` (2026.9.15.3, game version 36): same balance as version 34, creep lanes
