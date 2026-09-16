@@ -60,6 +60,10 @@
   ticks, Arcane Meteor 3 tiles / 72 ticks, Ricochet Disc / Golem Seed / Withering Idol / Bone Marionette / Bound Void / Dread Totem /
   Void Portal 2 tiles / 24 ticks, Dark Eclipse ring 2.33 tiles around the caster, Inferno Aegis heal circle; Healing Bloom / Kindred Wisps
   are allied heals (never dodge). Enum order in content.nim: LionGuard=0 ... VolcanicEruption=39.
+  v127 (Codex S38) delivered: dodges enemy area strikes with impact in 3-40 ticks whose centre is within radius+1 tiles (radius 2 for
+  Blazing Blade/Ricochet/Meteor/Golem/Gale Slash/Withering Idol/Bone Marionette/Bound Void/Void Portal/Volcanic Eruption, 3 for Arcane
+  Meteor/Dark Eclipse/Winged Boot, 6 Lodestone Surge, 9 Storm Eagle, 8 Clockwork Charge, 5 Dread Totem; default 1.5-tile projectiles are
+  not dodged) by stepping radius+2 tiles away (act 50, DODGE print); placed after flee, before fort/fights/kiting. Smoke test, then duel vs v113.
   Round 324 (first with v113): 6/9.
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep attacking footmen in basic range while travelling between lanes
   or rejoining (no enemy hero near, no tower danger): 64-56 then 136-104 vs v87 = 200-160 over 360 shared games (+40, both batches positive,
