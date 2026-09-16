@@ -34,6 +34,14 @@
   run ahead of the front allied footman toward a standing enemy tower (RIDE, act 47). Test on melee seats only:
   `duel v135 v113 --seats 0,4 -n 30` (120 games, all DK/VK/Berserk/DH). Rounds 329: 4/8, 330: 2/8 (rank 5, 1514 MMR at 07:55 UTC;
   the two Berserker and two Lich seats all lost).
+  v135 (:v135) smoke (seed 2026 vs nine base.bas): Berserk won 9332 / 1 death / farm share 42% (v113: 7022 / 1 / 21%); DK won 9382 /
+  1 death but sat at level 1 beside the enemy outer tower for 3000 ticks (the two-footman gate delayed the tower kill v113 got at
+  1784) and still died alone at the inner tower (ride needed tower sight + a footman within 30 tiles). Dueling anyway on melee
+  seats (`duel-v135-v113`, 120 games). v136 (S40: gate restored, farm-first within 3 tiles, hold when no footman near) smoke: Berserk
+  won 5061 / 1 death (best yet) but DK LOST 7683 with 7 deaths — hold fired at spawn, and the diagonal death march through mid
+  continued because mid-lane footmen counted as the wave. Not uploaded/tested. v137 (S41) = v113 + lane-aware wave discipline only
+  (front footman of OUR lane by a physical lane test; walk to it when ahead of it or > 20 tiles behind; hold when the lane has no
+  footman; act 47 in stuck detection).
 
 ## GAME VERSION 36 (since ~23:20 UTC 2026-09-15)
 - League coworld is now `cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870` (2026.9.15.3, game version 36): same balance as version 34, creep lanes
