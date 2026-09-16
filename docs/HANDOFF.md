@@ -75,7 +75,10 @@
   Warlock rows are a null). Also queued: `v148-blue-2` (second Blue baseline, 240). **v160 smoke (Druid vs nine base.bas): TIMEOUT
   28800, 9 deaths, 60 stuck, SUP 38 — it glued itself to the mid-camping base heroes and never pushed; with camping teammates
   (khors, base) in the league the same happens. Dropped, not dueled (uploaded for label order).** Support/follow rules join the
-  "passive loses tempo" list. Round 352: 4/9 (v148 league 17/34 over rounds 349-352), rank 6 at 1518, leader relh 1592. **Second v148 ten-seat baseline (`v148-seats-b`, 18:45 UTC): 138/240 = 0.575 (first 0.650)** — the field adapted
+  "passive loses tempo" list. Round 352: 4/9 (v148 league 17/34 over rounds 349-352), rank 6 at 1518, leader relh 1592.
+  **Melee-package ablation under version 37: v155 (v113 + hotfixes, no package) vs v148 on melee seats: 109/240 (-22) and 116/240 (-4) =
+  225/480 (-30)** — the package is worth ~+30/480 on version 37 as it was on 36; v148 keeps it. Queued: `v148-red` (Red-seat baseline,
+  240) to pair with the Blue baselines for side-specific tests. **Second v148 ten-seat baseline (`v148-seats-b`, 18:45 UTC): 138/240 = 0.575 (first 0.650)** — the field adapted
   within two hours: khors 0.58, aaron-cadence 0.58, relh:v133 0.56, codex-objective 0.56, richard 0.49, red-kite 0.39; Red wins 0.55
   of these games. Our weakest seats now DH 8/24, Warlock 9/24, VK 10/24, Druid 12/24.
   Next: ten-seat baseline for v148 DONE;
