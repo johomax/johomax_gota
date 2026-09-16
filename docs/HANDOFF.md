@@ -71,7 +71,8 @@
   several of those are low-damage (40-60), so the tempo lost to stepping away roughly cancels the damage saved: v127 deaths 2.07/game
   (v113 2.59) but level wins. v129 (:v129) = v127 dodging only strikes of 70+ damage (Blazing Blade, Storm Eagle, Meteor, Arcane Meteor,
   Golem Seed, Shadow Comet, Dark Eclipse, Clockwork Charge, Bound Void, Void Portal, Volcanic Eruption), queued vs v113 (`duel-v129-v113`).
-  Note: Final Measure is 20 damage (v128's inclusion of it was a misread), Molten Fist 45.
+  Note: Final Measure is 20 damage (v128's inclusion of it was a misread), Molten Fist 45. Finals: v127 58/62 (level), v128 55/65
+  (negative) — both dropped; dodging saves ~0.5 deaths per game but costs the tempo back. v129 is the last dodge variant to try.
   Round 324 (first with v113): 6/9.
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep attacking footmen in basic range while travelling between lanes
   or rejoining (no enemy hero near, no tower danger): 64-56 then 136-104 vs v87 = 200-160 over 360 shared games (+40, both batches positive,
