@@ -70,6 +70,13 @@
   v140 (:v140) = v113 with `clash = 1` (Blue pushes physical lane 2 too — black-kite's lane from both sides; v86 tested "other side
   lane" for BOTH sides at parity, so a Blue-only change is untested). Smoke ok (Blue Ranger INIT lane 2). Dueling v113 on all seats,
   480 games (`duel-v140-v113`); only the candidate-as-Blue rows (s5-s9) carry signal, the Red half is a null.
+  **v140 duel result 240/480 = 0.500 exactly** (Blue rows 120/240: VK 24/48, Ranger 16/48, Arcanist 29/48, Druid 24/48, DH ~27/48) —
+  but this design is biased: the Blue candidate meets our own v113 Red hero head-on in the same physical lane (Ranger vs the
+  longer-ranged Crossbowman), which never happens in league games. Fair test queued: random-roster Blue seats, v140 vs a concurrent
+  v113 baseline (`create ... --seats 5-9 -n 48`, tags `v140-blue` / `v113-blue`, 240 games each); compare the two Blue win rates.
+  v141 (:v141, S44) = v139 + the wave-bound rule for Arcanist/Lich/Warlock (Ranger/Xbow/Druid unchanged): smoke Warlock won 6724 /
+  1 death, Arcanist 7908 / 2 deaths / 11 stuck (v138's far trigger caused its 40). Not yet queued — the queue holds ~1 h of work
+  (v139 replication, then the two Blue-seat tests).
 
 ## GAME VERSION 36 (since ~23:20 UTC 2026-09-15)
 - League coworld is now `cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870` (2026.9.15.3, game version 36): same balance as version 34, creep lanes
