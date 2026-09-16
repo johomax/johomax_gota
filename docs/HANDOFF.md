@@ -9,12 +9,16 @@
   or waiting for a wave (one scan condition, `farmR2`): 73-47 then 125-114 vs v76 = 198-161 over 360 shared games (+37, both batches
   positive, 1 timeout). Telemetry: deaths 3.5/game vs v76's 4.7, level curve unchanged, first kill 2151 vs 2412. Follow-ups dueling v87:
   v93 (:v93, keep farming in basic range while travelling between lanes) 64/56 vs v87 (+8 first batch, replication `duel-v93-v87-2` running),
-  v94 (:v94, melee buy armor before the big damage items) dueling; v95 (:v95, Codex S32 focus fire: attack the enemy hero most nearby allies
+  v94 (:v94, melee buy armor before the big damage items) 55/65 vs v87 (negative, dropped); v95 (:v95, Codex S32 focus fire: attack the enemy hero most nearby allies
   are hitting, via objectTarget) dueling; v91 ten-seat 123/240 (Red 52/120, Blue 71/120);
   v90 (:v90, farm radius 10/8) 60/60 vs v87 (exact parity, dropped); v91 (:v91, = v87 + death-position
   telemetry) ten-seat batch `v91-seats` for a per-seat baseline and a death map (tools/log_stats.py prints DEATH POSITIONS).
   Dropped: v88 (creeps before towers below level 4) 59/61 vs v76; v89 (Codex S31 creep-front anchor) and v92 (static lane-midpoint anchor)
   idle or walk at level 1 locally, uploaded for label order only.
+- **Death map (v91 ten-seat, 855 deaths in 240 games, Red frame):** 29% on the enemy inner/gate stretch, 26% on our own east-edge lane,
+  20% mid/jungle. Hot cells: (40,100) 101 deaths + (50,100) 39 = the enemy INNER tower (46,104); (90,100) 85 = the enemy outer tower;
+  (100,60)-(100,70) 66 = our own outer tower under enemy push. 54% of deaths happen at levels 2-4, ticks 2000-8000. Next test: v96 = v87 with
+  the all-in dive needing 2 allies within 8 tiles for inner/gate towers (1 still enough for the outer tower).
 - Previous champion v76 (`Jordan:v76`). Under version 36 (all duels since 23:30 UTC ran on it): v82 (:v82, Codex S28, target-aware siege via
   objectTarget) 59/61 then 117/123 vs v76 (176-184 over 360, level, dropped); v83 (:v83, S29) 58/62 (level, dropped); v84 (:v84, S30 group
   follow for all classes) 53/66 (negative, dropped); sanity v76 vs v68 117/121 (level). v76 ten-seat baseline on v36 (`xp/v76-seats-v36`):

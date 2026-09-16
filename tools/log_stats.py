@@ -23,8 +23,8 @@ def parse_log(txt):
         if not p: continue
         if p[0] == "D":
             d["deaths"] += 1
-            if len(p) >= 7 and p[3] == "at":
-                try: d.setdefault("dpos", []).append({"tick": int(p[1]), "x": int(p[4]), "y": int(p[5]), "level": int(p[6][1:])})
+            if len(p) >= 8 and p[4] == "at":
+                try: d.setdefault("dpos", []).append({"tick": int(p[1]), "x": int(p[5]), "y": int(p[6]), "level": int(p[7][1:])})
                 except Exception: pass
         elif p[0] == "K":
             g = int(p[2]); d["kills"] += 1; d["kill_gold"] += g
