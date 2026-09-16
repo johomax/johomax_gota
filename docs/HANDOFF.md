@@ -97,6 +97,11 @@
   (6.1 vs 5.3) do. Private policy logs ARE available for league episodes (`get_episode_request_policy_log(ereq, my_pv, seat)`);
   cache in tmp/league_log_cache.json. NOTE: `tools/league_data.py` overwrites docs/league_episodes.json — monitors must pass
   `--out tmp/league_recent.json` (the 30-min monitor now does).
+  League-log class detail (v87-v113, 13-20 games per class): level at tick 1920 / 3840 — Ranger 2.7 / 5.0, DK 1.9 / 2.8, Berserk
+  1.5 / 2.7, Warlock 1.4 / 2.3, Lich 1.3 / 2.8. Berserk (3/17 wins) dies only 2.9 times per game with its first death at median tick
+  9371 — its problem is being useless, not dying: 15% of samples waiting for a wave (act 22), 14% escorting the Crossbowman (act 35),
+  10% farming. Lich (3/13): 1.8 deaths, level 2.8 at 3840, 16% escorting. The Red-side early game (first 2000 ticks at level 1) is the
+  open problem; class-restricted duels (`--seats 2,3` for casters, `0,4` for melee) are the way to measure it.
 
 ## GAME VERSION 36 (since ~23:20 UTC 2026-09-15)
 - League coworld is now `cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870` (2026.9.15.3, game version 36): same balance as version 34, creep lanes
