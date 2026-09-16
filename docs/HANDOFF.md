@@ -32,6 +32,12 @@
   950/1300/1950 + escort off; smoke Lich won 12565 / 2 deaths / 0 stuck), `duel-v150-v148` (240; v150 = v148 + S47 barracks endgame:
   attack an exposed enemy barracks instead of a solo fort dive against >= 2 defenders and when idle within 12 tiles; smoke Ranger won
   7904, rules did not trigger locally — check BARR/acts 56-57 in hosted logs). Then: replications of anything positive, repeat baseline.
+  **`null-v148-v37` is INVALID**: the platform merges identical policy versions in one roster into a single policy_stats entry (our
+  policy appeared once, reward 0.5, nine entries), so `report` read other seats (it printed Red 239/240). Never duel a version against
+  itself; calibrate with two byte-identical files under different labels (v151 = v148 re-uploaded, `null-v151-v148`, queued). Engine
+  head moved again at ~17:55 UTC: 6ee8642 "Put creeps on the correct sides and make Radiant soldiers larger" — graphics only
+  (assets.nim/graphics.nim), league coworld still cow_dd6ceed6. v152 (:v152) = v148 with the melee farm radius 8 tiles (6-creep waves),
+  melee-seat duel vs v148 queued (`duel-v152-v148`, 240).
   Next: ten-seat baseline for v148 DONE;
   then re-tune for version 37 (3x creeps, barracks, bigger towers).
 - Previous champion v139 = `Jordan:v139` (08:45-17:40 UTC; game version 36). **Rank 2 at 1589 MMR after round
