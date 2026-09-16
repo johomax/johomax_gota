@@ -1,4 +1,4 @@
-# HANDOFF — Gods of the Arena policy project (paused 2026-09-15, 00:45 UTC at the user's request)
+# HANDOFF — Gods of the Arena policy project (paused 2026-09-16, 01:22 UTC at the user's request)
 
 ## GAME VERSION 36 (since ~23:20 UTC 2026-09-15) — read first
 - League coworld is now `cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870` (2026.9.15.3, game version 36): same balance as version 34, creep lanes
@@ -18,8 +18,8 @@
 - **Side gap:** in random rosters v91 (= v87) wins 52/120 as Red but 71/120 as Blue; v93's duel batches win 89/180 as Red vs 111/180 as Blue
   (v76 had no gap: 59/60). Red non-Crossbowman seats (DK 0.42, Lich 0.38, Warlock 0.29, Berserk 0.38) spend 11% of their time in the
   Red-only escort rule (act 35, v68: follow the allied Crossbowman near the enemy fort) instead of farming; Blue never escorts (0.54-0.67 per class).
-  v99 (:v99) = v93 with the escort walk disabled: **66/54 vs v93 (+12 first batch; as candidate Red 26/60, Blue 40/60)**; replication over 240
-  running (`duel-v99-v93-2`). Also queued vs v93: v100 (:v100, never fight alone, `duel-v100-v93`), v101 (:v101, level-aware fights via
+  v99 (:v99) = v93 with the escort walk disabled: 66/54 then 110/130 vs v93 (176-184 over 360; Red seats fell to 43/120) — dropped, the
+  Red-only escort rule helps. Also queued vs v93: v100 (:v100, never fight alone, `duel-v100-v93`), v101 (:v101, level-aware fights via
   objectLevel: never start on a hero two or more levels above us unless it is low or an ally is beside us, `duel-v101-v93`), and the
   [v100 result: 55/65 vs v93, negative, dropped — retreating from 1v1s costs more than the re-deaths it avoids]
   v93 ten-seat baseline `v93-seats`: 129/240 (Red 60/120, Blue 69/120) — v76 was 119/240, so the side gap is mostly noise.
@@ -38,6 +38,11 @@
   20% mid/jungle. Hot cells: (40,100) 101 deaths + (50,100) 39 = the enemy INNER tower (46,104); (90,100) 85 = the enemy outer tower;
   (100,60)-(100,70) 66 = our own outer tower under enemy push. 54% of deaths happen at levels 2-4, ticks 2000-8000. Next test: v96 = v87 with
   the all-in dive needing 2 allies within 8 tiles for inner/gate towers (1 still enough for the outer tower).
+- **Resume here:** v101 (level-aware fights) duel vs v93 was 21/21 after 42 games (`duel-v101-v93`, report with
+  `uv run python tools/xp_mixed.py report xp/duel-v101-v93.json`). Next idea, not yet written: v102 = v93 + keep the home guard (act 14)
+  active while an enemy hero is within ~18 tiles, we are within 12 tiles of an own tower and no ally is within 8 tiles (cap ~2400 ticks),
+  because Blue-side classes die mostly on our own lane right after respawn (DH 59 of 152 deaths, VK 40, Arcanist 31; act 9 walking).
+  Every hosted result so far is in this file and README.md; standings via `uv run python tools/ladder.py`.
 - Previous champion v76 (`Jordan:v76`). Under version 36 (all duels since 23:30 UTC ran on it): v82 (:v82, Codex S28, target-aware siege via
   objectTarget) 59/61 then 117/123 vs v76 (176-184 over 360, level, dropped); v83 (:v83, S29) 58/62 (level, dropped); v84 (:v84, S30 group
   follow for all classes) 53/66 (negative, dropped); sanity v76 vs v68 117/121 (level). v76 ten-seat baseline on v36 (`xp/v76-seats-v36`):
