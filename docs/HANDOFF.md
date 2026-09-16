@@ -57,6 +57,13 @@
   the enemy corner; level at tick 2400 only 2.3-2.8 for VK/DH/Druid. Same mid death march as Red melee (DK 72/105 in mid/jungle).
   Candidate v156 (S48, Codex): walk out via a point 4 tiles short of our own outer tower when the objective is beyond the enemy outer
   (VIA, act 58) — the single-waypoint version of v137's lane-hugging without queuing behind waves; test on all seats, 480 games.
+  v156 smoke: Ranger fine but the rule re-fires after the waypoint (the "behind our outer tower" test stays true for a few tiles) —
+  DK oscillated to a 28800 timeout with 11 deaths. v157 (:v157, per-life viaReached flag) still timed out as DK (14 deaths, VIA 26):
+  the waypoint 4 tiles from the outer tower toward home can be unreachable, so "reached" never fires. v158 = v157 + reached within
+  5 tiles + a 1200-tick per-life deadline (viaDeadline) — smoke pending; queue only if neither seat times out. v156/v157 uploaded for
+  label order only. **Second v148 ten-seat baseline (`v148-seats-b`, 18:45 UTC): 138/240 = 0.575 (first 0.650)** — the field adapted
+  within two hours: khors 0.58, aaron-cadence 0.58, relh:v133 0.56, codex-objective 0.56, richard 0.49, red-kite 0.39; Red wins 0.55
+  of these games. Our weakest seats now DH 8/24, Warlock 9/24, VK 10/24, Druid 12/24.
   Next: ten-seat baseline for v148 DONE;
   then re-tune for version 37 (3x creeps, barracks, bigger towers).
 - Previous champion v139 = `Jordan:v139` (08:45-17:40 UTC; game version 36). **Rank 2 at 1589 MMR after round
