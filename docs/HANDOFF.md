@@ -85,7 +85,8 @@
   **Result: v140 Blue 152/240 = 0.633 (VK 29, Ranger 38, Arcanist 29, Druid 33, DH 23 of 48) vs v113 Blue 147/240 = 0.613 — level
   (+5, SE of the difference ~0.044). Lane choice for Blue is closed: dropped.** Round 333 (first with v139): 6/10 (Berserk 0/2, DH 1/3,
   Warlock 2/2, Druid/Lich/VK won); rank 4, 1544. Round 334: 4/8 (DK 1/2, Druid 1/2, Ranger W, Warlock W; DH, Lich L) -> rank 5, 1537;
-  v139 league record 10/18 after two rounds.
+  v139 league record 10/18 after two rounds. Round 335: 4/8 (Berserk W, Warlock 2/2, Druid 1/3; Arcanist, Xbow L) -> v139 14/26; rank 4,
+  1532 — richard 1619 and black-kite 1609 both fell ~25 this round, the top three are within 90 points.
   v141 (:v141, S44) = v139 + the wave-bound rule for Arcanist/Lich/Warlock (Ranger/Xbow/Druid unchanged): smoke Warlock won 6724 /
   1 death, Arcanist 7908 / 2 deaths / 11 stuck (v138's far trigger caused its 40). **Dueled v139 on caster seats (`--seats 2,3 -n 60`,
   240 games): 125/240 = 0.521 — Lich/Arcanist pair 55/120 (-5), Warlock/Druid pair 70/120 (+10): level, dropped.** The wave-bound
