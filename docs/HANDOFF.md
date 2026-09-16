@@ -86,8 +86,9 @@
   (+5, SE of the difference ~0.044). Lane choice for Blue is closed: dropped.** Round 333 (first with v139): 6/10 (Berserk 0/2, DH 1/3,
   Warlock 2/2, Druid/Lich/VK won); rank 4, 1544.
   v141 (:v141, S44) = v139 + the wave-bound rule for Arcanist/Lich/Warlock (Ranger/Xbow/Druid unchanged): smoke Warlock won 6724 /
-  1 death, Arcanist 7908 / 2 deaths / 11 stuck (v138's far trigger caused its 40). Not yet queued — the queue holds ~1 h of work
-  (v139 replication, then the two Blue-seat tests).
+  1 death, Arcanist 7908 / 2 deaths / 11 stuck (v138's far trigger caused its 40). **Dueled v139 on caster seats (`--seats 2,3 -n 60`,
+  240 games): 125/240 = 0.521 — Lich/Arcanist pair 55/120 (-5), Warlock/Druid pair 70/120 (+10): level, dropped.** The wave-bound
+  movement rule helps melee only.
 - **LEAGUE STRUCTURE (20 rounds, 190 games, tools/league_data.py --rounds 20 + new tools/league_logs.py, 09:00 UTC):** Red wins only
   0.36 of league games (XP random rosters: 0.44). Seating is not uniform: Blue seats hold the higher-rated players in 120/165 games
   (mean current MMR Red 1512 / Blue 1534); black-kite sits Blue in 86/110 games, daveey-2 98/126, docxology 72/97, richard 105/164,
@@ -107,6 +108,11 @@
   9371 — its problem is being useless, not dying: 15% of samples waiting for a wave (act 22), 14% escorting the Crossbowman (act 35),
   10% farming. Lich (3/13): 1.8 deaths, level 2.8 at 3840, 16% escorting. The Red-side early game (first 2000 ticks at level 1) is the
   open problem; class-restricted duels (`--seats 2,3` for casters, `0,4` for melee) are the way to measure it.
+  **Escort finding (league logs, 63 Red non-Xbow games): ESCORT fires in 61/63 games, median first at tick 1680 (level 1).** Games with
+  escorting before tick 2400 (39): win 0.36, level 1.38 at 1920 / 2.32 at 3840; without (24): 0.46, 1.83 / 3.27. v142 (:v142) = v139
+  with the escort disabled (`escortOn = 0`); smoke Lich won 6960 / 1 death / 0 ESCORT. Dueling v139 on seats 0-4 x 48 = 480 games
+  (`duel-v142-v139`): only the candidate-as-Red rows (s0-s4, 240 games) carry signal, the Blue rows are a null (Blue never escorts).
+  v117/v118 (escort limits) read level on all seats in 120 games each — too insensitive for a Red-only effect.
 
 ## GAME VERSION 36 (since ~23:20 UTC 2026-09-15)
 - League coworld is now `cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870` (2026.9.15.3, game version 36): same balance as version 34, creep lanes
