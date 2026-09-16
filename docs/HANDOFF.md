@@ -33,7 +33,8 @@
   (98-172 hits). Hot spots: near our own inner tower (105,35) while walking straight at the enemy inner tower (46,104) — 171 events — and at
   spawn (110,0) walking to the enemy gate; i.e. long cross-map walkTo calls after a respawn snag on terrain/tower footprints. v122 = v113 +
   when the objective is more than 40 tiles away, walk to the nearest lane route point that is closer to the objective (road-following), walk
-  home after six stuck hits, forget stuck hits after 240 ticks of movement. Smoke-testing with a v113 reference (stuck counts).
+  home after six stuck hits, forget stuck hits after 240 ticks of movement. Local same-seed DK game: 1 stuck / 1 death / won at tick 5861
+  (v113: 13 stuck / 5 deaths / 12973). Uploaded as :v122, dueling v113 (`duel-v122-v113`).
   Round 324 (first with v113): 6/9.
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep attacking footmen in basic range while travelling between lanes
   or rejoining (no enemy hero near, no tower danger): 64-56 then 136-104 vs v87 = 200-160 over 360 shared games (+40, both batches positive,
