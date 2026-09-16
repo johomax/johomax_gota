@@ -63,7 +63,8 @@
   v127 (Codex S38) delivered: dodges enemy area strikes with impact in 3-40 ticks whose centre is within radius+1 tiles (radius 2 for
   Blazing Blade/Ricochet/Meteor/Golem/Gale Slash/Withering Idol/Bone Marionette/Bound Void/Void Portal/Volcanic Eruption, 3 for Arcane
   Meteor/Dark Eclipse/Winged Boot, 6 Lodestone Surge, 9 Storm Eagle, 8 Clockwork Charge, 5 Dread Totem; default 1.5-tile projectiles are
-  not dodged) by stepping radius+2 tiles away (act 50, DODGE print); placed after flee, before fort/fights/kiting. Smoke test, then duel vs v113.
+  not dodged) by stepping radius+2 tiles away (act 50, DODGE print); placed after flee, before fort/fights/kiting. Smoke tests clean
+  (Ranger 12 dodges / 4 deaths, DK 4 / 2); uploaded as :v127, dueling v113 (`duel-v127-v113`).
   Round 324 (first with v113): 6/9.
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep attacking footmen in basic range while travelling between lanes
   or rejoining (no enemy hero near, no tower danger): 64-56 then 136-104 vs v87 = 200-160 over 360 shared games (+40, both batches positive,
