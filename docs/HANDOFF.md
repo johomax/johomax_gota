@@ -20,7 +20,7 @@
   --ids --exact --by-class`, fillers `tools/roster_stats.py`, ladder `tools/ladder.py`, engine/coworld drift `tools/coworld_check.py`.
   Upload every policy file once, in numeric order (`uv run coworld upload-policy --file policy/vNNN.bas --tag version=vNNN`), so the
   platform label equals the file number; smoke-test Codex output locally first (blank line before `end if`/`wend` is a compile error).
-- **In flight:** v133 (short-range kite steps) and v134 (meet the wave) dueling v113. v129-v132 dropped (level).
+- **In flight:** v134 (meet the wave; first batch 66/54) replicating over 240 vs v113. v129-v133 dropped (level).
 
 ## GAME VERSION 36 (since ~23:20 UTC 2026-09-15)
 - League coworld is now `cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870` (2026.9.15.3, game version 36): same balance as version 34, creep lanes
@@ -113,8 +113,9 @@
   stays free) — converts the 100-360 gold our ranged seats leave unspent into effective HP: 59/60 vs v113 (level, 1 timeout; dropped).
   Next low-cost tests: v133 (Druid/Warlock kite with a 3-tile trigger and 2-tile steps so the target stays inside their 4.0/4.5 range),
   v134 (after 120 ticks waiting outside a tower with no allied footman within 8 tiles, walk back toward the previous route point to meet
-  the wave; act 23). v133 (:v133) smoke-tested (Druid: 5 kites, 2 deaths) and dueling v113 (`duel-v133-v113`); v134 (:v134) smoke-tested
-  (Berserk: compiles; the walk-back did not trigger locally) and dueling v113 (`duel-v134-v113`).
+  the wave; act 23). v133 65/55 vs v113 but the only seats it changes did not move (Warlock 3/12, Druid 7/12) — noise, dropped.
+  **v134 first batch 66/54 vs v113 (+12; Berserk 8/12, VK 10/12, Druid 9/12)** — replication over 240 queued (`duel-v134-v113-2`);
+  checking that act 23 fires in its hosted logs.
   Round 324 (first with v113): 6/9.
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep attacking footmen in basic range while travelling between lanes
   or rejoining (no enemy hero near, no tower danger): 64-56 then 136-104 vs v87 = 200-160 over 360 shared games (+40, both batches positive,
