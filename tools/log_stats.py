@@ -21,7 +21,11 @@ def parse_log(txt):
     for line in txt.splitlines():
         p = line.split()
         if not p: continue
-        if p[0] == "D": d["deaths"] += 1
+        if p[0] == "D":
+            d["deaths"] += 1
+            if len(p) >= 7 and p[3] == "at":
+                try: d.setdefault("dpos", []).append({"tick": int(p[1]), "x": int(p[4]), "y": int(p[5]), "level": int(p[6][1:])})
+                except Exception: pass
         elif p[0] == "K":
             g = int(p[2]); d["kills"] += 1; d["kill_gold"] += g
             if g >= 100: d["hero_kills"] += 1
@@ -101,6 +105,25 @@ def main():
         tab("tick bucket", lambda dc: dc["tick"] // 1000 * 1000)
         tab("class", lambda dc: None)
         c = Counter(cls for cls, _, _ in dcs); print("  by class: " + ", ".join(f"{k}={v}" for k, v in sorted(c.items(), key=lambda kv: -kv[1])))
+
+    dps = [(r["seat"], r["win"], dp) for _, r in rows for dp in r["log"].get("dpos", [])]
+    if dps:
+        from collections import Counter
+        print(f"\nDEATH POSITIONS (Red frame; Red spawn 112,4; own lane runs north along x~105 then west along y~104): {len(dps)} deaths over {len(rows)} games")
+        def rf(seat, dp): return (dp["x"], dp["y"]) if seat < 5 else (115 - dp["x"], 115 - dp["y"])
+        def zone(seat, dp):
+            x, y = rf(seat, dp)
+            if x >= 90 and y <= 50: return "own base/gate"
+            if x >= 90: return "own lane (east edge)"
+            if y >= 90 and x >= 60: return "enemy outer stretch"
+            if y >= 90: return "enemy inner/gate stretch"
+            if x <= 25 or y >= 90: return "enemy base"
+            return "mid/jungle"
+        def tab(name, keyf):
+            c = Counter(keyf(seat, dp) for seat, _, dp in dps)
+            print(f"  by {name}: " + ", ".join(f"{k}={v}" for k, v in sorted(c.items(), key=lambda kv: -kv[1])[:14]))
+        tab("zone", zone); tab("level", lambda s_, dp: dp["level"]); tab("tick bucket", lambda s_, dp: dp["tick"] // 1000 * 1000)
+        tab("10-tile cell (x,y)", lambda s_, dp: (rf(s_, dp)[0] // 10 * 10, rf(s_, dp)[1] // 10 * 10))
 
 if __name__ == "__main__":
     main()
