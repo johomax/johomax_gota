@@ -2,7 +2,7 @@
 
 ## WHERE THIS STANDS (2026-09-16 04:50 UTC) — read this first
 - **Champion: v148 = `Jordan:v148`** (submitted 17:05 UTC 2026-09-16 for GAME VERSION 37; ladder label confirmed 17:26 UTC; first league
-  round 349 = 6/9, MMR 1514 -> 1532, rank 6 with the leader at 1612). An emergency fix: every
+  round 349 = 6/9, MMR 1514 -> 1532; round 350 = 2/8 -> 1506, rank 6, leader richard 1603; relh is iterating fast, v133). An emergency fix: every
   earlier version parks on dead tower coordinates until the timeout because version 37 no longer lists dead buildings). v148 = v139 +
   (v147) all building-targeted walks stop 3 tiles short of the building and no walk is issued within 4 tiles of a building objective
   (act 23) + a building objective that is missing from the object list while we stand within 4 tiles counts as dead (DEADOBJ; sets
