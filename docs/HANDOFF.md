@@ -10,6 +10,11 @@
   0 timeouts). Replay trace over the 359 v87-v76 duel games: v87 issues 1050 creep attacks per game vs v76's 533 on the same lane/path
   (team-win 0.549 vs 0.448). Pending duels vs v87: v95 (focus fire) and v96 (two-ally dive rule). Already ported onto v93 and queued vs v93:
   v97 (:v97) = v93 + two-ally dive, v98 (:v98) = v93 + focus fire; both carry the death-position telemetry (`D tick respawn #n at x y Lk`).
+  v95 vs v87: 60/60 (exact parity); v96 vs v87: 36/43 after 79 (trending negative).
+- **Side gap:** in random rosters v91 (= v87) wins 52/120 as Red but 71/120 as Blue; v93's duel batches win 89/180 as Red vs 111/180 as Blue
+  (v76 had no gap: 59/60). Red non-Crossbowman seats (DK 0.42, Lich 0.38, Warlock 0.29, Berserk 0.38) spend 11% of their time in the
+  Red-only escort rule (act 35, v68: follow the allied Crossbowman near the enemy fort) instead of farming; Blue never escorts (0.54-0.67 per class).
+  Test: v99 = v93 with the escort rule disabled, duel vs v93 (mirrored seats, so a Red-side gain shows as a candidate gain).
 - Champion 00:42-00:56 UTC: v87 = `Jordan:v87` = v76 + attack any enemy footman within 8 tiles (melee 6) instead of walking
   or waiting for a wave (one scan condition, `farmR2`): 73-47 then 125-114 vs v76 = 198-161 over 360 shared games (+37, both batches
   positive, 1 timeout). Telemetry: deaths 3.5/game vs v76's 4.7, level curve unchanged, first kill 2151 vs 2412. Follow-ups dueling v87:
