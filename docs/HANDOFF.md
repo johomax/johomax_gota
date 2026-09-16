@@ -1,6 +1,27 @@
 # HANDOFF — Gods of the Arena policy project (resumed 2026-09-16, 02:42 UTC)
 
-## GAME VERSION 36 (since ~23:20 UTC 2026-09-15) — read first
+## WHERE THIS STANDS (2026-09-16 04:50 UTC) — read this first
+- **Champion: v113 = `Jordan:v113`** (promoted 03:36 UTC). Lineage of confirmed gains on game version 36, all by mirrored-seat duels:
+  v76 -> v87 (farm any enemy footman within 8 tiles instead of walking/waiting, 198-161 over 360) -> v93 (also farm while travelling
+  between lanes, 200-160 over 360) -> v113 (stutter-step kiting for ranged classes via selfAttackCooldown, 207-153 over 360).
+  Ladder: rank 4-5, ~1533 MMR, up from rank 9 / 1482 at 01:16 UTC; league rounds with v113: 319-325 roughly 60%.
+- **Promotion rule:** combined >= +24 over >= 360 shared games with both batches positive (a null duel of identical policies read +21
+  then -15 per batch, so +-20 per 120-240 games is noise). Always confirm a new rule fires in the hosted logs (tools/log_stats.py) first.
+- **Tried on top of v113 and level or negative (16 candidates):** wider kite trigger, range-advantage kiting, melee anti-kite, escort
+  variants, free elixir slot, melee flee at 40%, melee farm radius, road-following via route points (harmful), the Codex audit's fix bundle,
+  stuck escalation, spell dodging (saves ~0.5 deaths/game, wins level). Passive/safety rules lose tempo; only added productive actions won.
+- **Structural facts:** Blue-side classes (VK/Ranger/Arcanist/Druid/DH) win 0.71-0.88 for us, Red-side (DK/Xbow/Lich/Warlock/Berserk)
+  0.29-0.58; the best opponents show the same Red weakness in shared games. Games end ~tick 8000; deaths cost ~800 ticks each; our hero
+  walks 39% of the time, farms 14.5%, sieges 13.5%. Heroes snag 6 times per game on long walks (route points are tower centres — never
+  walkTo a tower position).
+- **Tools:** duels `tools/xp_mixed.py duel CAND CTRL --seats 0-4 -n 12|24 --tag t`, report `tools/xp_mixed.py report xp/t.json`,
+  telemetry `tools/log_stats.py xp/t.json` (act share, deaths, DEATH POSITIONS), replays `tools/replay_lanes.py`, `tools/policy_trace.py
+  --ids --exact --by-class`, fillers `tools/roster_stats.py`, ladder `tools/ladder.py`, engine/coworld drift `tools/coworld_check.py`.
+  Upload every policy file once, in numeric order (`uv run coworld upload-policy --file policy/vNNN.bas --tag version=vNNN`), so the
+  platform label equals the file number; smoke-test Codex output locally first (blank line before `end if`/`wend` is a compile error).
+- **In flight:** v129 (dodge only 70+ damage strikes) and v130 (looser side-lane join) dueling v113.
+
+## GAME VERSION 36 (since ~23:20 UTC 2026-09-15)
 - League coworld is now `cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870` (2026.9.15.3, game version 36): same balance as version 34, creep lanes
   route around towers, and NEW BASIC observations: objectTarget(i), objectLevel/Mana/ItemId/ItemCount/FacingX/Y/VelX/Y, spellCount()+spell*
   (see docs/ARENA_NOTES.md top). Tools retargeted; v76 verified locally (DK 11141 ticks/3 deaths, Xbow 5636/1 on seed 2026).
