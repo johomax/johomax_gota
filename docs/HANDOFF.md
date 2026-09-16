@@ -26,7 +26,9 @@
   Locally base.bas heroes end with 1.5-2x our XP. Hypothesis: under-levelled hero -> loses fights -> dies -> the lane push stalls.
 - **Farming tests running:** v87 (:v87) = v76 + attack any enemy footman within 8 tiles (melee 6) instead of walking/waiting (farmR2);
   v88 (:v88) = v87 + below level 4 creeps come before towers (unless all-in). Local DK: v87 17191 ticks / 9 deaths / 2475 XP, v88 13687 / 3 / 1425
-  (v76 11141 / 3 / 1475). Duels vs v76, 120 each (`duel-v87-v76`, `duel-v88-v76`).
+  (v76 11141 / 3 / 1475). **v87 first batch: 73/47 vs v76 over 120 (+26, Red 34/60, Blue 39/60, 0 timeouts)** — the largest first-batch
+  gain so far; replication over 240 running (`duel-v87-v76-2`); promote if the replication is positive. v88 dueling (`duel-v88-v76`).
+  Codex S31 (docs/tasks/s31_early_farm_anchor.md, task-mu3d6yj1-zgw31c) writes v89 = v88 + hold at the creep meeting point until level 4.
 - **Where this stands (23:45 UTC):** the confirmed lineage is v49a (tower-safe siege, kiting, commitment, all-in) -> v51 (join a 2+ ally side
   push, 91-66 over 360) -> v68 (escort the allied Crossbowman, 102-85 over 360) -> v76 (fort rush once a gate is known dead, 129-107 over 240
   vs v75, level vs v68). Since game version 34 every further candidate (v73-v83, 12 of them) landed within noise (+/-5 over 120-240 games),
