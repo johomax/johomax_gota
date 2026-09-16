@@ -113,7 +113,8 @@
   stays free) — converts the 100-360 gold our ranged seats leave unspent into effective HP: 59/60 vs v113 (level, 1 timeout; dropped).
   Next low-cost tests: v133 (Druid/Warlock kite with a 3-tile trigger and 2-tile steps so the target stays inside their 4.0/4.5 range),
   v134 (after 120 ticks waiting outside a tower with no allied footman within 8 tiles, walk back toward the previous route point to meet
-  the wave; act 23). v133 (:v133) smoke-tested (Druid: 5 kites, 2 deaths) and dueling v113 (`duel-v133-v113`); v134 building.
+  the wave; act 23). v133 (:v133) smoke-tested (Druid: 5 kites, 2 deaths) and dueling v113 (`duel-v133-v113`); v134 (:v134) smoke-tested
+  (Berserk: compiles; the walk-back did not trigger locally) and dueling v113 (`duel-v134-v113`).
   Round 324 (first with v113): 6/9.
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep attacking footmen in basic range while travelling between lanes
   or rejoining (no enemy hero near, no tower danger): 64-56 then 136-104 vs v87 = 200-160 over 360 shared games (+40, both batches positive,
