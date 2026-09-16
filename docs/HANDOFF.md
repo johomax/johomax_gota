@@ -73,6 +73,8 @@
   Golem Seed, Shadow Comet, Dark Eclipse, Clockwork Charge, Bound Void, Void Portal, Volcanic Eruption), queued vs v113 (`duel-v129-v113`).
   Note: Final Measure is 20 damage (v128's inclusion of it was a misread), Molten Fist 45. Finals: v127 58/62 (level), v128 55/65
   (negative) — both dropped; dodging saves ~0.5 deaths per game but costs the tempo back. v129 is the last dodge variant to try.
+  v130 (:v130) = v113 with a looser side-lane join (one ally pushing the other side lane suffices when our lane has none and no ally is
+  beside us; JOIN fired only 0.22 times per game), queued vs v113 (`duel-v130-v113`).
   Round 324 (first with v113): 6/9.
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep attacking footmen in basic range while travelling between lanes
   or rejoining (no enemy hero near, no tower danger): 64-56 then 136-104 vs v87 = 200-160 over 360 shared games (+40, both batches positive,
