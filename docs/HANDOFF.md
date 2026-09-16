@@ -10,7 +10,11 @@
   0 timeouts). Replay trace over the 359 v87-v76 duel games: v87 issues 1050 creep attacks per game vs v76's 533 on the same lane/path
   (team-win 0.549 vs 0.448). Pending duels vs v87: v95 (focus fire) and v96 (two-ally dive rule). Already ported onto v93 and queued vs v93:
   v97 (:v97) = v93 + two-ally dive, v98 (:v98) = v93 + focus fire; both carry the death-position telemetry (`D tick respawn #n at x y Lk`).
-  v95 vs v87: 60/60 (exact parity, dropped); v96 vs v87: 51/69 (negative, dropped; v97 carries the same rule and is expected to fail).
+  v95 vs v87: 60/60 (exact parity, dropped); v96 vs v87: 51/69 (negative, dropped). vs v93: v97 (two-ally dive) 61/59 (parity, dropped),
+  v98 (focus fire) 52/68 (negative, dropped). Neither dive caution nor focus fire moves the needle; farming and not wasting time do.
+- **Re-death pattern (v91 logs):** 39% of deaths are re-deaths within 1500 ticks of a respawn, on our own lane or mid, mostly while walking
+  back (act 9) with one enemy hero near and no ally. v100 (:v100) = v93 + never fight alone: with no ally within 8 tiles, an enemy hero within
+  10 tiles we cannot burst, and none of our towers within 7 tiles, fall back toward the previous route point (act 41; Crossbowman exempt).
 - **Side gap:** in random rosters v91 (= v87) wins 52/120 as Red but 71/120 as Blue; v93's duel batches win 89/180 as Red vs 111/180 as Blue
   (v76 had no gap: 59/60). Red non-Crossbowman seats (DK 0.42, Lich 0.38, Warlock 0.29, Berserk 0.38) spend 11% of their time in the
   Red-only escort rule (act 35, v68: follow the allied Crossbowman near the enemy fort) instead of farming; Blue never escorts (0.54-0.67 per class).
