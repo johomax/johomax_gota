@@ -53,7 +53,8 @@
   per episode (12 distinct rosters per 12-episode request), so games are independent; treat +-20 over 120 as ordinary noise and keep the
   final null result 112/127 over 240 (-15). **Promotion rule tightened (03:05 UTC): combined >= +24 over >= 360 shared games with both
   batches positive** (v87 +37 and v93 +40 over 360 pass; nothing else so far would). v106 (crippled reset) 55/65 vs v93 (dropped).
-  v111 (:v111) = v93 buying boots before the dagger (walking is 43% of our time) queued vs v93.
+  v111 (:v111) = v93 buying boots before the dagger (walking is 43% of our time) queued vs v93. v107 (chase kill shots) first batch
+  70/50 vs v93 (+20); replication over 240 queued (`duel-v107-v93-2`); verifying act 43 fires in its logs.
   Lesson: check that a new rule fires (act share / print) in the first hosted batch before trusting its duel. v109 (:v109) = v102 with the
   gates removed and a HOLD print; local DH/DK games show the hold firing; dueling v93 (`duel-v109-v93`). v103 60/60 (parity, dropped).
   v108 (:v108, Codex S33 = v102 + ride the next allied creep wave out after a respawn) inherited the same dead gates — uploaded for label
