@@ -48,7 +48,8 @@
   level 3 by tick 960 (v93: 1920) but both DK games were LOST (the centre is where all enemy campers converge) and the v104 Crossbowman ended
   crippled at home (41 HP, 25 gold, no potion) for 13000 ticks — a general failure mode: 36 of 480 hosted games (v91+v93 batches) had the hero
   idle below 25% HP with under 30 gold for 1400+ ticks. v106 = v93 + crippled reset (walk into the enemy lane to respawn at full HP);
-  v104/v105 also carry it. Plan: duel v105 and v106 vs v93; v104 uploaded for label order only.
+  v104/v105 also carry it but the v105 Crossbowman never reached the centre locally (stuck at level 1 until tick 2400) — both dropped
+  without a duel (uploaded as :v104/:v105 for label order). v106 (:v106) dueling v93 (`duel-v106-v93`).
   because Blue-side classes die mostly on our own lane right after respawn (DH 59 of 152 deaths, VK 40, Arcanist 31; act 9 walking).
   Every hosted result so far is in this file and README.md; standings via `uv run python tools/ladder.py`.
 - Previous champion v76 (`Jordan:v76`). Under version 36 (all duels since 23:30 UTC ran on it): v82 (:v82, Codex S28, target-aware siege via
