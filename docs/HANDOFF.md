@@ -1,7 +1,15 @@
 # HANDOFF — Gods of the Arena policy project (resumed 2026-09-16, 02:42 UTC)
 
 ## WHERE THIS STANDS (2026-09-16 04:50 UTC) — read this first
-- **Champion: v113 = `Jordan:v113`** (promoted 03:36 UTC). Lineage of confirmed gains on game version 36, all by mirrored-seat duels:
+- **Champion: v139 = `Jordan:v139`** (submitted 09:10 UTC with auto-champion; verify the ladder label flips from :v113). v139 = v113 +
+  melee package (Codex S41/S43): melee heroes last-hit before hitting a healthy tower, open on enemy heroes only when adjacent /
+  nearly dead / with an ally within 8 tiles, and never run ahead of their lane's front footman toward a standing enemy tower (RIDE,
+  act 47; hold 49/50 when the lane has no footman). Evidence: melee-seat duels vs v113 133/240 (+26) and 122/240 (+4) = 255/480
+  (+30, both positive; Berserk/DH pair +24, DK/VK pair +6), plus the earlier v135 variant of the same mechanism +12/120; hosted
+  telemetry: melee deaths down 25-40% (Berserk 5.0 -> 3.1, VK 6.3 -> 3.8), levels ~unchanged, hero kills slightly down. Ranged code
+  is byte-identical to v113. This is BELOW the +36/360 bar — promoted on the consistency of three positive batches and the zero
+  ranged risk; if the league's melee seats (Berserk/DH/DK/VK) do not improve over the next ~10 rounds, revert to v113.
+  Previous champion v113 (promoted 03:36 UTC). Lineage of confirmed gains on game version 36, all by mirrored-seat duels:
   v76 -> v87 (farm any enemy footman within 8 tiles instead of walking/waiting, 198-161 over 360) -> v93 (also farm while travelling
   between lanes, 200-160 over 360) -> v113 (stutter-step kiting for ranged classes via selfAttackCooldown, 207-153 over 360).
   Ladder: rank 4, 1536 MMR (06:15 UTC; round 327 was 2/9, round 328 10/10), up from rank 9 / 1482 at 01:16 UTC; league rounds with v113

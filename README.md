@@ -34,7 +34,14 @@ uv run coworld submit <name>:vN -l league_3c60897b-25cf-4b37-9d1a-8554c1198f28
 - Duels vs v76 on v36 (candidate/control per shared games): v82 target-aware siege 59/61 + 117/123 (level), v83 58/62 (level), v84 group follow
   53/66 (negative), sanity v76 vs v68 117/121. Field strength over 840 hosted games (tools/roster_stats.py): black-kite 0.566, richard 0.563,
   khors 0.552, red-kite 0.519, base.bas 0.484; v76 0.496. Lane tests: v85 mid lane 50/70 (negative), v86 other side lane 62/58 (parity).
-- **Champion since 03:36 UTC 2026-09-16: v113 = `Jordan:v113`** = v93 + stutter-step kiting for ranged classes (hit while the attack
+- **Champion since 09:10 UTC 2026-09-16: v139 = `Jordan:v139`** = v113 + a melee-only package (Codex S41/S43): melee heroes last-hit
+  before hitting a healthy tower, open on enemy heroes only when adjacent / nearly dead / with an ally near, and never run ahead of
+  their own lane's front footman toward a standing enemy tower. Melee-seat duels vs v113: 133/240 then 122/240 (= 255/480, +30, both
+  batches positive; melee deaths down 25-40%); ranged code unchanged. Promoted below the +36/360 bar on the consistency of three
+  positive batches (v135 +12/120 was the same mechanism) — revert if the league's melee seats do not improve. Dropped today: v135-v138,
+  v140 (Blue pushing physical lane 2; the mirrored duel read exactly 0.500 and a fair random-roster Blue-seat test is running).
+  League structure found today: Red wins only 0.36 of league games and Blue seats hold the higher-rated players in 73% of games.
+- **Previous champion 03:36-09:10 UTC 2026-09-16: v113 = `Jordan:v113`** = v93 + stutter-step kiting for ranged classes (hit while the attack
   cooldown is within the windup, step away from melee threats during recovery, via the version-36 selfAttackCooldown observation):
   67-53 then 140-100 vs v93 (207-153 over 360). Ranged deaths per game fell from 2.4-3.0 to 0.6-1.2. Level vs v113 and dropped: v114
   (wider kite trigger) 58/62, v115 (melee anti-kite) 58/62, v116 (range-advantage kiting) 61/59. The remaining gap is on the Red-side
