@@ -45,7 +45,10 @@
   from there; v103 (:v103) = v93 + v84's follow-the-largest-allied-group rule restricted to Demon Hunter, Vanguard Knight and Druid (the
   Blue-side classes that die on our own lane). v102 first batch 69/48 vs v93 — **but its telemetry shows the hold (act 14) never fired in
   any of the 120 games** (the rule required objective index < 3 and routing = 0; after a respawn the index stays at the enemy tower and the
-  rejoin logic sets routing = 1), so v102 is behaviourally v93 and the +21 was noise (its replication `duel-v102-v93-2` opened 23/37; ignore).
+  rejoin logic sets routing = 1), so v102 is behaviourally v93 and the +21 was noise. Its replication `duel-v102-v93-2` is therefore a
+  NULL CALIBRATION of the duel method (identical behaviour on both sides): 75/98 after 173 games (-23, 3.5 binomial SE). Fillers are drawn
+  per episode (12 distinct rosters per 12-episode request), so games are independent; treat +-20 over 120 as ordinary noise and keep the
+  >= +8 over >= 240 both-batches-positive rule as a minimum, not a proof.
   Lesson: check that a new rule fires (act share / print) in the first hosted batch before trusting its duel. v109 (:v109) = v102 with the
   gates removed and a HOLD print; local DH/DK games show the hold firing; dueling v93 (`duel-v109-v93`). v103 60/60 (parity, dropped).
   v108 (:v108, Codex S33 = v102 + ride the next allied creep wave out after a respawn) inherited the same dead gates — uploaded for label
