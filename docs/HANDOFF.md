@@ -7,7 +7,9 @@
 - `uv run python tools/coworld_check.py` reports the league coworld and engine head and warns on change (state in tmp/coworld_check.json).
 - **Champion since 00:56 UTC 2026-09-16: v93 = `Jordan:v93`** = v87 + keep attacking footmen in basic range while travelling between lanes
   or rejoining (no enemy hero near, no tower danger): 64-56 then 136-104 vs v87 = 200-160 over 360 shared games (+40, both batches positive,
-  0 timeouts). Pending duels vs v87: v95 (focus fire) and v96 (two-ally dive rule); positive ones get ported onto v93 and re-dueled vs v93.
+  0 timeouts). Replay trace over the 359 v87-v76 duel games: v87 issues 1050 creep attacks per game vs v76's 533 on the same lane/path
+  (team-win 0.549 vs 0.448). Pending duels vs v87: v95 (focus fire) and v96 (two-ally dive rule). Already ported onto v93 and queued vs v93:
+  v97 (:v97) = v93 + two-ally dive, v98 (:v98) = v93 + focus fire; both carry the death-position telemetry (`D tick respawn #n at x y Lk`).
 - Champion 00:42-00:56 UTC: v87 = `Jordan:v87` = v76 + attack any enemy footman within 8 tiles (melee 6) instead of walking
   or waiting for a wave (one scan condition, `farmR2`): 73-47 then 125-114 vs v76 = 198-161 over 360 shared games (+37, both batches
   positive, 1 timeout). Telemetry: deaths 3.5/game vs v76's 4.7, level curve unchanged, first kill 2151 vs 2412. Follow-ups dueling v87:
