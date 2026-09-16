@@ -8,6 +8,16 @@ Game version 2026.9.14.3 (map generation changed on 2026-09-14; older wiki/book 
   objectVelX/Y(i), objectTarget(i) = the object's current attack-target id if that target is visible to us (0 otherwise; a tower's targetId
   is exposed while it lives), spellCount() and spellAbility/spellCasterId/spellX/spellY/spellImpactTick(k) for pending enemy area spells.
   Also itemCount(slot). Local reference games on this coworld: v76 DK solo 11141 ticks/3 deaths, Xbow 5636/1.
+- Games are ~2x faster than version 34 with the same seed and roster (v76 DK vs base: 25570 -> 11141 ticks); hosted median end ~8400
+  ticks, winner's first gate attack ~5700, first fort attack ~8000. Blue wins ~55% of hosted random-roster games.
+- XP and gold go ONLY to the hero that lands the killing blow (sim.nim applyHeroHit -> gainRewards): footman 25xp/15g, hero 150/100,
+  tower 100/75. Level-ups heal by the max-HP delta. Farming = last-hitting; our v76 hero was level 1 until tick ~1500-1900.
+- What moved the needle under version 36 (duels, mirrored seats): v87 = attack any enemy footman within 8 tiles (melee 6) instead of
+  walking/waiting: 198-161 vs v76 over 360; v93 = also keep farming footmen in basic range while travelling between lanes: 200-160 vs v87.
+  Level/parity or negative: mid lane (50/70), other side lane, creeps-before-towers, wider farm radius, melee armor first, two-ally dive rule,
+  focus fire via objectTarget, target-aware siege, group follow. Death map (tools/log_stats.py DEATH POSITIONS): the enemy inner tower
+  (46,104 Red frame) is the deadliest cell; 39% of deaths are re-deaths within 1500 ticks of a respawn while walking back alone.
+- Standings: `uv run python tools/ladder.py` (division leaderboard); the softmax CLI has no `leagues` command.
 
 ## GAME VERSION 34 (league coworld cow_d4827721-d640-4296-b7ff-13b1d8c3bdf0, 2026.9.15.2, 2026-09-15 ~20:30-23:20 UTC)
 - Rebalance: towers 900/1200/1800 HP, damage 18/24/30 per 24 ticks (version 33 had 1200/2400/4800 and 28/56/112; the original 600/800/1000

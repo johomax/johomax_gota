@@ -1,4 +1,9 @@
 # Brief for policy workers (Codex) — solo-hero regime (2026-09-14, 23:10 UTC)
+> UPDATE 2026-09-16 01:10 UTC (game version 36): the base to modify is now the champion named in the task file (v93 lineage: v76 + farm any
+> enemy footman within 8 tiles + keep farming while travelling). Confirmed by mirrored-seat duels: farming/last-hitting creeps (XP and gold go
+> only to the killing blow; games end ~tick 8000). Tested level or negative, do not re-propose: mid-lane or other-side-lane push, creeps before
+> towers below level 4, wider farm radius, melee armor first, two-ally dive rule, focus fire via objectTarget, target-aware siege, group follow,
+> footman-front anchors. Keep the death telemetry line `print "D " ; worldTick ; " respawn #" ; deaths ; " at " ; lastX ; " " ; lastY ; " L" ; selfLevel`.
 
 You improve a BASIC hero policy for Gods of the Arena. Work ONLY inside /Users/jordan/Desktop/Projects/johomax/gota.
 Do not touch git. You cannot run Docker or any game episode: self-check the BASIC very carefully instead.
