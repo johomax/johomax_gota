@@ -19,7 +19,7 @@
   --ids --exact --by-class`, fillers `tools/roster_stats.py`, ladder `tools/ladder.py`, engine/coworld drift `tools/coworld_check.py`.
   Upload every policy file once, in numeric order (`uv run coworld upload-policy --file policy/vNNN.bas --tag version=vNNN`), so the
   platform label equals the file number; smoke-test Codex output locally first (blank line before `end if`/`wend` is a compile error).
-- **In flight:** v129 (dodge only 70+ damage strikes) and v130 (looser side-lane join) dueling v113.
+- **In flight:** v129 (dodge only 70+ damage strikes; first batch 67/53) replicating over 240; v130 (looser side-lane join) trending negative.
 
 ## GAME VERSION 36 (since ~23:20 UTC 2026-09-15)
 - League coworld is now `cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870` (2026.9.15.3, game version 36): same balance as version 34, creep lanes
@@ -94,8 +94,10 @@
   Golem Seed, Shadow Comet, Dark Eclipse, Clockwork Charge, Bound Void, Void Portal, Volcanic Eruption), queued vs v113 (`duel-v129-v113`).
   Note: Final Measure is 20 damage (v128's inclusion of it was a misread), Molten Fist 45. Finals: v127 58/62 (level), v128 55/65
   (negative) — both dropped; dodging saves ~0.5 deaths per game but costs the tempo back. v129 is the last dodge variant to try.
+  **v129 first batch 67/53 vs v113 (+14; VK 10/12, Arcanist 9/12)** — replication over 240 queued automatically (`duel-v129-v113-2`);
+  promote only if combined >= +24 over 360 with the replication positive.
   v130 (:v130) = v113 with a looser side-lane join (one ally pushing the other side lane suffices when our lane has none and no ally is
-  beside us; JOIN fired only 0.22 times per game), queued vs v113 (`duel-v130-v113`).
+  beside us; JOIN fired only 0.22 times per game): 36/44 after 80 vs v113 (trending negative).
   Round 324 (first with v113): 6/9.
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep attacking footmen in basic range while travelling between lanes
   or rejoining (no enemy hero near, no tower danger): 64-56 then 136-104 vs v87 = 200-160 over 360 shared games (+40, both batches positive,
