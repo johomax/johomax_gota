@@ -12,7 +12,10 @@
   v114 (kite trigger 4.5 tiles, 4-tile steps) vs v93: 77/43 (+34 first batch; DH 11/12, VK 10/12) — now dueling v113 directly
   (`duel-v114-v113`: 58/62, level — the +34 vs v93 was the shared kiting gain; dropped, v113's 3.5-tile/3-step parameters stay). v115 (melee
   anti-kite) 58/62 vs v113 (level, dropped). v116 (:v116, Codex S36) = v113 + keep the range advantage against shorter-ranged enemy heroes
-  (acts 47/48, KITE3; local Ranger 8075 XP, 3 deaths): dueling v113 (`duel-v116-v113`).
+  (acts 47/48, KITE3; local Ranger 8075 XP, 3 deaths): 61/59 vs v113 (level, dropped).
+- **Side asymmetry is a class asymmetry:** in every mirrored duel of this lineage the Blue copy beats the Red copy about 2:1 (v116 batch:
+  candidate 21/60 as Red, 40/60 as Blue). Red seats are DK/Xbow/Lich/Warlock/Berserk (our win rates 0.38/0.58/0.46/0.46/0.29), Blue seats
+  VK/Ranger/Arcanist/Druid/DH (0.71/0.88/0.79/0.79/0.50). The upside left is on the Red classes.
 - **v113 per-class telemetry (replication, 24 games each):** Ranger 0.88 win / 0.79 deaths / 13.1 kills / level 8.3 / 358 gold unspent
   (all six inventory slots hold equipment, so gold piles up); Arcanist 0.79, Druid 0.79, VK 0.71, Xbow 0.58 (148 gold unspent), DH 0.50
   (5.5 deaths), Lich 0.46, Warlock 0.46, DK 0.38 (0.8 kills, level 3.3 at game end, 19% of its time escorting the Crossbowman), Berserk 0.29
