@@ -43,7 +43,12 @@
   walk out immediately after every respawn. v102 (:v102) = v93 + arm a 2400-tick window at each respawn during which, with an enemy hero within
   18 tiles, one of our first three route towers within 12 tiles and no ally within 8, the hero holds at that nearest tower (act 14) and fights
   from there; v103 (:v103) = v93 + v84's follow-the-largest-allied-group rule restricted to Demon Hunter, Vanguard Knight and Druid (the
-  Blue-side classes that die on our own lane). Both smoke-testing, then duel vs v93.
+  Blue-side classes that die on our own lane). Both dueling v93 (`duel-v102-v93`, `duel-v103-v93`).
+- v104/v105 = v93 + farm at the map centre until level 5/tick 3000 (v104) or level 4/tick 2000 (v105), then push: locally the DK reaches
+  level 3 by tick 960 (v93: 1920) but both DK games were LOST (the centre is where all enemy campers converge) and the v104 Crossbowman ended
+  crippled at home (41 HP, 25 gold, no potion) for 13000 ticks — a general failure mode: 36 of 480 hosted games (v91+v93 batches) had the hero
+  idle below 25% HP with under 30 gold for 1400+ ticks. v106 = v93 + crippled reset (walk into the enemy lane to respawn at full HP);
+  v104/v105 also carry it. Plan: duel v105 and v106 vs v93; v104 uploaded for label order only.
   because Blue-side classes die mostly on our own lane right after respawn (DH 59 of 152 deaths, VK 40, Arcanist 31; act 9 walking).
   Every hosted result so far is in this file and README.md; standings via `uv run python tools/ladder.py`.
 - Previous champion v76 (`Jordan:v76`). Under version 36 (all duels since 23:30 UTC ran on it): v82 (:v82, Codex S28, target-aware siege via
