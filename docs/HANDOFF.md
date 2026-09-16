@@ -34,6 +34,11 @@
   telemetry) ten-seat batch `v91-seats` for a per-seat baseline and a death map (tools/log_stats.py prints DEATH POSITIONS).
   Dropped: v88 (creeps before towers below level 4) 59/61 vs v76; v89 (Codex S31 creep-front anchor) and v92 (static lane-midpoint anchor)
   idle or walk at level 1 locally, uploaded for label order only.
+- **Per-class gap vs the best fillers (600 hosted games with v87+ present, tmp/roster_cache.json):** black-kite / red-kite win 0.88 / 0.76 as
+  Ranger and 0.77 / 0.76 as Arcanist; we win 0.50 / 0.53 on those seats (we beat them as VK: 0.58 vs 0.45 / 0.39). Their edge is on ranged
+  Blue-side classes, i.e. kiting. Our anti-melee rule for ranged heroes (act 2) just walks back 4 tiles and cancels our attack (2% of time,
+  kite act 28 0.4%). Codex S34 (docs/tasks/s34_stutter_step_kiting.md) writes v113 = v93 + stutter-step kiting using selfAttackCooldown
+  (hit when the cooldown is within the windup, step 3 tiles away from the melee threat otherwise).
 - **Time budget (v93 ten-seat, 4340 telemetry samples):** walking the route 43%, farming creeps 14%, sieging 9%, fighting heroes 7%, escort 6%,
   open-lane fort walk 4%, waiting for a wave 4%, low-HP retreat 3% (4.4% in losses vs 2.7% in wins). With ~3.5 deaths per game and ~800 ticks
   per death (24 dying + 192 respawn + the walk back), deaths eat roughly a third of an 8500-tick game; every death avoided is worth ~10% presence.
