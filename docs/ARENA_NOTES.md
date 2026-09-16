@@ -14,6 +14,10 @@ Game version 2026.9.14.3 (map generation changed on 2026-09-14; older wiki/book 
   (was 0.42/0.55/0.70) — walkTo at a tower centre snags every time; stop 2.5-3 tiles short (v147) or attackTarget.
 - **Hero buffs**: Crossbowman 46 dmg +9/level (was 43/+8), Berserker 38 +8 (was 35/+7), Lich Ice Spear 48 dmg / 6.67 tiles (was 44 /
   6.33), Warlock Aether Siphon restore 30 (24), Death Knight Sanguine Chalice heal 36 (30).
+- Barracks positions on the seed-2026 local map (tools/probe.bas, kind 5): Red ids 41 (113,26), 43 (100,28), 45 (88,14), 47 (89,2),
+  49 (97,24) + one more; Blue 44 (27,101), 48 (18,91) + others — i.e. two per lane just inside each gate tower, mirrored by point symmetry.
+  Own barracks are always visible (own team); enemy barracks only when exposed and seen. Kind 5 objects sit in the object list, so
+  scans keyed on kind 1-4 ignore them safely.
 - `terrainWalkable(x, y)` now returns 1 only for cells the team has SEEN as walkable (fog on terrain); unknown cells read 0.
 - Paths and creep waves were "simplified" (c57c1f5) and map generation changed (rock triangles, floor cuts); tower positions and
   lane route points are the same as version 36 in the seed-2026 local map.
