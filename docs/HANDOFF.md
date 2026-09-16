@@ -49,7 +49,8 @@
   20% mid/jungle. Hot cells: (40,100) 101 deaths + (50,100) 39 = the enemy INNER tower (46,104); (90,100) 85 = the enemy outer tower;
   (100,60)-(100,70) 66 = our own outer tower under enemy push. 54% of deaths happen at levels 2-4, ticks 2000-8000. Next test: v96 = v87 with
   the all-in dive needing 2 allies within 8 tiles for inner/gate towers (1 still enough for the outer tower).
-- v101 (level-aware fights) 57/63 vs v93 (level, dropped). League with v93: rounds 319-321 = 18/29, 1520 MMR, rank 8 (02:41 UTC).
+- v101 (level-aware fights) 57/63 vs v93 (level, dropped). League with v93: rounds 319-322 = 24/39, 1528 MMR, rank 6 (03:11 UTC; was rank 9,
+  1482 with v76/v87 at 01:16).
   Note: v93's home-guard block (act 14, 'wait at own gate up to 30 s after respawn') is dead code — guardUntil is never armed — so heroes
   walk out immediately after every respawn. v102 (:v102) = v93 + arm a 2400-tick window at each respawn during which, with an enemy hero within
   18 tiles, one of our first three route towers within 12 tiles and no ally within 8, the hero holds at that nearest tower (act 14) and fights
