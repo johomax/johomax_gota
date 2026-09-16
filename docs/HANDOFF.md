@@ -10,7 +10,7 @@
   v93 = 207-153 over 360 (+54, both batches positive, 0 timeouts). Blue-side ranged seats carry it (Ranger 21/24, Arcanist 19/24, Druid
   19/24 in the replication); Red melee seats unchanged. Telemetry: ranged deaths per game fell 60-75%, kills up ~70%.
   v114 (kite trigger 4.5 tiles, 4-tile steps) vs v93: 77/43 (+34 first batch; DH 11/12, VK 10/12) — now dueling v113 directly
-  (`duel-v114-v113`; 39/41 after 80 — the +34 vs v93 was the shared kiting gain; adopt only on >= +24 over 360 vs v113). v115 (melee
+  (`duel-v114-v113`: 58/62, level — the +34 vs v93 was the shared kiting gain; dropped, v113's 3.5-tile/3-step parameters stay). v115 (melee
   anti-kite) 58/62 vs v113 (level, dropped). v116 (:v116, Codex S36) = v113 + keep the range advantage against shorter-ranged enemy heroes
   (acts 47/48, KITE3; local Ranger 8075 XP, 3 deaths): dueling v113 (`duel-v116-v113`).
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep attacking footmen in basic range while travelling between lanes
