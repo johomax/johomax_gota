@@ -100,7 +100,8 @@
   beside us; JOIN fired only 0.22 times per game): 57/63 vs v113 (level, dropped). v129 replication interim 30/30 after 60; v129's
   hosted telemetry: 3.65 dodges per game (1.0% of samples; Meteor, Bound Void, Clockwork, Void Portal, Volcanic, Shadow Comet), deaths 2.25.
   A v113 ten-seat baseline (`v113-seats`, 240) is queued behind it for per-class rates in random rosters. v129 replication 121/119
-  (combined 188-172 over 360, +16 < +24): dropped — spell dodging in any form saves ~0.3-0.5 deaths per game but not games. v131 (:v131) = v113 preferring footmen within one hit of death (hp <= selfAttackDamage) as the
+  (combined 188-172 over 360, +16 < +24): dropped — spell dodging in any form saves ~0.3-0.5 deaths per game but not games.
+  v113 ten-seat baseline, Red seats done: 65/120 (DK 11/24, Xbow 21/24, Lich 13/24, Warlock 12/24, Berserk 8/24); Blue seats pending. v131 (:v131) = v113 preferring footmen within one hit of death (hp <= selfAttackDamage) as the
   farming target — XP/gold go only to the killing blow — queued vs v113 (`duel-v131-v113`).
   Round 324 (first with v113): 6/9.
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep attacking footmen in basic range while travelling between lanes
