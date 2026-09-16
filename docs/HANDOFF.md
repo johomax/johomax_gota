@@ -21,7 +21,8 @@
   v99 (:v99) = v93 with the escort walk disabled: **66/54 vs v93 (+12 first batch; as candidate Red 26/60, Blue 40/60)**; replication over 240
   running (`duel-v99-v93-2`). Also queued vs v93: v100 (:v100, never fight alone, `duel-v100-v93`), v101 (:v101, level-aware fights via
   objectLevel: never start on a hero two or more levels above us unless it is low or an ally is beside us, `duel-v101-v93`), and the
-  v93 ten-seat baseline (`v93-seats`, 240) for the side gap. Every file from v97 on prints `D tick respawn #n at x y Lk`.
+  v93 ten-seat baseline `v93-seats`: 129/240 (Red 60/120, Blue 69/120) — v76 was 119/240, so the side gap is mostly noise.
+  Every file from v97 on prints `D tick respawn #n at x y Lk`.
 - Champion 00:42-00:56 UTC: v87 = `Jordan:v87` = v76 + attack any enemy footman within 8 tiles (melee 6) instead of walking
   or waiting for a wave (one scan condition, `farmR2`): 73-47 then 125-114 vs v76 = 198-161 over 360 shared games (+37, both batches
   positive, 1 timeout). Telemetry: deaths 3.5/game vs v76's 4.7, level curve unchanged, first kill 2151 vs 2412. Follow-ups dueling v87:
