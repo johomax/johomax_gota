@@ -141,6 +141,11 @@
   the corner approach. Candidate v145 (S46, Codex) = v139 + melee back-off when alone against >= 2 enemy heroes (act 55, OUTN) and
   ride walks removed from stuck detection; test on melee seats (`--seats 0,4 -n 60`). v145 (:v145) smoke: DK won 5717 / 1 death /
   3 stuck (v139: 8-13) / OUTN fires at 2-4 enemy heroes; Berserk won 5571 / 1 death. Dueling v139 (`duel-v145-v139`, 240 games).
+  **Result 117/240 = 0.487 (-6): DK/VK pair 58/120, Berserk/DH pair 59/120; deaths down (Berserk 2.2, DK 2.7) but levels down (4.0-4.2)
+  — backing off costs the XP it saves. Dropped.** Stuck prints did fall to 5-8/game with act 47 out of stuck detection (keep that
+  hygiene change in the next bundle). Day tally: v135-v145 tested, one gain (v139). Single tweaks are now below the detectable floor
+  (+-25/240); next step is a bundle of the individually level-to-positive changes for a larger test: v146 = v139 + Blue pushes physical
+  lane 2 (v140: +5/240 as Blue) + no Crossbowman escort (v142: +8/480, Red rows 0.479 vs null) + ride walks off stuck detection.
 
 ## GAME VERSION 36 (since ~23:20 UTC 2026-09-15)
 - League coworld is now `cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870` (2026.9.15.3, game version 36): same balance as version 34, creep lanes
