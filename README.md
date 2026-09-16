@@ -33,7 +33,10 @@ uv run coworld submit <name>:vN -l league_3c60897b-25cf-4b37-9d1a-8554c1198f28
   first gate attack ~5700, fort ~8000). Champion stays **v76 = `Jordan:v76`**: ten-seat baseline on v36 119/240; league 5/21 (rounds 315-316), rank 8.
 - Duels vs v76 on v36 (candidate/control per shared games): v82 target-aware siege 59/61 + 117/123 (level), v83 58/62 (level), v84 group follow
   53/66 (negative), sanity v76 vs v68 117/121. Field strength over 840 hosted games (tools/roster_stats.py): black-kite 0.566, richard 0.563,
-  khors 0.552, red-kite 0.519, base.bas 0.484; v76 0.496. Lane tests dueling: v85 (mid lane), v86 (other side lane).
+  khors 0.552, red-kite 0.519, base.bas 0.484; v76 0.496. Lane tests: v85 mid lane 50/70 (negative), v86 other side lane 62/58 (parity).
+- **Champion since 00:42 UTC 2026-09-16: v87 = `Jordan:v87`** = v76 + farm any enemy footman within 8 tiles (melee 6) instead of walking or
+  waiting for a wave: 73-47 then 125-114 vs v76 (198-161 over 360). Our hero was level 1 until tick ~1500-1900 and died 4.7 times per game;
+  v87 dies 3.5 times. Dueling v87: v90 (farm radius 10/8), v93 (farm while travelling); v91 (= v87 + death telemetry) ten-seat batch.
 
 ## Status at game version 33 (2026-09-15 18:20 UTC)
 - **Engine change:** the league coworld is `cow_252fb6a6` (2026.9.15.1, game version 33): towers 1200/2400/4800 HP and 28/56/112 damage
