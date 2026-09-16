@@ -28,7 +28,12 @@
   wins only 42% of those games because Blue carries our kiting copy plus the stronger classes. No Red-specific mechanism to copy.
   relh:v88 (uploaded 03:42) scored 0.616 in 73 of those games — a new strong opponent to watch. v113 time budget: walk 39%, farm 14.5%,
   siege 13.5%, escort 6.4%, fight 5.1%; 2.6 deaths and 6.3 STUCK events per game (analysing the stuck spots).
-  v120 (:v120, melee flee at 40% HP instead of 25%) 59/61 vs v113 (level, dropped); v121 (:v121, melee farming radius 8 tiles) dueling.
+  v120 (:v120, melee flee at 40% HP instead of 25%) 59/61 vs v113 (level, dropped); v121 (:v121, melee farming radius 8 tiles) 63/57 (level, dropped).
+- **Stuck analysis (v113 replication, 240 games):** 6.3 STUCK events per game (1503 total); 3 games had a hero stuck for the rest of the game
+  (98-172 hits). Hot spots: near our own inner tower (105,35) while walking straight at the enemy inner tower (46,104) — 171 events — and at
+  spawn (110,0) walking to the enemy gate; i.e. long cross-map walkTo calls after a respawn snag on terrain/tower footprints. v122 = v113 +
+  when the objective is more than 40 tiles away, walk to the nearest lane route point that is closer to the objective (road-following), walk
+  home after six stuck hits, forget stuck hits after 240 ticks of movement. Smoke-testing with a v113 reference (stuck counts).
   Round 324 (first with v113): 6/9.
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep attacking footmen in basic range while travelling between lanes
   or rejoining (no enemy hero near, no tower danger): 64-56 then 136-104 vs v87 = 200-160 over 360 shared games (+40, both batches positive,
