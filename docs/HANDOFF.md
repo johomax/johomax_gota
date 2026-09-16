@@ -29,7 +29,8 @@
   first tuning candidates for version 37 only with a strong hypothesis (laneTowerHp defaults 950/1300/1950 go into the next one).
   **User request 18:00 UTC: keep XP requests in flight at all times** (memory gota-xp-always-in-flight). Queue since then:
   `null-v148-v37` (v148 vs v148, 240 — noise calibration for version 37), `duel-v149-v148` (480; v149 = v148 + tower HP defaults
-  950/1300/1950 + escort off; smoke Lich won 12565 / 2 deaths / 0 stuck), `duel-v150-v148` (240; v150 = v148 + S47 barracks endgame:
+  950/1300/1950 + escort off; smoke Lich won 12565 / 2 deaths / 0 stuck — **result 240/480 = 0.500, pair sums cancel (Red rows 135/240,
+  Blue rows 105/240: Red wins 56% of our mirrored games under v37); dropped**), `duel-v150-v148` (240; v150 = v148 + S47 barracks endgame:
   attack an exposed enemy barracks instead of a solo fort dive against >= 2 defenders and when idle within 12 tiles; smoke Ranger won
   7904, rules did not trigger locally — check BARR/acts 56-57 in hosted logs). Then: replications of anything positive, repeat baseline.
   **`null-v148-v37` is INVALID**: the platform merges identical policy versions in one roster into a single policy_stats entry (our
