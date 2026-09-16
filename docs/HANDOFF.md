@@ -47,6 +47,10 @@
   led by Xbow 22, Warlock 21, Lich 19, DK 18 (the buffed Red classes). Our split in those games: Red 13/25, **Blue 8/27** — Blue is where
   we lose now. Blue-seat candidates get fair random-roster tests against the concurrent `v148-blue` baseline: v153 (Blue lane 2) and
   v154 (Blue mid, pushLane 1). League logs of v148's 17 games: no timeouts, stuck 0-7, several games ending by tick 2400-3800.
+  **Blue-seat results (240 games each, concurrent): v153 lane 2 137/240 = 0.571, v148 lane 0 (baseline) 132/240 = 0.550, v154 mid
+  126/240 = 0.525 — all within the +-28 noise band: Blue lane choice is closed under version 37; v153/v154 dropped.** Queue after
+  this: `duel-v152-v148` (melee farm radius 8, 240), `duel-v155-v148` + `-2` (melee-package ablation, 2 x 240), `null-v151-v148-2`,
+  `v148-seats-b` (second ten-seat baseline for field drift).
   Next: ten-seat baseline for v148 DONE;
   then re-tune for version 37 (3x creeps, barracks, bigger towers).
 - Previous champion v139 = `Jordan:v139` (08:45-17:40 UTC; game version 36). **Rank 2 at 1589 MMR after round
