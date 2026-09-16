@@ -4,7 +4,7 @@
 
 - League: `league_3c60897b-25cf-4b37-9d1a-8554c1198f28` (Gods of the Arena), division `div_a4534073-c5d2-4193-a94a-93d9c5e2e443` (Competition).
   Page: https://softmax.com/observatory/v2?detail=league:league_3c60897b-25cf-4b37-9d1a-8554c1198f28
-- Coworld: `cow_54d6f449-6d63-464d-b742-ff720a9ce803` (league build since 2026-09-16 ~20:40 UTC, game version 37 gameplay; downloaded to `coworld/`).
+- Coworld: `cow_126f2fcb-80a0-4b6e-8166-eb6163576db5` (league build since 2026-09-16 ~22:30 UTC, "guarded gods" engine f2ab959: two 1950-HP guard towers per fort, ids 28-31; downloaded to `coworld/`).
 - Game README: see `docs/game_readme.md`; docs https://github.com/Metta-AI/polyworld/blob/main/examples/gods_of_the_arena/docs/index.html
 - Runtime: **game-hosted** — a single `.bas` file runs as five independent hero VMs (one team of five seats).
 - Softmax player: Jordan (`ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb`).
@@ -38,7 +38,7 @@ uv run coworld submit <name>:vN -l league_3c60897b-25cf-4b37-9d1a-8554c1198f28
   engine 5c701f9): dead towers/barracks are no longer listed to policies, so v113/v139 parked on dead tower coordinates until the
   timeout (local Ranger game: 318 stuck prints, 28800 ticks). v148 = v139 + walks stop 3 tiles short of buildings + an unseen
   building objective within 4 tiles counts as dead. Local: Ranger won 7727 / 0 stuck, DK won 14074 (both lost/timed out with v139).
-  Hosted on the new coworld: v148 vs v139 174/240 (0.725); ten-seat random-roster baseline 156/240 = 0.650 (Red 0.67, Blue 0.63). Later baselines 0.575 and 0.608 (Blue seats 0.55-0.61). **League after round 357 (21:32 UTC 2026-09-16): rank 1 at 1583** (relh 1577, daveey 1561, black-kite 1535); v148 league record ~42/73 over rounds 349-357. Random-roster level has slid to ~0.50 as the field adapts (black-kite:v13 0.59). Candidates v149-v163 (tower HP defaults, barracks endgame, melee farm radius, Blue lane choice, VIA waypoint, objective reset, Druid support, melee back-off, Blue farm-first, Blue wave-camper) all level or negative — see docs/HANDOFF.md. Version 37 also adds barracks buildings (kind 5, 950 HP, killable after the
+  Hosted on the new coworld: v148 vs v139 174/240 (0.725); ten-seat random-roster baseline 156/240 = 0.650 (Red 0.67, Blue 0.63). Later baselines 0.575 and 0.608 (Blue seats 0.55-0.61). **Champion since 22:53 UTC 2026-09-16: v175 = v148 + guarded-gods hotfix** (skip tower ids >= 28 in both route scans; v148 died at init on the new engine and idled through rounds 359-360). **League after round 357 (21:32 UTC 2026-09-16): rank 1 at 1583** (relh 1577, daveey 1561, black-kite 1535); v148 league record ~42/73 over rounds 349-357. Random-roster level has slid to ~0.50 as the field adapts (black-kite:v13 0.59). Candidates v149-v163 (tower HP defaults, barracks endgame, melee farm radius, Blue lane choice, VIA waypoint, objective reset, Druid support, melee back-off, Blue farm-first, Blue wave-camper) all level or negative — see docs/HANDOFF.md. Version 37 also adds barracks buildings (kind 5, 950 HP, killable after the
   lane's towers, 3 creeps each per wave), towers 950/1300/1950 HP with bigger footprints, and buffs for Crossbowman/Berserker/Lich.
 - **Champion 09:10-17:40 UTC 2026-09-16: v139 = `Jordan:v139`** = v113 + a melee-only package (Codex S41/S43): melee heroes last-hit
   before hitting a healthy tower, open on enemy heroes only when adjacent / nearly dead / with an ally near, and never run ahead of
