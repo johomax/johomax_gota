@@ -37,8 +37,8 @@
   **`null-v148-v37` is INVALID**: the platform merges identical policy versions in one roster into a single policy_stats entry (our
   policy appeared once, reward 0.5, nine entries), so `report` read other seats (it printed Red 239/240). Never duel a version against
   itself; calibrate with two byte-identical files under different labels (v151 = v148 re-uploaded). **`null-v151-v148` read 106/240 =
-  0.442 (-28); `null-v151-v148-2` 117/240 = 0.487 (-3): combined 223/480. The noise band on version 37 is about +-28 per 240 games;
-  keep the +36/360 two-batch bar.** Engine
+  0.442 (-28); `null-v151-v148-2` 117/240 = 0.487 (-3); caster seats `null-casters-v151-v148` (seats 2,3 x 60) 122/240 = 0.508 (+2).
+  The noise band on version 37 is about +-28 per 240 games; keep the +36/360 two-batch bar.** Engine
   head moved again at ~17:55 UTC: 6ee8642 "Put creeps on the correct sides and make Radiant soldiers larger" — graphics only
   (assets.nim/graphics.nim), league coworld still cow_dd6ceed6. v152 (:v152) = v148 with the melee farm radius 8 tiles (6-creep waves),
   melee-seat duel vs v148 queued (`duel-v152-v148`, 240) — **result 117/240 = 0.487 (-6; DK/VK pair 57/120, Berserk/DH 60/120): level,
