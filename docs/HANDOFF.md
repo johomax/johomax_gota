@@ -4,7 +4,7 @@
 - **Champion: v113 = `Jordan:v113`** (promoted 03:36 UTC). Lineage of confirmed gains on game version 36, all by mirrored-seat duels:
   v76 -> v87 (farm any enemy footman within 8 tiles instead of walking/waiting, 198-161 over 360) -> v93 (also farm while travelling
   between lanes, 200-160 over 360) -> v113 (stutter-step kiting for ranged classes via selfAttackCooldown, 207-153 over 360).
-  Ladder: rank 4-5, ~1533 MMR, up from rank 9 / 1482 at 01:16 UTC; league rounds with v113: 319-325 roughly 60%. Random-roster
+  Ladder: rank 4, 1538 MMR (05:11 UTC), up from rank 9 / 1482 at 01:16 UTC; league rounds with v113 (324-326): 18/28. Random-roster
   baseline 0.575 (v76 0.496, v93 0.537), second in its batch behind nancy-goa:v1 0.596 and ahead of black-kite 0.565.
 - **Promotion rule:** combined >= +24 over >= 360 shared games with both batches positive (a null duel of identical policies read +21
   then -15 per batch, so +-20 per 120-240 games is noise). Always confirm a new rule fires in the hosted logs (tools/log_stats.py) first.
