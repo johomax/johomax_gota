@@ -49,8 +49,11 @@
   v122 replication 86/114 after 200 (-28): combined ~153-167, **dropped** — tower-centre route points hurt more than the long walks.
   v125 (:v125) = v113 + the audit fixes only (no road-following), dueling v113 (`duel-v125-v113`). v126 (:v126) = v125 + the stuck
   escalation only (walk home after six stuck hits, forget hits after 240 ticks of movement), dueling v113 (`duel-v126-v113`).
-  v123 44/76 vs v113 (-32, dropped) and v124 39/51 after 90: together with v122's replication, road-following via route points is harmful
-  in every form tried — dropped. Awaiting v125 (fixes only) and v126 (fixes + stuck escalation).
+  v123 44/76 vs v113 (-32, dropped) and v124 55/65 (dropped): together with v122's replication, road-following via route points is harmful
+  in every form tried. v125 (audit fixes only) 53/66 and v126 (fixes + stuck escalation) 57/63 — both dropped; the audit's "fixes" do not
+  help in aggregate (the forward-pointing retreat point and the fallback-siege gate may each have been doing useful work). **v113 stays
+  champion.** Fourteen candidates on top of v113 have now been level or negative; cheap tweaks are exhausted — next: genuinely new
+  mechanisms (spell dodging via spellCount/spellX/spellY/spellImpactTick, Codex S38).
   Round 324 (first with v113): 6/9.
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep attacking footmen in basic range while travelling between lanes
   or rejoining (no enemy hero near, no tower danger): 64-56 then 136-104 vs v87 = 200-160 over 360 shared games (+40, both batches positive,

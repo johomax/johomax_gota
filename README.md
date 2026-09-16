@@ -43,8 +43,8 @@ uv run coworld submit <name>:vN -l league_3c60897b-25cf-4b37-9d1a-8554c1198f28
   farm radius 8 tiles) 63/57. v122 (walk the lane's route points when the objective is far) opened 67/53 vs v113 but replicated 86/114
   and v123 (v122 + audit fixes) lost 44/76: tower-centre route points snag on footprints (hosted stuck events doubled), so road-following
   is rejected. A Codex audit of v113 found several mis-gated rules (dead respawn rejoin, stale tower-HP defaults, kite target out of
-  range, fallback siege beside an enemy, forward-pointing retreat point); dueling v113 now: v124 (route-point switch at 6 tiles), v125
-  (audit fixes only), v126 (fixes + walk home after six stuck hits).
+  range, fallback siege beside an enemy, forward-pointing retreat point) but the fix bundle did not help: v124 (route-point switch at 6
+  tiles) 55/65, v125 (audit fixes only) 53/66, v126 (fixes + walk home after six stuck hits) 57/63. v113 stays champion.
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep farming footmen in basic range while travelling between lanes:
   64-56 then 136-104 vs v87 (200-160 over 360). Level or negative since: v95 focus fire 60/60, v96 two-ally dive 51/69 (vs v87); v97 61/59,
   v98 52/68 (vs v93). Running vs v93: v99 (no Red-only Crossbowman escort; first batch 66/54, replicating), v100 (never fight alone),
