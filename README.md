@@ -35,7 +35,9 @@ uv run coworld submit <name>:vN -l league_3c60897b-25cf-4b37-9d1a-8554c1198f28
   53/66 (negative), sanity v76 vs v68 117/121. Field strength over 840 hosted games (tools/roster_stats.py): black-kite 0.566, richard 0.563,
   khors 0.552, red-kite 0.519, base.bas 0.484; v76 0.496. Lane tests: v85 mid lane 50/70 (negative), v86 other side lane 62/58 (parity).
 - **Champion since 00:56 UTC 2026-09-16: v93 = `Jordan:v93`** = v87 + keep farming footmen in basic range while travelling between lanes:
-  64-56 then 136-104 vs v87 (200-160 over 360). Dueling v87: v95 (focus fire via objectTarget), v96 (two allies needed to dive inner/gate towers).
+  64-56 then 136-104 vs v87 (200-160 over 360). Level or negative since: v95 focus fire 60/60, v96 two-ally dive 51/69 (vs v87); v97 61/59,
+  v98 52/68 (vs v93). Running vs v93: v99 (no Red-only Crossbowman escort; first batch 66/54, replicating), v100 (never fight alone),
+  v101 (level-aware fights); v93 ten-seat baseline for the Red/Blue gap (v87 won 0.43 as Red, 0.59 as Blue in random rosters).
 - Champion 00:42-00:56 UTC: v87 = `Jordan:v87` = v76 + farm any enemy footman within 8 tiles (melee 6) instead of walking or
   waiting for a wave: 73-47 then 125-114 vs v76 (198-161 over 360). Our hero was level 1 until tick ~1500-1900 and died 4.7 times per game;
   v87 dies 3.5 times. Dueling v87: v90 (farm radius 10/8), v93 (farm while travelling); v91 (= v87 + death telemetry) ten-seat batch.
