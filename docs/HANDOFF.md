@@ -23,7 +23,11 @@
   v118 (:v118) = v113 with no Red escort at all. v119 (:v119) = v113 without the sword purchase so the sixth inventory slot stays free for
   elixirs. All three level vs v113 and dropped: v117 62/58, v118 61/59, v119 59/61. The escort is irrelevant either way under version 36.
   Reading of the Red gap: Red's ranged classes kite worse by design (Lich cadence 32, Warlock range 4.5 vs Ranger 18 / 5.5) and Red's
-  melee DK/Berserk get nothing from kiting; black-kite's Berserker wins 0.62 where ours wins 0.29 — tracing what their Red melee do.
+  melee DK/Berserk get nothing from kiting. Trace over the 360 v113-v93 duel games: the fillers do no better on Red classes in these
+  games (black-kite DK 0.50 / Lich 0.42 / Warlock 0.61 / Berserk 0.38; red-kite DK 0.32 / Lich 0.50 / Warlock 0.25 / Berserk 0.32) — Red
+  wins only 42% of those games because Blue carries our kiting copy plus the stronger classes. No Red-specific mechanism to copy.
+  relh:v88 (uploaded 03:42) scored 0.616 in 73 of those games — a new strong opponent to watch. v113 time budget: walk 39%, farm 14.5%,
+  siege 13.5%, escort 6.4%, fight 5.1%; 2.6 deaths and 6.3 STUCK events per game (analysing the stuck spots).
   v120 (:v120, melee flee at 40% HP instead of 25%) 59/61 vs v113 (level, dropped); v121 (:v121, melee farming radius 8 tiles) dueling.
   Round 324 (first with v113): 6/9.
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep attacking footmen in basic range while travelling between lanes
