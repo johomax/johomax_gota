@@ -24,7 +24,8 @@
   elixirs. All three level vs v113 and dropped: v117 62/58, v118 61/59, v119 59/61. The escort is irrelevant either way under version 36.
   Reading of the Red gap: Red's ranged classes kite worse by design (Lich cadence 32, Warlock range 4.5 vs Ranger 18 / 5.5) and Red's
   melee DK/Berserk get nothing from kiting; black-kite's Berserker wins 0.62 where ours wins 0.29 — tracing what their Red melee do.
-  Queued vs v113: v120 (:v120, melee flee at 40% HP instead of 25%), v121 (:v121, melee farming radius 8 tiles instead of 6).
+  v120 (:v120, melee flee at 40% HP instead of 25%) 59/61 vs v113 (level, dropped); v121 (:v121, melee farming radius 8 tiles) dueling.
+  Round 324 (first with v113): 6/9.
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep attacking footmen in basic range while travelling between lanes
   or rejoining (no enemy hero near, no tower danger): 64-56 then 136-104 vs v87 = 200-160 over 360 shared games (+40, both batches positive,
   0 timeouts). Replay trace over the 359 v87-v76 duel games: v87 issues 1050 creep attacks per game vs v76's 533 on the same lane/path
