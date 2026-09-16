@@ -43,7 +43,9 @@
   hero-attack and ~1100 creep-attack commands per game vs our 575/475 and reach the fort in 90% of games (we: 56%), i.e. they stay alive in fights.
   v111 (boots first) 51/69 vs v93 (negative, dropped). v112 (wave ride only) 58/62 (level, dropped).
   **v113 first batch 67/53 vs v93 (+14; Xbow 10/12, Lich 9/12, Arcanist 8/12, Warlock 8/12)**; replication over 240 running
-  (`duel-v113-v93-2`); promote only if combined >= +24 over 360 with the replication positive. Checking the kite rule fires in its logs.
+  (`duel-v113-v93-2`); promote only if combined >= +24 over 360 with the replication positive. Hosted logs confirm the rule fires (KITE2
+  5-6 prints per game on every ranged class, 0 on melee) and the mechanism: deaths per game Ranger 0.58 (v87-era 2.46), Xbow 0.83 (2.38),
+  Lich 1.17 (3.04), Arcanist ~1.5 (3.8); kills per game Ranger 8.1 (4.7), Xbow 7.9 (5.9), Lich 5.7 (3.3). Overall 2.42 deaths/game vs 3.56.
   v114 (:v114) = v113 with the kite trigger at 4.5 tiles (was 3.5) and 4-tile steps, queued vs v93 (`duel-v114-v93`).
 - **Time budget (v93 ten-seat, 4340 telemetry samples):** walking the route 43%, farming creeps 14%, sieging 9%, fighting heroes 7%, escort 6%,
   open-lane fort walk 4%, waiting for a wave 4%, low-HP retreat 3% (4.4% in losses vs 2.7% in wins). With ~3.5 deaths per game and ~800 ticks
