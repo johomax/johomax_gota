@@ -125,7 +125,10 @@
   walks 47% / sieges 3% in losses (2.1 deaths in that phase either way). League replays (171 v36 games): Blue wins 0.65; breakthrough
   lanes 63/65/43; 3-5 heroes at the winning fort; long-range class among fort attackers in 130/171. Candidate: v143 (S45, Codex) =
   v139 + race-aware gate defence (hold our own gate under its tower while enemy heroes + a wave siege it and the enemy gate in our
-  lane still has > 900 HP; DEF prints, acts 51/52).
+  lane still has > 900 HP; DEF prints, acts 51/52). v143 (:v143) died at tick 1 in the smoke test: `defLane >= 0 and gateAlive(defLane)`
+  still evaluates the array at -1 (NO short-circuit evaluation — nest such checks). v144 (:v144) = v143 with the check nested: smoke
+  DK identical to v139 (5737 / 1 death, no errors; DEF does not trigger against nine base.bas). Dueling v139 on all seats, 240 games
+  (`duel-v144-v139`).
 
 ## GAME VERSION 36 (since ~23:20 UTC 2026-09-15)
 - League coworld is now `cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870` (2026.9.15.3, game version 36): same balance as version 34, creep lanes
