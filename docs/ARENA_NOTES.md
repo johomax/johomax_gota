@@ -2,6 +2,22 @@
 
 Game version 2026.9.14.3 (map generation changed on 2026-09-14; older wiki/book assume 64x64). Source commit 275ba23.
 
+## GAME VERSION 37 (league coworld cow_dd6ceed6-9188-4eaa-9099-03aefcd1e5fe, 2026.9.16.2, engine 5c701f9, since ~2026-09-16 16:00 UTC)
+- **Dead towers and barracks are NOT enumerated in objectCount()** (sim: `value.kind in [Tower, Barracks] and hp <= 0 -> skip`). Any rule
+  that waits to SEE a tower at 0 HP never fires: v113/v139 parked on dead tower coordinates until the 28800-tick timeout (318 STUCK
+  prints in one local game). v148 infers "dead" when the building objective is missing from the list while we stand within 4 tiles.
+- **Barracks are buildings**: object kind 5, ids 40+, two per lane per team, 950 HP, no attack, attackable once the lane's towers are dead
+  (`buildingExposed`); creeps spawn 3 per living barracks per interval (6 per lane per team, was 2; unit cap 360). Killing both
+  barracks of a lane stops that lane's enemy creeps. No XP/gold reward found for barracks kills in the diff (towers still 100/75).
+  Fort exposure unchanged (a lane with all three towers dead).
+- **Towers**: HP 950/1300/1950 (was 900/1200/1800), damage 18/24/30 unchanged, ranges unchanged; body footprints 1.05/1.25/1.65 tiles
+  (was 0.42/0.55/0.70) — walkTo at a tower centre snags every time; stop 2.5-3 tiles short (v147) or attackTarget.
+- **Hero buffs**: Crossbowman 46 dmg +9/level (was 43/+8), Berserker 38 +8 (was 35/+7), Lich Ice Spear 48 dmg / 6.67 tiles (was 44 /
+  6.33), Warlock Aether Siphon restore 30 (24), Death Knight Sanguine Chalice heal 36 (30).
+- `terrainWalkable(x, y)` now returns 1 only for cells the team has SEEN as walkable (fog on terrain); unknown cells read 0.
+- Paths and creep waves were "simplified" (c57c1f5) and map generation changed (rock triangles, floor cuts); tower positions and
+  lane route points are the same as version 36 in the seed-2026 local map.
+
 ## GAME VERSION 36 (league coworld cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870, 2026.9.15.3, since ~2026-09-15 23:20 UTC)
 - No balance change vs version 34 (towers 900/1200/1800 HP, 18/24/30 dmg). Creep lanes now route around tower collision footprints.
 - New BASIC observations (bots.nim, 16 work each): objectLevel(i), objectMana(i), objectItemId(i, slot?), objectItemCount, objectFacingX/Y(i),
