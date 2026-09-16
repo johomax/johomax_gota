@@ -52,6 +52,11 @@
   126/240 = 0.525 — all within the +-28 noise band: Blue lane choice is closed under version 37; v153/v154 dropped.** Queue after
   this: `duel-v152-v148` (melee farm radius 8, 240), `duel-v155-v148` + `-2` (melee-package ablation, 2 x 240), `null-v151-v148-2`,
   `v148-seats-b` (second ten-seat baseline for field drift).
+  Blue telemetry under version 37 (v148 Blue baseline, 48 games per class): VK 20/48 with 6.6 deaths, DH 26/48 / 6.0, Druid 28/48 /
+  5.3, Arcanist 26/48 / 4.0, Ranger 32/48 / 2.7; deaths come while walking (act 9: DH 147 of 290, VK 98 of 317) in mid/jungle and
+  the enemy corner; level at tick 2400 only 2.3-2.8 for VK/DH/Druid. Same mid death march as Red melee (DK 72/105 in mid/jungle).
+  Candidate v156 (S48, Codex): walk out via a point 4 tiles short of our own outer tower when the objective is beyond the enemy outer
+  (VIA, act 58) — the single-waypoint version of v137's lane-hugging without queuing behind waves; test on all seats, 480 games.
   Next: ten-seat baseline for v148 DONE;
   then re-tune for version 37 (3x creeps, barracks, bigger towers).
 - Previous champion v139 = `Jordan:v139` (08:45-17:40 UTC; game version 36). **Rank 2 at 1589 MMR after round
