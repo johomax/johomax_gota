@@ -18,8 +18,15 @@
   nancy 0.452, daf 0.384. v76 sits at 0.496, i.e. 6-7 points behind the best fillers. black-kite pushes the same physical side lane as v76
   (Red lane 2 / Blue lane 0); richard pushes the other side lane and mid; khors camps mid and farms. `tools/policy_trace.py` aggregates what
   each policy's hero does per 1000 ticks over the cached hosted replays.
-- **Lane test running:** v85 (:v85) = v76 with mid as the default push lane for both teams; v86 (:v86) = v76 pushing the other side lane
-  (Red lane 0 / Blue lane 2). Both smoke-tested on v36 (14115 / 6299 ticks vs base) and dueling v76, 120 games each (`duel-v85-v76`, `duel-v86-v76`).
+- **Lane tests done:** v85 (:v85, mid lane for both teams) 50/70 vs v76 (negative); v86 (:v86, other side lane) 62/58 (parity). The
+  current push lane (Red lane 2 / Blue lane 0) stays.
+- **Why we lose (tools/log_stats.py on v76-seats-v36, 240 games):** our hero dies 4.7 times per game (5.5 in losses, 3.9 in wins; DH 6.9,
+  Druid 6.4, Xbow 5.0) and is still level 1 at tick 1920, level ~3.6 by tick 4000-6000 and ~5 at game end. It issues ~6400 walkTo commands
+  per game but only ~530 creep attacks; the strongest fillers (black-kite, red-kite ~1400 creep attacks; khors/base ~3800) farm far more.
+  Locally base.bas heroes end with 1.5-2x our XP. Hypothesis: under-levelled hero -> loses fights -> dies -> the lane push stalls.
+- **Farming tests running:** v87 (:v87) = v76 + attack any enemy footman within 8 tiles (melee 6) instead of walking/waiting (farmR2);
+  v88 (:v88) = v87 + below level 4 creeps come before towers (unless all-in). Local DK: v87 17191 ticks / 9 deaths / 2475 XP, v88 13687 / 3 / 1425
+  (v76 11141 / 3 / 1475). Duels vs v76, 120 each (`duel-v87-v76`, `duel-v88-v76`).
 - **Where this stands (23:45 UTC):** the confirmed lineage is v49a (tower-safe siege, kiting, commitment, all-in) -> v51 (join a 2+ ally side
   push, 91-66 over 360) -> v68 (escort the allied Crossbowman, 102-85 over 360) -> v76 (fort rush once a gate is known dead, 129-107 over 240
   vs v75, level vs v68). Since game version 34 every further candidate (v73-v83, 12 of them) landed within noise (+/-5 over 120-240 games),
