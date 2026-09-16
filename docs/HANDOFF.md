@@ -39,6 +39,10 @@
   --ids --exact --by-class`, fillers `tools/roster_stats.py`, ladder `tools/ladder.py`, engine/coworld drift `tools/coworld_check.py`.
   Upload every policy file once, in numeric order (`uv run coworld upload-policy --file policy/vNNN.bas --tag version=vNNN`), so the
   platform label equals the file number; smoke-test Codex output locally first (blank line before `end if`/`wend` is a compile error).
+- **PAUSED by the user at ~14:05 UTC 2026-09-16** ("Stop for now"). Champion v139; rank 2 at 1582. Background loops left running
+  and harmless: 30-min monitor (tmp/monitor3.log), 20-min git pusher (until ~20:00 UTC), and a ~17:00 UTC league review that writes
+  tmp/league_v139b.json and pushes. On resume: read the 17:00 review output (or run `tools/league_logs.py --only-version 139` after
+  `tools/league_data.py --rounds 20`), compare v139's melee seats with v113's league record, then continue from the ideas list below.
 - **In flight (10:10 UTC):** `duel-v146-v139` (480 games, all seats): v146 = v139 + Blue pushes physical lane 2 + no Crossbowman
   escort + ride walks off stuck detection — a bundle of three changes that read level-to-positive alone (+5/240 Blue, +8/480, hygiene).
   Promote only if >= +36 over 480 and no class row collapses. Today's conclusions: (1) the melee package (v139) is the only gain of
