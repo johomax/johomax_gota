@@ -38,7 +38,10 @@
   Ranger and 0.77 / 0.76 as Arcanist; we win 0.50 / 0.53 on those seats (we beat them as VK: 0.58 vs 0.45 / 0.39). Their edge is on ranged
   Blue-side classes, i.e. kiting. Our anti-melee rule for ranged heroes (act 2) just walks back 4 tiles and cancels our attack (2% of time,
   kite act 28 0.4%). Codex S34 (docs/tasks/s34_stutter_step_kiting.md) writes v113 = v93 + stutter-step kiting using selfAttackCooldown
-  (hit when the cooldown is within the windup, step 3 tiles away from the melee threat otherwise).
+  (hit when the cooldown is within the windup, step 3 tiles away from the melee threat otherwise). v113 (:v113) delivered and smoke-tested
+  (Ranger: KITE2 active, 4100 XP vs v93's 3700 on the same seed; Arcanist fine); dueling v93 (`duel-v113-v93`). Their Rangers issue ~930
+  hero-attack and ~1100 creep-attack commands per game vs our 575/475 and reach the fort in 90% of games (we: 56%), i.e. they stay alive in fights.
+  v111 (boots first) 51/69 vs v93 (negative, dropped).
 - **Time budget (v93 ten-seat, 4340 telemetry samples):** walking the route 43%, farming creeps 14%, sieging 9%, fighting heroes 7%, escort 6%,
   open-lane fort walk 4%, waiting for a wave 4%, low-HP retreat 3% (4.4% in losses vs 2.7% in wins). With ~3.5 deaths per game and ~800 ticks
   per death (24 dying + 192 respawn + the walk back), deaths eat roughly a third of an 8500-tick game; every death avoided is worth ~10% presence.

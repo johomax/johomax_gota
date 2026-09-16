@@ -18,7 +18,7 @@ def tower_info(tid):
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--match", nargs="+", default=["black-kite", "richard", "khors", "red-kite", "Jordan"])
     ap.add_argument("--limit", type=int, default=100000); ap.add_argument("--window", type=int, default=1000)
-    ap.add_argument("--ids", default=None, help="json list of episode ids to restrict to"); ap.add_argument("--exact", action="store_true", help="match keys as full labels"); a = ap.parse_args()
+    ap.add_argument("--ids", default=None, help="json list of episode ids to restrict to"); ap.add_argument("--exact", action="store_true", help="match keys as full labels"); ap.add_argument("--by-class", action="store_true", help="split each policy by hero class (seat)"); a = ap.parse_args()
     only = set(json.load(open(a.ids))) if a.ids else None
     cache = json.load(open(ROOT / "tmp/roster_cache.json"))
     per = defaultdict(lambda: {"games": 0, "wins": 0, "win": defaultdict(Counter), "cmds": Counter(), "lane": Counter(), "first_tower": [], "fort_first": [], "walkwin": defaultdict(lambda: [0, 0, 0])})
@@ -38,6 +38,7 @@ def main():
             for m in a.match:
                 if (label == m) if a.exact else (m in label): key = m if m != "Jordan" else label.split(":")[-1]; break
             if key is None: continue
+            if a.by_class: key = key + "/" + ["VK","Ranger","Arcanist","Druid","DH","DK","Xbow","Lich","Warlock","Berserk"][(seat % 5) + (5 if seat < 5 else 0)]
             p = per[key]; team = 0 if seat < 5 else 1; hid = 100 + seat
             p["games"] += 1; p["wins"] += 1 if rws[seat] else 0
             ft = None; ff = None
