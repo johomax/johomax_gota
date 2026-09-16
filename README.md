@@ -50,7 +50,8 @@ uv run coworld submit <name>:vN -l league_3c60897b-25cf-4b37-9d1a-8554c1198f28
   random-roster baseline is 138/240 = 0.575 (v76 0.496, v93 0.537), second in its batch behind nancy-goa:v1 0.596, ahead of black-kite 0.565.
   v131 (prefer guaranteed last hits) 57/63, dropped. The strong campers use items ~50x more often than we do, so v132 (keep an elixir
   stocked, drink at 70% HP, free slot) 59/60, dropped. v133 (short-range kite steps for Druid/Warlock) 65/55 with no change on the
-  seats it touches, dropped. v134 (walk back to meet the creep wave instead of waiting outside a tower) opened 66/54 and is replicating.
+  seats it touches, dropped. v134 (walk back to meet the creep wave instead of waiting outside a tower) opened 66/54 but its rule fires
+  in 0.3% of samples, so that was noise too; its replication doubles as a second null calibration. v113 remains champion.
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep farming footmen in basic range while travelling between lanes:
   64-56 then 136-104 vs v87 (200-160 over 360). Level or negative since: v95 focus fire 60/60, v96 two-ally dive 51/69 (vs v87); v97 61/59,
   v98 52/68 (vs v93). Running vs v93: v99 (no Red-only Crossbowman escort; first batch 66/54, replicating), v100 (never fight alone),
