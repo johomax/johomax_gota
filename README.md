@@ -38,8 +38,11 @@ uv run coworld submit <name>:vN -l league_3c60897b-25cf-4b37-9d1a-8554c1198f28
   before hitting a healthy tower, open on enemy heroes only when adjacent / nearly dead / with an ally near, and never run ahead of
   their own lane's front footman toward a standing enemy tower. Melee-seat duels vs v113: 133/240 then 122/240 (= 255/480, +30, both
   batches positive; melee deaths down 25-40%); ranged code unchanged. Promoted below the +36/360 bar on the consistency of three
-  positive batches (v135 +12/120 was the same mechanism) — revert if the league's melee seats do not improve. Dropped today: v135-v138,
-  v140 (Blue pushing physical lane 2; the mirrored duel read exactly 0.500 and a fair random-roster Blue-seat test is running).
+  positive batches (v135 +12/120 was the same mechanism) — revert if the league's melee seats do not improve. Dropped today: v135-v138
+  (wave-riding variants), v140 (Blue pushing physical lane 2: 0.633 vs 0.613 in a fair Blue-seat test), v141 (casters wave-bound,
+  +10/240), v142 (no Crossbowman escort, +8/480 with the Red rows at 0.479), v143/v144 (race-aware gate defence: -20/240 — safety
+  rules keep losing tempo on version 36). League findings: Red wins only 0.36 of league games, seating puts the higher-rated players
+  on Blue (black-kite sits Blue 78% of the time), private policy logs are available for league episodes (tools/league_logs.py).
   League structure found today: Red wins only 0.36 of league games and Blue seats hold the higher-rated players in 73% of games.
 - **Previous champion 03:36-09:10 UTC 2026-09-16: v113 = `Jordan:v113`** = v93 + stutter-step kiting for ranged classes (hit while the attack
   cooldown is within the windup, step away from melee threats during recovery, via the version-36 selfAttackCooldown observation):
