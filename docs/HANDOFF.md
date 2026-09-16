@@ -46,6 +46,9 @@
   DH 19/30. Telemetry vs the v113 baseline: deaths halved (Berserk 5.0 -> 2.0, DK 4.2 -> 2.9, VK 6.3 -> 3.3) but levels fell (Berserk
   5.3 -> 3.8, DK 4.6 -> 4.2) and VK stuck events rose to 20/game: fewer deaths bought with passivity. The hosted queue currently
   finishes 120 games in ~25 minutes, so 240-game batches are affordable.
+  **v137 (:v137) smoke, seed 2026 vs nine base.bas: DK WON 6003 / 1 death / tower kill 1907 (v113: 12973 / 5 deaths); Berserk WON 4564 /
+  0 deaths / tower kill 1696 (v113: 7022 / 1).** RIDE targets hug the lane ((105,101), (76,99), (57,100)); no HOLDW needed. Dueling
+  v113 on melee seats, 240 games (`duel-v137-v113`, seats 0,4 x 60).
 
 ## GAME VERSION 36 (since ~23:20 UTC 2026-09-15)
 - League coworld is now `cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870` (2026.9.15.3, game version 36): same balance as version 34, creep lanes
