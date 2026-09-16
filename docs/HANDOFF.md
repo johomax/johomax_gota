@@ -47,7 +47,9 @@
   any of the 120 games** (the rule required objective index < 3 and routing = 0; after a respawn the index stays at the enemy tower and the
   rejoin logic sets routing = 1), so v102 is behaviourally v93 and the +21 was noise (its replication `duel-v102-v93-2` opened 23/37; ignore).
   Lesson: check that a new rule fires (act share / print) in the first hosted batch before trusting its duel. v109 (:v109) = v102 with the
-  gates removed and a HOLD print; smoke-tested for actual holds before dueling. v103 60/60 (parity, dropped). v106 (:v106, crippled reset) and v107 (:v107,
+  gates removed and a HOLD print; local DH/DK games show the hold firing; dueling v93 (`duel-v109-v93`). v103 60/60 (parity, dropped).
+  v108 (:v108, Codex S33 = v102 + ride the next allied creep wave out after a respawn) inherited the same dead gates — uploaded for label
+  order only; v110 = v109 + that ride rule with the gates removed (smoke-testing, then duel vs v93). v106 (:v106, crippled reset) and v107 (:v107,
   chase kill shots: attack an enemy hero within 10 tiles whose HP is at most three of our hits) queued vs v93.
 - v104/v105 = v93 + farm at the map centre until level 5/tick 3000 (v104) or level 4/tick 2000 (v105), then push: locally the DK reaches
   level 3 by tick 960 (v93: 1920) but both DK games were LOST (the centre is where all enemy campers converge) and the v104 Crossbowman ended
