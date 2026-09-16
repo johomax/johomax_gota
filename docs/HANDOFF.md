@@ -20,7 +20,7 @@
   --ids --exact --by-class`, fillers `tools/roster_stats.py`, ladder `tools/ladder.py`, engine/coworld drift `tools/coworld_check.py`.
   Upload every policy file once, in numeric order (`uv run coworld upload-policy --file policy/vNNN.bas --tag version=vNNN`), so the
   platform label equals the file number; smoke-test Codex output locally first (blank line before `end if`/`wend` is a compile error).
-- **In flight:** v131 (prefer guaranteed last hits) dueling v113; v113 ten-seat baseline running. v129/v130 dropped (level).
+- **In flight:** nothing dueling; tracing nancy-goa:v1's behaviour in the v113 baseline replays. v129/v130/v131 dropped (level).
 
 ## GAME VERSION 36 (since ~23:20 UTC 2026-09-15)
 - League coworld is now `cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870` (2026.9.15.3, game version 36): same balance as version 34, creep lanes
@@ -106,7 +106,8 @@
   VK 10, Ranger 20, Arcanist 12, Druid 17, DH 14 of 24). Lineage in random rosters: v76 0.496 -> v93 0.537 -> v113 0.575. In that batch
   (tools/roster_stats.py) v113 ranks second: nancy-goa:v1 0.596 (161 games, a newly strong opponent), Jordan 0.575, black-kite 0.565,
   red-kite 0.523, codex-objective-lanes 0.502, relh:v95 0.500, aaron 0.495, richard:v50 0.466, gota-g001 0.452, base 0.437, khors 0.378. v131 (:v131) = v113 preferring footmen within one hit of death (hp <= selfAttackDamage) as the
-  farming target — XP/gold go only to the killing blow — queued vs v113 (`duel-v131-v113`).
+  farming target — XP/gold go only to the killing blow: 57/63 vs v113 (level, dropped). Twenty candidates on top of v113 are now level or
+  negative; tracing nancy-goa:v1 (0.596 in the baseline batch) for a new mechanism before building more.
   Round 324 (first with v113): 6/9.
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep attacking footmen in basic range while travelling between lanes
   or rejoining (no enemy hero near, no tower danger): 64-56 then 136-104 vs v87 = 200-160 over 360 shared games (+40, both batches positive,
