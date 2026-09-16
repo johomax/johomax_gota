@@ -1,7 +1,7 @@
 # HANDOFF — Gods of the Arena policy project (resumed 2026-09-16, 02:42 UTC)
 
 ## WHERE THIS STANDS (2026-09-16 04:50 UTC) — read this first
-- **Champion: v139 = `Jordan:v139`** (submitted 09:10 UTC with auto-champion; verify the ladder label flips from :v113). v139 = v113 +
+- **Champion: v139 = `Jordan:v139`** (submitted 08:45 UTC, ladder label confirmed :v139 at 09:00 UTC; rank 4, 1544 MMR after round 333). v139 = v113 +
   melee package (Codex S41/S43): melee heroes last-hit before hitting a healthy tower, open on enemy heroes only when adjacent /
   nearly dead / with an ally within 8 tiles, and never run ahead of their lane's front footman toward a standing enemy tower (RIDE,
   act 47; hold 49/50 when the lane has no footman). Evidence: melee-seat duels vs v113 133/240 (+26) and 122/240 (+4) = 255/480
