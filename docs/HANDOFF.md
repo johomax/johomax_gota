@@ -80,7 +80,9 @@
   225/480 (-30)** — the package is worth ~+30/480 on version 37 as it was on 36; v148 keeps it. Queued: `v148-red` (Red-seat baseline,
   240) to pair with the Blue baselines for side-specific tests. `v148-blue-2`: 136/240 = 0.567 (first Blue baseline 0.550) — v148 as
   Blue sits at ~0.56 in random rosters. v161 (:v161) = v148 + melee back-off when alone against >= 2 enemy heroes (S46 re-test under
-  version 37): smoke DK won 13025 / 2 deaths / OUTN 4 (v148: 14074 / 4); melee-seat duel vs v148 queued (`duel-v161-v148`, 240). **Second v148 ten-seat baseline (`v148-seats-b`, 18:45 UTC): 138/240 = 0.575 (first 0.650)** — the field adapted
+  version 37): smoke DK won 13025 / 2 deaths / OUTN 4 (v148: 14074 / 4); melee-seat duel vs v148 queued (`duel-v161-v148`, 240, plus a
+  pre-queued second batch `-2`). `v148-red`: 152/240 = 0.633 — v148 is ~0.63 as Red and ~0.56 as Blue in random rosters (side gap
+  durable); third ten-seat baseline `v148-seats-c` running at 113/182 (Red 79/120, Blue 34/62). **Second v148 ten-seat baseline (`v148-seats-b`, 18:45 UTC): 138/240 = 0.575 (first 0.650)** — the field adapted
   within two hours: khors 0.58, aaron-cadence 0.58, relh:v133 0.56, codex-objective 0.56, richard 0.49, red-kite 0.39; Red wins 0.55
   of these games. Our weakest seats now DH 8/24, Warlock 9/24, VK 10/24, Druid 12/24.
   Next: ten-seat baseline for v148 DONE;
