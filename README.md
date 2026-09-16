@@ -36,9 +36,10 @@ uv run coworld submit <name>:vN -l league_3c60897b-25cf-4b37-9d1a-8554c1198f28
   khors 0.552, red-kite 0.519, base.bas 0.484; v76 0.496. Lane tests: v85 mid lane 50/70 (negative), v86 other side lane 62/58 (parity).
 - **Champion since 03:36 UTC 2026-09-16: v113 = `Jordan:v113`** = v93 + stutter-step kiting for ranged classes (hit while the attack
   cooldown is within the windup, step away from melee threats during recovery, via the version-36 selfAttackCooldown observation):
-  67-53 then 140-100 vs v93 (207-153 over 360). Ranged deaths per game fell from 2.4-3.0 to 0.6-1.2. v114 (kite trigger 4.5 tiles,
-  4-tile steps) 77-43 vs v93 in its first batch and now dueling v113 directly; v115 (melee heroes stop chasing targets that flee at 80%+ of
-  our speed) dueling v113; v116 (keep the range advantage against shorter-ranged enemy heroes) being written by Codex.
+  67-53 then 140-100 vs v93 (207-153 over 360). Ranged deaths per game fell from 2.4-3.0 to 0.6-1.2. Level vs v113 and dropped: v114
+  (wider kite trigger) 58/62, v115 (melee anti-kite) 58/62, v116 (range-advantage kiting) 61/59. The remaining gap is on the Red-side
+  classes (DK 0.38, Berserk 0.29, Lich/Warlock 0.46 vs Blue classes 0.71-0.88); dueling v113: v117 (escort only for ranged Red heroes),
+  v118 (no Red escort at all).
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep farming footmen in basic range while travelling between lanes:
   64-56 then 136-104 vs v87 (200-160 over 360). Level or negative since: v95 focus fire 60/60, v96 two-ally dive 51/69 (vs v87); v97 61/59,
   v98 52/68 (vs v93). Running vs v93: v99 (no Red-only Crossbowman escort; first batch 66/54, replicating), v100 (never fight alone),
