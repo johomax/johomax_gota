@@ -18,7 +18,11 @@
   wait to see a tower at 0 HP), so the baseline will drift as others fix theirs. Field on version 37 (tools/roster_stats.py over the
   480 v148 games): aaron-gota-ir-cadence-all 0.57 (new), gota-codex-objective-lanes 0.55, relh:v129 0.54, codex-secondary 0.53,
   richard:v50 0.49, nancy 0.48, khors 0.46, red-kite 0.44, games-bond 0.43, black-kite:v11 0.40 (was 0.575 — broken or weakened),
-  Red side 0.48 league-wide in these games. Next: ten-seat baseline for v148 DONE;
+  Red side 0.48 league-wide in these games. Version-37 game structure (tools/replay_lanes.py on the v148 baseline, parser now accepts
+  replay game version 40): winner's first gate attack median 3240 ticks (v36 ~4900), first fort attack 6406 (8037), game end 7197
+  (8428) — the 6-creep waves melt towers; 3-5 heroes at the winning fort in 195/240; our hero hits the enemy fort in 156/156 wins;
+  when we lose the enemy breaks mid in 42/84. Melee deaths under v37: DH median tick 4451 and VK 6783 while walking (58-62% of
+  their time, ride rule only 4-6%), DK/Berserk late in mid/jungle (fort approach / escort). Next: ten-seat baseline for v148 DONE;
   then re-tune for version 37 (3x creeps, barracks, bigger towers).
 - Previous champion v139 = `Jordan:v139` (08:45-17:40 UTC; game version 36). **Rank 2 at 1589 MMR after round
   338 (11:40 UTC; richard 1658, black-kite 1574).** v139 league record 35/53 = 0.66 (Red 16/25 = 0.64, Blue 19/28 = 0.68; v113 was 0.59
