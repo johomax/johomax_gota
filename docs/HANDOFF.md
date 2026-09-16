@@ -4,10 +4,11 @@
 - **Champion: v113 = `Jordan:v113`** (promoted 03:36 UTC). Lineage of confirmed gains on game version 36, all by mirrored-seat duels:
   v76 -> v87 (farm any enemy footman within 8 tiles instead of walking/waiting, 198-161 over 360) -> v93 (also farm while travelling
   between lanes, 200-160 over 360) -> v113 (stutter-step kiting for ranged classes via selfAttackCooldown, 207-153 over 360).
-  Ladder: rank 4, 1538 MMR (05:11 UTC), up from rank 9 / 1482 at 01:16 UTC; league rounds with v113 (324-326): 18/28. Random-roster
+  Ladder: rank 5, 1509 MMR (05:45 UTC; was 1538 before a 2/9 round 327), up from rank 9 / 1482 at 01:16 UTC; league rounds with v113
+  (324-327): 20/37. Random-roster
   baseline 0.575 (v76 0.496, v93 0.537), second in its batch behind nancy-goa:v1 0.596 and ahead of black-kite 0.565.
-- **Promotion rule:** combined >= +24 over >= 360 shared games with both batches positive (a null duel of identical policies read +21
-  then -15 per batch, so +-20 per 120-240 games is noise). Always confirm a new rule fires in the hosted logs (tools/log_stats.py) first.
+- **Promotion rule:** combined >= +36 over >= 360 shared games with both batches positive (two null duels of identical policies read
+  +21/-15 and +12/-24 per batch, so +-25 per 240 games is noise). Always confirm a new rule fires in the hosted logs (tools/log_stats.py) first.
 - **Tried on top of v113 and level or negative (16 candidates):** wider kite trigger, range-advantage kiting, melee anti-kite, escort
   variants, free elixir slot, melee flee at 40%, melee farm radius, road-following via route points (harmful), the Codex audit's fix bundle,
   stuck escalation, spell dodging (saves ~0.5 deaths/game, wins level). Passive/safety rules lose tempo; only added productive actions won.
@@ -22,7 +23,7 @@
   --ids --exact --by-class`, fillers `tools/roster_stats.py`, ladder `tools/ladder.py`, engine/coworld drift `tools/coworld_check.py`.
   Upload every policy file once, in numeric order (`uv run coworld upload-policy --file policy/vNNN.bas --tag version=vNNN`), so the
   platform label equals the file number; smoke-test Codex output locally first (blank line before `end if`/`wend` is a compile error).
-- **In flight:** a second null calibration (v134's replication, behaviourally identical to v113). v129-v134 dropped (level/noise).
+- **In flight:** nothing; monitoring the ladder and coworld. v129-v134 dropped (level/noise).
 
 ## GAME VERSION 36 (since ~23:20 UTC 2026-09-15)
 - League coworld is now `cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870` (2026.9.15.3, game version 36): same balance as version 34, creep lanes
@@ -118,7 +119,10 @@
   the wave; act 23). v133 65/55 vs v113 but the only seats it changes did not move (Warlock 3/12, Druid 7/12) — noise, dropped.
   v134 first batch 66/54 vs v113 (+12) — but its hosted logs show the walk-back (act 23) in only 0.29% of samples (5 samples in 120
   games; waiting heroes almost always have allied footmen within 8 tiles), so v134 is behaviourally v113 and the +12 is noise. Its
-  replication (`duel-v134-v113-2`, 240) therefore serves as a second null calibration; v134 dropped.
+  replication (`duel-v134-v113-2`, 240) therefore serves as a second null calibration: **108/132 (-24 over 240)** for two behaviourally
+  identical policies. Together with the first null (+21 then -15) the per-240 noise band is about +-25, wider than binomial. **Promotion
+  rule tightened again (05:46 UTC): combined >= +36 over >= 360 shared games with both batches positive** (v87 +37, v93 +40, v113 +54 pass).
+  Practical consequence: only large effects are testable; small tweaks cannot be resolved with 360 games.
   Round 324 (first with v113): 6/9.
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep attacking footmen in basic range while travelling between lanes
   or rejoining (no enemy hero near, no tower danger): 64-56 then 136-104 vs v87 = 200-160 over 360 shared games (+40, both batches positive,
