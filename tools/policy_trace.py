@@ -17,11 +17,14 @@ def tower_info(tid):
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--match", nargs="+", default=["black-kite", "richard", "khors", "red-kite", "Jordan"])
-    ap.add_argument("--limit", type=int, default=100000); ap.add_argument("--window", type=int, default=1000); a = ap.parse_args()
+    ap.add_argument("--limit", type=int, default=100000); ap.add_argument("--window", type=int, default=1000)
+    ap.add_argument("--ids", default=None, help="json list of episode ids to restrict to"); ap.add_argument("--exact", action="store_true", help="match keys as full labels"); a = ap.parse_args()
+    only = set(json.load(open(a.ids))) if a.ids else None
     cache = json.load(open(ROOT / "tmp/roster_cache.json"))
     per = defaultdict(lambda: {"games": 0, "wins": 0, "win": defaultdict(Counter), "cmds": Counter(), "lane": Counter(), "first_tower": [], "fort_first": [], "walkwin": defaultdict(lambda: [0, 0, 0])})
     n = 0
     for eid, (pols, rws) in cache.items():
+        if only is not None and eid not in only: continue
         f = ROOT / "tmp/replays" / (eid + ".replay")
         if not f.exists(): continue
         try: rep = rp.load_replay(f)
@@ -33,7 +36,7 @@ def main():
         for seat in range(10):
             label = pols[seat]; key = None
             for m in a.match:
-                if m in label: key = m if m != "Jordan" else label.split(":")[-1]; break
+                if (label == m) if a.exact else (m in label): key = m if m != "Jordan" else label.split(":")[-1]; break
             if key is None: continue
             p = per[key]; team = 0 if seat < 5 else 1; hid = 100 + seat
             p["games"] += 1; p["wins"] += 1 if rws[seat] else 0
