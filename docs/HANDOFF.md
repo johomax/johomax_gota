@@ -40,6 +40,66 @@
   leaders' win rates are partly seat luck; (5) single rule tweaks are below the +-25/240 noise floor — use class-restricted duels
   (`--seats 0,4` melee, `2,3` casters) or 480+ games. Tools added today: tools/league_logs.py (league telemetry from private logs).
   Monitor: 30-min loop (coworld, ladder, rounds -> tmp/monitor2.log); git pusher every 20 min.
+- **Detailed log of today's candidates (v135-v146), oldest first:** S39 melee wave-rider = v135 (Codex task-mu3sicj1-pbpo2i, spec docs/tasks/s39_melee_wave_rider.md).
+  Why: clean per-class baseline (xp/v113-seats.json, 24 games each) Ranger 0.83 / Xbow 0.88 / Druid 0.71 / DH 0.58 / Lich 0.54 /
+  Arcanist 0.50 / Warlock 0.50 / DK 0.46 / VK 0.42 / Berserk 0.33 — the earlier "Blue side dominance" was a duel artefact (mirrored
+  copies face each other); the real gap is the melee classes. black-kite:v11 wins DK 0.53 / VK 0.55 / Berserk 0.59 / DH 0.56 with the
+  same classes (1642 random-roster games). Replays: our melee heroes walk straight to the enemy outer tower (median first tower attack
+  ~1100 ticks vs black-kite ~2400), siege at level 1, push on alone to the inner tower and die 4-6 times per game (act 9 precedes most
+  deaths); they farm 9-15% of the time (act 4) and issue half as many footman attacks (DK 757/game vs 1716). v135: melee farm before
+  siege, siege a healthy tower only with >= 2 footmen soaking, open on heroes only when adjacent/nearly dead/with an ally, and never
+  run ahead of the front allied footman toward a standing enemy tower (RIDE, act 47). Test on melee seats only:
+  `duel v135 v113 --seats 0,4 -n 30` (120 games, all DK/VK/Berserk/DH). Rounds 329: 4/8, 330: 2/8 (rank 5, 1514 MMR at 07:55 UTC;
+  the two Berserker and two Lich seats all lost).
+  v135 (:v135) smoke (seed 2026 vs nine base.bas): Berserk won 9332 / 1 death / farm share 42% (v113: 7022 / 1 / 21%); DK won 9382 /
+  1 death but sat at level 1 beside the enemy outer tower for 3000 ticks (the two-footman gate delayed the tower kill v113 got at
+  1784) and still died alone at the inner tower (ride needed tower sight + a footman within 30 tiles). Dueling anyway on melee
+  seats (`duel-v135-v113`, 120 games). v136 (S40: gate restored, farm-first within 3 tiles, hold when no footman near) smoke: Berserk
+  won 5061 / 1 death (best yet) but DK LOST 7683 with 7 deaths — hold fired at spawn, and the diagonal death march through mid
+  continued because mid-lane footmen counted as the wave. Not uploaded/tested. v137 (S41) = v113 + lane-aware wave discipline only
+  (front footman of OUR lane by a physical lane test; walk to it when ahead of it or > 20 tiles behind; hold when the lane has no
+  footman; act 47 in stuck detection).
+  **v135 duel result (melee seats, 120 games, done 08:25 UTC): 66/120 = 0.550 (+12, noise-level)** — DK 17/30, Berserk 20/30, VK 10/30,
+  DH 19/30. Telemetry vs the v113 baseline: deaths halved (Berserk 5.0 -> 2.0, DK 4.2 -> 2.9, VK 6.3 -> 3.3) but levels fell (Berserk
+  5.3 -> 3.8, DK 4.6 -> 4.2) and VK stuck events rose to 20/game: fewer deaths bought with passivity. The hosted queue currently
+  finishes 120 games in ~25 minutes, so 240-game batches are affordable.
+  **v137 (:v137) smoke, seed 2026 vs nine base.bas: DK WON 6003 / 1 death / tower kill 1907 (v113: 12973 / 5 deaths); Berserk WON 4564 /
+  0 deaths / tower kill 1696 (v113: 7022 / 1).** RIDE targets hug the lane ((105,101), (76,99), (57,100)); no HOLDW needed. Dueling
+  v113 on melee seats, 240 games (`duel-v137-v113`, seats 0,4 x 60). **Result 114/237 = 0.481 (level, dropped)**: DK 28/60, Berserk
+  21/60, VK 30/60, DH 35/57. Its "walk to the front footman when > 20 tiles behind" makes heroes queue behind their own waves in the
+  lane (STUCK prints every ~30 ticks while crawling at wave speed). v135's Berserk/DH pair was 39/60 vs v137's 56/117, so v135's
+  combat rules (melee farm-first, melee hero-chase gate) look like the useful part.
+  v138 (:v138, S42) = v137 with the movement rule for ranged classes too — smoke Warlock won 6724 / 1 death (v113 11247 / 2), Arcanist
+  won 7815 / 2 deaths (v113 14507 / 3) — dueling v113 on all seats (`duel-v138-v113`, 240 games). v139 (:v139, S43) = v137 minus the
+  far catch-up trigger plus v135's two melee combat rules — smoke DK won 5737 / 1 death, Berserk 5324 / 1 — dueling v113 on melee
+  seats (`duel-v139-v113`, 240 games). Time check: it is ~08:10 UTC; the hosted queue finishes 240 games in ~25-30 minutes.
+  **v138 result 115/240 = 0.479 (-10, dropped)**: Xbow 8/24, Ranger 9/24, Lich 5/24, Warlock 7/24 — the movement rule hurts every ranged
+  class (queuing behind waves, walking back from safe range); Arcanist 13/24, Druid 15/24, VK 16/24 fine. Movement discipline stays
+  melee-only if anywhere. Baseline structure (tools/replay_lanes.py on xp/v113-seats.json, 240 games): winner's breakthrough lane is
+  evenly split (82/83/75), 3-4 heroes hit the winning gate in 80% of games, our hero is at the breakthrough gate in 74% of our wins;
+  when we lose the enemy breaks mid in 44/102. Early-game predictors of our win: carries 0 deaths by tick 3000 -> 0.94 (2+ -> 0.33),
+  casters 0 -> 0.62 / 1 -> 0.50 / 2+ -> 0.38, level 1 at tick 1920 -> 0.45 for casters; for melee nothing early predicts the result
+  (they are passengers), which caps what melee work can deliver.
+  **v139 first batch 133/240 = 0.554 (+26; DK 31/60, Berserk 31/60, VK 31/60, DH 40/60; both pairs positive)** — above the +-25 noise
+  band, below the promotion bar. Telemetry (60 games/class): deaths Berserk 3.1 (v113 5.0), DK 2.9 (4.2), VK 3.8 (6.3), DH 3.8 (5.5);
+  levels ~4.5-4.7 (v113 4.6-5.5); hero kills slightly down; stuck prints 14-22/game (act-47 walks queued behind waves). Replication
+  queued (`duel-v139-v113-2`, 240 games); promote if combined >= +36 over 480 with the replication positive.
+  v140 (:v140) = v113 with `clash = 1` (Blue pushes physical lane 2 too — black-kite's lane from both sides; v86 tested "other side
+  lane" for BOTH sides at parity, so a Blue-only change is untested). Smoke ok (Blue Ranger INIT lane 2). Dueling v113 on all seats,
+  480 games (`duel-v140-v113`); only the candidate-as-Blue rows (s5-s9) carry signal, the Red half is a null.
+  **v140 duel result 240/480 = 0.500 exactly** (Blue rows 120/240: VK 24/48, Ranger 16/48, Arcanist 29/48, Druid 24/48, DH ~27/48) —
+  but this design is biased: the Blue candidate meets our own v113 Red hero head-on in the same physical lane (Ranger vs the
+  longer-ranged Crossbowman), which never happens in league games. Fair test queued: random-roster Blue seats, v140 vs a concurrent
+  v113 baseline (`create ... --seats 5-9 -n 48`, tags `v140-blue` / `v113-blue`, 240 games each); compare the two Blue win rates.
+  **Result: v140 Blue 152/240 = 0.633 (VK 29, Ranger 38, Arcanist 29, Druid 33, DH 23 of 48) vs v113 Blue 147/240 = 0.613 — level
+  (+5, SE of the difference ~0.044). Lane choice for Blue is closed: dropped.** Round 333 (first with v139): 6/10 (Berserk 0/2, DH 1/3,
+  Warlock 2/2, Druid/Lich/VK won); rank 4, 1544. Round 334: 4/8 (DK 1/2, Druid 1/2, Ranger W, Warlock W; DH, Lich L) -> rank 5, 1537;
+  v139 league record 10/18 after two rounds. Round 335: 4/8 (Berserk W, Warlock 2/2, Druid 1/3; Arcanist, Xbow L) -> v139 14/26; rank 4,
+  1532 — richard 1619 and black-kite 1609 both fell ~25 this round, the top three are within 90 points.
+  v141 (:v141, S44) = v139 + the wave-bound rule for Arcanist/Lich/Warlock (Ranger/Xbow/Druid unchanged): smoke Warlock won 6724 /
+  1 death, Arcanist 7908 / 2 deaths / 11 stuck (v138's far trigger caused its 40). **Dueled v139 on caster seats (`--seats 2,3 -n 60`,
+  240 games): 125/240 = 0.521 — Lich/Arcanist pair 55/120 (-5), Warlock/Druid pair 70/120 (+10): level, dropped.** The wave-bound
+  movement rule helps melee only.
 - **LEAGUE STRUCTURE (20 rounds, 190 games, tools/league_data.py --rounds 20 + new tools/league_logs.py, 09:00 UTC):** Red wins only
   0.36 of league games (XP random rosters: 0.44). Seating is not uniform: Blue seats hold the higher-rated players in 120/165 games
   (mean current MMR Red 1512 / Blue 1534); black-kite sits Blue in 86/110 games, daveey-2 98/126, docxology 72/97, richard 105/164,
