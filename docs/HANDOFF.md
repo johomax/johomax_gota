@@ -39,7 +39,17 @@
   --ids --exact --by-class`, fillers `tools/roster_stats.py`, ladder `tools/ladder.py`, engine/coworld drift `tools/coworld_check.py`.
   Upload every policy file once, in numeric order (`uv run coworld upload-policy --file policy/vNNN.bas --tag version=vNNN`), so the
   platform label equals the file number; smoke-test Codex output locally first (blank line before `end if`/`wend` is a compile error).
-- **PAUSED by the user at ~14:05 UTC 2026-09-16** ("Stop for now"). Champion v139; rank 2 at 1582. All background loops
+- **RESUMED 17:03 UTC 2026-09-16 — REGIME CHANGE: league coworld is now `cow_dd6ceed6-9188-4eaa-9099-03aefcd1e5fe` (game version
+  2026.9.16.2, engine 5c701f9 "Buff red heroes and tune towers" + "Simplify GotA paths and creep waves").** Facts so far (engine diff):
+  barracks are buildings (object kind 5, ids 40+, 2 per lane per team, 950 HP, no attack, attackable once the lane's towers are dead);
+  creeps spawn 3 per living barracks (6 per lane per team, was 2) with unit cap 360; towers 950/1300/1950 HP (damage 18/24/30
+  unchanged) and footprints 1.05/1.25/1.65 tiles (was 0.42/0.55/0.70); Crossbowman 46 dmg (+9/lvl), Berserker 38 (+8), Ice Spear
+  48 dmg / 6.67 tiles, Aether Siphon 30, Lion Guard 36; terrainWalkable now returns only KNOWN walkable cells (fog); fort exposure
+  unchanged. Our rounds 345-348: 5/9, 0/9, 4/8, 4/9 -> rank 6 at 1514. Local v139 DK on the new coworld: LOST at 16088 with 74 STUCK
+  events (parked at the enemy outer tower centre for 2400 ticks) — objective walks aim at tower centres and the bigger footprints snag
+  them. Hotfix in progress: v147 = v139 with objective/flee walks stopping 3 tiles short of tower objectives. Hosted re-measurement
+  queued under the new coworld: `v139-seats-v37` (240) and `duel-v139-v113-v37` (240).
+- PAUSED by the user at ~14:05 UTC 2026-09-16 ("Stop for now"). Champion v139; rank 2 at 1582. All background loops
   (monitor, git pusher, scheduled 17:00 league review) were stopped at the user's request at ~15:06 UTC; nothing runs unattended.
   On resume: restart the 30-min monitor and the 20-min pusher, then run `tools/league_logs.py --only-version 139` after
   `tools/league_data.py --rounds 20`), compare v139's melee seats with v113's league record, then continue from the ideas list below.
