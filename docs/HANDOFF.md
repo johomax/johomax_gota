@@ -32,7 +32,7 @@
   950/1300/1950 + escort off; smoke Lich won 12565 / 2 deaths / 0 stuck — **result 240/480 = 0.500, pair sums cancel (Red rows 135/240,
   Blue rows 105/240: Red wins 56% of our mirrored games under v37); dropped**), `duel-v150-v148` (240; v150 = v148 + S47 barracks endgame:
   attack an exposed enemy barracks instead of a solo fort dive against >= 2 defenders and when idle within 12 tiles; smoke Ranger won
-  7904, rules did not trigger locally — check BARR/acts 56-57 in hosted logs). Then: replications of anything positive, repeat baseline.
+  7904, rules did not trigger locally — **result 114/240 = 0.475 (-12), BARR fired in 23/240 logs, act 56 rare; dropped**). Then: replications of anything positive, repeat baseline.
   **`null-v148-v37` is INVALID**: the platform merges identical policy versions in one roster into a single policy_stats entry (our
   policy appeared once, reward 0.5, nine entries), so `report` read other seats (it printed Red 239/240). Never duel a version against
   itself; calibrate with two byte-identical files under different labels (v151 = v148 re-uploaded, `null-v151-v148`, queued). Engine
