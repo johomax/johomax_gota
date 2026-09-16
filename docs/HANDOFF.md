@@ -1,7 +1,10 @@
 # HANDOFF — Gods of the Arena policy project (resumed 2026-09-16, 02:42 UTC)
 
 ## WHERE THIS STANDS (2026-09-16 04:50 UTC) — read this first
-- **Champion: v139 = `Jordan:v139`** (submitted 08:45 UTC, ladder label confirmed :v139 at 09:00 UTC; rank 4, 1544 MMR after round 333). v139 = v113 +
+- **Champion: v139 = `Jordan:v139`** (submitted 08:45 UTC, ladder label confirmed :v139 at 09:00 UTC). **Rank 2 at 1589 MMR after round
+  338 (11:40 UTC; richard 1658, black-kite 1574).** v139 league record 35/53 = 0.66 (Red 16/25 = 0.64, Blue 19/28 = 0.68; v113 was 0.59
+  with Red 0.42): rounds 333-338 = 6/10, 4/8, 4/8, 6/9, 8/9, 7/9. By class so far: Warlock 9/9, Ranger 6/6, Druid 5/8, DH 4/7, Lich 3/5,
+  Arcanist 3/5, Berserk 2/6, DK 2/4, VK 1/2, Xbow 0/1 — melee 9/19 (v113 35/66), too few games to judge the melee seats yet. v139 = v113 +
   melee package (Codex S41/S43): melee heroes last-hit before hitting a healthy tower, open on enemy heroes only when adjacent /
   nearly dead / with an ally within 8 tiles, and never run ahead of their lane's front footman toward a standing enemy tower (RIDE,
   act 47; hold 49/50 when the lane has no footman). Evidence: melee-seat duels vs v113 133/240 (+26) and 122/240 (+4) = 255/480
