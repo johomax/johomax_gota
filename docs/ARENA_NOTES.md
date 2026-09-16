@@ -2,6 +2,8 @@
 
 Game version 2026.9.14.3 (map generation changed on 2026-09-14; older wiki/book assume 64x64). Source commit 275ba23.
 
+## League coworld cow_54d6f449 (since ~21:00 UTC 2026-09-16, engine 7365e4e): graphics-only rebuild of version 37 (procedural trees/rocks models); gameplay unchanged. Local runs: use ./coworld/cow_54d6f449-6d63-464d-b742-ff720a9ce803/coworld_manifest.json.
+
 ## GAME VERSION 37 (league coworld cow_dd6ceed6-9188-4eaa-9099-03aefcd1e5fe, 2026.9.16.2, engine 5c701f9, since ~2026-09-16 16:00 UTC)
 - **Dead towers and barracks are NOT enumerated in objectCount()** (sim: `value.kind in [Tower, Barracks] and hp <= 0 -> skip`). Any rule
   that waits to SEE a tower at 0 HP never fires: v113/v139 parked on dead tower coordinates until the 28800-tick timeout (318 STUCK
