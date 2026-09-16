@@ -132,6 +132,10 @@
   sampled logs (acts 51/52 ~5% of samples), deaths fell to 1.85/game — the hero stays alive but the push dies. Dropped.** Third
   confirmation that safety/defensive rules lose tempo on version 36 (hold at home v109, spell dodge v127-129, gate defence v144).
   Queued: ten-seat baseline for v139 (`v139-seats`, 240 games) to refresh per-class numbers.
+  **v139 ten-seat baseline (09:49 UTC): 150/240 = 0.625** (v113 0.575, v93 0.537, v76 0.496): DK 11, Xbow 23, Lich 11, Warlock 13,
+  Berserk 11, VK 15, Ranger 19, Arcanist 19, Druid 16, DH 12 of 24; Red 0.575 / Blue 0.675. Telemetry: Berserk deaths 3.6 (v113 5.0),
+  DK 4.5, DH 5.9 (worst; unchanged), VK levels up; DK/Berserk STUCK prints 27-33 per game (v113 6-12) — the act-47 ride walks queue
+  behind waves and trip the stuck/back-off machinery (check act 10 share).
 
 ## GAME VERSION 36 (since ~23:20 UTC 2026-09-15)
 - League coworld is now `cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870` (2026.9.15.3, game version 36): same balance as version 34, creep lanes
