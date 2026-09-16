@@ -8,7 +8,8 @@
 - **Champion since 00:42 UTC 2026-09-16: v87 = `Jordan:v87`** = v76 + attack any enemy footman within 8 tiles (melee 6) instead of walking
   or waiting for a wave (one scan condition, `farmR2`): 73-47 then 125-114 vs v76 = 198-161 over 360 shared games (+37, both batches
   positive, 1 timeout). Telemetry: deaths 3.5/game vs v76's 4.7, level curve unchanged, first kill 2151 vs 2412. Follow-ups dueling v87:
-  v90 (:v90, farm radius 10/8), v93 (:v93, keep farming in basic range while travelling between lanes); v91 (:v91, = v87 + death-position
+  v93 (:v93, keep farming in basic range while travelling between lanes), v94 (:v94, melee buy armor before the big damage items);
+  v90 (:v90, farm radius 10/8) 60/60 vs v87 (exact parity, dropped); v91 (:v91, = v87 + death-position
   telemetry) ten-seat batch `v91-seats` for a per-seat baseline and a death map (tools/log_stats.py prints DEATH POSITIONS).
   Dropped: v88 (creeps before towers below level 4) 59/61 vs v76; v89 (Codex S31 creep-front anchor) and v92 (static lane-midpoint anchor)
   idle or walk at level 1 locally, uploaded for label order only.
