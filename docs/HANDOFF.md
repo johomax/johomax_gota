@@ -5,12 +5,21 @@
   route around towers, and NEW BASIC observations: objectTarget(i), objectLevel/Mana/ItemId/ItemCount/FacingX/Y/VelX/Y, spellCount()+spell*
   (see docs/ARENA_NOTES.md top). Tools retargeted; v76 verified locally (DK 11141 ticks/3 deaths, Xbow 5636/1 on seed 2026).
 - `uv run python tools/coworld_check.py` reports the league coworld and engine head and warns on change (state in tmp/coworld_check.json).
-- Champion stays v76 (`Jordan:v76`). Running: sanity duel v76 vs v68 (240, on v36); v82 (:v82, Codex S28) = v76 + target-aware siege using
-  objectTarget (siege while the tower shoots someone else; step out below 45% HP when it targets me): local reference game 4807 ticks /
-  0 deaths vs v76's 11141/3 — but duel vs v76 59/61 (level; local single-seed gains vs base.bas keep failing to transfer). Sanity duel
-  v76 vs v68 on v36: 117/121 (level). v83 (:v83, Codex S29) = v82 + fights/flee keyed on enemies actually targeting me: 58/62 vs v76 (level, dropped).
-  v84 (:v84, Codex S30) = v76 + every non-Crossbowman follows the largest allied group: 53/66 vs v76 (negative, dropped).
-  v82 240-game replication vs v76 running (its first batch 59/61). Round 316: 1489 MMR, rank 8.
+- Champion stays v76 (`Jordan:v76`). Under version 36 (all duels since 23:30 UTC ran on it): v82 (:v82, Codex S28, target-aware siege via
+  objectTarget) 59/61 then 117/123 vs v76 (176-184 over 360, level, dropped); v83 (:v83, S29) 58/62 (level, dropped); v84 (:v84, S30 group
+  follow for all classes) 53/66 (negative, dropped); sanity v76 vs v68 117/121 (level). v76 ten-seat baseline on v36 (`xp/v76-seats-v36`):
+  119/240 (Red 59, Blue 60; DK/Warlock 10/24 weakest, Xbow 16/24). League on v36: 5/21 (rounds 315-316), rank 8, 1489 MMR.
+- **Version-36 game structure** (tools/replay_lanes.py over the 240 v76-v68 duel games): winner's first gate attack median 5732, first fort
+  attack 8028, game end 8388 (version 34: 14700). Same seed/roster locally: v76 DK 25570 ticks on v34 -> 11141 on v36, so the creep-routing
+  change itself speeds games up. Our hero hit the breakthrough gate in 58% of wins (68/117) and 8% of losses; in wins it issues 220 gate and 135 fort
+  commands per game, in losses 79 and 15. Blue wins 55% of hosted games on v36 (Red 45%).
+- **Field strength on v36** (tools/roster_stats.py, 840 hosted games): black-kite:v11 0.566 (685 games), richard:v40 0.563, khors:v1 0.552,
+  games-bond:v6 0.540, red-kite:v13 0.519, relh:v67 0.504, codex-objective-lanes 0.495, base.bas 0.484, aaron:v2 0.482, gota-g001 0.476,
+  nancy 0.452, daf 0.384. v76 sits at 0.496, i.e. 6-7 points behind the best fillers. black-kite pushes the same physical side lane as v76
+  (Red lane 2 / Blue lane 0); richard pushes the other side lane and mid; khors camps mid and farms. `tools/policy_trace.py` aggregates what
+  each policy's hero does per 1000 ticks over the cached hosted replays.
+- **Lane test running:** v85 (:v85) = v76 with mid as the default push lane for both teams; v86 (:v86) = v76 pushing the other side lane
+  (Red lane 0 / Blue lane 2). Both smoke-tested on v36 (14115 / 6299 ticks vs base) and dueling v76, 120 games each (`duel-v85-v76`, `duel-v86-v76`).
 - **Where this stands (23:45 UTC):** the confirmed lineage is v49a (tower-safe siege, kiting, commitment, all-in) -> v51 (join a 2+ ally side
   push, 91-66 over 360) -> v68 (escort the allied Crossbowman, 102-85 over 360) -> v76 (fort rush once a gate is known dead, 129-107 over 240
   vs v75, level vs v68). Since game version 34 every further candidate (v73-v83, 12 of them) landed within noise (+/-5 over 120-240 games),
