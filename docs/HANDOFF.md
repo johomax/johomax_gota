@@ -7,7 +7,10 @@
   (act 23) + a building objective that is missing from the object list while we stand within 4 tiles counts as dead (DEADOBJ; sets
   routeDead/laneTowerHp). Local seed-2026 on the new coworld: Ranger WON 7727 / 2 deaths / 0 STUCK (v139: TIMEOUT 28800 / 7 deaths /
   318 STUCK), DK WON 14074 / 4 deaths / 7 STUCK (v139: LOST 16088 / 74 STUCK). Hosted: `duel-v148-v139` (240) queued behind
-  `v139-seats-v37` and `duel-v139-v113-v37` (both broken versions — they only measure the damage). Next: ten-seat baseline for v148,
+  `v139-seats-v37` and `duel-v139-v113-v37` (both broken versions — they only measure the damage: v139 ten-seat 83/240 = 0.346 on
+  version 37; v139 vs v113 77/172 with 17 timeouts). **v148 vs v139 duel: 174/240 = 0.725** (Xbow 23/24, Ranger 21/24, Druid 21/24,
+  DH 19/24, DK 17/24, Lich 17/24, Arcanist 17/24, VK 14/24, Warlock 13/24, Berserk 12/24; STUCK 1.3/game, 6 timeouts/240, median
+  game ~7900 ticks). Next: ten-seat baseline for v148,
   then re-tune for version 37 (3x creeps, barracks, bigger towers).
 - Previous champion v139 = `Jordan:v139` (08:45-17:40 UTC; game version 36). **Rank 2 at 1589 MMR after round
   338 (11:40 UTC; richard 1658, black-kite 1574).** v139 league record 35/53 = 0.66 (Red 16/25 = 0.64, Blue 19/28 = 0.68; v113 was 0.59
