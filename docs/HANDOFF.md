@@ -128,7 +128,10 @@
   lane still has > 900 HP; DEF prints, acts 51/52). v143 (:v143) died at tick 1 in the smoke test: `defLane >= 0 and gateAlive(defLane)`
   still evaluates the array at -1 (NO short-circuit evaluation — nest such checks). v144 (:v144) = v143 with the check nested: smoke
   DK identical to v139 (5737 / 1 death, no errors; DEF does not trigger against nine base.bas). Dueling v139 on all seats, 240 games
-  (`duel-v144-v139`).
+  (`duel-v144-v139`). **Result 110/240 = 0.458 (-20): Ranger 6/24, Lich 7/24, Warlock 7/24, DK 10/24; DEF fired in 34 of 60
+  sampled logs (acts 51/52 ~5% of samples), deaths fell to 1.85/game — the hero stays alive but the push dies. Dropped.** Third
+  confirmation that safety/defensive rules lose tempo on version 36 (hold at home v109, spell dodge v127-129, gate defence v144).
+  Queued: ten-seat baseline for v139 (`v139-seats`, 240 games) to refresh per-class numbers.
 
 ## GAME VERSION 36 (since ~23:20 UTC 2026-09-15)
 - League coworld is now `cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870` (2026.9.15.3, game version 36): same balance as version 34, creep lanes
