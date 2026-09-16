@@ -62,7 +62,11 @@
   the waypoint 4 tiles from the outer tower toward home can be unreachable, so "reached" never fires. v158 = v157 + reached within
   5 tiles + a 1200-tick per-life deadline (viaDeadline) — smoke: DK won 24877 with 13 deaths (v148: 14074 / 4), Ranger won 12245 with 6
   deaths (v148: 7727 / 2); the lane-0 waypoint (24,11) is unreachable and the detour costs tempo. **VIA family v156-v158 dropped, not
-  dueled**; v156-v158 uploaded for label order only. **Second v148 ten-seat baseline (`v148-seats-b`, 18:45 UTC): 138/240 = 0.575 (first 0.650)** — the field adapted
+  dueled**; v156-v158 uploaded for label order only. v159 (:v159) = v148 + objective reset to our own outer tower on respawn
+  (oi = 2): local DK won 16433 / 6 deaths, Ranger won 25830 / 12 deaths (v148: 14074 / 4 and 7727 / 2) — after each death the hero
+  re-walks every dead tower position to re-infer it dead; dropped, uploaded for label order. **Lesson: three attempts to re-route the
+  respawn walk-out (v137 footman anchor, v156-v158 waypoint, v159 objective reset) all cost more tempo than the mid deaths they avoid;
+  stop pursuing this thread without a fundamentally different mechanism.** **Second v148 ten-seat baseline (`v148-seats-b`, 18:45 UTC): 138/240 = 0.575 (first 0.650)** — the field adapted
   within two hours: khors 0.58, aaron-cadence 0.58, relh:v133 0.56, codex-objective 0.56, richard 0.49, red-kite 0.39; Red wins 0.55
   of these games. Our weakest seats now DH 8/24, Warlock 9/24, VK 10/24, Druid 12/24.
   Next: ten-seat baseline for v148 DONE;
