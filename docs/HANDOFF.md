@@ -157,7 +157,12 @@
   (+-25/240); next step is a bundle of the individually level-to-positive changes for a larger test: v146 = v139 + Blue pushes physical
   lane 2 (v140: +5/240 as Blue) + no Crossbowman escort (v142: +8/480, Red rows 0.479 vs null) + ride walks off stuck detection.
   v146 (:v146) smoke: DK won 5826 / 1 death / 1 stuck / no ESCORT; Blue Ranger INIT lane 2, won 15935 / 5 deaths. Dueling v139 on all
-  seats, 480 games (`duel-v146-v139`).
+  seats, 480 games (`duel-v146-v139`). **Result 233/480 = 0.485 (-14): Blue rows 115/240 with Ranger 14/48 (the Blue copy in lane 2
+  meets our own Red Crossbowman head-on — the mirrored design is biased for lane changes), Red rows 118/240 (no-escort part: null).
+  Dropped; v139 stays.** Lesson: test lane-choice changes with random-roster `create` batches per side, never with mirrored duels.
+  12 candidates today (v135-v146); one gain (v139). The loop is in maintenance mode: monitor rounds/coworld, push git, review v139's
+  league results by class after ~10 rounds (scheduled ~14:00 UTC via `tools/league_logs.py --only-version 139`); revert to v113 if
+  its melee seats do not improve on v113's league record (DK 0.65, VK 0.60, DH 0.71, Berserk 0.18 over 13-20 games each).
 
 ## GAME VERSION 36 (since ~23:20 UTC 2026-09-15)
 - League coworld is now `cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870` (2026.9.15.3, game version 36): same balance as version 34, creep lanes
