@@ -34,7 +34,11 @@ uv run coworld submit <name>:vN -l league_3c60897b-25cf-4b37-9d1a-8554c1198f28
 - Duels vs v76 on v36 (candidate/control per shared games): v82 target-aware siege 59/61 + 117/123 (level), v83 58/62 (level), v84 group follow
   53/66 (negative), sanity v76 vs v68 117/121. Field strength over 840 hosted games (tools/roster_stats.py): black-kite 0.566, richard 0.563,
   khors 0.552, red-kite 0.519, base.bas 0.484; v76 0.496. Lane tests: v85 mid lane 50/70 (negative), v86 other side lane 62/58 (parity).
-- **Champion since 00:56 UTC 2026-09-16: v93 = `Jordan:v93`** = v87 + keep farming footmen in basic range while travelling between lanes:
+- **Champion since 03:36 UTC 2026-09-16: v113 = `Jordan:v113`** = v93 + stutter-step kiting for ranged classes (hit while the attack
+  cooldown is within the windup, step away from melee threats during recovery, via the version-36 selfAttackCooldown observation):
+  67-53 then 140-100 vs v93 (207-153 over 360). Ranged deaths per game fell from 2.4-3.0 to 0.6-1.2. Running: v114 (wider kite trigger)
+  vs v93, v115 (melee heroes stop chasing fleeing targets) vs v113.
+- Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep farming footmen in basic range while travelling between lanes:
   64-56 then 136-104 vs v87 (200-160 over 360). Level or negative since: v95 focus fire 60/60, v96 two-ally dive 51/69 (vs v87); v97 61/59,
   v98 52/68 (vs v93). Running vs v93: v99 (no Red-only Crossbowman escort; first batch 66/54, replicating), v100 (never fight alone),
   v101 (level-aware fights) — all level or negative (v99 176-184 over 360, v100 55/65, v101 57/63). v93 ten-seat baseline 129/240

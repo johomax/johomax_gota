@@ -5,7 +5,12 @@
   route around towers, and NEW BASIC observations: objectTarget(i), objectLevel/Mana/ItemId/ItemCount/FacingX/Y/VelX/Y, spellCount()+spell*
   (see docs/ARENA_NOTES.md top). Tools retargeted; v76 verified locally (DK 11141 ticks/3 deaths, Xbow 5636/1 on seed 2026).
 - `uv run python tools/coworld_check.py` reports the league coworld and engine head and warns on change (state in tmp/coworld_check.json).
-- **Champion since 00:56 UTC 2026-09-16: v93 = `Jordan:v93`** = v87 + keep attacking footmen in basic range while travelling between lanes
+- **Champion since 03:36 UTC 2026-09-16: v113 = `Jordan:v113`** = v93 + stutter-step kiting for ranged classes (Codex S34: when a melee
+  threat is within 3.5 tiles, hit while selfAttackCooldown is within the windup, otherwise step 3 tiles directly away): 67-53 then 140-100 vs
+  v93 = 207-153 over 360 (+54, both batches positive, 0 timeouts). Blue-side ranged seats carry it (Ranger 21/24, Arcanist 19/24, Druid
+  19/24 in the replication); Red melee seats unchanged. Telemetry: ranged deaths per game fell 60-75%, kills up ~70%.
+  Running vs v93: v114 (kite trigger 4.5 tiles, 4-tile steps; 48/27 after 75). Queued vs v113: v115 (melee anti-kite).
+- Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep attacking footmen in basic range while travelling between lanes
   or rejoining (no enemy hero near, no tower danger): 64-56 then 136-104 vs v87 = 200-160 over 360 shared games (+40, both batches positive,
   0 timeouts). Replay trace over the 359 v87-v76 duel games: v87 issues 1050 creep attacks per game vs v76's 533 on the same lane/path
   (team-win 0.549 vs 0.448). Pending duels vs v87: v95 (focus fire) and v96 (two-ally dive rule). Already ported onto v93 and queued vs v93:
