@@ -1,4 +1,4 @@
-# HANDOFF — Gods of the Arena policy project (paused 2026-09-16, 01:22 UTC at the user's request)
+# HANDOFF — Gods of the Arena policy project (resumed 2026-09-16, 02:42 UTC)
 
 ## GAME VERSION 36 (since ~23:20 UTC 2026-09-15) — read first
 - League coworld is now `cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870` (2026.9.15.3, game version 36): same balance as version 34, creep lanes
@@ -38,8 +38,8 @@
   20% mid/jungle. Hot cells: (40,100) 101 deaths + (50,100) 39 = the enemy INNER tower (46,104); (90,100) 85 = the enemy outer tower;
   (100,60)-(100,70) 66 = our own outer tower under enemy push. 54% of deaths happen at levels 2-4, ticks 2000-8000. Next test: v96 = v87 with
   the all-in dive needing 2 allies within 8 tiles for inner/gate towers (1 still enough for the outer tower).
-- **Resume here:** v101 (level-aware fights) duel vs v93 was 21/21 after 42 games (`duel-v101-v93`, report with
-  `uv run python tools/xp_mixed.py report xp/duel-v101-v93.json`). Next idea, not yet written: v102 = v93 + keep the home guard (act 14)
+- v101 (level-aware fights) 57/63 vs v93 (level, dropped). League with v93: rounds 319-321 = 18/29, 1520 MMR, rank 8 (02:41 UTC).
+  Next: v102 = v93 + keep the home guard (act 14)
   active while an enemy hero is within ~18 tiles, we are within 12 tiles of an own tower and no ally is within 8 tiles (cap ~2400 ticks),
   because Blue-side classes die mostly on our own lane right after respawn (DH 59 of 152 deaths, VK 40, Arcanist 31; act 9 walking).
   Every hosted result so far is in this file and README.md; standings via `uv run python tools/ladder.py`.
