@@ -98,7 +98,9 @@
   black-kite 12/33, games-bond 7/20, codex-secondary 12/31; against nancy 19/23, red-kite 23/29, aaron 31/36, base 31/41; with
   aaron 8/30. In league games deaths do not separate wins from losses (4.2 vs 4.4 per game) but hero kills (4.3 vs 2.8) and level
   (6.1 vs 5.3) do. Private policy logs ARE available for league episodes (`get_episode_request_policy_log(ereq, my_pv, seat)`);
-  cache in tmp/league_log_cache.json. NOTE: `tools/league_data.py` overwrites docs/league_episodes.json — monitors must pass
+  cache in tmp/league_log_cache.json. Seating by in-game rating rank (current MMR as proxy, 139 games): P(Blue) rank1 0.82, rank2
+  0.50, rank3 0.22, rank4 0.71, rank5 0.45, ..., rank9 0.19 — looks like a greedy MMR-balancing draft (the top-rated player goes
+  Blue, the next two Red, ...), so being #1 brings the 64% side most of the time and #2/#3 are punished. NOTE: `tools/league_data.py` overwrites docs/league_episodes.json — monitors must pass
   `--out tmp/league_recent.json` (the 30-min monitor now does).
   League-log class detail (v87-v113, 13-20 games per class): level at tick 1920 / 3840 — Ranger 2.7 / 5.0, DK 1.9 / 2.8, Berserk
   1.5 / 2.7, Warlock 1.4 / 2.3, Lich 1.3 / 2.8. Berserk (3/17 wins) dies only 2.9 times per game with its first death at median tick
