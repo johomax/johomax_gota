@@ -42,7 +42,7 @@
   head moved again at ~17:55 UTC: 6ee8642 "Put creeps on the correct sides and make Radiant soldiers larger" — graphics only
   (assets.nim/graphics.nim), league coworld still cow_dd6ceed6. v152 (:v152) = v148 with the melee farm radius 8 tiles (6-creep waves),
   melee-seat duel vs v148 queued (`duel-v152-v148`, 240) — **result 117/240 = 0.487 (-6; DK/VK pair 57/120, Berserk/DH 60/120): level,
-  dropped; the pre-queued replication `duel-v152-v148-2` only adds data.** v153 (:v153) = v148 with Blue pushing physical lane 2 (clash = 1): fair
+  dropped; the pre-queued replication `duel-v152-v148-2` read 118/240 (-2): combined 235/480, level.** v153 (:v153) = v148 with Blue pushing physical lane 2 (clash = 1): fair
   Blue-seat test under version 37 — `v153-blue` (seats 5-9 x 48 = 240) vs a concurrent `v148-blue` (240); compare the two Blue rates.
 - **VERSION-37 LEAGUE STRUCTURE (52 games, rounds 345-350, tools/league_replays.py --coworld cow_dd6ceed6): Red wins 0.62 (v36: 0.36)**;
   game end median 8279, winner's first gate attack 4896, breakthrough lanes mid 25 / lane 0 16 / lane 2 11; winning fort attackers are
