@@ -147,6 +147,8 @@
   hygiene change in the next bundle). Day tally: v135-v145 tested, one gain (v139). Single tweaks are now below the detectable floor
   (+-25/240); next step is a bundle of the individually level-to-positive changes for a larger test: v146 = v139 + Blue pushes physical
   lane 2 (v140: +5/240 as Blue) + no Crossbowman escort (v142: +8/480, Red rows 0.479 vs null) + ride walks off stuck detection.
+  v146 (:v146) smoke: DK won 5826 / 1 death / 1 stuck / no ESCORT; Blue Ranger INIT lane 2, won 15935 / 5 deaths. Dueling v139 on all
+  seats, 480 games (`duel-v146-v139`).
 
 ## GAME VERSION 36 (since ~23:20 UTC 2026-09-15)
 - League coworld is now `cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870` (2026.9.15.3, game version 36): same balance as version 34, creep lanes
