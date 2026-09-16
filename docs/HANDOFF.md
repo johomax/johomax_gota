@@ -15,6 +15,8 @@
   0.29-0.58; the best opponents show the same Red weakness in shared games. Games end ~tick 8000; deaths cost ~800 ticks each; our hero
   walks 39% of the time, farms 14.5%, sieges 13.5%. Heroes snag 6 times per game on long walks (route points are tower centres — never
   walkTo a tower position).
+- **Git:** commit as you go AND push to the remote (`git push origin main`, github.com/johomax/johomax_gota) after every commit or at
+  least every 20 minutes — requested by the user 2026-09-16 05:32 UTC.
 - **Tools:** duels `tools/xp_mixed.py duel CAND CTRL --seats 0-4 -n 12|24 --tag t`, report `tools/xp_mixed.py report xp/t.json`,
   telemetry `tools/log_stats.py xp/t.json` (act share, deaths, DEATH POSITIONS), replays `tools/replay_lanes.py`, `tools/policy_trace.py
   --ids --exact --by-class`, fillers `tools/roster_stats.py`, ladder `tools/ladder.py`, engine/coworld drift `tools/coworld_check.py`.
