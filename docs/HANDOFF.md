@@ -32,7 +32,8 @@
   deaths); they farm 9-15% of the time (act 4) and issue half as many footman attacks (DK 757/game vs 1716). v135: melee farm before
   siege, siege a healthy tower only with >= 2 footmen soaking, open on heroes only when adjacent/nearly dead/with an ally, and never
   run ahead of the front allied footman toward a standing enemy tower (RIDE, act 47). Test on melee seats only:
-  `duel v135 v113 --seats 0,4 -n 30` (120 games, all DK/VK/Berserk/DH). Round 329: 4/8.
+  `duel v135 v113 --seats 0,4 -n 30` (120 games, all DK/VK/Berserk/DH). Rounds 329: 4/8, 330: 2/8 (rank 5, 1514 MMR at 07:55 UTC;
+  the two Berserker and two Lich seats all lost).
 
 ## GAME VERSION 36 (since ~23:20 UTC 2026-09-15)
 - League coworld is now `cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870` (2026.9.15.3, game version 36): same balance as version 34, creep lanes
