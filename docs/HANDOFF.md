@@ -56,7 +56,8 @@
   v111 (:v111) = v93 buying boots before the dagger (walking is 43% of our time) queued vs v93. v107 (chase kill shots) first batch
   70/50 vs v93 (+20); replication over 240 queued (`duel-v107-v93-2`); verifying act 43 fires in its logs.
   Lesson: check that a new rule fires (act share / print) in the first hosted batch before trusting its duel. v109 (:v109) = v102 with the
-  gates removed and a HOLD print; local DH/DK games show the hold firing; dueling v93 (`duel-v109-v93`). v103 60/60 (parity, dropped).
+  gates removed and a HOLD print; local DH/DK games show the hold firing; **duel vs v93 32/57 after 89 (clearly negative: waiting at home
+  loses more tempo than the re-deaths cost)**. v112 = v110 without the hold (wave ride only) prepared for a clean test. v103 60/60 (parity, dropped).
   v108 (:v108, Codex S33 = v102 + ride the next allied creep wave out after a respawn) inherited the same dead gates — uploaded for label
   order only; v110 = v109 + that ride rule with the gates removed (smoke-testing, then duel vs v93). v106 (:v106, crippled reset) and v107 (:v107,
   chase kill shots: attack an enemy hero within 10 tiles whose HP is at most three of our hits) queued vs v93.
