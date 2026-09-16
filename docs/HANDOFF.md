@@ -3,7 +3,7 @@
 ## WHERE THIS STANDS (2026-09-16 04:50 UTC) — read this first
 - **Champion: v148 = `Jordan:v148`** (submitted 17:05 UTC 2026-09-16 for GAME VERSION 37; ladder label confirmed 17:26 UTC; first league
   round 349 = 6/9, MMR 1514 -> 1532; round 350 = 2/8 -> 1506; round 351 = 5/8 -> 1515, rank 6; the leaders are sliding under version 37:
-  relh 1579, khors 1576, richard 1567 at 18:33 UTC; round 352 = 4/9 -> 1518; round 353 = 5/7 -> 1536, rank 5, leader relh 1600; round 354 = 4/8 -> 1537, rank 5, leader relh 1604; round 355 = 5/7 -> 1556, rank 2, leader relh 1624;
+  relh 1579, khors 1576, richard 1567 at 18:33 UTC; round 352 = 4/9 -> 1518; round 353 = 5/7 -> 1536, rank 5, leader relh 1600; round 354 = 4/8 -> 1537, rank 5, leader relh 1604; round 355 = 5/7 -> 1556, rank 2, leader relh 1624; round 356 = 5/9 -> 1559, rank 3; **round 357 -> 1583, RANK 1 (relh 1577, daveey 1561, black-kite 1535) at 21:32 UTC**;
   v148 league 31/56 over rounds 349-355). An emergency fix: every
   earlier version parks on dead tower coordinates until the timeout because version 37 no longer lists dead buildings). v148 = v139 +
   (v147) all building-targeted walks stop 3 tiles short of the building and no walk is issued within 4 tiles of a building objective
