@@ -39,9 +39,10 @@ uv run coworld submit <name>:vN -l league_3c60897b-25cf-4b37-9d1a-8554c1198f28
   v98 52/68 (vs v93). Running vs v93: v99 (no Red-only Crossbowman escort; first batch 66/54, replicating), v100 (never fight alone),
   v101 (level-aware fights) — all level or negative (v99 176-184 over 360, v100 55/65, v101 57/63). v93 ten-seat baseline 129/240
   (Red 60, Blue 69). League with v93: rounds 319-321 = 18/29, 1520 MMR, rank 8.
-- Since 02:42 UTC: v102 (hold at the home tower after a respawn while an enemy hero is near and no ally is beside us) 69/48 vs v93 first
-  batch, replicating; v103 (group follow for DH/VK/Druid) trending negative; v104/v105 (farm at the map centre first) dropped after local
-  failures; v106 (crippled reset) and v107 (chase kill shots) queued vs v93.
+- Since 02:42 UTC: v102's hold rule turned out never to fire, which made its duel a null calibration: 69/48 then 112/127 vs an identical
+  policy, so +-20 per batch is noise; the promotion rule is now >= +24 over >= 360 with both batches positive. Dropped: v103 (group follow
+  for DH/VK/Druid) 60/60, v104/v105 (farm at the map centre first, local failures), v106 (crippled reset) 55/65. Queued vs v93: v107 (chase
+  kill shots), v109 (post-respawn hold that actually fires), v110 (v109 + ride the next creep wave out), v111 (boots before dagger).
 - Champion 00:42-00:56 UTC: v87 = `Jordan:v87` = v76 + farm any enemy footman within 8 tiles (melee 6) instead of walking or
   waiting for a wave: 73-47 then 125-114 vs v76 (198-161 over 360). Our hero was level 1 until tick ~1500-1900 and died 4.7 times per game;
   v87 dies 3.5 times. Dueling v87: v90 (farm radius 10/8), v93 (farm while travelling); v91 (= v87 + death telemetry) ten-seat batch.
