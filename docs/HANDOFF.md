@@ -66,6 +66,7 @@
   not dodged) by stepping radius+2 tiles away (act 50, DODGE print); placed after flee, before fort/fights/kiting. Smoke tests clean
   (Ranger 12 dodges / 4 deaths, DK 4 / 2); uploaded as :v127, dueling v113 (`duel-v127-v113`). v128 (:v128) = v127 also dodging the
   heavy projectile strikes Shadow Comet (100), Final Measure (110) and Molten Fist as 2-tile circles, dueling v113 (`duel-v128-v113`).
+  v127 interim 39/48 after 87 (not a gain so far); checking how often the dodge fires in hosted games.
   Round 324 (first with v113): 6/9.
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep attacking footmen in basic range while travelling between lanes
   or rejoining (no enemy hero near, no tower danger): 64-56 then 136-104 vs v87 = 200-160 over 360 shared games (+40, both batches positive,
