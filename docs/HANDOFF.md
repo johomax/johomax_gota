@@ -63,6 +63,13 @@
   when we lose the enemy breaks mid in 44/102. Early-game predictors of our win: carries 0 deaths by tick 3000 -> 0.94 (2+ -> 0.33),
   casters 0 -> 0.62 / 1 -> 0.50 / 2+ -> 0.38, level 1 at tick 1920 -> 0.45 for casters; for melee nothing early predicts the result
   (they are passengers), which caps what melee work can deliver.
+  **v139 first batch 133/240 = 0.554 (+26; DK 31/60, Berserk 31/60, VK 31/60, DH 40/60; both pairs positive)** — above the +-25 noise
+  band, below the promotion bar. Telemetry (60 games/class): deaths Berserk 3.1 (v113 5.0), DK 2.9 (4.2), VK 3.8 (6.3), DH 3.8 (5.5);
+  levels ~4.5-4.7 (v113 4.6-5.5); hero kills slightly down; stuck prints 14-22/game (act-47 walks queued behind waves). Replication
+  queued (`duel-v139-v113-2`, 240 games); promote if combined >= +36 over 480 with the replication positive.
+  v140 (:v140) = v113 with `clash = 1` (Blue pushes physical lane 2 too — black-kite's lane from both sides; v86 tested "other side
+  lane" for BOTH sides at parity, so a Blue-only change is untested). Smoke ok (Blue Ranger INIT lane 2). Dueling v113 on all seats,
+  480 games (`duel-v140-v113`); only the candidate-as-Blue rows (s5-s9) carry signal, the Red half is a null.
 
 ## GAME VERSION 36 (since ~23:20 UTC 2026-09-15)
 - League coworld is now `cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870` (2026.9.15.3, game version 36): same balance as version 34, creep lanes
