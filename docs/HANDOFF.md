@@ -67,7 +67,12 @@
   (oi = 2): local DK won 16433 / 6 deaths, Ranger won 25830 / 12 deaths (v148: 14074 / 4 and 7727 / 2) — after each death the hero
   re-walks every dead tower position to re-infer it dead; dropped, uploaded for label order. **Lesson: three attempts to re-route the
   respawn walk-out (v137 footman anchor, v156-v158 waypoint, v159 objective reset) all cost more tempo than the mid deaths they avoid;
-  stop pursuing this thread without a fundamentally different mechanism.** **Second v148 ten-seat baseline (`v148-seats-b`, 18:45 UTC): 138/240 = 0.575 (first 0.650)** — the field adapted
+  stop pursuing this thread without a fundamentally different mechanism.** Trace of version-37 fillers (720 cached episodes):
+  khors:v1 camps (58,58) with 3620 footman + 2643 hero commands and 803 walks per game (a pure mid farmer/fighter), codex-objective-lanes
+  pushes P2 0.54 / P0 0.27; our v148 pushes P2 0.91 with first tower attack at 996 (theirs 1084-1240). Next candidate (S49, Codex):
+  v160 = v148 + Druid support — the Druid's Healing Bloom (55) and Kindred Wisps (80) are auto-cast on damaged allies in range, so it
+  stays within 5 tiles of the nearest allied hero when it has nothing better to do (SUP, act 59); test on seat 3 (`--seats 3 -n 120`,
+  Warlock rows are a null). Also queued: `v148-blue-2` (second Blue baseline, 240). **Second v148 ten-seat baseline (`v148-seats-b`, 18:45 UTC): 138/240 = 0.575 (first 0.650)** — the field adapted
   within two hours: khors 0.58, aaron-cadence 0.58, relh:v133 0.56, codex-objective 0.56, richard 0.49, red-kite 0.39; Red wins 0.55
   of these games. Our weakest seats now DH 8/24, Warlock 9/24, VK 10/24, Druid 12/24.
   Next: ten-seat baseline for v148 DONE;
