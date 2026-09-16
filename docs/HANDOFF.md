@@ -43,7 +43,9 @@
   walk out immediately after every respawn. v102 (:v102) = v93 + arm a 2400-tick window at each respawn during which, with an enemy hero within
   18 tiles, one of our first three route towers within 12 tiles and no ally within 8, the hero holds at that nearest tower (act 14) and fights
   from there; v103 (:v103) = v93 + v84's follow-the-largest-allied-group rule restricted to Demon Hunter, Vanguard Knight and Druid (the
-  Blue-side classes that die on our own lane). Both dueling v93 (`duel-v102-v93`, `duel-v103-v93`).
+  Blue-side classes that die on our own lane). **v102 first batch 69/48 vs v93 (+21, but 3 timeouts in 120 where v93-era duels had 0-1)**;
+  replication over 240 queued (`duel-v102-v93-2`). v103 20/30 after 50 (trending negative). v106 (:v106, crippled reset) and v107 (:v107,
+  chase kill shots: attack an enemy hero within 10 tiles whose HP is at most three of our hits) queued vs v93.
 - v104/v105 = v93 + farm at the map centre until level 5/tick 3000 (v104) or level 4/tick 2000 (v105), then push: locally the DK reaches
   level 3 by tick 960 (v93: 1920) but both DK games were LOST (the centre is where all enemy campers converge) and the v104 Crossbowman ended
   crippled at home (41 HP, 25 gold, no potion) for 13000 ticks — a general failure mode: 36 of 480 hosted games (v91+v93 batches) had the hero
