@@ -48,7 +48,14 @@
   finishes 120 games in ~25 minutes, so 240-game batches are affordable.
   **v137 (:v137) smoke, seed 2026 vs nine base.bas: DK WON 6003 / 1 death / tower kill 1907 (v113: 12973 / 5 deaths); Berserk WON 4564 /
   0 deaths / tower kill 1696 (v113: 7022 / 1).** RIDE targets hug the lane ((105,101), (76,99), (57,100)); no HOLDW needed. Dueling
-  v113 on melee seats, 240 games (`duel-v137-v113`, seats 0,4 x 60).
+  v113 on melee seats, 240 games (`duel-v137-v113`, seats 0,4 x 60). **Result 114/237 = 0.481 (level, dropped)**: DK 28/60, Berserk
+  21/60, VK 30/60, DH 35/57. Its "walk to the front footman when > 20 tiles behind" makes heroes queue behind their own waves in the
+  lane (STUCK prints every ~30 ticks while crawling at wave speed). v135's Berserk/DH pair was 39/60 vs v137's 56/117, so v135's
+  combat rules (melee farm-first, melee hero-chase gate) look like the useful part.
+  v138 (:v138, S42) = v137 with the movement rule for ranged classes too — smoke Warlock won 6724 / 1 death (v113 11247 / 2), Arcanist
+  won 7815 / 2 deaths (v113 14507 / 3) — dueling v113 on all seats (`duel-v138-v113`, 240 games). v139 (:v139, S43) = v137 minus the
+  far catch-up trigger plus v135's two melee combat rules — smoke DK won 5737 / 1 death, Berserk 5324 / 1 — dueling v113 on melee
+  seats (`duel-v139-v113`, 240 games). Time check: it is ~08:10 UTC; the hosted queue finishes 240 games in ~25-30 minutes.
 
 ## GAME VERSION 36 (since ~23:20 UTC 2026-09-15)
 - League coworld is now `cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870` (2026.9.15.3, game version 36): same balance as version 34, creep lanes
