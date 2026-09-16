@@ -13,6 +13,10 @@
   (`duel-v114-v113`: 58/62, level — the +34 vs v93 was the shared kiting gain; dropped, v113's 3.5-tile/3-step parameters stay). v115 (melee
   anti-kite) 58/62 vs v113 (level, dropped). v116 (:v116, Codex S36) = v113 + keep the range advantage against shorter-ranged enemy heroes
   (acts 47/48, KITE3; local Ranger 8075 XP, 3 deaths): dueling v113 (`duel-v116-v113`).
+- **v113 per-class telemetry (replication, 24 games each):** Ranger 0.88 win / 0.79 deaths / 13.1 kills / level 8.3 / 358 gold unspent
+  (all six inventory slots hold equipment, so gold piles up); Arcanist 0.79, Druid 0.79, VK 0.71, Xbow 0.58 (148 gold unspent), DH 0.50
+  (5.5 deaths), Lich 0.46, Warlock 0.46, DK 0.38 (0.8 kills, level 3.3 at game end, 19% of its time escorting the Crossbowman), Berserk 0.29
+  (16% escorting, 14% waiting for a wave). v117 (:v117) = v113 with the escort limited to ranged Red heroes (Lich/Warlock), dueling v113.
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep attacking footmen in basic range while travelling between lanes
   or rejoining (no enemy hero near, no tower danger): 64-56 then 136-104 vs v87 = 200-160 over 360 shared games (+40, both batches positive,
   0 timeouts). Replay trace over the 359 v87-v76 duel games: v87 issues 1050 creep attacks per game vs v76's 533 on the same lane/path
