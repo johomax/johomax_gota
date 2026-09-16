@@ -1,7 +1,15 @@
 # HANDOFF — Gods of the Arena policy project (resumed 2026-09-16, 02:42 UTC)
 
 ## WHERE THIS STANDS (2026-09-16 04:50 UTC) — read this first
-- **Champion: v139 = `Jordan:v139`** (submitted 08:45 UTC, ladder label confirmed :v139 at 09:00 UTC). **Rank 2 at 1589 MMR after round
+- **Champion: v148 = `Jordan:v148`** (submitted ~17:40 UTC 2026-09-16 for GAME VERSION 37, unmeasured hosted — an emergency fix: every
+  earlier version parks on dead tower coordinates until the timeout because version 37 no longer lists dead buildings). v148 = v139 +
+  (v147) all building-targeted walks stop 3 tiles short of the building and no walk is issued within 4 tiles of a building objective
+  (act 23) + a building objective that is missing from the object list while we stand within 4 tiles counts as dead (DEADOBJ; sets
+  routeDead/laneTowerHp). Local seed-2026 on the new coworld: Ranger WON 7727 / 2 deaths / 0 STUCK (v139: TIMEOUT 28800 / 7 deaths /
+  318 STUCK), DK WON 14074 / 4 deaths / 7 STUCK (v139: LOST 16088 / 74 STUCK). Hosted: `duel-v148-v139` (240) queued behind
+  `v139-seats-v37` and `duel-v139-v113-v37` (both broken versions — they only measure the damage). Next: ten-seat baseline for v148,
+  then re-tune for version 37 (3x creeps, barracks, bigger towers).
+- Previous champion v139 = `Jordan:v139` (08:45-17:40 UTC; game version 36). **Rank 2 at 1589 MMR after round
   338 (11:40 UTC; richard 1658, black-kite 1574).** v139 league record 35/53 = 0.66 (Red 16/25 = 0.64, Blue 19/28 = 0.68; v113 was 0.59
   with Red 0.42): rounds 333-338 = 6/10, 4/8, 4/8, 6/9, 8/9, 7/9. By class so far: Warlock 9/9, Ranger 6/6, Druid 5/8, DH 4/7, Lich 3/5,
   Arcanist 3/5, Berserk 2/6, DK 2/4, VK 1/2, Xbow 0/1 — melee 9/19 (v113 35/66), too few games to judge the melee seats yet.

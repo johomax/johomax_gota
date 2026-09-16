@@ -34,7 +34,13 @@ uv run coworld submit <name>:vN -l league_3c60897b-25cf-4b37-9d1a-8554c1198f28
 - Duels vs v76 on v36 (candidate/control per shared games): v82 target-aware siege 59/61 + 117/123 (level), v83 58/62 (level), v84 group follow
   53/66 (negative), sanity v76 vs v68 117/121. Field strength over 840 hosted games (tools/roster_stats.py): black-kite 0.566, richard 0.563,
   khors 0.552, red-kite 0.519, base.bas 0.484; v76 0.496. Lane tests: v85 mid lane 50/70 (negative), v86 other side lane 62/58 (parity).
-- **Champion since 09:10 UTC 2026-09-16: v139 = `Jordan:v139`** = v113 + a melee-only package (Codex S41/S43): melee heroes last-hit
+- **Champion since ~17:40 UTC 2026-09-16: v148 = `Jordan:v148`** — emergency fix for GAME VERSION 37 (league coworld cow_dd6ceed6,
+  engine 5c701f9): dead towers/barracks are no longer listed to policies, so v113/v139 parked on dead tower coordinates until the
+  timeout (local Ranger game: 318 stuck prints, 28800 ticks). v148 = v139 + walks stop 3 tiles short of buildings + an unseen
+  building objective within 4 tiles counts as dead. Local: Ranger won 7727 / 0 stuck, DK won 14074 (both lost/timed out with v139).
+  Hosted measurement on the new coworld is queued. Version 37 also adds barracks buildings (kind 5, 950 HP, killable after the
+  lane's towers, 3 creeps each per wave), towers 950/1300/1950 HP with bigger footprints, and buffs for Crossbowman/Berserker/Lich.
+- **Champion 09:10-17:40 UTC 2026-09-16: v139 = `Jordan:v139`** = v113 + a melee-only package (Codex S41/S43): melee heroes last-hit
   before hitting a healthy tower, open on enemy heroes only when adjacent / nearly dead / with an ally near, and never run ahead of
   their own lane's front footman toward a standing enemy tower. Melee-seat duels vs v113: 133/240 then 122/240 (= 255/480, +30, both
   batches positive; melee deaths down 25-40%); ranged code unchanged. Promoted below the +36/360 bar on the consistency of three
