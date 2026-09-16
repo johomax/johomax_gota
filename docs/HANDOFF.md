@@ -80,7 +80,9 @@
   **Melee-package ablation under version 37: v155 (v113 + hotfixes, no package) vs v148 on melee seats: 109/240 (-22) and 116/240 (-4) =
   225/480 (-30)** — the package is worth ~+30/480 on version 37 as it was on 36; v148 keeps it. Queued: `v148-red` (Red-seat baseline,
   240) to pair with the Blue baselines for side-specific tests. `v148-blue-2`: 136/240 = 0.567 (first Blue baseline 0.550) — v148 as
-  Blue sits at ~0.56 in random rosters (`v148-blue-3`: 131/240 = 0.546; Blue over 720 games 0.554). v161 (:v161) = v148 + melee back-off when alone against >= 2 enemy heroes (S46 re-test under
+  Blue sits at ~0.56 in random rosters (`v148-blue-3`: 131/240 = 0.546; Blue over 720 games 0.554). v162 (:v162) = v148 + Blue heroes
+  below level 4 farm footmen within 10 tiles before sieging a healthy tower: smoke Ranger level 4 by tick 1920 but won 14178 / 4 deaths
+  (v148 7727 / 2), VK won 19648 / 10 deaths; Blue-seat batch `v162-blue` (240) queued vs the ~0.55 Blue baseline. v161 (:v161) = v148 + melee back-off when alone against >= 2 enemy heroes (S46 re-test under
   version 37): smoke DK won 13025 / 2 deaths / OUTN 4 (v148: 14074 / 4); melee-seat duel vs v148 queued (`duel-v161-v148`, 240, plus a
   pre-queued second batch `-2`). **v161: 120/240 then 111/240 = 231/480 (-18) — level/negative, dropped (same as v145 on version 36).** `v148-red`: 152/240 = 0.633 — v148 is ~0.63 as Red and ~0.56 as Blue in random rosters (side gap
   durable); **third ten-seat baseline `v148-seats-c` (19:07 UTC): 146/240 = 0.608 (Red 79/120, Blue 67/120)** — sequence 0.650,
