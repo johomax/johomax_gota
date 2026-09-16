@@ -20,7 +20,7 @@
   --ids --exact --by-class`, fillers `tools/roster_stats.py`, ladder `tools/ladder.py`, engine/coworld drift `tools/coworld_check.py`.
   Upload every policy file once, in numeric order (`uv run coworld upload-policy --file policy/vNNN.bas --tag version=vNNN`), so the
   platform label equals the file number; smoke-test Codex output locally first (blank line before `end if`/`wend` is a compile error).
-- **In flight:** v134 (meet the wave; first batch 66/54) replicating over 240 vs v113. v129-v133 dropped (level).
+- **In flight:** a second null calibration (v134's replication, behaviourally identical to v113). v129-v134 dropped (level/noise).
 
 ## GAME VERSION 36 (since ~23:20 UTC 2026-09-15)
 - League coworld is now `cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870` (2026.9.15.3, game version 36): same balance as version 34, creep lanes
@@ -114,8 +114,9 @@
   Next low-cost tests: v133 (Druid/Warlock kite with a 3-tile trigger and 2-tile steps so the target stays inside their 4.0/4.5 range),
   v134 (after 120 ticks waiting outside a tower with no allied footman within 8 tiles, walk back toward the previous route point to meet
   the wave; act 23). v133 65/55 vs v113 but the only seats it changes did not move (Warlock 3/12, Druid 7/12) — noise, dropped.
-  **v134 first batch 66/54 vs v113 (+12; Berserk 8/12, VK 10/12, Druid 9/12)** — replication over 240 queued (`duel-v134-v113-2`);
-  checking that act 23 fires in its hosted logs.
+  v134 first batch 66/54 vs v113 (+12) — but its hosted logs show the walk-back (act 23) in only 0.29% of samples (5 samples in 120
+  games; waiting heroes almost always have allied footmen within 8 tiles), so v134 is behaviourally v113 and the +12 is noise. Its
+  replication (`duel-v134-v113-2`, 240) therefore serves as a second null calibration; v134 dropped.
   Round 324 (first with v113): 6/9.
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep attacking footmen in basic range while travelling between lanes
   or rejoining (no enemy hero near, no tower danger): 64-56 then 136-104 vs v87 = 200-160 over 360 shared games (+40, both batches positive,
