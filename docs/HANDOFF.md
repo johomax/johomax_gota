@@ -38,6 +38,11 @@
   head moved again at ~17:55 UTC: 6ee8642 "Put creeps on the correct sides and make Radiant soldiers larger" — graphics only
   (assets.nim/graphics.nim), league coworld still cow_dd6ceed6. v152 (:v152) = v148 with the melee farm radius 8 tiles (6-creep waves),
   melee-seat duel vs v148 queued (`duel-v152-v148`, 240).
+- **VERSION-37 LEAGUE STRUCTURE (52 games, rounds 345-350, tools/league_replays.py --coworld cow_dd6ceed6): Red wins 0.62 (v36: 0.36)**;
+  game end median 8279, winner's first gate attack 4896, breakthrough lanes mid 25 / lane 0 16 / lane 2 11; winning fort attackers are
+  led by Xbow 22, Warlock 21, Lich 19, DK 18 (the buffed Red classes). Our split in those games: Red 13/25, **Blue 8/27** — Blue is where
+  we lose now. Blue-seat candidates get fair random-roster tests against the concurrent `v148-blue` baseline: v153 (Blue lane 2) and
+  v154 (Blue mid, pushLane 1). League logs of v148's 17 games: no timeouts, stuck 0-7, several games ending by tick 2400-3800.
   Next: ten-seat baseline for v148 DONE;
   then re-tune for version 37 (3x creeps, barracks, bigger towers).
 - Previous champion v139 = `Jordan:v139` (08:45-17:40 UTC; game version 36). **Rank 2 at 1589 MMR after round
