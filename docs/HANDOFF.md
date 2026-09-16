@@ -4,7 +4,8 @@
 - **Champion: v113 = `Jordan:v113`** (promoted 03:36 UTC). Lineage of confirmed gains on game version 36, all by mirrored-seat duels:
   v76 -> v87 (farm any enemy footman within 8 tiles instead of walking/waiting, 198-161 over 360) -> v93 (also farm while travelling
   between lanes, 200-160 over 360) -> v113 (stutter-step kiting for ranged classes via selfAttackCooldown, 207-153 over 360).
-  Ladder: rank 4-5, ~1533 MMR, up from rank 9 / 1482 at 01:16 UTC; league rounds with v113: 319-325 roughly 60%.
+  Ladder: rank 4-5, ~1533 MMR, up from rank 9 / 1482 at 01:16 UTC; league rounds with v113: 319-325 roughly 60%. Random-roster
+  baseline 0.575 (v76 0.496, v93 0.537), second in its batch behind nancy-goa:v1 0.596 and ahead of black-kite 0.565.
 - **Promotion rule:** combined >= +24 over >= 360 shared games with both batches positive (a null duel of identical policies read +21
   then -15 per batch, so +-20 per 120-240 games is noise). Always confirm a new rule fires in the hosted logs (tools/log_stats.py) first.
 - **Tried on top of v113 and level or negative (16 candidates):** wider kite trigger, range-advantage kiting, melee anti-kite, escort
@@ -101,7 +102,10 @@
   hosted telemetry: 3.65 dodges per game (1.0% of samples; Meteor, Bound Void, Clockwork, Void Portal, Volcanic, Shadow Comet), deaths 2.25.
   A v113 ten-seat baseline (`v113-seats`, 240) is queued behind it for per-class rates in random rosters. v129 replication 121/119
   (combined 188-172 over 360, +16 < +24): dropped — spell dodging in any form saves ~0.3-0.5 deaths per game but not games.
-  v113 ten-seat baseline, Red seats done: 65/120 (DK 11/24, Xbow 21/24, Lich 13/24, Warlock 12/24, Berserk 8/24); Blue seats pending. v131 (:v131) = v113 preferring footmen within one hit of death (hp <= selfAttackDamage) as the
+  **v113 ten-seat baseline `v113-seats`: 138/240 = 0.575** (Red 65/120, Blue 73/120; DK 11, Xbow 21, Lich 13, Warlock 12, Berserk 8,
+  VK 10, Ranger 20, Arcanist 12, Druid 17, DH 14 of 24). Lineage in random rosters: v76 0.496 -> v93 0.537 -> v113 0.575. In that batch
+  (tools/roster_stats.py) v113 ranks second: nancy-goa:v1 0.596 (161 games, a newly strong opponent), Jordan 0.575, black-kite 0.565,
+  red-kite 0.523, codex-objective-lanes 0.502, relh:v95 0.500, aaron 0.495, richard:v50 0.466, gota-g001 0.452, base 0.437, khors 0.378. v131 (:v131) = v113 preferring footmen within one hit of death (hp <= selfAttackDamage) as the
   farming target — XP/gold go only to the killing blow — queued vs v113 (`duel-v131-v113`).
   Round 324 (first with v113): 6/9.
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep attacking footmen in basic range while travelling between lanes
