@@ -20,7 +20,7 @@
   --ids --exact --by-class`, fillers `tools/roster_stats.py`, ladder `tools/ladder.py`, engine/coworld drift `tools/coworld_check.py`.
   Upload every policy file once, in numeric order (`uv run coworld upload-policy --file policy/vNNN.bas --tag version=vNNN`), so the
   platform label equals the file number; smoke-test Codex output locally first (blank line before `end if`/`wend` is a compile error).
-- **In flight:** nothing dueling; tracing nancy-goa:v1's behaviour in the v113 baseline replays. v129/v130/v131 dropped (level).
+- **In flight:** v133 (short-range kite steps) and v134 (meet the wave) dueling v113. v129-v132 dropped (level).
 
 ## GAME VERSION 36 (since ~23:20 UTC 2026-09-15)
 - League coworld is now `cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870` (2026.9.15.3, game version 36): same balance as version 34, creep lanes
@@ -110,7 +110,9 @@
   negative. Trace of the baseline replays: nancy-goa:v1 (0.596) is a centre camper like khors/base (walks to (56,56) all game, 4300 creep
   and 2800 hero attack commands per game) but with 847 useItem commands per game (ours: 15) — the strong campers drink potions constantly.
   Next: v132 = v113 potion economy (buy an elixir whenever gold >= 50 and none is held, drink at 70% HP instead of 55%, no sword so a slot
-  stays free) — converts the 100-360 gold our ranged seats leave unspent into effective HP.
+  stays free) — converts the 100-360 gold our ranged seats leave unspent into effective HP: 59/60 vs v113 (level, 1 timeout; dropped).
+  Next low-cost tests: v133 (Druid/Warlock kite with a 3-tile trigger and 2-tile steps so the target stays inside their 4.0/4.5 range),
+  v134 (while waiting for a wave with no creep in reach, walk back toward the previous route point to meet the wave).
   Round 324 (first with v113): 6/9.
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep attacking footmen in basic range while travelling between lanes
   or rejoining (no enemy hero near, no tower danger): 64-56 then 136-104 vs v87 = 200-160 over 360 shared games (+40, both batches positive,
