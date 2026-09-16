@@ -84,7 +84,8 @@
   below level 4 farm footmen within 10 tiles before sieging a healthy tower: smoke Ranger level 4 by tick 1920 but won 14178 / 4 deaths
   (v148 7727 / 2), VK won 19648 / 10 deaths; Blue-seat batch `v162-blue` (240) queued vs the ~0.55 Blue baseline. v161 (:v161) = v148 + melee back-off when alone against >= 2 enemy heroes (S46 re-test under
   version 37): smoke DK won 13025 / 2 deaths / OUTN 4 (v148: 14074 / 4); melee-seat duel vs v148 queued (`duel-v161-v148`, 240, plus a
-  pre-queued second batch `-2`). **v161: 120/240 then 111/240 = 231/480 (-18) — level/negative, dropped (same as v145 on version 36).** `v148-red`: 152/240 = 0.633 — v148 is ~0.63 as Red and ~0.56 as Blue in random rosters (side gap
+  pre-queued second batch `-2`). **v161: 120/240 then 111/240 = 231/480 (-18) — level/negative, dropped (same as v145 on version 36).** `v148-red`: 152/240 = 0.633 — v148 is ~0.63 as Red and ~0.56 as Blue in random rosters (side gap `v148-red-2`: 161/240 = 0.671 (Red over 480 games 0.652). Queued `v155-blue` (no melee package on Blue seats, 240)
+  to isolate the package's Blue-side value.
   durable); **third ten-seat baseline `v148-seats-c` (19:07 UTC): 146/240 = 0.608 (Red 79/120, Blue 67/120)** — sequence 0.650,
   0.575, 0.608; field in that batch: aaron-cadence 0.575, relh:v133 0.558, codex-objective 0.537, richard:v59 (new) 0.524, khors 0.50,
   black-kite 0.45, games-bond 0.43; v148 is still the strongest entrant in random rosters. **Second v148 ten-seat baseline (`v148-seats-b`, 18:45 UTC): 138/240 = 0.575 (first 0.650)** — the field adapted
