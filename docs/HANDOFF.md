@@ -19,7 +19,7 @@
   --ids --exact --by-class`, fillers `tools/roster_stats.py`, ladder `tools/ladder.py`, engine/coworld drift `tools/coworld_check.py`.
   Upload every policy file once, in numeric order (`uv run coworld upload-policy --file policy/vNNN.bas --tag version=vNNN`), so the
   platform label equals the file number; smoke-test Codex output locally first (blank line before `end if`/`wend` is a compile error).
-- **In flight:** v129 (dodge only 70+ damage strikes; first batch 67/53) replicating over 240; v130 (looser side-lane join) trending negative.
+- **In flight:** v131 (prefer guaranteed last hits) dueling v113; v113 ten-seat baseline running. v129/v130 dropped (level).
 
 ## GAME VERSION 36 (since ~23:20 UTC 2026-09-15)
 - League coworld is now `cow_fdd365d8-57ba-4e3f-8c06-f0b87cd6d870` (2026.9.15.3, game version 36): same balance as version 34, creep lanes
@@ -99,8 +99,8 @@
   v130 (:v130) = v113 with a looser side-lane join (one ally pushing the other side lane suffices when our lane has none and no ally is
   beside us; JOIN fired only 0.22 times per game): 57/63 vs v113 (level, dropped). v129 replication interim 30/30 after 60; v129's
   hosted telemetry: 3.65 dodges per game (1.0% of samples; Meteor, Bound Void, Clockwork, Void Portal, Volcanic, Shadow Comet), deaths 2.25.
-  A v113 ten-seat baseline (`v113-seats`, 240) is queued behind it for per-class rates in random rosters. v129 replication 80/80 after
-  160 (level; will not reach +24 over 360). v131 (:v131) = v113 preferring footmen within one hit of death (hp <= selfAttackDamage) as the
+  A v113 ten-seat baseline (`v113-seats`, 240) is queued behind it for per-class rates in random rosters. v129 replication 121/119
+  (combined 188-172 over 360, +16 < +24): dropped — spell dodging in any form saves ~0.3-0.5 deaths per game but not games. v131 (:v131) = v113 preferring footmen within one hit of death (hp <= selfAttackDamage) as the
   farming target — XP/gold go only to the killing blow — queued vs v113 (`duel-v131-v113`).
   Round 324 (first with v113): 6/9.
 - Champion 00:56-03:36 UTC: v93 = `Jordan:v93` = v87 + keep attacking footmen in basic range while travelling between lanes
