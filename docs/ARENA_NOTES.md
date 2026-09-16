@@ -2,6 +2,12 @@
 
 Game version 2026.9.14.3 (map generation changed on 2026-09-14; older wiki/book assume 64x64). Source commit 275ba23.
 
+## GUARDED GODS — engine f2ab959 (league coworld cow_126f2fcb-80a0-4b6e-8166-eb6163576db5 since ~22:30 UTC 2026-09-16; cow_703e69a4 ran round 359)
+- Each fort (god) now has TWO level-three guard towers flanking it (1950 HP, gate-tier; kind 4, ids 28-29 for Red at (106,16) and (99,9), Blue mirrored, presumably ids 30-31). They are exposed once ANY lane's three towers are dead; the fort takes NO damage until both of its guards are dead (`fortExposed`).
+- Creeps target lane towers, then barracks, then the nearest exposed guard. Barracks unchanged (ids 41-51 for Red).
+- Any policy that derives lane/tier from tower ids must skip ids >= 28 — v148 died at init with `BASIC array 'routex' index 23` on every game (rounds 359-360: 7/17 with an idle hero). Hotfix v175.
+- Engine commits since 7365e4e: "Add guarded gods and rusher policy" (06858d1, new players/rusher.bas reference bot), visibility caching (no gameplay change), tournament reports.
+
 ## League coworld cow_54d6f449 (since ~20:40 UTC 2026-09-16, engine 7365e4e): graphics-only rebuild of version 37 (procedural trees/rocks models); gameplay bit-identical (same seed-2026 game: RedTeam 14074). Local runs: use ./coworld/cow_54d6f449-6d63-464d-b742-ff720a9ce803/coworld_manifest.json.
 
 ## GAME VERSION 37 (league coworld cow_dd6ceed6-9188-4eaa-9099-03aefcd1e5fe, 2026.9.16.2, engine 5c701f9, since ~2026-09-16 16:00 UTC)
