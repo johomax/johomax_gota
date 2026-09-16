@@ -4,7 +4,7 @@
 
 - League: `league_3c60897b-25cf-4b37-9d1a-8554c1198f28` (Gods of the Arena), division `div_a4534073-c5d2-4193-a94a-93d9c5e2e443` (Competition).
   Page: https://softmax.com/observatory/v2?detail=league:league_3c60897b-25cf-4b37-9d1a-8554c1198f28
-- Coworld: `cow_0752b441-af96-421d-8a1e-f8365a95e022` version 2026.9.14.2 (downloaded to `coworld/`).
+- Coworld: `cow_54d6f449-6d63-464d-b742-ff720a9ce803` (league build since 2026-09-16 ~20:40 UTC, game version 37 gameplay; downloaded to `coworld/`).
 - Game README: see `docs/game_readme.md`; docs https://github.com/Metta-AI/polyworld/blob/main/examples/gods_of_the_arena/docs/index.html
 - Runtime: **game-hosted** — a single `.bas` file runs as five independent hero VMs (one team of five seats).
 - Softmax player: Jordan (`ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb`).

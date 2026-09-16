@@ -21,7 +21,7 @@ def main():
     ap.add_argument("--ids", default=None, help="json list of episode ids to restrict to"); ap.add_argument("--exact", action="store_true", help="match keys as full labels"); ap.add_argument("--by-class", action="store_true", help="split each policy by hero class (seat)"); a = ap.parse_args()
     only = set(json.load(open(a.ids))) if a.ids else None
     cache = json.load(open(ROOT / "tmp/roster_cache.json"))
-    per = defaultdict(lambda: {"games": 0, "wins": 0, "win": defaultdict(Counter), "cmds": Counter(), "lane": Counter(), "first_tower": [], "fort_first": [], "walkwin": defaultdict(lambda: [0, 0, 0])})
+    per = defaultdict(lambda: {"games": 0, "wins": 0, "win": defaultdict(Counter), "cmds": Counter(), "lane": Counter(), "first_tower": [], "fort_first": [], "walkwin": defaultdict(lambda: [0, 0, 0]), "cmdwin": defaultdict(Counter)})
     n = 0
     for eid, (pols, rws) in cache.items():
         if only is not None and eid not in only: continue
@@ -44,6 +44,12 @@ def main():
             ft = None; ff = None
             for act in acts_by_hero[hid]:
                 w = min(act["tick"] // a.window, 11); k = act.get("kind")
+                grp = "other"
+                if k == "walkTo": grp = "walk"
+                elif k == "attackTarget":
+                    t2 = act["targetId"]
+                    grp = "tower" if 10 <= t2 <= 27 else ("fort" if t2 in (1, 2) else ("hero" if 100 <= t2 <= 109 else "foot"))
+                p["cmdwin"][w][grp] += 1
                 if k == "walkTo":
                     x, y = act.get("x", act.get("first")), act.get("y", act.get("second"))
                     if x is None: continue
@@ -73,6 +79,8 @@ def main():
               f"  fort attacked in {len(p['fort_first'])}/{g} games, median first {st.median(p['fort_first']) if p['fort_first'] else 0:.0f}")
         print("   cmds/g: " + " ".join(f"{k} {v/g:.0f}" for k, v in sorted(p["cmds"].items(), key=lambda kv: -kv[1])))
         print("   walk by window: " + " ".join(f"{w*a.window//1000}k({v[1]//v[0]},{v[2]//v[0]})" for w, v in sorted(p["walkwin"].items()) if v[0]))
+        print("   cmds by window (walk/foot/hero/tower/fort per game): " + " ".join(
+            f"{w*a.window//1000}k({c['walk']/g:.0f}/{c['foot']/g:.0f}/{c['hero']/g:.0f}/{c['tower']/g:.0f}/{c['fort']/g:.0f})" for w, c in sorted(p["cmdwin"].items())))
 
 if __name__ == "__main__":
     main()
