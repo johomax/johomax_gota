@@ -1,75 +1,75 @@
 {
  "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v212",
- "n": 2,
+ "n": 12,
  "requests": [
   {
-   "id": "xreq_4b336801-29e5-4b8c-acb1-7148f31428fc",
+   "id": "xreq_6c7a3fe3-6b98-41ef-8b79-8249a1757afc",
    "seat": 0,
    "opp": "black-kite:v13",
    "side": 0
   },
   {
-   "id": "xreq_901fba04-518e-45c2-beba-6730074c0e2c",
+   "id": "xreq_914d144e-3d38-41c8-ac01-3799cc01dd0f",
    "seat": 5,
    "opp": "black-kite:v13",
    "side": 1
   },
   {
-   "id": "xreq_cc047444-8064-4cf0-ae39-016f2dd96dd2",
+   "id": "xreq_5c99dd67-8cdb-41cf-a6d2-9f5e7926a7c1",
    "seat": 0,
    "opp": "red-kite:v29",
    "side": 0
   },
   {
-   "id": "xreq_d2748df7-0781-4cf4-a892-2fdc1c953a81",
+   "id": "xreq_dc1ea509-fde6-49b0-a9e0-54478b69a537",
    "seat": 5,
    "opp": "red-kite:v29",
    "side": 1
   },
   {
-   "id": "xreq_d87568b7-96de-40ba-b4ea-0cee40b0f6ae",
+   "id": "xreq_deb3613f-58ff-494d-8fb7-7485349c52cb",
    "seat": 0,
    "opp": "gota-g002:v1",
    "side": 0
   },
   {
-   "id": "xreq_bddd22cb-fc95-4906-8a07-d2f48d95dbc5",
+   "id": "xreq_8e884977-1297-47ac-92c9-d8e15b69096e",
    "seat": 5,
    "opp": "gota-g002:v1",
    "side": 1
   },
   {
-   "id": "xreq_22be2270-c31f-4627-aa7e-3a9df9057f31",
+   "id": "xreq_c736901b-ad76-45be-a6cf-aa471417461b",
    "seat": 0,
    "opp": "relh-gods-of-the-arena:v133",
    "side": 0
   },
   {
-   "id": "xreq_7cbe80f0-82ff-4cd1-8af4-6a1349cc734c",
+   "id": "xreq_bb72469c-31f2-4225-bdf5-2dd5d8428bc3",
    "seat": 5,
    "opp": "relh-gods-of-the-arena:v133",
    "side": 1
   },
   {
-   "id": "xreq_4301dce8-9e50-4ed5-8fd5-ece560b0a005",
+   "id": "xreq_15d88aa7-23b5-4326-b078-38282510805f",
    "seat": 0,
    "opp": "richard-gods-of-the-arena:v78",
    "side": 0
   },
   {
-   "id": "xreq_723553a8-0cf4-4ae8-8bd0-c0c5c3099bb6",
+   "id": "xreq_f753f2cb-9b14-4076-8157-e6c9c11c2239",
    "seat": 5,
    "opp": "richard-gods-of-the-arena:v78",
    "side": 1
   },
   {
-   "id": "xreq_2791b422-3a0b-4a2d-87d1-532822d18972",
+   "id": "xreq_bdf384ed-5ba8-4943-8391-2bf60b794bc4",
    "seat": 0,
    "opp": "aaron-gota-ir-perimeter-blue_repair-0916:v1",
    "side": 0
   },
   {
-   "id": "xreq_132130c5-5018-4ce1-acb5-7ee74f2fde97",
+   "id": "xreq_465c1bdd-8418-4e09-ab37-e82dbc9b859e",
    "seat": 5,
    "opp": "aaron-gota-ir-perimeter-blue_repair-0916:v1",
    "side": 1
