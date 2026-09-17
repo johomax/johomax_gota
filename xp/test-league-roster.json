@@ -1,0 +1,21 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v186",
+ "n": 2,
+ "requests": [
+  {
+   "id": "xreq_17a4e4c1-0b96-43d4-a4ee-052ccacede95",
+   "seat": 0,
+   "roster": [
+    "black-kite:v13",
+    "red-kite:v29",
+    "relh-gods-of-the-arena:v133",
+    "aaron-gota-ir-win-bounded-0916-aaron:v1",
+    "Polyworld GOTA base.bas:v1",
+    "khors:v1",
+    "gota-g002:v1",
+    "aaron-gota-ir-win-bounded-0916:v1",
+    "richard-gods-of-the-arena:v78"
+   ]
+  }
+ ]
+}
