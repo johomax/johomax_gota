@@ -1,0 +1,46 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v186",
+ "n": 24,
+ "requests": [
+  {
+   "id": "xreq_aadb066f-b4ce-42fa-bd3d-5a983c46f5a7",
+   "seat": 0
+  },
+  {
+   "id": "xreq_2398d0e7-de27-41df-9c77-6c93225528e8",
+   "seat": 1
+  },
+  {
+   "id": "xreq_5e1e84c4-ed8a-40fa-8f48-e76b4f6305a3",
+   "seat": 2
+  },
+  {
+   "id": "xreq_939d9e6c-8130-47be-8baf-17783e455fe7",
+   "seat": 3
+  },
+  {
+   "id": "xreq_7673b4f4-e114-4fc9-b729-48b6191fe6da",
+   "seat": 4
+  },
+  {
+   "id": "xreq_96c2f4ae-bccb-401d-a4a0-b748a9bd2eaa",
+   "seat": 5
+  },
+  {
+   "id": "xreq_92a4f5e6-2ebd-413b-a4f7-81efd1401da0",
+   "seat": 6
+  },
+  {
+   "id": "xreq_82e2de81-0441-42f9-ae29-3590fdce6a42",
+   "seat": 7
+  },
+  {
+   "id": "xreq_0e7af803-2a67-4814-9a2a-10935ae74e81",
+   "seat": 8
+  },
+  {
+   "id": "xreq_90da8efc-e3a6-40aa-97be-200bff986293",
+   "seat": 9
+  }
+ ]
+}
