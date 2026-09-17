@@ -1,0 +1,78 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v218",
+ "n": 2,
+ "requests": [
+  {
+   "id": "xreq_a015a65f-872e-4844-aae2-a9a3a7fac0d5",
+   "seat": 0,
+   "opp": "khors:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_fadfd357-c2d1-4691-ad83-d12347ae2fd5",
+   "seat": 5,
+   "opp": "khors:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_f249a775-8d7a-430b-a305-0734054a55e1",
+   "seat": 0,
+   "opp": "Polyworld GOTA base.bas:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_54f2402f-df15-4bcd-bbf9-4b90377c290b",
+   "seat": 5,
+   "opp": "Polyworld GOTA base.bas:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_29b44005-95e7-418d-9c0e-6c39094a0324",
+   "seat": 0,
+   "opp": "nancy-goa:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_757f69fb-5cc0-470d-a6c9-839ac236d404",
+   "seat": 5,
+   "opp": "nancy-goa:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_54d5043f-3184-498e-a5e6-98aa3b4f50de",
+   "seat": 0,
+   "opp": "gota-vanguard-rally-hold:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_c316e040-0ff1-4655-9c36-b9f26b82e4eb",
+   "seat": 5,
+   "opp": "gota-vanguard-rally-hold:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_5906cfbb-c898-4bab-8291-aafdc3a7c198",
+   "seat": 0,
+   "opp": "games-bond-gota:v6",
+   "side": 0
+  },
+  {
+   "id": "xreq_befc67b4-3644-42a5-b7fc-14f5a1be6f92",
+   "seat": 5,
+   "opp": "games-bond-gota:v6",
+   "side": 1
+  },
+  {
+   "id": "xreq_c35399c6-7936-421a-accf-b89505de8556",
+   "seat": 0,
+   "opp": "daf-gota-v1:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_262fb453-a3ec-4755-bfc5-64eee83524a3",
+   "seat": 5,
+   "opp": "daf-gota-v1:v1",
+   "side": 1
+  }
+ ]
+}
