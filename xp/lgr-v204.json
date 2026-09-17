@@ -1,0 +1,390 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v204",
+ "n": 3,
+ "requests": [
+  {
+   "id": "xreq_ca978ba4-1841-407b-95c8-645819dd14ef",
+   "seat": 0,
+   "rep": 0,
+   "roster": [
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1",
+    "aaron-gota-ir-win-bounded-0916:v1",
+    "aaron-gota-ir-win-bounded-0916-aaron:v1",
+    "red-kite:v29",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78"
+   ]
+  },
+  {
+   "id": "xreq_0783609a-728e-4db6-8107-f43caeb149e2",
+   "seat": 5,
+   "rep": 1,
+   "roster": [
+    "aaron-gota-ir-win-bounded-0916:v1",
+    "aaron-gota-ir-win-bounded-0916-aaron:v1",
+    "black-kite:v13",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1"
+   ]
+  },
+  {
+   "id": "xreq_c876e9c7-3afc-4051-bd3e-7f917b2469d9",
+   "seat": 0,
+   "rep": 2,
+   "roster": [
+    "relh-gods-of-the-arena:v133",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "Polyworld GOTA base.bas:v1",
+    "aaron-gota-ir-win-bounded-0916:v1",
+    "black-kite:v13",
+    "red-kite:v29",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78"
+   ]
+  },
+  {
+   "id": "xreq_5452f147-eaed-4c8e-9bb7-f71153d5751e",
+   "seat": 5,
+   "rep": 3,
+   "roster": [
+    "aaron-gota-ir-win-bounded-0916:v1",
+    "aaron-gota-ir-win-bounded-0916-aaron:v1",
+    "black-kite:v13",
+    "red-kite:v29",
+    "gota-g002:v1",
+    "relh-gods-of-the-arena:v133",
+    "gota-vanguard-rally-hold:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1"
+   ]
+  },
+  {
+   "id": "xreq_b0c452a0-92e9-4497-a7ff-a2a251d06d73",
+   "seat": 0,
+   "rep": 4,
+   "roster": [
+    "relh-gods-of-the-arena:v133",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "nancy-goa:v1",
+    "aaron-gota-ir-win-bounded-0916:v1",
+    "aaron-gota-ir-win-bounded-0916-aaron:v1",
+    "red-kite:v29",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78"
+   ]
+  },
+  {
+   "id": "xreq_a661079f-2037-4bbf-85cd-6d3643e7d813",
+   "seat": 5,
+   "rep": 5,
+   "roster": [
+    "aaron-gota-ir-win-bounded-0916-aaron:v1",
+    "black-kite:v13",
+    "red-kite:v29",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78",
+    "relh-gods-of-the-arena:v133",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "nancy-goa:v1"
+   ]
+  },
+  {
+   "id": "xreq_0db29039-7580-4bd6-80dc-6648123cc81a",
+   "seat": 0,
+   "rep": 6,
+   "roster": [
+    "relh-gods-of-the-arena:v133",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "nancy-goa:v1",
+    "aaron-gota-ir-win-bounded-0916:v1",
+    "aaron-gota-ir-win-bounded-0916-aaron:v1",
+    "black-kite:v13",
+    "red-kite:v29",
+    "gota-g002:v1"
+   ]
+  },
+  {
+   "id": "xreq_699b8867-5950-4508-96ba-b9090eee3db1",
+   "seat": 5,
+   "rep": 7,
+   "roster": [
+    "aaron-gota-ir-win-bounded-0916:v1",
+    "aaron-gota-ir-win-bounded-0916-aaron:v1",
+    "red-kite:v29",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78",
+    "relh-gods-of-the-arena:v133",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "nancy-goa:v1"
+   ]
+  },
+  {
+   "id": "xreq_cc50678c-4bc0-4a19-b451-338affcd4ab2",
+   "seat": 0,
+   "rep": 8,
+   "roster": [
+    "relh-gods-of-the-arena:v133",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "Polyworld GOTA base.bas:v1",
+    "aaron-gota-ir-win-bounded-0916:v1",
+    "black-kite:v13",
+    "red-kite:v29",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78"
+   ]
+  },
+  {
+   "id": "xreq_dcfb10db-3d0a-4a43-bbee-c742d5d09fa9",
+   "seat": 5,
+   "rep": 9,
+   "roster": [
+    "aaron-gota-ir-win-bounded-0916:v1",
+    "aaron-gota-ir-win-bounded-0916-aaron:v1",
+    "red-kite:v29",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78",
+    "relh-gods-of-the-arena:v133",
+    "gota-vanguard-rally-hold:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1"
+   ]
+  },
+  {
+   "id": "xreq_6ee6cbde-56e3-4f31-a938-cb305c227284",
+   "seat": 0,
+   "rep": 10,
+   "roster": [
+    "relh-gods-of-the-arena:v133",
+    "gota-vanguard-rally-hold:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1",
+    "aaron-gota-ir-win-bounded-0916:v1",
+    "aaron-gota-ir-win-bounded-0916-aaron:v1",
+    "black-kite:v13",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78"
+   ]
+  },
+  {
+   "id": "xreq_fa7a2cfe-cffd-4c9e-9e99-0ba5a5dcafe2",
+   "seat": 5,
+   "rep": 11,
+   "roster": [
+    "aaron-gota-ir-win-bounded-0916:v1",
+    "aaron-gota-ir-win-bounded-0916-aaron:v1",
+    "black-kite:v13",
+    "red-kite:v29",
+    "richard-gods-of-the-arena:v78",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1"
+   ]
+  },
+  {
+   "id": "xreq_18737a64-4054-48ac-a7ca-44bc49783ef1",
+   "seat": 0,
+   "rep": 12,
+   "roster": [
+    "relh-gods-of-the-arena:v133",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "Polyworld GOTA base.bas:v1",
+    "aaron-gota-ir-win-bounded-0916:v1",
+    "aaron-gota-ir-win-bounded-0916-aaron:v1",
+    "black-kite:v13",
+    "red-kite:v29",
+    "gota-g002:v1"
+   ]
+  },
+  {
+   "id": "xreq_9e52cd53-297d-43c4-ae73-d430dfb000ce",
+   "seat": 5,
+   "rep": 13,
+   "roster": [
+    "aaron-gota-ir-win-bounded-0916:v1",
+    "aaron-gota-ir-win-bounded-0916-aaron:v1",
+    "black-kite:v13",
+    "red-kite:v29",
+    "gota-g002:v1",
+    "relh-gods-of-the-arena:v133",
+    "gota-vanguard-rally-hold:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1"
+   ]
+  },
+  {
+   "id": "xreq_50f23ccd-3a06-4af0-ab19-2b94f6a2f119",
+   "seat": 0,
+   "rep": 14,
+   "roster": [
+    "relh-gods-of-the-arena:v133",
+    "khors:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1",
+    "aaron-gota-ir-win-bounded-0916:v1",
+    "aaron-gota-ir-win-bounded-0916-aaron:v1",
+    "red-kite:v29",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78"
+   ]
+  },
+  {
+   "id": "xreq_913540e3-2ff2-4648-86b2-139f1687fb1c",
+   "seat": 5,
+   "rep": 15,
+   "roster": [
+    "aaron-gota-ir-win-bounded-0916:v1",
+    "aaron-gota-ir-win-bounded-0916-aaron:v1",
+    "black-kite:v13",
+    "red-kite:v29",
+    "gota-g002:v1",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1"
+   ]
+  },
+  {
+   "id": "xreq_4d87b49d-7c19-4ca4-bd22-3f9f11b5d470",
+   "seat": 0,
+   "rep": 16,
+   "roster": [
+    "relh-gods-of-the-arena:v133",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "Polyworld GOTA base.bas:v1",
+    "aaron-gota-ir-win-bounded-0916:v1",
+    "black-kite:v13",
+    "red-kite:v29",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78"
+   ]
+  },
+  {
+   "id": "xreq_95440f8b-b41d-40e8-92b1-be05f7b4b1f4",
+   "seat": 5,
+   "rep": 17,
+   "roster": [
+    "aaron-gota-ir-win-bounded-0916:v1",
+    "aaron-gota-ir-win-bounded-0916-aaron:v1",
+    "red-kite:v29",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78",
+    "relh-gods-of-the-arena:v133",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "Polyworld GOTA base.bas:v1"
+   ]
+  },
+  {
+   "id": "xreq_1026c05a-cbaf-428c-a777-6f1311d50419",
+   "seat": 0,
+   "rep": 18,
+   "roster": [
+    "relh-gods-of-the-arena:v133",
+    "khors:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1",
+    "aaron-gota-ir-win-bounded-0916:v1",
+    "black-kite:v13",
+    "red-kite:v29",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78"
+   ]
+  },
+  {
+   "id": "xreq_72cc76ed-881f-4d84-a88b-62610fe0ddfb",
+   "seat": 5,
+   "rep": 19,
+   "roster": [
+    "aaron-gota-ir-win-bounded-0916:v1",
+    "aaron-gota-ir-win-bounded-0916-aaron:v1",
+    "black-kite:v13",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1"
+   ]
+  },
+  {
+   "id": "xreq_3bb11ebe-287f-48e2-bb3b-0db227523b9b",
+   "seat": 0,
+   "rep": 20,
+   "roster": [
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1",
+    "aaron-gota-ir-win-bounded-0916:v1",
+    "aaron-gota-ir-win-bounded-0916-aaron:v1",
+    "red-kite:v29",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78"
+   ]
+  },
+  {
+   "id": "xreq_bc4cf3dc-eff9-4acc-8eb3-c9249eb3c12b",
+   "seat": 5,
+   "rep": 21,
+   "roster": [
+    "aaron-gota-ir-win-bounded-0916:v1",
+    "aaron-gota-ir-win-bounded-0916-aaron:v1",
+    "black-kite:v13",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1"
+   ]
+  },
+  {
+   "id": "xreq_1551d9d9-5efd-42ff-901c-4748d4c693f6",
+   "seat": 0,
+   "rep": 22,
+   "roster": [
+    "relh-gods-of-the-arena:v133",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "Polyworld GOTA base.bas:v1",
+    "aaron-gota-ir-win-bounded-0916:v1",
+    "aaron-gota-ir-win-bounded-0916-aaron:v1",
+    "black-kite:v13",
+    "red-kite:v29",
+    "richard-gods-of-the-arena:v78"
+   ]
+  },
+  {
+   "id": "xreq_982da05d-398e-41ad-9550-2e45d1db663e",
+   "seat": 5,
+   "rep": 23,
+   "roster": [
+    "aaron-gota-ir-win-bounded-0916:v1",
+    "aaron-gota-ir-win-bounded-0916-aaron:v1",
+    "red-kite:v29",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78",
+    "relh-gods-of-the-arena:v133",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "Polyworld GOTA base.bas:v1"
+   ]
+  }
+ ]
+}
