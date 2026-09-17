@@ -46,9 +46,33 @@ def main():
     cr.add_argument("--aaron", choices=["perimeter", "winbounded"], default="perimeter", help="which aaron pair sits in TOP (winbounded = the lgr-* pool)")
     cr.add_argument("--force-enemy", default=None, help="policy_ref that must sit on the enemy team (removed from LOW if there; e.g. relh-gods-of-the-arena:v133)")
     cr.add_argument("--mate-top", default=None, help="policy_ref that leads OUR team at slot 0 (we sit at slot 1 as Xbow/Ranger); removed from TOP")
+    ho = sub.add_parser("homo", help="competition format: five copies of REF vs five copies of each --opp, both sides"); ho.add_argument("ref")
+    ho.add_argument("--opp", action="append", required=True, help="opponent policy_ref (repeatable)"); ho.add_argument("-n", type=int, default=12); ho.add_argument("--tag", required=True)
     du = sub.add_parser("duel", help="cand at seat S and ctrl at S+5, then swapped; eight pool seats"); du.add_argument("cand"); du.add_argument("ctrl")
     du.add_argument("--seat", type=int, default=0); du.add_argument("-n", type=int, default=24); du.add_argument("--tag", required=True); du.add_argument("--pool", default="tmp/league_pool.txt"); du.add_argument("--reps", type=int, default=1)
     a = ap.parse_args()
+    if a.cmd == "homo":
+        with CoworldApiClient.from_login(server_url=get_api_server()) as c:
+            path = ROOT / "xp" / f"{a.tag}.json"
+            cur = json.load(open(path)) if path.exists() else {"candidate": a.ref, "n": a.n, "requests": []}
+            for opp in a.opp:
+                for side in (0, 1):
+                    red, blue = (a.ref, opp) if side == 0 else (opp, a.ref)
+                    roster = [{"player": {"policy_ref": red if s < 5 else blue}, "slot": s} for s in range(10)]
+                    body = {"target": {"league_id": LEAGUE}, "roster": roster, "num_episodes": a.n, "notes": f"[{a.tag}] 5x{a.ref} vs 5x{opp} ours {'Red' if side == 0 else 'Blue'}"}
+                    d = None
+                    for attempt in range(60):
+                        try:
+                            d = dump(c.create_experience_request(body)); break
+                        except Exception as ex:
+                            msg = repr(ex)
+                            if "429" in msg: time.sleep(30)
+                            else: print("create failed:", msg[:300]); time.sleep(5)
+                    if d is None: sys.exit(1)
+                    print("created", d["id"], "opp", opp.split(":")[0][:20], "ours", "Red" if side == 0 else "Blue")
+                    cur["requests"].append({"id": d["id"], "seat": side * 5, "opp": opp, "side": side}); json.dump(cur, open(path, "w"), indent=1)
+                    time.sleep(1)
+        print("saved", path); return
     pool = [l.strip() for l in open(ROOT / a.pool) if l.strip() and not l.startswith("#")]
     with CoworldApiClient.from_login(server_url=get_api_server()) as c:
         orders = [None] if a.cmd == "create" else [0, 1]
