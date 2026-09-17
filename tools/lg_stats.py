@@ -85,13 +85,16 @@ def main():
                     try: rep = rp.load_replay(f)
                     except Exception as ex: print("parse fail", eid, repr(ex)[:80], file=sys.stderr); continue
                     row = analyze(rep, r["seat"]); row["seat"] = r["seat"]; row["win"] = int(row["winner"] == row["my_team"]); row["eid"] = eid; rows.append(row)
-                    if a.dump: print(json.dumps(row))
                     if eid not in rc:
                         try:
                             st = dump(c.get_episode_request_episode_stats(eid))
                             seats = {ps["position"]: (f'{ps.get("policy_name")}:v{ps.get("policy_version")}', ps.get("avg_reward") or 0) for ps in st.get("policy_stats", [])}
                             if len(seats) == 10: rc[eid] = [[seats[i][0] for i in range(10)], [seats[i][1] for i in range(10)]]
                         except Exception: pass
+                    if eid in rc:
+                        labels, rewards = rc[eid]
+                        row["win"] = int(bool(rewards[r["seat"]]))  # authoritative result (the fort-attack inference can be wrong)
+                    if a.dump: print(json.dumps(row))
                     if eid in rc:
                         labels, rewards = rc[eid]
                         for hid, o in per_hero(rep).items():
