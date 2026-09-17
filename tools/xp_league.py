@@ -13,16 +13,53 @@ LEAGUE = "league_3c60897b-25cf-4b37-9d1a-8554c1198f28"
 
 def dump(o): return o.model_dump() if hasattr(o, "model_dump") else o
 
+# League seating as observed 2026-09-17: we sit at slot 0 of our team in ~90% of games (DK on Red, VK on Blue); slots follow
+# rating order, so our teammates are the lower-rated entrants and the enemy team is the top of the ladder.
+TOP = ["aaron-gota-ir-win-bounded-0916:v1", "aaron-gota-ir-win-bounded-0916-aaron:v1", "black-kite:v13", "red-kite:v29", "gota-g002:v1", "richard-gods-of-the-arena:v78"]
+LOW = ["relh-gods-of-the-arena:v133", "gota-vanguard-rally-hold:v1", "khors:v1", "nancy-goa:v1", "Polyworld GOTA base.bas:v1"]  # vanguard/nancy stand in for the hidden daveey policies
+
+def realistic_roster(ref, rep):
+    """rep-th realistic roster: rosters depend only on rep, so two candidates run with the same --reps play identical rosters."""
+    rnd = random.Random(1000 + rep)
+    pick_e = set(rnd.sample(TOP, 5)); pick_m = set(rnd.sample(LOW, 4))
+    enemy = [p for p in TOP if p in pick_e]   # rating order kept
+    mates = [p for p in LOW if p in pick_m]
+    side = rep % 2  # 0 = we are Red (seats 0-4), 1 = we are Blue (seats 5-9)
+    ours = [ref] + mates
+    red, blue = (ours, enemy) if side == 0 else (enemy, ours)
+    return [{"player": {"policy_ref": (red + blue)[s]}, "slot": s} for s in range(10)], side * 5, red + blue
+
 def main():
     ap = argparse.ArgumentParser(); sub = ap.add_subparsers(dest="cmd", required=True)
     cr = sub.add_parser("create"); cr.add_argument("ref"); cr.add_argument("--seat", type=int, default=0); cr.add_argument("-n", type=int, default=12)
     cr.add_argument("--tag", required=True); cr.add_argument("--pool", default="tmp/league_pool.txt"); cr.add_argument("--reps", type=int, default=1, help="requests with different shuffles")
+    cr.add_argument("--realistic", action="store_true", help="rating-ordered league seating (TOP vs us+LOW), alternating sides per rep; same rosters for every candidate")
+    cr.add_argument("--rep0", type=int, default=0, help="first rep index (realistic mode)")
     du = sub.add_parser("duel", help="cand at seat S and ctrl at S+5, then swapped; eight pool seats"); du.add_argument("cand"); du.add_argument("ctrl")
     du.add_argument("--seat", type=int, default=0); du.add_argument("-n", type=int, default=24); du.add_argument("--tag", required=True); du.add_argument("--pool", default="tmp/league_pool.txt"); du.add_argument("--reps", type=int, default=1)
     a = ap.parse_args()
     pool = [l.strip() for l in open(ROOT / a.pool) if l.strip() and not l.startswith("#")]
     with CoworldApiClient.from_login(server_url=get_api_server()) as c:
         orders = [None] if a.cmd == "create" else [0, 1]
+        if a.cmd == "create" and a.realistic:
+            for rep in range(a.rep0, a.rep0 + a.reps):
+                roster, cand_seat, labels = realistic_roster(a.ref, rep)
+                body = {"target": {"league_id": LEAGUE}, "roster": roster, "num_episodes": a.n, "notes": f"[{a.tag}] {a.ref} realistic rep {rep} seat {cand_seat}"}
+                d = None
+                for attempt in range(60):
+                    try:
+                        d = dump(c.create_experience_request(body)); break
+                    except Exception as ex:
+                        msg = repr(ex)
+                        if "429" in msg: time.sleep(30)
+                        else: print("create failed:", msg[:300]); time.sleep(5)
+                if d is None: sys.exit(1)
+                print("created", d["id"], "rep", rep, "seat", cand_seat, [l.split(":")[0][:10] for l in labels])
+                path = ROOT / "xp" / f"{a.tag}.json"
+                cur = json.load(open(path)) if path.exists() else {"candidate": a.ref, "n": a.n, "requests": []}
+                cur["requests"].append({"id": d["id"], "seat": cand_seat, "rep": rep, "roster": [l for i, l in enumerate(labels) if i != cand_seat]}); json.dump(cur, open(path, "w"), indent=1)
+                time.sleep(1)
+            print("saved", path); return
         for rep in range(a.reps):
             for order in orders:
                 rnd = random.Random((sum(map(ord, a.tag)) * 31 + rep) & 0xffff); others = pool[:]; rnd.shuffle(others)
