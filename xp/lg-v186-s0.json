@@ -1,0 +1,81 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v186",
+ "n": 24,
+ "requests": [
+  {
+   "id": "xreq_a30f9768-4aa9-4a54-9221-1c3138c5ef54",
+   "seat": 0,
+   "roster": [
+    "black-kite:v13",
+    "khors:v1",
+    "relh-gods-of-the-arena:v133",
+    "richard-gods-of-the-arena:v78",
+    "gota-g002:v1",
+    "Polyworld GOTA base.bas:v1",
+    "red-kite:v29",
+    "aaron-gota-ir-win-bounded-0916-aaron:v1",
+    "aaron-gota-ir-win-bounded-0916:v1"
+   ]
+  },
+  {
+   "id": "xreq_643bb41a-6d60-49ec-bfc2-65fd5b0aa2ba",
+   "seat": 0,
+   "roster": [
+    "red-kite:v29",
+    "black-kite:v13",
+    "aaron-gota-ir-win-bounded-0916:v1",
+    "relh-gods-of-the-arena:v133",
+    "richard-gods-of-the-arena:v78",
+    "aaron-gota-ir-win-bounded-0916-aaron:v1",
+    "Polyworld GOTA base.bas:v1",
+    "khors:v1",
+    "gota-g002:v1"
+   ]
+  },
+  {
+   "id": "xreq_3892c55d-c735-471b-8abf-b2facc1ecb5f",
+   "seat": 0,
+   "roster": [
+    "relh-gods-of-the-arena:v133",
+    "red-kite:v29",
+    "black-kite:v13",
+    "Polyworld GOTA base.bas:v1",
+    "khors:v1",
+    "gota-g002:v1",
+    "aaron-gota-ir-win-bounded-0916-aaron:v1",
+    "aaron-gota-ir-win-bounded-0916:v1",
+    "richard-gods-of-the-arena:v78"
+   ]
+  },
+  {
+   "id": "xreq_7d97d90b-212e-49f2-8339-0636ad778d72",
+   "seat": 0,
+   "roster": [
+    "relh-gods-of-the-arena:v133",
+    "aaron-gota-ir-win-bounded-0916:v1",
+    "khors:v1",
+    "black-kite:v13",
+    "aaron-gota-ir-win-bounded-0916-aaron:v1",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78",
+    "red-kite:v29",
+    "Polyworld GOTA base.bas:v1"
+   ]
+  },
+  {
+   "id": "xreq_66e7f4b9-8c04-4f9b-bf42-f66dcc482e2d",
+   "seat": 0,
+   "roster": [
+    "black-kite:v13",
+    "aaron-gota-ir-win-bounded-0916:v1",
+    "red-kite:v29",
+    "gota-g002:v1",
+    "relh-gods-of-the-arena:v133",
+    "richard-gods-of-the-arena:v78",
+    "khors:v1",
+    "Polyworld GOTA base.bas:v1",
+    "aaron-gota-ir-win-bounded-0916-aaron:v1"
+   ]
+  }
+ ]
+}
