@@ -19,10 +19,10 @@ def dump(o): return o.model_dump() if hasattr(o, "model_dump") else o
 TOP = ["aaron-gota-ir-perimeter-blue_repair-0916:v1", "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1", "black-kite:v13", "red-kite:v29", "gota-g002:v1", "richard-gods-of-the-arena:v78"]
 LOW = ["relh-gods-of-the-arena:v133", "gota-vanguard-rally-hold:v1", "khors:v1", "nancy-goa:v1", "Polyworld GOTA base.bas:v1"]  # vanguard/nancy stand in for the hidden daveey policies
 
-def realistic_roster(ref, rep, force_enemy=None):
+def realistic_roster(ref, rep, force_enemy=None, mate_top=None):
     """rep-th realistic roster: rosters depend only on rep, so two candidates run with the same --reps play identical rosters."""
     rnd = random.Random(1000 + rep)
-    top = TOP[:]; low = [p for p in LOW if p != force_enemy]
+    top = [p for p in TOP if p != mate_top]; low = [p for p in LOW if p != force_enemy]
     if force_enemy:
         pick_e = set(rnd.sample(top, 4)); enemy = [p for p in top if p in pick_e] + [force_enemy]   # forced enemy sits last (lowest rated)
         pick_m = set(rnd.sample(low, 4))
@@ -32,8 +32,10 @@ def realistic_roster(ref, rep, force_enemy=None):
     mates = [p for p in low if p in pick_m]
     side = rep % 2  # 0 = we are Red (seats 0-4), 1 = we are Blue (seats 5-9)
     ours = [ref] + mates
+    if mate_top:
+        mates = mates[:3]; ours = [mate_top, ref] + mates
     red, blue = (ours, enemy) if side == 0 else (enemy, ours)
-    return [{"player": {"policy_ref": (red + blue)[s]}, "slot": s} for s in range(10)], side * 5, red + blue
+    return [{"player": {"policy_ref": (red + blue)[s]}, "slot": s} for s in range(10)], side * 5 + (1 if mate_top else 0), red + blue
 
 def main():
     ap = argparse.ArgumentParser(); sub = ap.add_subparsers(dest="cmd", required=True)
@@ -43,6 +45,7 @@ def main():
     cr.add_argument("--rep0", type=int, default=0, help="first rep index (realistic mode)")
     cr.add_argument("--aaron", choices=["perimeter", "winbounded"], default="perimeter", help="which aaron pair sits in TOP (winbounded = the lgr-* pool)")
     cr.add_argument("--force-enemy", default=None, help="policy_ref that must sit on the enemy team (removed from LOW if there; e.g. relh-gods-of-the-arena:v133)")
+    cr.add_argument("--mate-top", default=None, help="policy_ref that leads OUR team at slot 0 (we sit at slot 1 as Xbow/Ranger); removed from TOP")
     du = sub.add_parser("duel", help="cand at seat S and ctrl at S+5, then swapped; eight pool seats"); du.add_argument("cand"); du.add_argument("ctrl")
     du.add_argument("--seat", type=int, default=0); du.add_argument("-n", type=int, default=24); du.add_argument("--tag", required=True); du.add_argument("--pool", default="tmp/league_pool.txt"); du.add_argument("--reps", type=int, default=1)
     a = ap.parse_args()
@@ -53,7 +56,7 @@ def main():
             if a.aaron == "winbounded":
                 TOP[0] = "aaron-gota-ir-win-bounded-0916:v1"; TOP[1] = "aaron-gota-ir-win-bounded-0916-aaron:v1"
             for rep in range(a.rep0, a.rep0 + a.reps):
-                roster, cand_seat, labels = realistic_roster(a.ref, rep, a.force_enemy)
+                roster, cand_seat, labels = realistic_roster(a.ref, rep, a.force_enemy, a.mate_top)
                 body = {"target": {"league_id": LEAGUE}, "roster": roster, "num_episodes": a.n, "notes": f"[{a.tag}] {a.ref} realistic rep {rep} seat {cand_seat}"}
                 d = None
                 for attempt in range(60):
