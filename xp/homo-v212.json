@@ -1,0 +1,48 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v212",
+ "n": 12,
+ "requests": [
+  {
+   "id": "xreq_6c7a3fe3-6b98-41ef-8b79-8249a1757afc",
+   "seat": 0,
+   "opp": "black-kite:v13",
+   "side": 0
+  },
+  {
+   "id": "xreq_914d144e-3d38-41c8-ac01-3799cc01dd0f",
+   "seat": 5,
+   "opp": "black-kite:v13",
+   "side": 1
+  },
+  {
+   "id": "xreq_5c99dd67-8cdb-41cf-a6d2-9f5e7926a7c1",
+   "seat": 0,
+   "opp": "red-kite:v29",
+   "side": 0
+  },
+  {
+   "id": "xreq_dc1ea509-fde6-49b0-a9e0-54478b69a537",
+   "seat": 5,
+   "opp": "red-kite:v29",
+   "side": 1
+  },
+  {
+   "id": "xreq_deb3613f-58ff-494d-8fb7-7485349c52cb",
+   "seat": 0,
+   "opp": "gota-g002:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_8e884977-1297-47ac-92c9-d8e15b69096e",
+   "seat": 5,
+   "opp": "gota-g002:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_c736901b-ad76-45be-a6cf-aa471417461b",
+   "seat": 0,
+   "opp": "relh-gods-of-the-arena:v133",
+   "side": 0
+  }
+ ]
+}
