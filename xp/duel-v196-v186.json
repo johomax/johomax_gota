@@ -1,0 +1,16 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v196",
+ "control": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v186",
+ "duel": true,
+ "n": 60,
+ "requests": [
+  {
+   "id": "xreq_7376a183-e6f5-45bf-9a4a-9f36b4eb0115",
+   "seat": 3
+  },
+  {
+   "id": "xreq_e0d02db3-095f-47ff-bffb-61cc0beeda0d",
+   "seat": 8
+  }
+ ]
+}
