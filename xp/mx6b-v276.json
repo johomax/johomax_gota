@@ -1,0 +1,66 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v276",
+ "n": 6,
+ "requests": [
+  {
+   "id": "xreq_b12102ef-7f2c-4457-b0fb-387eba740bde",
+   "seat": 0,
+   "opp": "khors:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_8a58d569-b70f-438b-a34f-8c60daae27b2",
+   "seat": 5,
+   "opp": "khors:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_865c9dba-6a27-4b2a-91cf-36e60f2b4a67",
+   "seat": 0,
+   "opp": "gota-vanguard-rally-hold:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_150d4ca9-8092-4b6c-8510-8a1584fa1338",
+   "seat": 5,
+   "opp": "gota-vanguard-rally-hold:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_1b7d68c7-2e0f-408d-8f68-83a1f9f76fb9",
+   "seat": 0,
+   "opp": "james-botts-gota:v13",
+   "side": 0
+  },
+  {
+   "id": "xreq_af3b329b-fe71-4c35-944e-6940a8b08a77",
+   "seat": 5,
+   "opp": "james-botts-gota:v13",
+   "side": 1
+  },
+  {
+   "id": "xreq_72e70911-ac1f-434e-acf5-a3b9e3888214",
+   "seat": 0,
+   "opp": "aaron-gota-ir-middle-rush-blue_three-0916:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_3d1b3499-a962-4c7c-9062-f523af99703f",
+   "seat": 5,
+   "opp": "aaron-gota-ir-middle-rush-blue_three-0916:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_c150b5ee-e18d-4902-bad6-5570a6ca2421",
+   "seat": 0,
+   "opp": "gota-g003:v2",
+   "side": 0
+  },
+  {
+   "id": "xreq_24574c3b-e6e8-439d-aed7-716e398ae043",
+   "seat": 5,
+   "opp": "gota-g003:v2",
+   "side": 1
+  }
+ ]
+}
