@@ -1,0 +1,18 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v270",
+ "n": 6,
+ "requests": [
+  {
+   "id": "xreq_81349a49-dc0a-4dcf-ae92-b004dcc99726",
+   "seat": 0,
+   "opp": "aaron-gota-ir-relh154-legacy-0916:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_b95aac67-6623-433d-9316-b5bde287ad11",
+   "seat": 5,
+   "opp": "aaron-gota-ir-relh154-legacy-0916:v1",
+   "side": 1
+  }
+ ]
+}
