@@ -1,0 +1,18 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v263",
+ "n": 6,
+ "requests": [
+  {
+   "id": "xreq_4205c9a4-9bf6-45d1-842e-bfb83a3abe2c",
+   "seat": 0,
+   "opp": "nancy-goa:v2",
+   "side": 0
+  },
+  {
+   "id": "xreq_0e529d0a-f9a2-4344-b7e7-b2e543526386",
+   "seat": 5,
+   "opp": "nancy-goa:v2",
+   "side": 1
+  }
+ ]
+}
