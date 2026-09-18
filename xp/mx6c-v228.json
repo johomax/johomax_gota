@@ -1,0 +1,54 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v228",
+ "n": 6,
+ "requests": [
+  {
+   "id": "xreq_a7326281-67fb-43a4-ab8b-7b1d7350bf65",
+   "seat": 0,
+   "opp": "red-kite:v33",
+   "side": 0
+  },
+  {
+   "id": "xreq_ded20d6e-c2fb-4393-b6b3-7cfce0e177df",
+   "seat": 5,
+   "opp": "red-kite:v33",
+   "side": 1
+  },
+  {
+   "id": "xreq_b80e9cae-e93d-4639-b980-a7239500339d",
+   "seat": 0,
+   "opp": "black-kite:v15",
+   "side": 0
+  },
+  {
+   "id": "xreq_e117220d-cbbb-4bfc-a993-edc065b7147a",
+   "seat": 5,
+   "opp": "black-kite:v15",
+   "side": 1
+  },
+  {
+   "id": "xreq_05d62395-ff5c-4d4d-8430-2347a423e8f4",
+   "seat": 0,
+   "opp": "gota-vanguard-rally-hold:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_e7145382-36cc-4b5a-86ee-ab0dd723e8f7",
+   "seat": 5,
+   "opp": "gota-vanguard-rally-hold:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_528dc28a-dab2-4a18-8494-b5c9b12a3ff5",
+   "seat": 0,
+   "opp": "aaron-gota-ir-perimeter-blue_repair-0916:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_d25c9957-7561-458b-a56d-802b18b9b1d1",
+   "seat": 5,
+   "opp": "aaron-gota-ir-perimeter-blue_repair-0916:v1",
+   "side": 1
+  }
+ ]
+}
