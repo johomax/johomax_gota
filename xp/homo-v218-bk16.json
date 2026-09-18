@@ -1,0 +1,18 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v218",
+ "n": 6,
+ "requests": [
+  {
+   "id": "xreq_c5024dc6-52d8-4593-a2b9-76f46f414057",
+   "seat": 0,
+   "opp": "black-kite:v16",
+   "side": 0
+  },
+  {
+   "id": "xreq_0e21e629-6914-4905-93f1-744df578d074",
+   "seat": 5,
+   "opp": "black-kite:v16",
+   "side": 1
+  }
+ ]
+}
