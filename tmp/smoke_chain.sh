@@ -1,6 +1,6 @@
 #!/bin/zsh
 cd /Users/jordan/Desktop/Projects/johomax/gota
-for n in ${SMOKE_VERSIONS:-232 233 234 235}; do
+for n in ${=SMOKE_VERSIONS:-232 233 234 235}; do
   echo "=== v$n start $(date -u +%H:%M:%S)"
   rm -rf runs/smoke_v$n
   DOCKER_DEFAULT_PLATFORM=linux/amd64 uv run coworld run-episode ./coworld/cow_126f2fcb-80a0-4b6e-8166-eb6163576db5/coworld_manifest.json policy/v$n.bas policy/v$n.bas policy/v$n.bas policy/v$n.bas policy/v$n.bas policy/v228.bas policy/v228.bas policy/v228.bas policy/v228.bas policy/v228.bas --variant competition --timeout-seconds 1500 -o runs/smoke_v$n > runs/smoke_v$n.out 2>&1
