@@ -13,6 +13,54 @@
    "seat": 5,
    "opp": "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
    "side": 1
+  },
+  {
+   "id": "xreq_f507d6a2-5ad6-4475-90df-02f25a24b0e1",
+   "seat": 0,
+   "opp": "gota-g002:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_f17345d1-90ed-4bf4-8efb-66f933622ce3",
+   "seat": 5,
+   "opp": "gota-g002:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_93e0e02b-4bca-47d4-8ad3-ca4d151f6d36",
+   "seat": 0,
+   "opp": "relh-gods-of-the-arena:v133",
+   "side": 0
+  },
+  {
+   "id": "xreq_ffbc021b-0efd-4110-a16a-e0a09118699e",
+   "seat": 5,
+   "opp": "relh-gods-of-the-arena:v133",
+   "side": 1
+  },
+  {
+   "id": "xreq_3dfdfeb5-b66d-4abd-a56d-4209d0c9a91c",
+   "seat": 0,
+   "opp": "richard-gods-of-the-arena:v78",
+   "side": 0
+  },
+  {
+   "id": "xreq_4f4b1a77-7773-4b42-8a5c-f15b17c2b269",
+   "seat": 5,
+   "opp": "richard-gods-of-the-arena:v78",
+   "side": 1
+  },
+  {
+   "id": "xreq_df7797d4-a151-421e-90a8-fa17215ffe7a",
+   "seat": 0,
+   "opp": "gota-codex-side-aware-team-secondary-20260917:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_3d769a42-422f-4abc-97fd-c54684d6531d",
+   "seat": 5,
+   "opp": "gota-codex-side-aware-team-secondary-20260917:v1",
+   "side": 1
   }
  ]
 }
