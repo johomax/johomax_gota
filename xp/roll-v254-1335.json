@@ -1,0 +1,174 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v254",
+ "n": 2,
+ "requests": [
+  {
+   "id": "xreq_b15eb8d7-2696-4dd1-97eb-da6fed2a2c17",
+   "seat": 0,
+   "opp": "aaron-gota-ir-middle-rush-blue_three-0916-aaron:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_64fd27f6-fee2-4be8-9482-cb373fdf4d17",
+   "seat": 5,
+   "opp": "aaron-gota-ir-middle-rush-blue_three-0916-aaron:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_5fe6aa9b-b602-41d6-ad2a-b34d7ad1d7e9",
+   "seat": 0,
+   "opp": "aaron-gota-ir-middle-rush-blue_three-0916:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_7a1b781e-f62c-48b2-a97d-984cf4494d4c",
+   "seat": 5,
+   "opp": "aaron-gota-ir-middle-rush-blue_three-0916:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_2f0afd3f-5ff2-4dcf-8107-036b2ae3a7d9",
+   "seat": 0,
+   "opp": "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_eca1cd7e-a52f-485c-b849-1dfa55d3fd61",
+   "seat": 5,
+   "opp": "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_f9be6e15-2a9d-491d-a8d6-600c61b1e47f",
+   "seat": 0,
+   "opp": "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_64a63dd6-6a10-405b-bb6c-a80dc6335f4f",
+   "seat": 5,
+   "opp": "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_2097d085-f0de-4b21-9727-da7ea21b3865",
+   "seat": 0,
+   "opp": "black-kite:v16",
+   "side": 0
+  },
+  {
+   "id": "xreq_b06568f0-4037-4fbb-80e0-3023275666fb",
+   "seat": 5,
+   "opp": "black-kite:v16",
+   "side": 1
+  },
+  {
+   "id": "xreq_c2804e61-380f-43c6-8422-c82ea6044b85",
+   "seat": 0,
+   "opp": "red-kite:v34",
+   "side": 0
+  },
+  {
+   "id": "xreq_f911eda7-dc48-45c7-b7ff-5d6fcf127c42",
+   "seat": 5,
+   "opp": "red-kite:v34",
+   "side": 1
+  },
+  {
+   "id": "xreq_ee8c783b-0e54-4b9a-954c-e2c1b465cc87",
+   "seat": 0,
+   "opp": "gota-g003:v2",
+   "side": 0
+  },
+  {
+   "id": "xreq_3b9e4c89-0414-4df2-a4d8-4feb236a6e27",
+   "seat": 5,
+   "opp": "gota-g003:v2",
+   "side": 1
+  },
+  {
+   "id": "xreq_8d347269-64e2-40df-a75c-dc6dc8182e4b",
+   "seat": 0,
+   "opp": "relh-gods-of-the-arena:v154",
+   "side": 0
+  },
+  {
+   "id": "xreq_fdc569db-02a1-42d3-9510-15749b2fceb4",
+   "seat": 5,
+   "opp": "relh-gods-of-the-arena:v154",
+   "side": 1
+  },
+  {
+   "id": "xreq_06d9cd96-41c0-444f-a06d-b99465b8f138",
+   "seat": 0,
+   "opp": "khors:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_6a7941f8-259a-4197-aeb9-ffce8e60cbff",
+   "seat": 5,
+   "opp": "khors:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_1617ab70-6e94-4835-8dfd-6d3a0b689234",
+   "seat": 0,
+   "opp": "macromackie-gota:v4",
+   "side": 0
+  },
+  {
+   "id": "xreq_4692e9b1-a8aa-4fb4-b3ae-c3018c157fb2",
+   "seat": 5,
+   "opp": "macromackie-gota:v4",
+   "side": 1
+  },
+  {
+   "id": "xreq_5391f392-fe54-4be6-be05-d6a12f7a0426",
+   "seat": 0,
+   "opp": "richard-gods-of-the-arena:v78",
+   "side": 0
+  },
+  {
+   "id": "xreq_062f9195-d88d-4fb3-b588-1fa0e8689db3",
+   "seat": 5,
+   "opp": "richard-gods-of-the-arena:v78",
+   "side": 1
+  },
+  {
+   "id": "xreq_0df635c2-2bf0-4ed3-9f99-37f74d106f7a",
+   "seat": 0,
+   "opp": "gota-g002:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_62af1a28-bda0-4bde-84a3-714ce9e0d9f7",
+   "seat": 5,
+   "opp": "gota-g002:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_e23a7c8e-383f-4b9f-b70b-07005179c700",
+   "seat": 0,
+   "opp": "gota-vanguard-rally-hold:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_b6ab340a-aadd-403f-89f5-8f5a18b1dfdc",
+   "seat": 5,
+   "opp": "gota-vanguard-rally-hold:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_7ecbb776-a345-4e7a-8d16-badf3be27f64",
+   "seat": 0,
+   "opp": "james-botts-gota:v13",
+   "side": 0
+  },
+  {
+   "id": "xreq_97403c5d-0c54-47a5-b57d-0c35d42ab12c",
+   "seat": 5,
+   "opp": "james-botts-gota:v13",
+   "side": 1
+  }
+ ]
+}
