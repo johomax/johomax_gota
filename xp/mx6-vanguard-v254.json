@@ -1,0 +1,18 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v254",
+ "n": 6,
+ "requests": [
+  {
+   "id": "xreq_1071c6a4-adf6-430d-986d-1edcf52e43a3",
+   "seat": 0,
+   "opp": "gota-vanguard-rally-hold:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_e3491ea9-1c77-4cd9-946b-d90fc815c848",
+   "seat": 5,
+   "opp": "gota-vanguard-rally-hold:v1",
+   "side": 1
+  }
+ ]
+}
