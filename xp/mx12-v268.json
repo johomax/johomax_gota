@@ -1,0 +1,42 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v268",
+ "n": 12,
+ "requests": [
+  {
+   "id": "xreq_765068c3-ba21-4068-a374-7ca3579f6d48",
+   "seat": 0,
+   "opp": "black-kite:v16",
+   "side": 0
+  },
+  {
+   "id": "xreq_8d5dbf18-a9a3-4406-a74e-2aacc5807e47",
+   "seat": 5,
+   "opp": "black-kite:v16",
+   "side": 1
+  },
+  {
+   "id": "xreq_4601443a-2ff5-4d87-a3b8-b376446b2a46",
+   "seat": 0,
+   "opp": "red-kite:v34",
+   "side": 0
+  },
+  {
+   "id": "xreq_a258fcfe-5c53-41d5-8432-0515e248d3f4",
+   "seat": 5,
+   "opp": "red-kite:v34",
+   "side": 1
+  },
+  {
+   "id": "xreq_88bd6a77-047d-4d88-8c36-9a9be26ecf75",
+   "seat": 0,
+   "opp": "gota-codex-side-aware-team-secondary-20260917:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_a826fa24-d698-4309-9131-3f93641f5c7e",
+   "seat": 5,
+   "opp": "gota-codex-side-aware-team-secondary-20260917:v1",
+   "side": 1
+  }
+ ]
+}
