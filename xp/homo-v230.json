@@ -1,0 +1,18 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v230",
+ "n": 2,
+ "requests": [
+  {
+   "id": "xreq_0f9f7ab9-1f22-48db-ac8d-1d49a384140d",
+   "seat": 0,
+   "opp": "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_cfe7586d-3454-41fb-bcc0-cacc46e3cde8",
+   "seat": 5,
+   "opp": "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+   "side": 1
+  }
+ ]
+}
