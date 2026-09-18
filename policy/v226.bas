@@ -359,7 +359,6 @@ else
     end if
   end if
 end if
-
 end if
 ' ---------- objective ----------
 if oi >= nObj then
