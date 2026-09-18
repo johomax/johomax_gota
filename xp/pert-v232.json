@@ -1,0 +1,114 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v232",
+ "n": 2,
+ "requests": [
+  {
+   "id": "xreq_473a8668-fec1-4204-8f62-aa3feeb607bb",
+   "seat": 0,
+   "opp": "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_b222de4d-f589-4a78-a0da-bb157f62e6f5",
+   "seat": 5,
+   "opp": "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_eb97869a-579d-4402-b35b-3f29ab7a7a89",
+   "seat": 0,
+   "opp": "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_6711b0f8-36aa-4431-ab3b-64bbc2779d22",
+   "seat": 5,
+   "opp": "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_da1b67e6-31e6-4737-83a6-e49921fef62a",
+   "seat": 0,
+   "opp": "black-kite:v16",
+   "side": 0
+  },
+  {
+   "id": "xreq_bc8ad628-f63e-45a1-a190-545de479adcb",
+   "seat": 5,
+   "opp": "black-kite:v16",
+   "side": 1
+  },
+  {
+   "id": "xreq_a1b27301-6dd3-47f2-8e8d-f4d805977ee8",
+   "seat": 0,
+   "opp": "red-kite:v34",
+   "side": 0
+  },
+  {
+   "id": "xreq_e88d978b-6808-4dfe-8db4-34923624965c",
+   "seat": 5,
+   "opp": "red-kite:v34",
+   "side": 1
+  },
+  {
+   "id": "xreq_c35e054b-9f8c-4876-98d0-846dc56f5998",
+   "seat": 0,
+   "opp": "relh-gods-of-the-arena:v154",
+   "side": 0
+  },
+  {
+   "id": "xreq_2ec6edca-0e04-4247-8ce3-1493a8215e1f",
+   "seat": 5,
+   "opp": "relh-gods-of-the-arena:v154",
+   "side": 1
+  },
+  {
+   "id": "xreq_ca6009be-7a5c-43ec-bb3e-cd960827fb64",
+   "seat": 0,
+   "opp": "gota-codex-side-aware-team-secondary-20260917:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_fdfd951f-c9ac-4adc-ac49-18f80735df75",
+   "seat": 5,
+   "opp": "gota-codex-side-aware-team-secondary-20260917:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_b0822e74-5afe-409c-88b5-23cfbb348357",
+   "seat": 0,
+   "opp": "richard-gods-of-the-arena:v78",
+   "side": 0
+  },
+  {
+   "id": "xreq_5eadfa34-56e0-45c1-9dff-f88ba8bfecee",
+   "seat": 5,
+   "opp": "richard-gods-of-the-arena:v78",
+   "side": 1
+  },
+  {
+   "id": "xreq_8bae1445-3c02-47ef-b44c-11ac56977ff4",
+   "seat": 0,
+   "opp": "gota-g002:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_a9d6d8a9-c843-4400-984e-8e9335d8e5e3",
+   "seat": 5,
+   "opp": "gota-g002:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_aa487ab3-38e8-495b-90ba-a0c17d36961a",
+   "seat": 0,
+   "opp": "gota-g003:v2",
+   "side": 0
+  },
+  {
+   "id": "xreq_d9ab9a93-46b2-4435-aa26-8c08d588752c",
+   "seat": 5,
+   "opp": "gota-g003:v2",
+   "side": 1
+  }
+ ]
+}
