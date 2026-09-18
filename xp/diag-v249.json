@@ -1,0 +1,18 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v249",
+ "n": 1,
+ "requests": [
+  {
+   "id": "xreq_53cc0dd0-9421-4ae2-91ac-73b35d7d303b",
+   "seat": 0,
+   "opp": "relh-gods-of-the-arena:v154",
+   "side": 0
+  },
+  {
+   "id": "xreq_c1523f21-a826-46ad-ad45-7590882d228a",
+   "seat": 5,
+   "opp": "relh-gods-of-the-arena:v154",
+   "side": 1
+  }
+ ]
+}
