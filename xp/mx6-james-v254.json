@@ -1,0 +1,18 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v254",
+ "n": 6,
+ "requests": [
+  {
+   "id": "xreq_3ece24a4-7c23-4c1a-8e86-b54fe1d2c5d9",
+   "seat": 0,
+   "opp": "james-botts-gota:v13",
+   "side": 0
+  },
+  {
+   "id": "xreq_2d21f079-34f6-49c9-b1ae-61a8028f2da1",
+   "seat": 5,
+   "opp": "james-botts-gota:v13",
+   "side": 1
+  }
+ ]
+}
