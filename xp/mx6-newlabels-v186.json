@@ -1,0 +1,30 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v186",
+ "n": 6,
+ "requests": [
+  {
+   "id": "xreq_47ecf9dd-1006-43f1-ac35-587b48f4361e",
+   "seat": 0,
+   "opp": "nancy-goa:v2",
+   "side": 0
+  },
+  {
+   "id": "xreq_a6a3d678-120e-4590-bfce-59ad864d03f5",
+   "seat": 5,
+   "opp": "nancy-goa:v2",
+   "side": 1
+  },
+  {
+   "id": "xreq_57f9b083-bdcb-4953-b562-bbda287b6ee8",
+   "seat": 0,
+   "opp": "aaron-gota-ir-j254-warning100-0916:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_4a689700-9f01-4bd7-987c-55ad85d060c4",
+   "seat": 5,
+   "opp": "aaron-gota-ir-j254-warning100-0916:v1",
+   "side": 1
+  }
+ ]
+}
