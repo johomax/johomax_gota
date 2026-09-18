@@ -1,0 +1,54 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v254",
+ "n": 6,
+ "requests": [
+  {
+   "id": "xreq_6b36d3d8-0244-4a80-9cbe-f760c993ba2d",
+   "seat": 0,
+   "opp": "aaron-gota-ir-middle-rush-blue_three-0916-aaron:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_ecaf8293-403d-456b-8746-bf843d93c4c6",
+   "seat": 5,
+   "opp": "aaron-gota-ir-middle-rush-blue_three-0916-aaron:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_848f55e6-94dc-4ef9-986b-e08da9dfcee8",
+   "seat": 0,
+   "opp": "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_40482049-61cc-4f96-9b7e-6070dadaee4a",
+   "seat": 5,
+   "opp": "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_2465d4d1-6a23-406a-8b33-39154049b04b",
+   "seat": 0,
+   "opp": "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_4af55b64-3659-441a-9cce-ffdf30166aef",
+   "seat": 5,
+   "opp": "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_b4b9cae6-428a-433c-a571-75b66c892a0b",
+   "seat": 0,
+   "opp": "black-kite:v16",
+   "side": 0
+  },
+  {
+   "id": "xreq_a01631d5-f376-4bbe-9d75-63ac423d3325",
+   "seat": 5,
+   "opp": "black-kite:v16",
+   "side": 1
+  }
+ ]
+}
