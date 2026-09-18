@@ -116,6 +116,7 @@ The participate guide names cow_d7a245f0 (2026.9.14.2, a 128x128 map) but the le
 - buyItem(id), useItem(slot): work anywhere on the map, any time alive. Equipment unique (no class restriction!), consumables stack 8.
 - castTarget(slot,id), castPoint(slot,x,y), abilityCharges/Cooldown/Recharge(slot) [slots 0..3 = passive, primary, secondary, ultimate].
   Abilities are ALSO auto-cast by the engine on the current attack target (passive self-heal whenever hp<max; ult>secondary>primary).
+  Auto-cast target priority footman > hero > tower > fort; every Strike ability damages structures. OBSERVED 2026-09-18 (guarded-gods engine): the auto-cast never fires on FORT GUARDS (ids 28-31) — a hero attacking a guard keeps full mana and zero cooldowns — so guards must be spelled manually (relh does: castTarget slot 1 on the guard, castPoint slots 2/3 on its tile). Manual casts do not disable the auto-cast.
 - terrainKind/Walkable/Height/WaterDepth(x,y) [32 work each] (+At(x,y,layer)).
 - Idle hero (no move target, no attack target) auto-acquires CREEPS ONLY: melee within 2.5 tiles, ranged within its range.
 - Limits per decision: 20,000 instructions, 50,000 work units, 128 print events, 1024 print bytes. Division by zero = VM dies for the match.
