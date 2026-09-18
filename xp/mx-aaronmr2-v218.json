@@ -1,0 +1,18 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v218",
+ "n": 2,
+ "requests": [
+  {
+   "id": "xreq_7fc85be4-fc48-41a3-8ccd-3d10fada6107",
+   "seat": 0,
+   "opp": "aaron-gota-ir-middle-rush-blue_three-0916:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_c612ed7e-5824-446e-9e87-6ac60f2bd044",
+   "seat": 5,
+   "opp": "aaron-gota-ir-middle-rush-blue_three-0916:v1",
+   "side": 1
+  }
+ ]
+}
