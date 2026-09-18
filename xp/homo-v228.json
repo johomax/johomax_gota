@@ -43,6 +43,24 @@
    "seat": 0,
    "opp": "richard-gods-of-the-arena:v78",
    "side": 0
+  },
+  {
+   "id": "xreq_a5e6b6f7-f689-4fee-9924-3f68c80b7e48",
+   "seat": 5,
+   "opp": "richard-gods-of-the-arena:v78",
+   "side": 1
+  },
+  {
+   "id": "xreq_3b9dbe3f-cb93-4e67-b56c-28fae1d946ac",
+   "seat": 0,
+   "opp": "gota-codex-side-aware-team-secondary-20260917:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_cb6bf67c-2311-44a7-a722-fd0059b3891c",
+   "seat": 5,
+   "opp": "gota-codex-side-aware-team-secondary-20260917:v1",
+   "side": 1
   }
  ]
 }
