@@ -1,0 +1,186 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v228",
+ "n": 2,
+ "requests": [
+  {
+   "id": "xreq_c3053e26-d4df-4d7c-be15-65ae6acc5600",
+   "seat": 0,
+   "opp": "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_d30905f6-3af4-47d9-bf2b-1c27de8310f6",
+   "seat": 5,
+   "opp": "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_be327c15-9542-4e8f-ab69-2fd585cb7f69",
+   "seat": 0,
+   "opp": "aaron-gota-ir-perimeter-blue_repair-0916:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_4d1d9ab4-c512-41f7-9cbf-a34bcafea449",
+   "seat": 5,
+   "opp": "aaron-gota-ir-perimeter-blue_repair-0916:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_03b6b42e-080d-427e-8bf9-2c11fc98dcc7",
+   "seat": 0,
+   "opp": "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_268a1099-f41d-4784-8dca-b1aea22a043d",
+   "seat": 5,
+   "opp": "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_c37a0af9-63c6-4201-8810-5c4dfc1702f1",
+   "seat": 0,
+   "opp": "black-kite:v16",
+   "side": 0
+  },
+  {
+   "id": "xreq_346b0373-1c97-427a-bcda-b0934814f7d5",
+   "seat": 5,
+   "opp": "black-kite:v16",
+   "side": 1
+  },
+  {
+   "id": "xreq_c6664cdb-431c-494c-afb2-f9db616d81a9",
+   "seat": 0,
+   "opp": "red-kite:v34",
+   "side": 0
+  },
+  {
+   "id": "xreq_3c5fcf96-f69d-4bdc-805c-56d55c0a986b",
+   "seat": 5,
+   "opp": "red-kite:v34",
+   "side": 1
+  },
+  {
+   "id": "xreq_c8c62f31-4d61-46d0-ad1d-f12191d02ba3",
+   "seat": 0,
+   "opp": "gota-g002:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_f973000a-b817-4515-acce-2b4ffbc9b828",
+   "seat": 5,
+   "opp": "gota-g002:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_823c8750-aaf4-417e-a594-80819e42d22e",
+   "seat": 0,
+   "opp": "gota-g003:v2",
+   "side": 0
+  },
+  {
+   "id": "xreq_c66697c6-e6ac-4bb5-ab3a-419019102025",
+   "seat": 5,
+   "opp": "gota-g003:v2",
+   "side": 1
+  },
+  {
+   "id": "xreq_6a0ecec8-bb36-48ba-87a0-cedfe9cb9eac",
+   "seat": 0,
+   "opp": "richard-gods-of-the-arena:v78",
+   "side": 0
+  },
+  {
+   "id": "xreq_d75125df-3220-4a6c-b5a4-8500b3748e5c",
+   "seat": 5,
+   "opp": "richard-gods-of-the-arena:v78",
+   "side": 1
+  },
+  {
+   "id": "xreq_e0d3b24b-cbdc-437f-ac4c-f55a262a4e04",
+   "seat": 0,
+   "opp": "relh-gods-of-the-arena:v154",
+   "side": 0
+  },
+  {
+   "id": "xreq_3a638935-dd72-4f3e-a1ec-505834ae1a95",
+   "seat": 5,
+   "opp": "relh-gods-of-the-arena:v154",
+   "side": 1
+  },
+  {
+   "id": "xreq_02d7edff-e360-4929-bfe8-823b49a93dee",
+   "seat": 0,
+   "opp": "james-botts-gota:v13",
+   "side": 0
+  },
+  {
+   "id": "xreq_76806f2f-74b0-4dad-9dbb-5adbb977a138",
+   "seat": 5,
+   "opp": "james-botts-gota:v13",
+   "side": 1
+  },
+  {
+   "id": "xreq_d1ae1ad3-b4e3-4128-be8d-046c4fdbd271",
+   "seat": 0,
+   "opp": "khors:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_885b2b38-ba71-46e4-9454-42ddfee41f41",
+   "seat": 5,
+   "opp": "khors:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_1c842ae8-4afe-4d16-9bf7-ee3c0872a59c",
+   "seat": 0,
+   "opp": "Polyworld GOTA base.bas:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_26590fa5-7014-445f-a203-774e6eadab89",
+   "seat": 5,
+   "opp": "Polyworld GOTA base.bas:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_f1a82676-4d05-4159-992f-544773354649",
+   "seat": 0,
+   "opp": "macromackie-gota:v4",
+   "side": 0
+  },
+  {
+   "id": "xreq_f063266e-2204-4f80-93c1-d1a1ce595b76",
+   "seat": 5,
+   "opp": "macromackie-gota:v4",
+   "side": 1
+  },
+  {
+   "id": "xreq_a34a1c8d-2188-4ffb-afc3-2267205b24ff",
+   "seat": 0,
+   "opp": "gota-codex-side-aware-team-secondary-20260917:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_7925071d-90eb-48d5-bded-1c350b8c19c6",
+   "seat": 5,
+   "opp": "gota-codex-side-aware-team-secondary-20260917:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_9f58bf36-c591-4ca0-9645-28c9d3dd4548",
+   "seat": 0,
+   "opp": "gota-vanguard-rally-hold:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_ab80bfa8-72d2-4d2f-ac58-2f31b32c0de3",
+   "seat": 5,
+   "opp": "gota-vanguard-rally-hold:v1",
+   "side": 1
+  }
+ ]
+}
