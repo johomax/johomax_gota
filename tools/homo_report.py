@@ -8,7 +8,7 @@ from coworld.api_client import CoworldApiClient
 from softmax.auth import get_api_server
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 def dump(o): return o.model_dump() if hasattr(o, "model_dump") else o
-def short(l): return l.split(":")[0].replace("-gods-of-the-arena", "").replace("aaron-gota-ir-", "aaron:")[:28]
+def short(l): return l.replace("-gods-of-the-arena", "").replace("aaron-gota-ir-", "aaron:").replace("perimeter-blue_repair-0916", "perim")[:30]
 def main():
     res = {}
     with CoworldApiClient.from_login(server_url=get_api_server()) as c:

@@ -16,7 +16,8 @@ def dump(o): return o.model_dump() if hasattr(o, "model_dump") else o
 # League seating as observed 2026-09-17: we sit at slot 0 of our team in ~90% of games (DK on Red, VK on Blue); slots follow
 # rating order, so our teammates are the lower-rated entrants and the enemy team is the top of the ladder.
 # Aaron's league label switched from win-bounded to perimeter-blue_repair in rounds 397-399 (2026-09-17 ~19:30 UTC); lgr-* used win-bounded, lgr2-* uses this pool
-TOP = ["aaron-gota-ir-perimeter-blue_repair-0916:v1", "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1", "black-kite:v13", "red-kite:v29", "gota-g002:v1", "richard-gods-of-the-arena:v78"]
+# black-kite v13 -> v16 (league since round 407, 2026-09-18 ~00:00 UTC); lgr2-* used v13, lgr3-* uses v16
+TOP = ["aaron-gota-ir-perimeter-blue_repair-0916:v1", "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1", "black-kite:v16", "red-kite:v29", "gota-g002:v1", "richard-gods-of-the-arena:v78"]
 LOW = ["relh-gods-of-the-arena:v133", "gota-vanguard-rally-hold:v1", "khors:v1", "nancy-goa:v1", "Polyworld GOTA base.bas:v1"]  # vanguard/nancy stand in for the hidden daveey policies
 
 def realistic_roster(ref, rep, force_enemy=None, mate_top=None):
