@@ -1,0 +1,66 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v268",
+ "n": 12,
+ "requests": [
+  {
+   "id": "xreq_4f7e47ce-03fc-441c-89eb-54d0ba189ddf",
+   "seat": 0,
+   "opp": "gota-g003:v2",
+   "side": 0
+  },
+  {
+   "id": "xreq_5765ea27-11c0-44af-ab79-55193276c58a",
+   "seat": 5,
+   "opp": "gota-g003:v2",
+   "side": 1
+  },
+  {
+   "id": "xreq_c2d5e642-51b0-4ad9-bc51-8ba87093f39c",
+   "seat": 0,
+   "opp": "aaron-gota-ir-j254-warning100-0916-aaron:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_31ff0b00-dd78-466c-a31a-8f39d0ca8284",
+   "seat": 5,
+   "opp": "aaron-gota-ir-j254-warning100-0916-aaron:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_dedb602d-77ff-4743-a4fa-cc85f98f6a6f",
+   "seat": 0,
+   "opp": "aaron-gota-ir-j254-warning100-0916:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_35d0615c-dc8d-4b17-b679-4a3964bb1503",
+   "seat": 5,
+   "opp": "aaron-gota-ir-j254-warning100-0916:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_d421f3aa-1ba5-4060-b195-2280fd8f855b",
+   "seat": 0,
+   "opp": "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_73d18be5-7a2a-4343-b961-e89453a346e0",
+   "seat": 5,
+   "opp": "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_9121eb15-18b8-40cf-a4e8-96d0ee4b811e",
+   "seat": 0,
+   "opp": "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_b6c6988b-27da-46fa-ad0d-88d9ffd1054c",
+   "seat": 5,
+   "opp": "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+   "side": 1
+  }
+ ]
+}
