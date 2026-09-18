@@ -1,0 +1,30 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v254",
+ "n": 6,
+ "requests": [
+  {
+   "id": "xreq_f800ae17-efac-4e9a-961a-ef0b53578650",
+   "seat": 0,
+   "opp": "khors:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_b6755ef6-e34e-42b8-bb54-a5f2ad65bf18",
+   "seat": 5,
+   "opp": "khors:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_0239a53e-9e79-469e-9910-2cbf9cf521b9",
+   "seat": 0,
+   "opp": "aaron-gota-ir-middle-rush-blue_three-0916:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_966c0c5e-2a47-442e-a6a3-328df2c0a035",
+   "seat": 5,
+   "opp": "aaron-gota-ir-middle-rush-blue_three-0916:v1",
+   "side": 1
+  }
+ ]
+}
