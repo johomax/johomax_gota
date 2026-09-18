@@ -17,8 +17,8 @@ def dump(o): return o.model_dump() if hasattr(o, "model_dump") else o
 # rating order, so our teammates are the lower-rated entrants and the enemy team is the top of the ladder.
 # Aaron's league label switched from win-bounded to perimeter-blue_repair in rounds 397-399 (2026-09-17 ~19:30 UTC); lgr-* used win-bounded, lgr2-* uses this pool
 # black-kite v13 -> v16 (league since round 407, 2026-09-18 ~00:00 UTC); lgr2-* used v13, lgr3-* uses v16
-TOP = ["aaron-gota-ir-perimeter-blue_repair-0916:v1", "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1", "black-kite:v16", "red-kite:v29", "gota-g002:v1", "richard-gods-of-the-arena:v78"]
-LOW = ["relh-gods-of-the-arena:v133", "gota-vanguard-rally-hold:v1", "khors:v1", "nancy-goa:v1", "Polyworld GOTA base.bas:v1"]  # vanguard/nancy stand in for the hidden daveey policies
+TOP = ["aaron-gota-ir-coordinated-support-anchor-0916:v1", "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1", "relh-gods-of-the-arena:v154", "black-kite:v16", "red-kite:v34", "gota-g002:v1", "richard-gods-of-the-arena:v78"]  # rating order, 2026-09-18 07:40 UTC field
+LOW = ["gota-g003:v2", "gota-vanguard-rally-hold:v1", "khors:v1", "nancy-goa:v1", "Polyworld GOTA base.bas:v1"]  # vanguard/nancy stand in for the hidden daveey policies
 
 def realistic_roster(ref, rep, force_enemy=None, mate_top=None):
     """rep-th realistic roster: rosters depend only on rep, so two candidates run with the same --reps play identical rosters."""

@@ -1,0 +1,774 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v228",
+ "n": 3,
+ "requests": [
+  {
+   "id": "xreq_dad41c84-70b6-45e4-9362-d89c0421a256",
+   "seat": 0,
+   "rep": 0,
+   "roster": [
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1",
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "black-kite:v16",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78"
+   ]
+  },
+  {
+   "id": "xreq_39a8dbef-43f0-4b65-b208-643878bbed89",
+   "seat": 5,
+   "rep": 1,
+   "roster": [
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "relh-gods-of-the-arena:v154",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1"
+   ]
+  },
+  {
+   "id": "xreq_3150af6c-7c31-4219-87ed-0d3078f240d0",
+   "seat": 0,
+   "rep": 2,
+   "roster": [
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "Polyworld GOTA base.bas:v1",
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "black-kite:v16",
+    "red-kite:v34",
+    "richard-gods-of-the-arena:v78"
+   ]
+  },
+  {
+   "id": "xreq_cb3ea238-6fd2-4a03-b286-49427fa30982",
+   "seat": 5,
+   "rep": 3,
+   "roster": [
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "relh-gods-of-the-arena:v154",
+    "black-kite:v16",
+    "red-kite:v34",
+    "gota-g002:v1",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1"
+   ]
+  },
+  {
+   "id": "xreq_d1670e33-b2f2-4494-8d1e-7e30d9bfb6ce",
+   "seat": 0,
+   "rep": 4,
+   "roster": [
+    "gota-g003:v2",
+    "khors:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1",
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "black-kite:v16",
+    "red-kite:v34",
+    "gota-g002:v1"
+   ]
+  },
+  {
+   "id": "xreq_c39202a3-a214-432d-b5db-3f2239d51116",
+   "seat": 5,
+   "rep": 5,
+   "roster": [
+    "relh-gods-of-the-arena:v154",
+    "black-kite:v16",
+    "red-kite:v34",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78",
+    "gota-g003:v2",
+    "khors:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1"
+   ]
+  },
+  {
+   "id": "xreq_da901a51-5451-4373-a76d-e96f334a8d71",
+   "seat": 0,
+   "rep": 6,
+   "roster": [
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "nancy-goa:v1",
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "relh-gods-of-the-arena:v154",
+    "black-kite:v16",
+    "gota-g002:v1"
+   ]
+  },
+  {
+   "id": "xreq_3328f84d-427a-48d7-8926-6716607ea7b0",
+   "seat": 5,
+   "rep": 7,
+   "roster": [
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "black-kite:v16",
+    "red-kite:v34",
+    "richard-gods-of-the-arena:v78",
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "Polyworld GOTA base.bas:v1"
+   ]
+  },
+  {
+   "id": "xreq_6d3a47f0-9749-4707-a9d7-377b723b2140",
+   "seat": 0,
+   "rep": 8,
+   "roster": [
+    "gota-g003:v2",
+    "khors:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1",
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "relh-gods-of-the-arena:v154",
+    "black-kite:v16",
+    "red-kite:v34",
+    "richard-gods-of-the-arena:v78"
+   ]
+  },
+  {
+   "id": "xreq_193d173f-943a-4e6a-b340-093cfbb76e65",
+   "seat": 5,
+   "rep": 9,
+   "roster": [
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "relh-gods-of-the-arena:v154",
+    "black-kite:v16",
+    "gota-g002:v1",
+    "gota-g003:v2",
+    "khors:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1"
+   ]
+  },
+  {
+   "id": "xreq_e05551fa-a7fe-43fc-9021-964cd266435e",
+   "seat": 0,
+   "rep": 10,
+   "roster": [
+    "gota-g003:v2",
+    "khors:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1",
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "red-kite:v34",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78"
+   ]
+  },
+  {
+   "id": "xreq_f782f51b-0a09-4178-a1e3-731c53a43e6c",
+   "seat": 5,
+   "rep": 11,
+   "roster": [
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "relh-gods-of-the-arena:v154",
+    "black-kite:v16",
+    "red-kite:v34",
+    "richard-gods-of-the-arena:v78",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1"
+   ]
+  },
+  {
+   "id": "xreq_9aaf5052-0e3a-4a90-b4a2-1da8feb8d1cb",
+   "seat": 0,
+   "rep": 12,
+   "roster": [
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "Polyworld GOTA base.bas:v1",
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "relh-gods-of-the-arena:v154",
+    "black-kite:v16",
+    "gota-g002:v1"
+   ]
+  },
+  {
+   "id": "xreq_30945701-39a8-428c-8a50-c58af3d779c6",
+   "seat": 5,
+   "rep": 13,
+   "roster": [
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "relh-gods-of-the-arena:v154",
+    "black-kite:v16",
+    "red-kite:v34",
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1"
+   ]
+  },
+  {
+   "id": "xreq_6b6efddc-ea32-4af6-b6c5-9a523e50a594",
+   "seat": 0,
+   "rep": 14,
+   "roster": [
+    "gota-g003:v2",
+    "khors:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1",
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "relh-gods-of-the-arena:v154",
+    "red-kite:v34",
+    "gota-g002:v1"
+   ]
+  },
+  {
+   "id": "xreq_128cc34f-d5f4-45ea-9cab-d44df7eebb02",
+   "seat": 5,
+   "rep": 15,
+   "roster": [
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "relh-gods-of-the-arena:v154",
+    "black-kite:v16",
+    "red-kite:v34",
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "nancy-goa:v1"
+   ]
+  },
+  {
+   "id": "xreq_e941f838-2329-410a-9c88-e625140fcbee",
+   "seat": 0,
+   "rep": 16,
+   "roster": [
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "Polyworld GOTA base.bas:v1",
+    "relh-gods-of-the-arena:v154",
+    "black-kite:v16",
+    "red-kite:v34",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78"
+   ]
+  },
+  {
+   "id": "xreq_14ba2876-2aee-4660-93fd-f4b843220f87",
+   "seat": 5,
+   "rep": 17,
+   "roster": [
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "black-kite:v16",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78",
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "Polyworld GOTA base.bas:v1"
+   ]
+  },
+  {
+   "id": "xreq_730d8265-a3ef-4664-b3df-e9e848779ef7",
+   "seat": 0,
+   "rep": 18,
+   "roster": [
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "nancy-goa:v1",
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "relh-gods-of-the-arena:v154",
+    "black-kite:v16",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78"
+   ]
+  },
+  {
+   "id": "xreq_5b918205-41e8-4db8-bbb9-fb4b44d2fa9d",
+   "seat": 5,
+   "rep": 19,
+   "roster": [
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "relh-gods-of-the-arena:v154",
+    "black-kite:v16",
+    "richard-gods-of-the-arena:v78",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1"
+   ]
+  },
+  {
+   "id": "xreq_30004de7-ed53-4d1a-bf04-1e1641bf7b22",
+   "seat": 0,
+   "rep": 20,
+   "roster": [
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "Polyworld GOTA base.bas:v1",
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "relh-gods-of-the-arena:v154",
+    "black-kite:v16",
+    "red-kite:v34",
+    "richard-gods-of-the-arena:v78"
+   ]
+  },
+  {
+   "id": "xreq_23d660b8-804c-4ddb-9ac0-8057dd543a19",
+   "seat": 5,
+   "rep": 21,
+   "roster": [
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "black-kite:v16",
+    "red-kite:v34",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1"
+   ]
+  },
+  {
+   "id": "xreq_9068f6d7-56f2-4667-955f-ca83e2c287d9",
+   "seat": 0,
+   "rep": 22,
+   "roster": [
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "nancy-goa:v1",
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "relh-gods-of-the-arena:v154",
+    "black-kite:v16",
+    "red-kite:v34"
+   ]
+  },
+  {
+   "id": "xreq_11012a85-5e14-4455-97f6-ae6c3152e526",
+   "seat": 5,
+   "rep": 23,
+   "roster": [
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "black-kite:v16",
+    "red-kite:v34",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78",
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "nancy-goa:v1"
+   ]
+  },
+  {
+   "id": "xreq_08d6f542-6531-41c1-8ef3-e5fcbb768d27",
+   "seat": 0,
+   "rep": 24,
+   "roster": [
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "Polyworld GOTA base.bas:v1",
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "black-kite:v16",
+    "red-kite:v34",
+    "richard-gods-of-the-arena:v78"
+   ]
+  },
+  {
+   "id": "xreq_42bc4058-901d-4a7f-ad5a-917bad076485",
+   "seat": 5,
+   "rep": 25,
+   "roster": [
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "black-kite:v16",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1"
+   ]
+  },
+  {
+   "id": "xreq_a7e5a8b5-c668-475a-a8c8-c69c38b892a7",
+   "seat": 0,
+   "rep": 26,
+   "roster": [
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1",
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "relh-gods-of-the-arena:v154",
+    "black-kite:v16",
+    "red-kite:v34",
+    "gota-g002:v1"
+   ]
+  },
+  {
+   "id": "xreq_32ac3dda-a4bc-4b65-8335-965158412c01",
+   "seat": 5,
+   "rep": 27,
+   "roster": [
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "black-kite:v16",
+    "red-kite:v34",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78",
+    "gota-g003:v2",
+    "khors:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1"
+   ]
+  },
+  {
+   "id": "xreq_a34634cb-1d0f-4ae3-b263-d996efb067bd",
+   "seat": 0,
+   "rep": 28,
+   "roster": [
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1",
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "relh-gods-of-the-arena:v154",
+    "black-kite:v16",
+    "red-kite:v34",
+    "richard-gods-of-the-arena:v78"
+   ]
+  },
+  {
+   "id": "xreq_1a233ab6-ac2a-486d-aa4d-455fd44ecaed",
+   "seat": 5,
+   "rep": 29,
+   "roster": [
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "relh-gods-of-the-arena:v154",
+    "red-kite:v34",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1"
+   ]
+  },
+  {
+   "id": "xreq_6268c904-b06c-4ad5-b4ab-61d1510339c8",
+   "seat": 0,
+   "rep": 30,
+   "roster": [
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1",
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "relh-gods-of-the-arena:v154",
+    "black-kite:v16",
+    "red-kite:v34"
+   ]
+  },
+  {
+   "id": "xreq_326d2ae7-c4f4-494c-9e4f-d31d507c955d",
+   "seat": 5,
+   "rep": 31,
+   "roster": [
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "black-kite:v16",
+    "red-kite:v34",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78",
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "Polyworld GOTA base.bas:v1"
+   ]
+  },
+  {
+   "id": "xreq_036ff339-c5be-4ecb-9d02-4b34ca90cc60",
+   "seat": 0,
+   "rep": 32,
+   "roster": [
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1",
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "black-kite:v16",
+    "red-kite:v34",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78"
+   ]
+  },
+  {
+   "id": "xreq_5b88477e-7ec4-44b8-b78c-087784f1c354",
+   "seat": 5,
+   "rep": 33,
+   "roster": [
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "relh-gods-of-the-arena:v154",
+    "black-kite:v16",
+    "gota-g002:v1",
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1"
+   ]
+  },
+  {
+   "id": "xreq_f24a246c-5978-4f37-842d-dae2eed2a377",
+   "seat": 0,
+   "rep": 34,
+   "roster": [
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1",
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "black-kite:v16",
+    "red-kite:v34",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78"
+   ]
+  },
+  {
+   "id": "xreq_a25e7730-d6fe-432c-b138-efc7576206dd",
+   "seat": 5,
+   "rep": 35,
+   "roster": [
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "black-kite:v16",
+    "red-kite:v34",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78",
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1"
+   ]
+  },
+  {
+   "id": "xreq_036ab7f3-2faf-415d-a8b4-189881d6f062",
+   "seat": 0,
+   "rep": 36,
+   "roster": [
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "Polyworld GOTA base.bas:v1",
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "black-kite:v16",
+    "red-kite:v34",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78"
+   ]
+  },
+  {
+   "id": "xreq_6d59353b-ef65-48f7-94e3-2f638f704894",
+   "seat": 5,
+   "rep": 37,
+   "roster": [
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "black-kite:v16",
+    "red-kite:v34",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78",
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "nancy-goa:v1"
+   ]
+  },
+  {
+   "id": "xreq_ccc3629d-f7a3-4916-8cce-5dce75b0befd",
+   "seat": 0,
+   "rep": 38,
+   "roster": [
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "nancy-goa:v1",
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "relh-gods-of-the-arena:v154",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78"
+   ]
+  },
+  {
+   "id": "xreq_eeed0e11-ea1a-42c7-b191-94b26d38c9e6",
+   "seat": 5,
+   "rep": 39,
+   "roster": [
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "relh-gods-of-the-arena:v154",
+    "red-kite:v34",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78",
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1"
+   ]
+  },
+  {
+   "id": "xreq_c1fb6f10-f440-4d2a-8e5b-b3f3d894756c",
+   "seat": 0,
+   "rep": 40,
+   "roster": [
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "Polyworld GOTA base.bas:v1",
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "relh-gods-of-the-arena:v154",
+    "red-kite:v34",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78"
+   ]
+  },
+  {
+   "id": "xreq_ff2a43fc-9c82-4fd0-b0e2-dd4788d8b584",
+   "seat": 5,
+   "rep": 41,
+   "roster": [
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "black-kite:v16",
+    "red-kite:v34",
+    "richard-gods-of-the-arena:v78",
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "nancy-goa:v1"
+   ]
+  },
+  {
+   "id": "xreq_d19b4958-707a-4992-8f20-0aa04deb4e76",
+   "seat": 0,
+   "rep": 42,
+   "roster": [
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1",
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "relh-gods-of-the-arena:v154",
+    "gota-g002:v1",
+    "richard-gods-of-the-arena:v78"
+   ]
+  },
+  {
+   "id": "xreq_10db2443-b87d-44ba-b522-956b5164e6c0",
+   "seat": 5,
+   "rep": 43,
+   "roster": [
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "relh-gods-of-the-arena:v154",
+    "black-kite:v16",
+    "red-kite:v34",
+    "gota-g002:v1",
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "Polyworld GOTA base.bas:v1"
+   ]
+  },
+  {
+   "id": "xreq_e3b6d7e8-1b21-48c8-ba11-579681be828b",
+   "seat": 0,
+   "rep": 44,
+   "roster": [
+    "gota-g003:v2",
+    "khors:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1",
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "relh-gods-of-the-arena:v154",
+    "black-kite:v16",
+    "red-kite:v34",
+    "richard-gods-of-the-arena:v78"
+   ]
+  },
+  {
+   "id": "xreq_6fa5f338-b152-4a32-852c-7cf1132ec9ac",
+   "seat": 5,
+   "rep": 45,
+   "roster": [
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "black-kite:v16",
+    "red-kite:v34",
+    "gota-g002:v1",
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1"
+   ]
+  },
+  {
+   "id": "xreq_1997435d-129a-4d99-8e77-1b440957592c",
+   "seat": 0,
+   "rep": 46,
+   "roster": [
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1",
+    "khors:v1",
+    "Polyworld GOTA base.bas:v1",
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "black-kite:v16",
+    "red-kite:v34",
+    "richard-gods-of-the-arena:v78"
+   ]
+  },
+  {
+   "id": "xreq_df385adc-49f2-4b52-b686-0424f903e62e",
+   "seat": 5,
+   "rep": 47,
+   "roster": [
+    "aaron-gota-ir-coordinated-support-anchor-0916:v1",
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "relh-gods-of-the-arena:v154",
+    "black-kite:v16",
+    "gota-g002:v1",
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1"
+   ]
+  }
+ ]
+}
