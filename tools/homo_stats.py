@@ -5,7 +5,7 @@ usage: uv run python tools/homo_stats.py xp/homo-v209.json [...]
 Per (opponent, our side): games, wins, median length, each team's first tower/gate/guard/fort attack, heroes on the guards,
 physical-lane shares of each team's tower attacks, and dead time per hero (command gaps >= 40 ticks).
 """
-import json, pathlib, statistics, sys, urllib.request
+import json, os, pathlib, statistics, sys, urllib.request
 from collections import defaultdict, Counter
 from coworld.api_client import CoworldApiClient
 from softmax.auth import get_api_server
@@ -59,6 +59,10 @@ def main():
                     except Exception: win = -1
                     rows.append((win, game(rep)))
                 if not rows: print(f"  {short(r['opp']):26s} ours {'Red ' if r['side'] == 0 else 'Blue'}: no games"); continue
+                if os.environ.get("HOMO_EPISODES"):
+                    for w, g in rows:
+                        u = r["side"]; t = 1 - u; f = g[1]
+                        print(f"    ep {short(r['opp']):22s} {'Red ' if u == 0 else 'Blue'} win {w} ticks {g[0]:5d} | ours gate {f.get((u,'gate'),-1):5d} guard {f.get((u,'guard'),-1):5d} fort {f.get((u,'fort'),-1):5d} h{len(g[2][u])} | theirs gate {f.get((t,'gate'),-1):5d} guard {f.get((t,'guard'),-1):5d} fort {f.get((t,'fort'),-1):5d} h{len(g[2][t])}")
                 us = r["side"]; them = 1 - us
                 def med(k, team): v = [g[1].get((team, k), -1) for _, g in rows]; v = [x for x in v if x >= 0]; return f"{int(statistics.median(v)) if v else -1:5d}({len(v)}/{len(rows)})"
                 def lanes(team):
