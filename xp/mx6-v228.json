@@ -85,6 +85,102 @@
    "seat": 5,
    "opp": "richard-gods-of-the-arena:v78",
    "side": 1
+  },
+  {
+   "id": "xreq_f3040e0b-61dc-4bf4-931e-192d570c199d",
+   "seat": 0,
+   "opp": "relh-gods-of-the-arena:v133",
+   "side": 0
+  },
+  {
+   "id": "xreq_4cae12f8-a4e6-4575-a5b4-cde22cafe9fe",
+   "seat": 5,
+   "opp": "relh-gods-of-the-arena:v133",
+   "side": 1
+  },
+  {
+   "id": "xreq_1d3440bb-82cd-4d40-9e4e-d1878c3b4ba4",
+   "seat": 0,
+   "opp": "james-botts-gota:v13",
+   "side": 0
+  },
+  {
+   "id": "xreq_1b5f6f16-94f8-4e6b-825d-fd5b059ddd88",
+   "seat": 5,
+   "opp": "james-botts-gota:v13",
+   "side": 1
+  },
+  {
+   "id": "xreq_65e85a0d-afb6-4b21-b206-d59564bd7d38",
+   "seat": 0,
+   "opp": "khors:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_06054694-af60-4cca-b06f-d9fbde0e1884",
+   "seat": 5,
+   "opp": "khors:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_c943407e-5cb8-4232-be19-a7514c88a7ed",
+   "seat": 0,
+   "opp": "Polyworld GOTA base.bas:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_1181a80c-a409-4c0d-b9a4-9088ccdd19b3",
+   "seat": 5,
+   "opp": "Polyworld GOTA base.bas:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_0ea7421e-fb01-4c18-b5fb-595eb8c6728e",
+   "seat": 0,
+   "opp": "macromackie-gota:v4",
+   "side": 0
+  },
+  {
+   "id": "xreq_2995de69-f63e-4e68-b1c0-2bcf1cab1182",
+   "seat": 5,
+   "opp": "macromackie-gota:v4",
+   "side": 1
+  },
+  {
+   "id": "xreq_6cd20b10-03bd-4b35-8634-64460906bfc9",
+   "seat": 0,
+   "opp": "gota-codex-side-aware-team-secondary-20260917:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_b9e0a64f-c694-4bd6-aaa3-209ac614bbe9",
+   "seat": 5,
+   "opp": "gota-codex-side-aware-team-secondary-20260917:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_90ba9cd4-88ab-4533-8e8d-7e320f0d8e24",
+   "seat": 0,
+   "opp": "red-kite:v31",
+   "side": 0
+  },
+  {
+   "id": "xreq_63b4ae47-cb94-429f-8871-d60b8f2a7648",
+   "seat": 5,
+   "opp": "red-kite:v31",
+   "side": 1
+  },
+  {
+   "id": "xreq_9de08f9a-c42d-40b3-b9de-e9ca461bf832",
+   "seat": 0,
+   "opp": "black-kite:v15",
+   "side": 0
+  },
+  {
+   "id": "xreq_d20bb692-73c4-450f-aef3-a8d0d9ea338e",
+   "seat": 5,
+   "opp": "black-kite:v15",
+   "side": 1
   }
  ]
 }

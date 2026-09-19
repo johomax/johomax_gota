@@ -753,6 +753,22 @@
     "gota-g002:v1",
     "richard-gods-of-the-arena:v78"
    ]
+  },
+  {
+   "id": "xreq_b926e6a2-cba2-41fa-b0bd-d5233895fa56",
+   "seat": 5,
+   "rep": 47,
+   "roster": [
+    "aaron-gota-ir-perimeter-blue_repair-0916:v1",
+    "aaron-gota-ir-perimeter-blue_repair-0916-aaron:v1",
+    "black-kite:v16",
+    "red-kite:v29",
+    "gota-g002:v1",
+    "relh-gods-of-the-arena:v133",
+    "gota-vanguard-rally-hold:v1",
+    "nancy-goa:v1",
+    "Polyworld GOTA base.bas:v1"
+   ]
   }
  ]
 }
