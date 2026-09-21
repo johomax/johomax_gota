@@ -1,0 +1,54 @@
+{
+ "candidate": "relh-gods-of-the-arena:v159",
+ "n": 2,
+ "requests": [
+  {
+   "id": "xreq_671ea934-0078-4bb1-9706-750299ea11e7",
+   "seat": 0,
+   "opp": "richard-gods-of-the-arena:v135",
+   "side": 0
+  },
+  {
+   "id": "xreq_110359be-66ae-4840-9ac0-0d41ad4cbbb0",
+   "seat": 5,
+   "opp": "richard-gods-of-the-arena:v135",
+   "side": 1
+  },
+  {
+   "id": "xreq_e93dd8df-0816-440e-8f9b-7bc018643f56",
+   "seat": 0,
+   "opp": "nancy-goa:v2",
+   "side": 0
+  },
+  {
+   "id": "xreq_8cd8b485-4c03-40ac-9330-de3420af09f1",
+   "seat": 5,
+   "opp": "nancy-goa:v2",
+   "side": 1
+  },
+  {
+   "id": "xreq_352bf910-4cde-4978-ae7c-802b44cbc6d5",
+   "seat": 0,
+   "opp": "arena-codex-blue-hero-timing-20260921:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_09d5dbab-2fbf-4848-b329-e38229cec385",
+   "seat": 5,
+   "opp": "arena-codex-blue-hero-timing-20260921:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_f06de5f1-8cf0-4366-8d50-64b04dd75c0b",
+   "seat": 0,
+   "opp": "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_964f88cc-702f-4cbc-97ba-b25e06288fcd",
+   "seat": 5,
+   "opp": "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+   "side": 1
+  }
+ ]
+}

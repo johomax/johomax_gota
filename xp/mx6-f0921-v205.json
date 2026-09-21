@@ -1,0 +1,54 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v205",
+ "n": 6,
+ "requests": [
+  {
+   "id": "xreq_60d8e9f3-a8b4-4241-a612-8ba874bca68f",
+   "seat": 0,
+   "opp": "relh-gods-of-the-arena:v159",
+   "side": 0
+  },
+  {
+   "id": "xreq_693853db-4a78-46c5-9ef8-d6df48bbd181",
+   "seat": 5,
+   "opp": "relh-gods-of-the-arena:v159",
+   "side": 1
+  },
+  {
+   "id": "xreq_565f7474-21c8-4789-a2ac-1d3246d4d834",
+   "seat": 0,
+   "opp": "richard-gods-of-the-arena:v135",
+   "side": 0
+  },
+  {
+   "id": "xreq_3320ca10-17a6-4e12-a916-dd7f9fc80bd4",
+   "seat": 5,
+   "opp": "richard-gods-of-the-arena:v135",
+   "side": 1
+  },
+  {
+   "id": "xreq_91894729-ebd0-427e-a4be-aaadf6757b70",
+   "seat": 0,
+   "opp": "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_0e592f2d-7ec5-4c32-b3eb-5d9f7ed95d1e",
+   "seat": 5,
+   "opp": "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_17beaf4f-c358-475b-826e-a5df2436e1a6",
+   "seat": 0,
+   "opp": "arena-codex-blue-hero-timing-20260921:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_4f0df230-0f16-4f1c-ace9-a7ba146b67ff",
+   "seat": 5,
+   "opp": "arena-codex-blue-hero-timing-20260921:v1",
+   "side": 1
+  }
+ ]
+}
