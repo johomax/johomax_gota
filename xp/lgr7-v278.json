@@ -1,0 +1,774 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v278",
+ "n": 3,
+ "requests": [
+  {
+   "id": "xreq_30864e91-ad9f-4f0a-b369-f464d35eb63e",
+   "seat": 0,
+   "rep": 0,
+   "roster": [
+    "nancy-goa:v2",
+    "black-kite:v16",
+    "gota-g002:v1",
+    "gota-g003:v2",
+    "relh-gods-of-the-arena:v159",
+    "richard-gods-of-the-arena:v135",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "macromackie-gota:v4",
+    "red-kite:v34"
+   ]
+  },
+  {
+   "id": "xreq_5432f48a-fb5f-4364-bafc-d8d8904e0b81",
+   "seat": 5,
+   "rep": 1,
+   "roster": [
+    "relh-gods-of-the-arena:v159",
+    "richard-gods-of-the-arena:v135",
+    "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+    "macromackie-gota:v4",
+    "red-kite:v34",
+    "black-kite:v16",
+    "gota-g002:v1",
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1"
+   ]
+  },
+  {
+   "id": "xreq_68d07fc0-acb1-415b-a276-aaf06dcf5a00",
+   "seat": 0,
+   "rep": 2,
+   "roster": [
+    "nancy-goa:v2",
+    "black-kite:v16",
+    "gota-g002:v1",
+    "gota-g003:v2",
+    "relh-gods-of-the-arena:v159",
+    "richard-gods-of-the-arena:v135",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "red-kite:v34"
+   ]
+  },
+  {
+   "id": "xreq_e8c9c965-41b3-424b-8669-e164b6c657f4",
+   "seat": 5,
+   "rep": 3,
+   "roster": [
+    "richard-gods-of-the-arena:v135",
+    "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "macromackie-gota:v4",
+    "black-kite:v16",
+    "gota-g003:v2",
+    "khors:v1",
+    "gota-vanguard-rally-hold:v1"
+   ]
+  },
+  {
+   "id": "xreq_4fe38a00-ea36-4356-96f1-41ead341ae5f",
+   "seat": 0,
+   "rep": 4,
+   "roster": [
+    "nancy-goa:v2",
+    "black-kite:v16",
+    "gota-g002:v1",
+    "gota-vanguard-rally-hold:v1",
+    "relh-gods-of-the-arena:v159",
+    "richard-gods-of-the-arena:v135",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "macromackie-gota:v4"
+   ]
+  },
+  {
+   "id": "xreq_84670518-f86f-4ca1-9a1b-fdd897f384ac",
+   "seat": 5,
+   "rep": 5,
+   "roster": [
+    "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "macromackie-gota:v4",
+    "red-kite:v34",
+    "gota-g002:v1",
+    "gota-g003:v2",
+    "khors:v1",
+    "gota-vanguard-rally-hold:v1"
+   ]
+  },
+  {
+   "id": "xreq_793ef42e-b675-43d6-80eb-3bbf2327a535",
+   "seat": 0,
+   "rep": 6,
+   "roster": [
+    "black-kite:v16",
+    "gota-g002:v1",
+    "gota-g003:v2",
+    "khors:v1",
+    "relh-gods-of-the-arena:v159",
+    "richard-gods-of-the-arena:v135",
+    "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "macromackie-gota:v4"
+   ]
+  },
+  {
+   "id": "xreq_2e04b836-7b1c-45f7-8ca8-9f381b120341",
+   "seat": 5,
+   "rep": 7,
+   "roster": [
+    "relh-gods-of-the-arena:v159",
+    "richard-gods-of-the-arena:v135",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "red-kite:v34",
+    "black-kite:v16",
+    "gota-g002:v1",
+    "khors:v1",
+    "gota-vanguard-rally-hold:v1"
+   ]
+  },
+  {
+   "id": "xreq_d7515105-28c4-4cac-82db-8a0f97bc4039",
+   "seat": 0,
+   "rep": 8,
+   "roster": [
+    "nancy-goa:v2",
+    "black-kite:v16",
+    "gota-g002:v1",
+    "gota-vanguard-rally-hold:v1",
+    "relh-gods-of-the-arena:v159",
+    "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "red-kite:v34"
+   ]
+  },
+  {
+   "id": "xreq_fb2364b4-db52-484a-bfa3-6a0bd003578d",
+   "seat": 5,
+   "rep": 9,
+   "roster": [
+    "relh-gods-of-the-arena:v159",
+    "richard-gods-of-the-arena:v135",
+    "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "macromackie-gota:v4",
+    "black-kite:v16",
+    "gota-g002:v1",
+    "gota-g003:v2",
+    "khors:v1"
+   ]
+  },
+  {
+   "id": "xreq_58ad06f7-7cad-44eb-805c-e5c284ef0767",
+   "seat": 0,
+   "rep": 10,
+   "roster": [
+    "nancy-goa:v2",
+    "black-kite:v16",
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1",
+    "relh-gods-of-the-arena:v159",
+    "richard-gods-of-the-arena:v135",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "macromackie-gota:v4",
+    "red-kite:v34"
+   ]
+  },
+  {
+   "id": "xreq_a9ba3bb5-c7bb-43ce-944d-90d52fa64b68",
+   "seat": 5,
+   "rep": 11,
+   "roster": [
+    "relh-gods-of-the-arena:v159",
+    "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "red-kite:v34",
+    "gota-g002:v1",
+    "gota-g003:v2",
+    "khors:v1",
+    "gota-vanguard-rally-hold:v1"
+   ]
+  },
+  {
+   "id": "xreq_cef93ec0-b0d9-4691-81f6-18a6f9a5c477",
+   "seat": 0,
+   "rep": 12,
+   "roster": [
+    "nancy-goa:v2",
+    "black-kite:v16",
+    "gota-g002:v1",
+    "khors:v1",
+    "relh-gods-of-the-arena:v159",
+    "richard-gods-of-the-arena:v135",
+    "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "macromackie-gota:v4"
+   ]
+  },
+  {
+   "id": "xreq_356373cc-1542-4613-b9c3-7a7a22a3e18c",
+   "seat": 5,
+   "rep": 13,
+   "roster": [
+    "relh-gods-of-the-arena:v159",
+    "richard-gods-of-the-arena:v135",
+    "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "nancy-goa:v2",
+    "black-kite:v16",
+    "gota-g003:v2",
+    "khors:v1"
+   ]
+  },
+  {
+   "id": "xreq_cc925b05-da6a-422e-934a-44b01902b205",
+   "seat": 0,
+   "rep": 14,
+   "roster": [
+    "black-kite:v16",
+    "gota-g003:v2",
+    "khors:v1",
+    "gota-vanguard-rally-hold:v1",
+    "relh-gods-of-the-arena:v159",
+    "richard-gods-of-the-arena:v135",
+    "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "macromackie-gota:v4"
+   ]
+  },
+  {
+   "id": "xreq_986aafa1-6b80-450a-8c1d-f3869ecac1aa",
+   "seat": 5,
+   "rep": 15,
+   "roster": [
+    "relh-gods-of-the-arena:v159",
+    "richard-gods-of-the-arena:v135",
+    "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "black-kite:v16",
+    "gota-g002:v1",
+    "gota-g003:v2",
+    "khors:v1"
+   ]
+  },
+  {
+   "id": "xreq_25bd957b-0d66-41b5-9b3d-92bbe84dded4",
+   "seat": 0,
+   "rep": 16,
+   "roster": [
+    "nancy-goa:v2",
+    "black-kite:v16",
+    "khors:v1",
+    "gota-vanguard-rally-hold:v1",
+    "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "macromackie-gota:v4",
+    "red-kite:v34"
+   ]
+  },
+  {
+   "id": "xreq_aa49de2f-83f5-4308-925d-772c2a03ed08",
+   "seat": 5,
+   "rep": 17,
+   "roster": [
+    "relh-gods-of-the-arena:v159",
+    "richard-gods-of-the-arena:v135",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "macromackie-gota:v4",
+    "red-kite:v34",
+    "nancy-goa:v2",
+    "black-kite:v16",
+    "gota-g002:v1",
+    "gota-vanguard-rally-hold:v1"
+   ]
+  },
+  {
+   "id": "xreq_379c20c6-d076-40f1-a149-2046cba881a5",
+   "seat": 0,
+   "rep": 18,
+   "roster": [
+    "nancy-goa:v2",
+    "black-kite:v16",
+    "gota-g002:v1",
+    "khors:v1",
+    "relh-gods-of-the-arena:v159",
+    "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "macromackie-gota:v4",
+    "red-kite:v34"
+   ]
+  },
+  {
+   "id": "xreq_dabc4051-73d5-4fb2-8a28-cd5947c27d24",
+   "seat": 5,
+   "rep": 19,
+   "roster": [
+    "relh-gods-of-the-arena:v159",
+    "richard-gods-of-the-arena:v135",
+    "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "red-kite:v34",
+    "black-kite:v16",
+    "gota-g003:v2",
+    "khors:v1",
+    "gota-vanguard-rally-hold:v1"
+   ]
+  },
+  {
+   "id": "xreq_9f4ea60f-99dc-407e-8df3-7389b4662924",
+   "seat": 0,
+   "rep": 20,
+   "roster": [
+    "black-kite:v16",
+    "gota-g002:v1",
+    "khors:v1",
+    "gota-vanguard-rally-hold:v1",
+    "relh-gods-of-the-arena:v159",
+    "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "red-kite:v34"
+   ]
+  },
+  {
+   "id": "xreq_da113ee6-c22b-4c25-b718-215ce44b477d",
+   "seat": 5,
+   "rep": 21,
+   "roster": [
+    "richard-gods-of-the-arena:v135",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "macromackie-gota:v4",
+    "red-kite:v34",
+    "gota-g002:v1",
+    "gota-g003:v2",
+    "khors:v1",
+    "gota-vanguard-rally-hold:v1"
+   ]
+  },
+  {
+   "id": "xreq_a83d913f-ebcb-4278-b76b-45e9e9730fc5",
+   "seat": 0,
+   "rep": 22,
+   "roster": [
+    "nancy-goa:v2",
+    "gota-g002:v1",
+    "gota-g003:v2",
+    "khors:v1",
+    "relh-gods-of-the-arena:v159",
+    "richard-gods-of-the-arena:v135",
+    "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "arena-codex-blue-hero-timing-20260921:v1"
+   ]
+  },
+  {
+   "id": "xreq_856280fe-a9d1-4de4-9ba2-156f331ec1e3",
+   "seat": 5,
+   "rep": 23,
+   "roster": [
+    "relh-gods-of-the-arena:v159",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "macromackie-gota:v4",
+    "red-kite:v34",
+    "nancy-goa:v2",
+    "gota-g002:v1",
+    "gota-g003:v2",
+    "khors:v1"
+   ]
+  },
+  {
+   "id": "xreq_5b7fb086-94fa-46e7-bd16-884eebb49af6",
+   "seat": 0,
+   "rep": 24,
+   "roster": [
+    "nancy-goa:v2",
+    "gota-g002:v1",
+    "gota-g003:v2",
+    "khors:v1",
+    "relh-gods-of-the-arena:v159",
+    "richard-gods-of-the-arena:v135",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "red-kite:v34"
+   ]
+  },
+  {
+   "id": "xreq_c8c4e11a-ac44-4540-812d-69fffa3a7f54",
+   "seat": 5,
+   "rep": 25,
+   "roster": [
+    "relh-gods-of-the-arena:v159",
+    "richard-gods-of-the-arena:v135",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "macromackie-gota:v4",
+    "red-kite:v34",
+    "black-kite:v16",
+    "gota-g002:v1",
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1"
+   ]
+  },
+  {
+   "id": "xreq_53b77c29-0853-49c7-a3bb-971c9d8eecf7",
+   "seat": 0,
+   "rep": 26,
+   "roster": [
+    "black-kite:v16",
+    "gota-g002:v1",
+    "gota-g003:v2",
+    "khors:v1",
+    "relh-gods-of-the-arena:v159",
+    "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "macromackie-gota:v4"
+   ]
+  },
+  {
+   "id": "xreq_f2510701-4b26-4783-b6ef-f9d673e31a22",
+   "seat": 5,
+   "rep": 27,
+   "roster": [
+    "relh-gods-of-the-arena:v159",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "macromackie-gota:v4",
+    "red-kite:v34",
+    "nancy-goa:v2",
+    "gota-g002:v1",
+    "gota-g003:v2",
+    "khors:v1"
+   ]
+  },
+  {
+   "id": "xreq_be39b86c-53cd-4a4b-a8de-ddffcc041094",
+   "seat": 0,
+   "rep": 28,
+   "roster": [
+    "nancy-goa:v2",
+    "gota-g002:v1",
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1",
+    "relh-gods-of-the-arena:v159",
+    "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "red-kite:v34"
+   ]
+  },
+  {
+   "id": "xreq_e5b120dd-98ee-41f9-a295-f0753c6b5e6b",
+   "seat": 5,
+   "rep": 29,
+   "roster": [
+    "richard-gods-of-the-arena:v135",
+    "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "macromackie-gota:v4",
+    "red-kite:v34",
+    "black-kite:v16",
+    "gota-g003:v2",
+    "khors:v1",
+    "gota-vanguard-rally-hold:v1"
+   ]
+  },
+  {
+   "id": "xreq_2cd71cd7-53bd-44b9-a757-bea478ae7235",
+   "seat": 0,
+   "rep": 30,
+   "roster": [
+    "nancy-goa:v2",
+    "black-kite:v16",
+    "gota-g003:v2",
+    "khors:v1",
+    "relh-gods-of-the-arena:v159",
+    "richard-gods-of-the-arena:v135",
+    "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "arena-codex-blue-hero-timing-20260921:v1"
+   ]
+  },
+  {
+   "id": "xreq_9b17c2b2-f875-41ea-ade6-ee6662812d33",
+   "seat": 5,
+   "rep": 31,
+   "roster": [
+    "relh-gods-of-the-arena:v159",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "macromackie-gota:v4",
+    "red-kite:v34",
+    "nancy-goa:v2",
+    "black-kite:v16",
+    "gota-g002:v1",
+    "gota-vanguard-rally-hold:v1"
+   ]
+  },
+  {
+   "id": "xreq_5a9969f6-56ca-4406-8b66-5f6331503f90",
+   "seat": 0,
+   "rep": 32,
+   "roster": [
+    "black-kite:v16",
+    "gota-g002:v1",
+    "gota-g003:v2",
+    "khors:v1",
+    "relh-gods-of-the-arena:v159",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "macromackie-gota:v4",
+    "red-kite:v34"
+   ]
+  },
+  {
+   "id": "xreq_34cdc841-80e2-45ff-b7a9-f970d4cc648a",
+   "seat": 5,
+   "rep": 33,
+   "roster": [
+    "relh-gods-of-the-arena:v159",
+    "richard-gods-of-the-arena:v135",
+    "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "macromackie-gota:v4",
+    "nancy-goa:v2",
+    "black-kite:v16",
+    "khors:v1",
+    "gota-vanguard-rally-hold:v1"
+   ]
+  },
+  {
+   "id": "xreq_2523d9ff-e810-4be3-9489-f7b183eee1d4",
+   "seat": 0,
+   "rep": 34,
+   "roster": [
+    "nancy-goa:v2",
+    "black-kite:v16",
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1",
+    "relh-gods-of-the-arena:v159",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "macromackie-gota:v4",
+    "red-kite:v34"
+   ]
+  },
+  {
+   "id": "xreq_6dcdf37d-24b4-4961-b764-5663c9d201a5",
+   "seat": 5,
+   "rep": 35,
+   "roster": [
+    "richard-gods-of-the-arena:v135",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "macromackie-gota:v4",
+    "red-kite:v34",
+    "nancy-goa:v2",
+    "black-kite:v16",
+    "khors:v1",
+    "gota-vanguard-rally-hold:v1"
+   ]
+  },
+  {
+   "id": "xreq_bb2af136-f59f-4fc9-a94c-88458b88fa8a",
+   "seat": 0,
+   "rep": 36,
+   "roster": [
+    "nancy-goa:v2",
+    "gota-g002:v1",
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1",
+    "relh-gods-of-the-arena:v159",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "macromackie-gota:v4",
+    "red-kite:v34"
+   ]
+  },
+  {
+   "id": "xreq_dee8e599-562e-4311-8183-3d384ce28a80",
+   "seat": 5,
+   "rep": 37,
+   "roster": [
+    "relh-gods-of-the-arena:v159",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "macromackie-gota:v4",
+    "red-kite:v34",
+    "nancy-goa:v2",
+    "gota-g002:v1",
+    "gota-g003:v2",
+    "khors:v1"
+   ]
+  },
+  {
+   "id": "xreq_c5bf2d6c-e5c6-4b0f-a9de-9bed9556b195",
+   "seat": 0,
+   "rep": 38,
+   "roster": [
+    "nancy-goa:v2",
+    "black-kite:v16",
+    "gota-g002:v1",
+    "gota-g003:v2",
+    "relh-gods-of-the-arena:v159",
+    "richard-gods-of-the-arena:v135",
+    "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+    "macromackie-gota:v4",
+    "red-kite:v34"
+   ]
+  },
+  {
+   "id": "xreq_28648bf0-2343-47b4-898f-9c95c74b8b85",
+   "seat": 5,
+   "rep": 39,
+   "roster": [
+    "richard-gods-of-the-arena:v135",
+    "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "macromackie-gota:v4",
+    "red-kite:v34",
+    "nancy-goa:v2",
+    "black-kite:v16",
+    "gota-g003:v2",
+    "gota-vanguard-rally-hold:v1"
+   ]
+  },
+  {
+   "id": "xreq_35ffaca2-f145-44f1-9ee0-0c8a2343bb2f",
+   "seat": 0,
+   "rep": 40,
+   "roster": [
+    "nancy-goa:v2",
+    "black-kite:v16",
+    "gota-g002:v1",
+    "gota-vanguard-rally-hold:v1",
+    "richard-gods-of-the-arena:v135",
+    "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "macromackie-gota:v4",
+    "red-kite:v34"
+   ]
+  },
+  {
+   "id": "xreq_5709de26-975f-4f30-9997-00f67390a91c",
+   "seat": 5,
+   "rep": 41,
+   "roster": [
+    "relh-gods-of-the-arena:v159",
+    "richard-gods-of-the-arena:v135",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "red-kite:v34",
+    "nancy-goa:v2",
+    "black-kite:v16",
+    "gota-g002:v1",
+    "gota-vanguard-rally-hold:v1"
+   ]
+  },
+  {
+   "id": "xreq_1b5ec871-3185-40f1-86d1-b6dbabba4a2b",
+   "seat": 0,
+   "rep": 42,
+   "roster": [
+    "black-kite:v16",
+    "gota-g002:v1",
+    "gota-g003:v2",
+    "khors:v1",
+    "relh-gods-of-the-arena:v159",
+    "richard-gods-of-the-arena:v135",
+    "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+    "macromackie-gota:v4",
+    "red-kite:v34"
+   ]
+  },
+  {
+   "id": "xreq_c2a0de0e-bded-4694-b977-9d2e6dade1ec",
+   "seat": 5,
+   "rep": 43,
+   "roster": [
+    "relh-gods-of-the-arena:v159",
+    "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "macromackie-gota:v4",
+    "nancy-goa:v2",
+    "black-kite:v16",
+    "khors:v1",
+    "gota-vanguard-rally-hold:v1"
+   ]
+  },
+  {
+   "id": "xreq_4d1e3b7a-7371-4934-adac-cc29d9fa7618",
+   "seat": 0,
+   "rep": 44,
+   "roster": [
+    "nancy-goa:v2",
+    "gota-g003:v2",
+    "khors:v1",
+    "gota-vanguard-rally-hold:v1",
+    "richard-gods-of-the-arena:v135",
+    "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "red-kite:v34"
+   ]
+  },
+  {
+   "id": "xreq_e388d74d-0c22-4145-9bee-dff0168f15f6",
+   "seat": 5,
+   "rep": 45,
+   "roster": [
+    "relh-gods-of-the-arena:v159",
+    "richard-gods-of-the-arena:v135",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "macromackie-gota:v4",
+    "nancy-goa:v2",
+    "black-kite:v16",
+    "gota-g003:v2",
+    "khors:v1"
+   ]
+  },
+  {
+   "id": "xreq_705624f1-7170-42d3-80fe-6808a68e9685",
+   "seat": 0,
+   "rep": 46,
+   "roster": [
+    "nancy-goa:v2",
+    "black-kite:v16",
+    "gota-g002:v1",
+    "khors:v1",
+    "relh-gods-of-the-arena:v159",
+    "richard-gods-of-the-arena:v135",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "arena-codex-blue-hero-timing-20260921:v1",
+    "red-kite:v34"
+   ]
+  },
+  {
+   "id": "xreq_2db7b4be-14d7-4cd0-89ec-2663f6b4364d",
+   "seat": 5,
+   "rep": 47,
+   "roster": [
+    "relh-gods-of-the-arena:v159",
+    "richard-gods-of-the-arena:v135",
+    "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+    "aaron-gota-ir-formation-profile-pruned-0920:v1",
+    "macromackie-gota:v4",
+    "black-kite:v16",
+    "gota-g003:v2",
+    "khors:v1",
+    "gota-vanguard-rally-hold:v1"
+   ]
+  }
+ ]
+}

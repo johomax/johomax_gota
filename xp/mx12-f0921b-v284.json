@@ -1,0 +1,42 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v284",
+ "n": 12,
+ "requests": [
+  {
+   "id": "xreq_4fedbc3f-364c-476f-93fb-f059e1018667",
+   "seat": 0,
+   "opp": "black-kite:v16",
+   "side": 0
+  },
+  {
+   "id": "xreq_8fe8e61b-d203-49a8-8072-9572d79aa2e4",
+   "seat": 5,
+   "opp": "black-kite:v16",
+   "side": 1
+  },
+  {
+   "id": "xreq_10a5ceb2-6113-4a31-aa89-47041e9d4b71",
+   "seat": 0,
+   "opp": "red-kite:v34",
+   "side": 0
+  },
+  {
+   "id": "xreq_6b86c1b8-a7df-4060-98cd-0101aadd556a",
+   "seat": 5,
+   "opp": "red-kite:v34",
+   "side": 1
+  },
+  {
+   "id": "xreq_c6d1c389-24fb-449a-aedd-02c8afcc559e",
+   "seat": 0,
+   "opp": "aaron-gota-ir-formation-profile-pruned-0920:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_a3885855-f598-41c2-9ad6-451a92fc4034",
+   "seat": 5,
+   "opp": "aaron-gota-ir-formation-profile-pruned-0920:v1",
+   "side": 1
+  }
+ ]
+}
