@@ -1,0 +1,102 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v278",
+ "n": 2,
+ "requests": [
+  {
+   "id": "xreq_4c1fc855-cd70-45e1-939a-e2fd395c4a02",
+   "seat": 0,
+   "opp": "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_5c031cf9-34ef-44c2-b487-de3e26dc6571",
+   "seat": 5,
+   "opp": "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_2d771502-e4a9-4e63-bc35-8b76003c6531",
+   "seat": 0,
+   "opp": "aaron-gota-ir-formation-profile-pruned-0920:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_418b93c4-ec0f-4aad-9cc9-8b7750707ea8",
+   "seat": 5,
+   "opp": "aaron-gota-ir-formation-profile-pruned-0920:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_652b44df-d951-477a-99ba-88c32797bb4d",
+   "seat": 0,
+   "opp": "arena-codex-blue-hero-timing-20260921:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_4dfd909d-1a38-430b-878f-2aa404dd8da9",
+   "seat": 5,
+   "opp": "arena-codex-blue-hero-timing-20260921:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_71765f2e-5428-4b00-a31a-b62e16e77451",
+   "seat": 0,
+   "opp": "black-kite:v16",
+   "side": 0
+  },
+  {
+   "id": "xreq_a9234cd8-247f-4a3c-88c6-3ee756a84c1e",
+   "seat": 5,
+   "opp": "black-kite:v16",
+   "side": 1
+  },
+  {
+   "id": "xreq_685de2db-e512-44f4-aa68-882a3703f61a",
+   "seat": 0,
+   "opp": "gota-g002:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_2b148e2f-b31d-4404-b5ed-dc9a49743912",
+   "seat": 5,
+   "opp": "gota-g002:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_61d00e90-46c5-4c9f-ad9a-1f3866076371",
+   "seat": 0,
+   "opp": "gota-g003:v2",
+   "side": 0
+  },
+  {
+   "id": "xreq_5785c130-9132-47d7-81da-da3765b6a93a",
+   "seat": 5,
+   "opp": "gota-g003:v2",
+   "side": 1
+  },
+  {
+   "id": "xreq_465df5d2-cfd6-45fb-9a3b-18b48b229595",
+   "seat": 0,
+   "opp": "macromackie-gota:v4",
+   "side": 0
+  },
+  {
+   "id": "xreq_348cde85-af0f-4470-981e-53666099ccae",
+   "seat": 5,
+   "opp": "macromackie-gota:v4",
+   "side": 1
+  },
+  {
+   "id": "xreq_6e714349-0fce-4c91-b840-4e0654bb36f9",
+   "seat": 0,
+   "opp": "nancy-goa:v2",
+   "side": 0
+  },
+  {
+   "id": "xreq_14564d4d-a29e-441e-ad4d-9606a6a2544c",
+   "seat": 5,
+   "opp": "nancy-goa:v2",
+   "side": 1
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v286",
+ "n": 1,
+ "requests": [
+  {
+   "id": "xreq_6c9aabc6-ab46-40e1-b4f1-ecb62c4397cc",
+   "seat": 0,
+   "opp": "relh-gods-of-the-arena:v159",
+   "side": 0
+  },
+  {
+   "id": "xreq_cf76e1c2-ca3b-4382-89e9-599f9e61cc8b",
+   "seat": 5,
+   "opp": "relh-gods-of-the-arena:v159",
+   "side": 1
+  },
+  {
+   "id": "xreq_f4b8fc96-5206-42ef-898a-0dd9debf9e8d",
+   "seat": 0,
+   "opp": "richard-gods-of-the-arena:v135",
+   "side": 0
+  },
+  {
+   "id": "xreq_9ed073d9-95c3-4761-8085-5de5fbc9f6bb",
+   "seat": 5,
+   "opp": "richard-gods-of-the-arena:v135",
+   "side": 1
+  },
+  {
+   "id": "xreq_ee6a627f-ee65-4ead-a1f3-5689a60f23e1",
+   "seat": 0,
+   "opp": "arena-codex-blue-hero-timing-20260921:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_f4757830-b3c9-4fc1-81e3-fa078c31d3dc",
+   "seat": 5,
+   "opp": "arena-codex-blue-hero-timing-20260921:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_ceaa0c0c-e243-4e13-82b4-0bc782ece2e3",
+   "seat": 0,
+   "opp": "nancy-goa:v2",
+   "side": 0
+  },
+  {
+   "id": "xreq_92590d03-d679-4027-af40-d4201cdaf264",
+   "seat": 5,
+   "opp": "nancy-goa:v2",
+   "side": 1
+  },
+  {
+   "id": "xreq_a5860faf-4e5d-4fe2-b110-886e8b13f9de",
+   "seat": 0,
+   "opp": "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_3125955f-36fa-4b37-bcb9-d4362f2968b3",
+   "seat": 5,
+   "opp": "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+   "side": 1
+  }
+ ]
+}

@@ -1,0 +1,102 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v288",
+ "n": 2,
+ "requests": [
+  {
+   "id": "xreq_9cfb0ec3-dcaf-4970-91da-3b9d98d6fc5d",
+   "seat": 0,
+   "opp": "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_1370f567-56ae-4a55-9ece-bfd707dc4b0f",
+   "seat": 5,
+   "opp": "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_aab9159c-9db2-4bee-bb6d-ee8a1749c9fb",
+   "seat": 0,
+   "opp": "arena-codex-blue-hero-timing-20260921:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_58519837-b5e4-4d6e-9191-f84ca9b6acbd",
+   "seat": 5,
+   "opp": "arena-codex-blue-hero-timing-20260921:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_d0b8fb9f-11b8-48f0-8e62-2548dea2f9cf",
+   "seat": 0,
+   "opp": "nancy-goa:v2",
+   "side": 0
+  },
+  {
+   "id": "xreq_a64964b4-25ee-43ea-803e-fe41c3bb73b6",
+   "seat": 5,
+   "opp": "nancy-goa:v2",
+   "side": 1
+  },
+  {
+   "id": "xreq_2fbad734-93c1-4fb6-828d-88b06fdffeb6",
+   "seat": 0,
+   "opp": "gota-g003:v2",
+   "side": 0
+  },
+  {
+   "id": "xreq_f4534172-0bc5-4241-8f2c-cafc1685c69d",
+   "seat": 5,
+   "opp": "gota-g003:v2",
+   "side": 1
+  },
+  {
+   "id": "xreq_69bdc9e5-12bc-46b2-8553-5a0b188eea5a",
+   "seat": 0,
+   "opp": "khors:v2",
+   "side": 0
+  },
+  {
+   "id": "xreq_69d9cb22-0d31-45d4-9c7a-df3a41f34fdc",
+   "seat": 5,
+   "opp": "khors:v2",
+   "side": 1
+  },
+  {
+   "id": "xreq_f2be8dce-5ae6-4891-b475-1dcaf4a0408a",
+   "seat": 0,
+   "opp": "macromackie-gota:v4",
+   "side": 0
+  },
+  {
+   "id": "xreq_f6b49ab1-4e18-4af4-b95a-5a1851bcfe17",
+   "seat": 5,
+   "opp": "macromackie-gota:v4",
+   "side": 1
+  },
+  {
+   "id": "xreq_7749381b-de5f-467d-a48a-72d2bfd2376f",
+   "seat": 0,
+   "opp": "relh-gods-of-the-arena:v159",
+   "side": 0
+  },
+  {
+   "id": "xreq_ca199177-59ab-4bf0-b785-a30adf483ab1",
+   "seat": 5,
+   "opp": "relh-gods-of-the-arena:v159",
+   "side": 1
+  },
+  {
+   "id": "xreq_bca6c310-894b-4c56-bdb1-c37799bca5d1",
+   "seat": 0,
+   "opp": "black-kite:v16",
+   "side": 0
+  },
+  {
+   "id": "xreq_91cc915c-4cf7-4105-a07a-1da35f3fe459",
+   "seat": 5,
+   "opp": "black-kite:v16",
+   "side": 1
+  }
+ ]
+}
