@@ -1,0 +1,20 @@
+== xp/sc2-v300.json
+  khors:v2                           Red  n2 ours    989 theirs    304 steps  24788
+  khors:v2                           Blue n2 ours   1061 theirs    106 steps  28909
+  Polyworld GOTA base.bas:v2         Red  n2 ours   1558 theirs      0 steps  28909
+  Polyworld GOTA base.bas:v2         Blue n2 ours   1010 theirs    349 steps  22416
+  games-bond-gota:v6                 Red  n2 ours   1187 theirs      0 steps  22467
+  games-bond-gota:v6                 Blue n2 ours    821 theirs      0 steps  24922
+  gota-g003:v2                       Red  n2 ours   1990 theirs      0 steps  30049
+  gota-g003:v2                       Blue n2 ours   2120 theirs      0 steps  30049
+  arena-codex-secondary-attack-timin Red  n2 ours   1766 theirs      0 steps  28603
+  arena-codex-secondary-attack-timin Blue n2 ours   1507 theirs     21 steps  28410
+  nancy-goa:v2                       Red  n2 ours   1644 theirs      0 steps  30049
+  nancy-goa:v2                       Blue n2 ours   1697 theirs      0 steps  30049
+  black-kite:v16                     Red  n2 ours    890 theirs      0 steps  27215
+  black-kite:v16                     Blue n2 ours    781 theirs      0 steps  24389
+  relh-gods-of-the-arena:v159        Red  n2 ours    344 theirs      0 steps  28575
+  relh-gods-of-the-arena:v159        Blue n2 ours    526 theirs      0 steps  24502
+  Jordan-ply_bcb80069-fb0c-4ba5-a45c Red  n2 ours   1008 theirs    937 steps  28909
+  Jordan-ply_bcb80069-fb0c-4ba5-a45c Blue n2 ours   1434 theirs    923 steps  28909
+  TOTAL n36 ours 1241 theirs 147
