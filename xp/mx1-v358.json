@@ -1,0 +1,46 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v358",
+ "n": 4,
+ "requests": [
+  {
+   "id": "xreq_b10c674f-c446-4f3b-9fe3-78837bcb122b",
+   "seat": 0
+  },
+  {
+   "id": "xreq_3a6ab3e0-0e32-4885-b5ad-7912c1e1d1ca",
+   "seat": 1
+  },
+  {
+   "id": "xreq_842a90b6-f511-4422-93ed-f446307750e1",
+   "seat": 2
+  },
+  {
+   "id": "xreq_4599f3e1-5879-4df4-9228-98819350ecf2",
+   "seat": 3
+  },
+  {
+   "id": "xreq_c89c1872-def7-473c-8563-67cf8dc5909a",
+   "seat": 4
+  },
+  {
+   "id": "xreq_85ade6a1-bdc9-4ed8-88aa-a733235bdd1e",
+   "seat": 5
+  },
+  {
+   "id": "xreq_4ff72c97-26cd-4945-b750-5ab212dd4828",
+   "seat": 6
+  },
+  {
+   "id": "xreq_98931827-49f6-42ae-be2f-a1bbb0a0e382",
+   "seat": 7
+  },
+  {
+   "id": "xreq_8bd1ec43-2c59-451b-8c7d-b37f152f1cad",
+   "seat": 8
+  },
+  {
+   "id": "xreq_b9067033-13c9-47dd-8f2e-61fcc9ada615",
+   "seat": 9
+  }
+ ]
+}
