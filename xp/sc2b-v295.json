@@ -1,0 +1,114 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v295",
+ "n": 2,
+ "requests": [
+  {
+   "id": "xreq_1b0a4031-dfdc-4e62-bd7c-c0ab7c90f1b7",
+   "seat": 0,
+   "opp": "daf-gota-v1:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_0e1ec4a5-bfcf-423d-9fd2-a36cb6abe868",
+   "seat": 5,
+   "opp": "daf-gota-v1:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_9020ba6c-f780-4e55-ad95-1d68fbb2e3b1",
+   "seat": 0,
+   "opp": "red-kite:v34",
+   "side": 0
+  },
+  {
+   "id": "xreq_caeebf51-70d9-496e-a579-f5abe82adc12",
+   "seat": 5,
+   "opp": "red-kite:v34",
+   "side": 1
+  },
+  {
+   "id": "xreq_3a74dbee-3762-45bb-9e00-6254837e77a9",
+   "seat": 0,
+   "opp": "gota-g002:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_935a59a5-d2a0-4f16-a175-01e084ee8994",
+   "seat": 5,
+   "opp": "gota-g002:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_42d20967-3d62-4ae4-948a-fe55829658d2",
+   "seat": 0,
+   "opp": "julia-gota-v10-fixed:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_794647c8-9d83-442c-a35f-59b138c0a5e0",
+   "seat": 5,
+   "opp": "julia-gota-v10-fixed:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_53c35f62-a470-480f-8b84-f0571d572da3",
+   "seat": 0,
+   "opp": "BeWellBot-Arena:v12",
+   "side": 0
+  },
+  {
+   "id": "xreq_e43a5f47-40a1-4371-b684-ed623e3c43e5",
+   "seat": 5,
+   "opp": "BeWellBot-Arena:v12",
+   "side": 1
+  },
+  {
+   "id": "xreq_9136f4db-b101-4c9e-be47-0a8cbbcdaa4c",
+   "seat": 0,
+   "opp": "macromackie-gota:v4",
+   "side": 0
+  },
+  {
+   "id": "xreq_edabaa86-d824-466c-a233-451099b4c588",
+   "seat": 5,
+   "opp": "macromackie-gota:v4",
+   "side": 1
+  },
+  {
+   "id": "xreq_1f6b0882-066c-4ca0-9ae8-fa4f4c2a9f8c",
+   "seat": 0,
+   "opp": "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_ac81d885-2ed6-40df-8421-fb645c17ce5a",
+   "seat": 5,
+   "opp": "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_9c30c493-fe3f-40d9-aecd-5cdddb1dc6de",
+   "seat": 0,
+   "opp": "arena-codex-blue-hero-timing-20260921:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_1f44bf90-d1c2-4b29-98da-9e86f359c88a",
+   "seat": 5,
+   "opp": "arena-codex-blue-hero-timing-20260921:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_a7f2e31e-5abf-405d-90f7-86cdb1225900",
+   "seat": 0,
+   "opp": "richard-gods-of-the-arena:v135",
+   "side": 0
+  },
+  {
+   "id": "xreq_11a6eb07-2837-4296-ac84-efb6be1d2650",
+   "seat": 5,
+   "opp": "richard-gods-of-the-arena:v135",
+   "side": 1
+  }
+ ]
+}
