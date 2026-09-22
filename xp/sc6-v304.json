@@ -1,0 +1,42 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v304",
+ "n": 6,
+ "requests": [
+  {
+   "id": "xreq_750108b3-3b60-4616-9196-51eac926be49",
+   "seat": 0,
+   "opp": "Polyworld GOTA base.bas:v2",
+   "side": 0
+  },
+  {
+   "id": "xreq_c7948090-c117-4f2b-9cc6-0e6eb8eca44a",
+   "seat": 5,
+   "opp": "Polyworld GOTA base.bas:v2",
+   "side": 1
+  },
+  {
+   "id": "xreq_823632f7-e4fe-4a3a-9afd-41ecff727b75",
+   "seat": 0,
+   "opp": "gota-g003:v2",
+   "side": 0
+  },
+  {
+   "id": "xreq_29e58676-b704-4046-a866-e77c7dc6d963",
+   "seat": 5,
+   "opp": "gota-g003:v2",
+   "side": 1
+  },
+  {
+   "id": "xreq_bdbe4061-3a78-4e16-9ecf-36565954e7a0",
+   "seat": 0,
+   "opp": "khors:v15",
+   "side": 0
+  },
+  {
+   "id": "xreq_11c8bd65-4a99-41d8-a342-b7abcbafccec",
+   "seat": 5,
+   "opp": "khors:v15",
+   "side": 1
+  }
+ ]
+}
