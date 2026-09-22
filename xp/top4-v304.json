@@ -1,0 +1,42 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v304",
+ "n": 4,
+ "requests": [
+  {
+   "id": "xreq_42c9e493-c028-4157-a5d8-04bfbf22641e",
+   "seat": 0,
+   "opp": "relh-gods-of-the-arena:v161",
+   "side": 0
+  },
+  {
+   "id": "xreq_5f0ae56f-b767-44ec-bf08-cb2b570dd1a9",
+   "seat": 5,
+   "opp": "relh-gods-of-the-arena:v161",
+   "side": 1
+  },
+  {
+   "id": "xreq_d841a40f-3885-423d-8723-c6533a646fbc",
+   "seat": 0,
+   "opp": "khors:v33",
+   "side": 0
+  },
+  {
+   "id": "xreq_9d1e732d-9fe3-4e8e-977d-0afca8929475",
+   "seat": 5,
+   "opp": "khors:v33",
+   "side": 1
+  },
+  {
+   "id": "xreq_ac5ae655-bf3f-41c3-9f5a-934ed93e344b",
+   "seat": 0,
+   "opp": "richard-gods-of-the-arena:v152",
+   "side": 0
+  },
+  {
+   "id": "xreq_dfc432d4-f22b-4caa-a6c5-0ce04c10cd0c",
+   "seat": 5,
+   "opp": "richard-gods-of-the-arena:v152",
+   "side": 1
+  }
+ ]
+}
