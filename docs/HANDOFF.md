@@ -756,3 +756,4 @@ Caveat: those batches always used seats 0 and 5 (Death Knight / Vanguard Knight)
 - 11:52 (real clock): queued v395 (= v385 + melee heroes camp from level 10 under the same guards) vs v385, n=12. In flight: v394 vs v385, v395 vs v385; probe loop on 385; round 637 poll.
 - 11:55 (real clock): live v385 probes: 869, 935, 1110 (zeros 35%, 30%, 21%). v394 vs v385 partial n46: +97 +-284.
 - 12:00 (real clock ~11:45): duel v394 (no FLOAT + fight back) vs v385 n118: +49 +-140 (zeros 43 vs 53): noise. Queued v396 (= v385 + ranged heroes hold two tiles ahead of the leading allied creep, nearer the dying enemy ranged creeps) vs v385. v395 (melee camp) in flight.
+- 11:50 (real clock): duels vs v385, n115-120: v395 (melee camp from 10) +142 +-130 but melee 278 vs 354 and ranged 993 vs 825 (the untouched group moved: noise), v396 (ranged two tiles ahead of the wave) +58 +-120, ranged 822 vs 775. Both dropped. Everything since v385 sits at the noise floor; v385 stays live.
