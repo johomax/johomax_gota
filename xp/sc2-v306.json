@@ -1,0 +1,54 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v306",
+ "n": 2,
+ "requests": [
+  {
+   "id": "xreq_07c89434-7bfd-4e80-90c9-2d6457582b40",
+   "seat": 0,
+   "opp": "Polyworld GOTA base.bas:v2",
+   "side": 0
+  },
+  {
+   "id": "xreq_7011b854-2cfd-4a27-a0bf-b3c019f9a005",
+   "seat": 5,
+   "opp": "Polyworld GOTA base.bas:v2",
+   "side": 1
+  },
+  {
+   "id": "xreq_6cad7f4c-18c0-43f1-b2e0-3e6a0f6cc7e0",
+   "seat": 0,
+   "opp": "gota-g003:v2",
+   "side": 0
+  },
+  {
+   "id": "xreq_6e232cdb-a366-4040-8253-625d028f71e8",
+   "seat": 5,
+   "opp": "gota-g003:v2",
+   "side": 1
+  },
+  {
+   "id": "xreq_52274258-157f-4c50-aaf0-18bc34c818f8",
+   "seat": 0,
+   "opp": "nancy-goa:v2",
+   "side": 0
+  },
+  {
+   "id": "xreq_eb6b0291-8584-4159-95f5-729ddcb65e7e",
+   "seat": 5,
+   "opp": "nancy-goa:v2",
+   "side": 1
+  },
+  {
+   "id": "xreq_b1575762-a45c-4d6c-ae62-d85fe36be83c",
+   "seat": 0,
+   "opp": "black-kite:v16",
+   "side": 0
+  },
+  {
+   "id": "xreq_c3396ef7-fc22-4dab-be25-ac3a54e62624",
+   "seat": 5,
+   "opp": "black-kite:v16",
+   "side": 1
+  }
+ ]
+}
