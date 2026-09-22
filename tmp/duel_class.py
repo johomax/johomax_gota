@@ -6,7 +6,9 @@ from coworld.api_client import CoworldApiClient
 from softmax.auth import get_api_server
 def dump(o): return o.model_dump() if hasattr(o, "model_dump") else o
 ME = "Jordan-ply_bcb80069"; CL = ["VK", "Ranger", "Arcanist", "Druid", "DH", "DK", "Xbow", "Lich", "Warlock", "Berserk"]; MELEE = {0, 3, 4, 5, 9}
+import os
 cand, ctrl = int(sys.argv[2]), int(sys.argv[3]); by = {cand: collections.defaultdict(list), ctrl: collections.defaultdict(list)}
+EXCL = {int(x) for x in os.environ.get("EXCL_SEATS", "").split(",") if x}  # skip games whose candidate sits in these seats
 with CoworldApiClient.from_login(server_url=get_api_server()) as c:
     for path in sys.argv[1].split(","):
         d = json.load(open(path))
@@ -21,6 +23,7 @@ with CoworldApiClient.from_login(server_url=get_api_server()) as c:
                     rep = load_replay(str(fp)); st = dump(c.get_episode_request_episode_stats(eid))
                 except Exception as ex: print("skip", eid, ex); continue
                 cls = {a["heroId"]: a["first"] for a in rep["actions"] if a["kind"] == "draft"}
+                if EXCL and any(ME in ps["policy_name"] and ps.get("policy_version") == cand and ps["position"] in EXCL for ps in st["policy_stats"]): continue
                 for ps in st["policy_stats"]:
                     if ME in ps["policy_name"] and ps.get("policy_version") in by:
                         k = cls.get(100 + ps["position"], -1)
