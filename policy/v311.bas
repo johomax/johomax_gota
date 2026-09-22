@@ -1,4 +1,3 @@
-' v312 = v311 for mixed rosters: every seat farms (no guards), initial lane = slot mod 3, then every 1200 ticks move to the lane region with the fewest allied heroes if ours holds one or more
 ' v311 = v310 + floaters: slots 3-4 farm a lane whose region has no allied hero (every seat must score in mixed rosters), guard only when all three lanes are held
 ' v310 = v306 with the base-defence check moved ahead of the attack block (a farmer with a creep in range never reached it: relh killed our god at tick 9452 with no DEFEND print)
 ' v306 = v304 + base defence: farmers scroll or run home when three or more enemy heroes are within 22 tiles of our god
@@ -709,9 +708,11 @@ speed = (selfMoveSpeed \ 100) / (worldScale \ 100)
 
 if initialized = 0 then
   initialized = 1
-  laneIdx = ((selfId - 100) mod 5) mod 3
-  floater = 1
-  lastLaneChange = 0
+  laneIdx = (selfId - 100) mod 5
+  floater = 0
+  if laneIdx >= 3 then
+    floater = 1
+  end if
   spawnX = selfX
   spawnY = selfY
   homeX = selfX
@@ -801,31 +802,17 @@ inventory()
 spells()
 dodgeWarnings()
 ' v312: slots 3-4 float — farm a lane whose region holds no allied hero (mixed rosters leave lanes empty), else guard home
-' v313: mixed rosters — every seat farms; every 1200 ticks move to the lane region with the fewest allied heroes when ours has at least one more
-if floater = 1 and worldTick >= 1200 and worldTick - lastLaneChange >= 1200 and worldTick mod 600 < 6 then
-  curAllies = allyLane0
-  if laneIdx = 1 then
-    curAllies = allyLane1
-  elseif laneIdx = 2 then
-    curAllies = allyLane2
-  end if
-  newLane = laneIdx
-  bestAllies = curAllies
-  if allyLane1 < bestAllies then
-    bestAllies = allyLane1
+if floater = 1 and worldTick >= 1200 and worldTick mod 600 < 6 then
+  newLane = 3
+  if allyLane1 = 0 then
     newLane = 1
-  end if
-  if allyLane0 < bestAllies then
-    bestAllies = allyLane0
+  elseif allyLane0 = 0 then
     newLane = 0
-  end if
-  if allyLane2 < bestAllies then
-    bestAllies = allyLane2
+  elseif allyLane2 = 0 then
     newLane = 2
   end if
-  if newLane <> laneIdx and curAllies >= 1 then
+  if newLane <> laneIdx then
     laneIdx = newLane
-    lastLaneChange = worldTick
     print "FLOAT " ; worldTick ; " lane " ; laneIdx ; " allies " ; allyLane0 ; " " ; allyLane1 ; " " ; allyLane2
   end if
 end if
