@@ -47,7 +47,7 @@ import zlib
 
 MAGIC = b"POLYWORLDREPLAY"
 GAME = "gods_of_the_arena"
-GAME_VERSIONS = {16, 17, 18, 19, 20, 22, 23, 24, 25, 26, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42}
+GAME_VERSIONS = {16, 17, 18, 19, 20, 22, 23, 24, 25, 26, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 51}
 MAX_BYTES = 64 * 1024 * 1024
 MAX_ACTIONS = 10_000_000
 MAX_HASHES = 100_000_000
@@ -59,7 +59,7 @@ KINDS = {
     1: "walkTo", 2: "attackTarget", 3: "buyItem", 4: "useItem",
     5: "attackMove", 6: "castTarget", 7: "castTarget", 8: "castTarget",
     9: "castTarget", 10: "castPoint", 11: "castPoint", 12: "castPoint",
-    13: "castPoint", 14: "manualSpells",
+    13: "castPoint", 14: "manualSpells", 15: "useItemAt", 16: "levelAbility", 17: "buyback", 18: "draft",
 }
 MAP_FLOATS = (
     "highSize castleSize roadWidth roadWobble lakeWidth lakeWobble "
@@ -133,7 +133,11 @@ def read_config(reader, version):
 
 
 def read_action(reader, version):
-    action = reader.record("IiB3xii", "tick heroId kindId first second")
+    if version >= 51:
+        # game version 51: uint32 tick, int32 heroId, uint8 kind (+3 pad), FixedVec2 offset, int32 slot, first, second
+        action = reader.record("IiB3xiiiii", "tick heroId kindId offX offY slot first second")
+    else:
+        action = reader.record("IiB3xii", "tick heroId kindId first second")
     kind, first, second = action["kindId"], action["first"], action["second"]
     if kind not in KINDS or (version <= 20 and kind >= 6):
         raise ReplayError(f"invalid action kind {kind} for game version {version}")
@@ -198,6 +202,8 @@ def decode_replay(data):
         for _ in range(reader.count("heroes", 8, 256))
     ]
     setup["heroes"] = heroes
+    if version >= 51:
+        setup["drafting"] = bool(reader.number("B", "drafting"))
     header["setup"] = setup
     hero_ids = {hero["id"] for hero in heroes}
     if not heroes or len(hero_ids) != len(heroes):
@@ -230,7 +236,7 @@ def decode_replay(data):
             raise ReplayError("actions move backward in time")
         last_tick = action["tick"]
         actions.append(action)
-    count = reader.count("hashes", 8, min(MAX_HASHES, setup["maximumTicks"]))
+    count = reader.count("hashes", 8, MAX_HASHES)
     hashes = [value[0] for value in struct.iter_unpack("<Q", reader.take(count * 8, "hashes"))]
     if last_tick > count:
         raise ReplayError("action exceeds the recorded duration")
