@@ -18,7 +18,7 @@ with CoworldApiClient.from_login(server_url=get_api_server()) as c:
             cls = -1
             for l in text.split("\n"):
                 if l.startswith("DRAFT ") and " ok 1" in l: cls = int(l.split()[1])
-            if not (0 <= cls < 10) or CL[cls] != want: continue
+            if not (0 <= cls < 10) or (want != "any" and CL[cls] != want): continue
             if zero and ((me.get("avg_reward") or 0) > 0 or (st.get("steps") or 0) < 15000): continue
             print(f"### episode {ep['id']} seat {seat} {want} score {me.get('avg_reward')} steps {st.get('steps')}")
             print("roster:", [ (ps["position"], ps["policy_name"][:28]) for ps in st["policy_stats"]])

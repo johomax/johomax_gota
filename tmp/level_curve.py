@@ -7,7 +7,8 @@ from softmax.auth import get_api_server
 def dump(o): return o.model_dump() if hasattr(o, "model_dump") else o
 ME = "Jordan-ply_bcb80069"
 FAM = [("Jordan", "ours"), ("relh", "relh"), ("richard", "richard"), ("khors", "khors"), ("aaron-gota-micro0922", "aaron-micro"), ("arena-codex", "arena-codex")]
-LV = [4, 6, 8, 10, 12]
+import os
+LV = [int(x) for x in os.environ.get("LV", "4,6,8,10,12").split(",")]
 reach = collections.defaultdict(lambda: collections.defaultdict(list)); final = collections.defaultdict(list); games = collections.Counter()
 with CoworldApiClient.from_login(server_url=get_api_server()) as c:
     for path in sys.argv[1:]:
