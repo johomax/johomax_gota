@@ -1,0 +1,90 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v290",
+ "n": 4,
+ "requests": [
+  {
+   "id": "xreq_f6227f1e-389a-4448-b7eb-869b628c387e",
+   "seat": 0,
+   "opp": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v288",
+   "side": 0
+  },
+  {
+   "id": "xreq_6a5a43a6-4d62-440d-8b50-d65c2461145c",
+   "seat": 5,
+   "opp": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v288",
+   "side": 1
+  },
+  {
+   "id": "xreq_2b20fc3a-2713-4cf0-9781-c3745272a8ac",
+   "seat": 0,
+   "opp": "macromackie-gota:v4",
+   "side": 0
+  },
+  {
+   "id": "xreq_a0832d3b-c5cc-4fbf-982f-d89320b3711f",
+   "seat": 5,
+   "opp": "macromackie-gota:v4",
+   "side": 1
+  },
+  {
+   "id": "xreq_57fc5a88-cda7-4294-a148-e1fc497b0056",
+   "seat": 0,
+   "opp": "relh-gods-of-the-arena:v159",
+   "side": 0
+  },
+  {
+   "id": "xreq_5965d533-4620-4658-9139-261c622f83e7",
+   "seat": 5,
+   "opp": "relh-gods-of-the-arena:v159",
+   "side": 1
+  },
+  {
+   "id": "xreq_e445f76a-ef93-4eea-aeb7-0da3e95b1fc9",
+   "seat": 0,
+   "opp": "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_a2e2f59d-0f6f-4edc-861b-77d261bd6b85",
+   "seat": 5,
+   "opp": "aaron-gota-ir-formation-profile-pruned-0920-coach:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_edadeb54-45a9-4a9f-b4d0-7f2d1b653eba",
+   "seat": 0,
+   "opp": "nancy-goa:v2",
+   "side": 0
+  },
+  {
+   "id": "xreq_b0985b48-88bd-4f03-ac4a-fe233eb0c669",
+   "seat": 5,
+   "opp": "nancy-goa:v2",
+   "side": 1
+  },
+  {
+   "id": "xreq_4cf6cd26-f539-4248-94bc-e53e13a8a396",
+   "seat": 0,
+   "opp": "gota-g003:v2",
+   "side": 0
+  },
+  {
+   "id": "xreq_6b109c29-7b54-477d-91bd-fbd6b591b18c",
+   "seat": 5,
+   "opp": "gota-g003:v2",
+   "side": 1
+  },
+  {
+   "id": "xreq_ed554895-19d6-4728-8e5e-c25450ee866d",
+   "seat": 0,
+   "opp": "arena-codex-blue-hero-timing-20260921:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_c4a8c4ab-3d6d-4b8a-a1c1-5677f2325cda",
+   "seat": 5,
+   "opp": "arena-codex-blue-hero-timing-20260921:v1",
+   "side": 1
+  }
+ ]
+}

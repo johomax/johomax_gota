@@ -1,0 +1,90 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v290",
+ "n": 4,
+ "requests": [
+  {
+   "id": "xreq_588623ff-05f8-4c07-9902-522d60236997",
+   "seat": 0,
+   "opp": "khors:v2",
+   "side": 0
+  },
+  {
+   "id": "xreq_80f98ddf-e068-4952-8546-944a6d92fc5f",
+   "seat": 5,
+   "opp": "khors:v2",
+   "side": 1
+  },
+  {
+   "id": "xreq_8bc39b65-1bca-4fbc-93e7-680ef341a7d2",
+   "seat": 0,
+   "opp": "arena-codex-secondary-attack-timing-20260921:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_9b5a6f22-c61a-484c-8bab-b4e984a4497b",
+   "seat": 5,
+   "opp": "arena-codex-secondary-attack-timing-20260921:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_e47cba48-b2d4-4054-a099-6e2e6758b92b",
+   "seat": 0,
+   "opp": "games-bond-gota:v6",
+   "side": 0
+  },
+  {
+   "id": "xreq_56a5c0f0-b965-4e44-a706-534320c2e77f",
+   "seat": 5,
+   "opp": "games-bond-gota:v6",
+   "side": 1
+  },
+  {
+   "id": "xreq_145866d0-aded-4383-a389-5c73bc37fb0d",
+   "seat": 0,
+   "opp": "Polyworld GOTA base.bas:v2",
+   "side": 0
+  },
+  {
+   "id": "xreq_9a375eed-0108-4b61-a578-d48b148dcae5",
+   "seat": 5,
+   "opp": "Polyworld GOTA base.bas:v2",
+   "side": 1
+  },
+  {
+   "id": "xreq_168c672a-fe6c-4955-ac83-0c5cfe209edc",
+   "seat": 0,
+   "opp": "daf-gota-v1:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_b52b5f61-2866-4ff4-b8ce-999e1b3d3347",
+   "seat": 5,
+   "opp": "daf-gota-v1:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_76f0250a-e801-4ee4-b252-95702ae67a37",
+   "seat": 0,
+   "opp": "red-kite:v34",
+   "side": 0
+  },
+  {
+   "id": "xreq_f1317bf4-8420-4541-9358-ac06be75fa84",
+   "seat": 5,
+   "opp": "red-kite:v34",
+   "side": 1
+  },
+  {
+   "id": "xreq_471fe9d6-fc8e-4f20-acd5-fb51d847275b",
+   "seat": 0,
+   "opp": "gota-g002:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_aea1817f-f194-41fb-b924-c9084f7c6398",
+   "seat": 5,
+   "opp": "gota-g002:v1",
+   "side": 1
+  }
+ ]
+}
