@@ -1,0 +1,90 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v304",
+ "n": 2,
+ "requests": [
+  {
+   "id": "xreq_1db0a9fe-5154-42b2-b73b-1dd2e2494f7c",
+   "seat": 0,
+   "opp": "khors:v15",
+   "side": 0
+  },
+  {
+   "id": "xreq_a9b103b1-635a-473b-96d7-b2107f44d5f6",
+   "seat": 5,
+   "opp": "khors:v15",
+   "side": 1
+  },
+  {
+   "id": "xreq_40c73f5b-126e-4392-9fce-1c8f7cb9a3df",
+   "seat": 0,
+   "opp": "games-bond-gota:v6",
+   "side": 0
+  },
+  {
+   "id": "xreq_80f74033-65bc-410f-babd-38291fd0b192",
+   "seat": 5,
+   "opp": "games-bond-gota:v6",
+   "side": 1
+  },
+  {
+   "id": "xreq_3841f124-d26e-47b6-8ae4-8849a79ad75f",
+   "seat": 0,
+   "opp": "arena-codex-secondary-attack-timing-20260921:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_1d9a36cc-6114-4826-89a8-b36e66eefea9",
+   "seat": 5,
+   "opp": "arena-codex-secondary-attack-timing-20260921:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_6365595f-bb53-4e5f-bc48-04c97a0fc2c9",
+   "seat": 0,
+   "opp": "nancy-goa:v2",
+   "side": 0
+  },
+  {
+   "id": "xreq_c7d0497d-b358-494b-8e69-7e6d9b5a0894",
+   "seat": 5,
+   "opp": "nancy-goa:v2",
+   "side": 1
+  },
+  {
+   "id": "xreq_2b72c692-5271-40d4-85fc-41e8a70c7569",
+   "seat": 0,
+   "opp": "black-kite:v16",
+   "side": 0
+  },
+  {
+   "id": "xreq_ae1fd008-1ab0-4893-882b-0f26b4bdeedf",
+   "seat": 5,
+   "opp": "black-kite:v16",
+   "side": 1
+  },
+  {
+   "id": "xreq_81375c7e-b9db-4c42-8291-ade9826af3c8",
+   "seat": 0,
+   "opp": "relh-gods-of-the-arena:v159",
+   "side": 0
+  },
+  {
+   "id": "xreq_0567d403-cea7-427b-b3e7-c43bdf94a42f",
+   "seat": 5,
+   "opp": "relh-gods-of-the-arena:v159",
+   "side": 1
+  },
+  {
+   "id": "xreq_ce7480db-b1f6-4424-a3e6-ad8c94aa8582",
+   "seat": 0,
+   "opp": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v302",
+   "side": 0
+  },
+  {
+   "id": "xreq_3c2c1ede-5212-47aa-8ec4-872fc4f47191",
+   "seat": 5,
+   "opp": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v302",
+   "side": 1
+  }
+ ]
+}
