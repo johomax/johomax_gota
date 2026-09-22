@@ -11,7 +11,7 @@ def main():
     subprocess.run([sys.executable.replace("python", "python"), str(ROOT / "tools/league_data.py"), "--rounds", str(a.rounds), "--out", str(out)], capture_output=True, text=True, cwd=ROOT)
     try: d = json.load(open(out))
     except Exception: print("no league data"); return
-    labels = sorted({l for e in d for l in e["seat_policies"] if l and l != "?" and not l.startswith("Jordan")})
+    labels = sorted({l for e in d for l in e.get("seat_policies", []) if l and l != "?" and not l.startswith("Jordan")})
     sp = ROOT / a.state; prev = json.load(open(sp)) if sp.exists() else []
     new = sorted(set(labels) - set(prev)); gone = sorted(set(prev) - set(labels))
     print("labels:", ", ".join(l.split(":")[0][-22:] + ":" + l.split(":")[1] for l in labels))
