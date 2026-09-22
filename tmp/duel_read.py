@@ -4,7 +4,9 @@ from coworld.api_client import CoworldApiClient
 from softmax.auth import get_api_server
 def dump(o): return o.model_dump() if hasattr(o, "model_dump") else o
 ME = "Jordan-ply_bcb80069"
+import os
 path, cand, ctrl = sys.argv[1], int(sys.argv[2]), int(sys.argv[3])
+EXCL_LIVE = int(os.environ["EXCL_LIVE"]) if os.environ.get("EXCL_LIVE") else None  # skip games where our live policy was also drawn as a random seat
 cache_p = "tmp/mixed_files_cache.json"
 try: cache = json.load(open(cache_p))
 except Exception: cache = {}
@@ -21,6 +23,7 @@ with CoworldApiClient.from_login(server_url=get_api_server()) as c:
                 eps.append([(ps["position"], ps.get("policy_version"), ps.get("avg_reward") or 0, ME in ps["policy_name"]) for ps in st.get("policy_stats", [])])
             e = {"total": det.get("episode_count") or len(det.get("episodes", [])), "done": len(eps), "eps": eps}; cache[key] = e
         for ep in e["eps"]:
+            if EXCL_LIVE is not None and any(x[3] and x[1] == EXCL_LIVE for x in ep) and EXCL_LIVE not in (cand, ctrl): continue
             cs = [x for x in ep if x[3] and x[1] == cand]; ks = [x for x in ep if x[3] and x[1] == ctrl]
             oth = [x[2] for x in ep if not x[3]]
             if cs and ks:
