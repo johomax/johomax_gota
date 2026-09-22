@@ -766,3 +766,4 @@ Caveat: those batches always used seats 0 and 5 (Death Knight / Vanguard Knight)
 - 12:12 (real clock): field: khors:v62 replaced khors:v33/v47 and the aaron compat labels are gone (micro0922 remains); coworld unchanged (cow_e5445477). Queued v399 (= v385 with the camp allowed until the sixth death) vs v385, n=12.
 - 12:14 (real clock): confirmation duel v393 (retreat at 40%) vs v385 at n160: +37 +-112: no difference. Both high-power confirmations are flat; v385 stands. In flight: v399 (camp until the sixth death) vs v385.
 - 12:16 (real clock): queued v400 (= v385 with the non-carry hunter flee lasting twenty seconds) vs v385, n=12.
+- 12:17 (real clock): duel v399 (camp until the sixth death) vs v385 n100: +23 +-140 (zeros 29 vs 44, melee 433 vs 171 although melee never camp: noise). Dropped. In flight: v400 (twenty-second hunter flee) vs v385; round 638 poll.
