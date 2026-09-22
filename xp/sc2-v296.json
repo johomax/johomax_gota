@@ -1,0 +1,114 @@
+{
+ "candidate": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v296",
+ "n": 2,
+ "requests": [
+  {
+   "id": "xreq_680c6a6e-ea7c-4f78-81d4-6deeb771edae",
+   "seat": 0,
+   "opp": "khors:v2",
+   "side": 0
+  },
+  {
+   "id": "xreq_cec684a9-ad97-4da5-97e6-eefb6e26a988",
+   "seat": 5,
+   "opp": "khors:v2",
+   "side": 1
+  },
+  {
+   "id": "xreq_3f6ccac1-0f90-453f-a38d-d8f2956a91f4",
+   "seat": 0,
+   "opp": "Polyworld GOTA base.bas:v2",
+   "side": 0
+  },
+  {
+   "id": "xreq_46045a7a-6124-458a-9449-db5cc055fe16",
+   "seat": 5,
+   "opp": "Polyworld GOTA base.bas:v2",
+   "side": 1
+  },
+  {
+   "id": "xreq_0a4ab241-a8e7-4e49-a18e-fe28ab5bfb64",
+   "seat": 0,
+   "opp": "games-bond-gota:v6",
+   "side": 0
+  },
+  {
+   "id": "xreq_a647c916-99cd-45a1-ac79-4bd9008fe5d2",
+   "seat": 5,
+   "opp": "games-bond-gota:v6",
+   "side": 1
+  },
+  {
+   "id": "xreq_bce3178b-d367-495c-98f7-43fe1811f6ab",
+   "seat": 0,
+   "opp": "gota-g003:v2",
+   "side": 0
+  },
+  {
+   "id": "xreq_dd9e8fd7-fe11-4a02-9982-5f592d4a68fa",
+   "seat": 5,
+   "opp": "gota-g003:v2",
+   "side": 1
+  },
+  {
+   "id": "xreq_1e985b3e-c644-46a2-ab91-b283b8b56a4f",
+   "seat": 0,
+   "opp": "arena-codex-secondary-attack-timing-20260921:v1",
+   "side": 0
+  },
+  {
+   "id": "xreq_0ef867cb-9c5e-43de-9a27-ca6225b92655",
+   "seat": 5,
+   "opp": "arena-codex-secondary-attack-timing-20260921:v1",
+   "side": 1
+  },
+  {
+   "id": "xreq_9cd8860e-01a2-4fab-a9e6-9348be3bf88f",
+   "seat": 0,
+   "opp": "nancy-goa:v2",
+   "side": 0
+  },
+  {
+   "id": "xreq_6a3ddfc1-180d-4c2d-9441-f4a71f419272",
+   "seat": 5,
+   "opp": "nancy-goa:v2",
+   "side": 1
+  },
+  {
+   "id": "xreq_fddbc900-901d-49c5-a8f5-b8acc472ca88",
+   "seat": 0,
+   "opp": "black-kite:v16",
+   "side": 0
+  },
+  {
+   "id": "xreq_f79b57a3-263d-4cb6-a5b9-6aeae5840333",
+   "seat": 5,
+   "opp": "black-kite:v16",
+   "side": 1
+  },
+  {
+   "id": "xreq_c80dcdf1-1b49-47b3-86c4-e23719abc514",
+   "seat": 0,
+   "opp": "relh-gods-of-the-arena:v159",
+   "side": 0
+  },
+  {
+   "id": "xreq_42590d13-b96c-413f-810f-c8b667ca54d7",
+   "seat": 5,
+   "opp": "relh-gods-of-the-arena:v159",
+   "side": 1
+  },
+  {
+   "id": "xreq_7967ab0b-123e-4a92-b0a7-9693bd49d199",
+   "seat": 0,
+   "opp": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v295",
+   "side": 0
+  },
+  {
+   "id": "xreq_c44492d7-71f1-49e2-a653-0dd188b28ee3",
+   "seat": 5,
+   "opp": "Jordan-ply_bcb80069-fb0c-4ba5-a45c-06b647870aeb:v295",
+   "side": 1
+  }
+ ]
+}
